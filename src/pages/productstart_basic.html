@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../input.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
+  
+
+</head>
+
+<div class="bg-gray-50">
+  <!-- Base page -->
+  <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 md:px-0 gap-10 bg-gray-50 py-12">
+    <!-- PageHeader-->
+    <div class="flex flex-col gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28">
+        <path stroke="#3A99E1" stroke-miterlimit="10" stroke-width="3.064"
+          d="M26 14c0 6.624-5.366 12-12 12S2 20.634 2 14C2 7.376 7.366 2 14 2s12 5.376 12 12Z" />
+        <path stroke="#3A99E1" stroke-miterlimit="10" stroke-width="3.064"
+          d="M19.828 14a5.826 5.826 0 0 0-5.83-5.828 5.826 5.826 0 0 0-5.828 5.829 5.826 5.826 0 0 0 5.829 5.829A5.826 5.826 0 0 0 19.828 14Z" />
+      </svg>
+      <div class="flex flex-col gap-2">
+        <h1 class="leading-none text-2xl font-semibold text-gray-900">Novo financiamento coletivo</h1>
+        <div class="text-sm font-normal text-gray-600">Agora, vamos preparar seu projeto e você poderá publicá-lo em
+          minutos.</div>
+      </div>
+    </div>
+    <!-- Layout 2 columns sem Stretch -->
+
+    <div class="flex flex-wrap gap-4 justify-center items-start">
+      <div class="basis-[30rem] grow-[2] shrink-[2] min-w-[51%] max-w-full flex flex-col gap-6">
+        <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+          <!-- Form -->
+          <div class="flex flex-col gap-8">
+            <!-- Não tem FormHeader -->
+
+            <!-- FormLayout-->
+            <!-- Input Field - Nome do projeto -->
+            <div class="flex flex-col gap-2">
+              <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do projeto</label>
+              <div class="mt-1 flex rounded-md shadow-sm">
+                <input
+                  class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                  id="preview-input" type="text" placeholder="" autofocus>
+              </div>
+              <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente. Não
+                ultrapasse 50 caracteres.</p>
+            </div>
+
+            
+
+
+
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="basis-[15rem] grow shrink min-w-0">
+        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+          <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Quer uma mãozinha?</h5>
+          <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+        </div>
+      </div>
+    </div>
+  <!-- Aqui tem que decidir como iremos fazer com esse Footer. Em tese podemos fazer dois componentes aqui. O ButtonGroup (que todos os DS tem, pois serve justamente para esses casos comuns de usar 2 buttons juntos) e o PageAction com suas possíveis variantes do futuro  -->
+  <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
+    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+      Cancelar
+    </button>
+    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+      Próximo: personalizar
+    </button>
+    
+  </div>  
+
+  
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+

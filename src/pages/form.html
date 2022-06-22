@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../input.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+<!-- Page XS -->
+<div class="flex flex-col max-w-lg mx-auto my-0 px-4 md:px-0 py-12 gap-10">
+    <!-- Form -->
+    <div class="flex flex-col gap-8">
+        <!-- FormHeader -->
+<div class="flex flex-row gap-6 pb-3">
+    <div class="w-1 bg-gray-100"></div>
+    <div class="flex flex-col gap-2">
+        <h2 class="text-lg font-semibold text-gray-800">Informações iniciais</h2>
+        <div class="text-xs font-normal text-gray-500">Os dados informados nessa seção não poderão ser modificados quando o projeto for ao ar.
+            Preencha com atenção e revise antes de lançar o projeto.</div>
+    </div>
+</div>
+<!-- FormLayout -->
+<div class="flex flex-col gap-2">
+    <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do projeto</label>
+    <div class="mt-1 flex rounded-md shadow-sm">
+        <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md" id="preview-input" type="text" placeholder="">
+      </div>
+      <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente. Não ultrapasse 50 caracteres.</p>
+  </div>
+  <div class="flex flex-col gap-2">
+    <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Link no Catarse</label>
+  <div class="flex rounded-md shadow-sm">
+    <span class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
+    <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md" id="preview-input" type="text" placeholder="">
+  </div>
+  <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar. Prefira algo simples, direto e que identifique bem seu projeto. Tente não usar hífen, underline etc.</p>
+</div>
+<div class="flex flex-col gap-2">
+    <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Categoria do projeto</label>
+  <div class="flex rounded-md shadow-sm">
+    <select name="" id="" class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900"><option value="">Escolha uma opção</option><option value="Red">red</option>
+    <option value="Green">green</option>
+    <option value="Blue">blue</option></select>
+  </div>
+</div>
+  
+
+<!-- FormFooter -->
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+    <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">My title</h5>
+    <div class="text-sm text-gray-900">My section</div>
+  </div>
+
+
+</body>
+
+</html>
+
+
+<!-- O que tem que fazer 
+1. Form fields tem que ficar dentro de um flex
+2. Helper tem que mudar para gray-500
+
+-->

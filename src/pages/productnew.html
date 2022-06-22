@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../input.css" rel="stylesheet">
+  <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+  <!-- Base page -->
+  <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 md:px-0 gap-10 bg-gray-50 py-12">
+    <!-- PageHeader-->
+    <div class="flex flex-col gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none" viewBox="0 0 23 20">
+        <path fill="#DC3481" d="m10.332 13.739-3.066-1.66-1.5-1.82 5.432-6.302v-.013L9.016 1.637C6.952-.544 3.608-.547 1.548 1.635c-2.063 2.18-2.065 5.71.001 7.896l2.203 2.327 7.422 7.94.024-.025v-6.034h-.867Z"/>
+        <path fill="#F6937A" d="m11.203 11.337-1.193-1.258a2.774 2.774 0 0 0-4.082-.004c-1.126 1.192-1.128 3.121.002 4.314l1.204 1.273L11.19 20l.013-.015v-8.648Z"/>
+        <path fill="#81BA41" d="m11.203 11.337-1.193-1.258a2.774 2.774 0 0 0-4.082-.004c-1.126 1.192-1.128 3.121.002 4.314l1.204 1.273L11.19 20l.013-.015v-8.648Z"/>
+        <path fill="#FAB678" d="m12.09 13.747-.049-1.368-.493-.175-.356-.86v2.403h.898Z"/>
+        <path fill="#E66825" d="M20.84 1.643c-2.061-2.18-5.404-2.178-7.47.004L11.322 3.81l-.13.152-5.433 6.304a2.774 2.774 0 0 1 4.24-.18l1.193 1.258 9.525-9.82c.042.039.085.075.124.118Z"/>
+        <path fill="#1DA149" d="m11.2 11.337 1.192-1.258c1.128-1.195 2.955-1.196 4.081-.004 1.129 1.192 1.129 3.121-.001 4.314l-1.203 1.273L11.215 20l-.015-.015v-8.648Z"/>
+        <path fill="#EE9121" d="M20.851 1.634c-.038-.043-.082-.078-.123-.12l-8.056 8.308c1.133-.93 2.762-.846 3.801.253.906.96 1.085 2.395.53 3.542l1.646-1.76L20.85 9.53c2.068-2.185 2.062-5.716 0-7.896Z"/>
+      </svg>
+    <div class="flex flex-col gap-2">
+      <h1 class="leading-none text-2xl font-semibold text-gray-900">O que você quer criar?</h1>
+      <div class="text-sm font-normal text-gray-600">Vamos lá! Primeiro precisamos definir a modalidade do seu projeto.</div>
+    </div>      
+    </div>
+    <!-- Layout 3 columns - incluir opção Stretch ou não. Default é stretch, mas se quiser sem ser stretch tem que adicionar a classe items-start -->
+    <div class="flex flex-wrap gap-4 justify-center">
+      <div class="basis-[15rem] grow shrink min-w-0 flex">
+          <!-- Card color gray com SHADOW. OBS: card tem que ser flex ao invés de block -->
+          <div class="p-6 rounded-lg border border-gray-100 bg-white shadow flex flex-col">
+            <div class="flex flex-col gap-10">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2 items-center">
+                  <div class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 28 28">
+                      <path stroke="#3A99E1" stroke-miterlimit="10" stroke-width="3.064"
+                        d="M25.833 14c0 6.624-5.365 12-12 12-6.634 0-12-5.366-12-12 0-6.624 5.366-12 12-12 6.635 0 12 5.376 12 12Z" />
+                      <path stroke="#3A99E1" stroke-miterlimit="10" stroke-width="3.064"
+                        d="M19.661 14a5.826 5.826 0 0 0-5.829-5.828 5.826 5.826 0 0 0-5.829 5.829 5.826 5.826 0 0 0 5.83 5.829A5.826 5.826 0 0 0 19.66 14Z" />
+                    </svg>
+                  </div>
+                  <div class="text-xl font-medium text-gray-900 text-center">Financiamento coletivo</div>
+                </div>
+                <div class="text-sm font-normal text-gray-600 text-center">Seu projeto ainda precisa de financiamento
+                  para
+                  ser lançado ao mundo? Essa é a opção para você.</div>
+              </div>
+              <!-- Button size L -->
+              <a name="button" href="productstart.html"
+                class="inline-flex justify-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3 px-5 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">Selecionar</a>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-row gap-2 items-center">
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
+                      <path fill="#3B873E" fill-rule="evenodd"
+                        d="m7.793 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="text-xs font-medium text-gray-500">Levante recursos para um projeto</div>
+                </div>
+                <div class="flex flex-row gap-2 items-center">
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
+                      <path fill="#3B873E" fill-rule="evenodd"
+                        d="m7.793 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="text-xs font-medium text-gray-500">Ações pontuais e vaquinhas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="basis-[15rem] grow shrink min-w-0 flex">
+        <!-- card tem que ser flex ao invés de block -->
+        <div class="p-6 rounded-lg border border-gray-100 bg-white shadow flex flex-col">
+          <div class="flex flex-col gap-10">
+
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-2 items-center">
+                <div class="Icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" fill="none" viewBox="0 0 28 28">
+                    <path fill="#C1B04F" fill-rule="evenodd"
+                      d="M13.547 24a11.918 11.918 0 0 1-8.479-3.517C1.172 16.587.521 10.66 3.113 6.083L.498 3.465l5.8-1.024A11.91 11.91 0 0 1 13.557 0c3.203 0 6.214 1.243 8.488 3.517a11.924 11.924 0 0 1 3.517 8.488c0 2.058-.517 4.036-1.487 5.79l2.427 2.425-5.143.907A11.965 11.965 0 0 1 13.547 24Zm3.887-3.992a8.88 8.88 0 0 1-3.887.89A8.86 8.86 0 0 1 7.25 18.29c-2.678-2.67-3.287-6.637-1.84-9.907l2.817 2.822 1.259-7.138a8.875 8.875 0 0 1 4.06-.976c2.384 0 4.618.93 6.295 2.607a8.86 8.86 0 0 1 2.607 6.296c0 1.213-.24 2.392-.7 3.479l-2.988-2.985-1.327 7.52Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="text-xl font-medium text-gray-900 text-center">Clube de assinatura</div>
+              </div>
+              <div class="text-sm font-normal text-gray-600 text-center">Seu projeto é recorrente? Essa é a melhor opção
+                para você manter
+                uma receita mensal.</div>
+            </div>
+            <button name="button" type="submit"
+              class="inline-flex justify-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3 px-5 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">Selecionar</button>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-2 items-center">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
+                    <path fill="#3B873E" fill-rule="evenodd"
+                      d="m7.793 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="text-xs font-medium text-gray-500">Garanta uma fonte de renda mensal</div>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
+                    <path fill="#3B873E" fill-rule="evenodd"
+                      d="m7.793 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="text-xs font-medium text-gray-500">Ideal para clube de membros</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="basis-[15rem] grow shrink min-w-0 flex">
+        <!-- card tem que ser flex ao invés de block e tem que incluir grow -->
+        <div class="p-6 rounded-lg border border-gray-100 bg-white shadow flex flex-col grow">
+          <div class="flex flex-col gap-10">
+
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-2 items-center">
+                <div class="Icon">
+                  <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9334 6H16.8534V5.52C16.8534 2.472 14.3814 0 11.3334 0C8.28538 0 5.81338 2.472 5.81338 5.52V6H1.73338C1.20238 6 0.773376 6.429 0.773376 6.96V23.04C0.773376 23.571 1.20238 24 1.73338 24H20.9334C21.4644 24 21.8934 23.571 21.8934 23.04V6.96C21.8934 6.429 21.4644 6 20.9334 6ZM14.6934 6H7.97338V5.52C7.97338 3.663 9.47638 2.16 11.3334 2.16C13.1904 2.16 14.6934 3.663 14.6934 5.52V6Z" fill="#3FAD8F"/>
+                    </svg>
+                    
+                </div>
+                <div class="text-xl font-medium text-gray-900 text-center">Produto<span class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-green-100 text-green-800 dark:bg-green-200 dark:text-green-900 mx-2 align-middle">
+                  Novidade
+                </span>
+                </div>
+              </div>
+              <div class="text-sm font-normal text-gray-600 text-center">Você quer vender um produto físico ou digital, que já esteja pronto, aqui no Catarse? Essa é a melhor opção.</div>
+            </div>
+            <button name="button" type="submit"
+              class="inline-flex justify-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3 px-5 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">Selecionar</button>
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-row gap-2 items-center">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
+                    <path fill="#3B873E" fill-rule="evenodd"
+                      d="m7.793 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="text-xs font-medium text-gray-500">Venda seus produtos físicos</div>
+              </div>
+              <div class="flex flex-row gap-2 items-center">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
+                    <path fill="#3B873E" fill-rule="evenodd"
+                      d="m7.793 14.707-3-3a.999.999 0 1 1 1.414-1.414l2.236 2.236 6.298-7.18a.999.999 0 1 1 1.518 1.3l-7 8a1 1 0 0 1-.72.35 1.017 1.017 0 0 1-.746-.292Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="text-xs font-medium text-gray-500">Ofereça produtos digitais</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
+

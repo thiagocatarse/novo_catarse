@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../input.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+  <!-- Base page -->
+  <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 md:px-0 gap-10 bg-gray-50 py-12">
+    <!-- PageHeader-->
+    <div class="flex flex-col gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28">
+        <path stroke="#3A99E1" stroke-miterlimit="10" stroke-width="3.064" d="M26 14c0 6.624-5.366 12-12 12S2 20.634 2 14C2 7.376 7.366 2 14 2s12 5.376 12 12Z"/>
+        <path stroke="#3A99E1" stroke-miterlimit="10" stroke-width="3.064" d="M19.828 14a5.826 5.826 0 0 0-5.83-5.828 5.826 5.826 0 0 0-5.828 5.829 5.826 5.826 0 0 0 5.829 5.829A5.826 5.826 0 0 0 19.828 14Z"/>
+      </svg>
+    <div class="flex flex-col gap-2">
+      <h1 class="leading-none text-2xl font-semibold text-gray-900">Novo financiamento coletivo</h1>
+      <div class="text-sm font-normal text-gray-600">Agora, vamos preparar seu projeto e você poderá publicá-lo em minutos.</div>
+    </div>      
+    </div>
+    <!-- Layout 2 columns - incluir opção Stretch ou não. Default é stretch, mas se quiser sem ser stretch tem que adicionar a classe items-start -->
+
+    <div class="flex flex-wrap gap-4 justify-center items-start">
+      <div class="basis-[30rem] grow-[2] shrink-[2] min-w-[51%] max-w-full">
+        <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+              <!-- Form -->
+    <div class="flex flex-col gap-8">
+      <!-- FormHeader -->
+
+<!-- FormLayout -->
+<div class="flex flex-col gap-2">
+  <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do projeto</label>
+  <div class="mt-1 flex rounded-md shadow-sm">
+      <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md" id="preview-input" type="text" placeholder="" autofocus>
+    </div>
+    <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente. Não ultrapasse 50 caracteres.</p>
+</div>
+
+<div class="flex flex-col gap-2">
+  <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Categoria do projeto</label>
+<div class="flex rounded-md shadow-sm">
+  <select name="" id="" class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900"><option value="">Escolha uma opção</option><option value="Red">red</option>
+  <option value="Green">green</option>
+  <option value="Blue">blue</option></select>
+</div>
+</div>
+
+<fieldset>
+  <legend class="text-base font-medium text-gray-900">Modelo do financiamento coletivo</legend>
+
+  <div class="mt-4 grid grid-cols-2 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+    <!--
+      Checked: "border-transparent", Not Checked: "border-gray-300"
+      Active: "border-indigo-500 ring-2 ring-indigo-500"
+    -->
+    <label class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
+      <input type="radio" name="project-type" value="Newsletter" class="sr-only" aria-labelledby="project-type-0-label" aria-describedby="project-type-0-description-0 project-type-0-description-1">
+      <span class="flex-1 flex">
+        <span class="flex flex-col">
+          <span id="project-type-0-label" class="block text-sm font-medium text-gray-900"> Newsletter </span>
+          <span id="project-type-0-description-0" class="mt-1 flex items-center text-sm text-gray-500"> Last message sent an hour ago </span>
+          <span id="project-type-0-description-1" class="mt-6 text-sm font-medium text-gray-900"> 621 users </span>
+        </span>
+      </span>
+      <!--
+        Not Checked: "invisible"
+
+        Heroicon name: solid/check-circle
+      -->
+      <svg class="h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+      </svg>
+      <!--
+        Active: "border", Not Active: "border-2"
+        Checked: "border-indigo-500", Not Checked: "border-transparent"
+      -->
+      <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
+    </label>
+
+    <!--
+      Checked: "border-transparent", Not Checked: "border-gray-300"
+      Active: "border-indigo-500 ring-2 ring-indigo-500"
+    -->
+    <label class="relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none">
+      <input type="radio" name="project-type" value="Existing Customers" class="sr-only" aria-labelledby="project-type-1-label" aria-describedby="project-type-1-description-0 project-type-1-description-1">
+      <span class="flex-1 flex">
+        <span class="flex flex-col">
+          <span id="project-type-1-label" class="block text-sm font-medium text-gray-900"> Existing Customers </span>
+          <span id="project-type-1-description-0" class="mt-1 flex items-center text-sm text-gray-500"> Last message sent 2 weeks ago </span>
+          <span id="project-type-1-description-1" class="mt-6 text-sm font-medium text-gray-900"> 1200 users </span>
+        </span>
+      </span>
+      <!--
+        Not Checked: "invisible"
+
+        Heroicon name: solid/check-circle
+      -->
+      <svg class="h-5 w-5 text-indigo-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+      </svg>
+      <!--
+        Active: "border", Not Active: "border-2"
+        Checked: "border-indigo-500", Not Checked: "border-transparent"
+      -->
+      <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
+    </label>
+
+  
+  </div>
+</fieldset>
+
+
+
+
+<!-- FormFooter -->
+  </div>
+        </div>
+      </div>
+      <div class="basis-[15rem] grow shrink min-w-0">
+        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+          <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Quer uma mãozinha?</h5>
+          <div class="text-sm text-gray-900">My section</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
+
