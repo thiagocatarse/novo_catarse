@@ -629,8 +629,16 @@ video {
   right: 0px;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .z-0{
   z-index: 0;
+}
+
+.-z-50{
+  z-index: -50;
 }
 
 .mx-auto{
