@@ -1669,6 +1669,11 @@ video {
     color: rgb(33 67 0 / var(--tw-text-opacity));
   }
 
+  .dark\:text-gray-300{
+    --tw-text-opacity: 1;
+    color: rgb(158 162 168 / var(--tw-text-opacity));
+  }
+
   .dark\:ring-offset-gray-800{
     --tw-ring-offset-color: #2a2f37;
   }
