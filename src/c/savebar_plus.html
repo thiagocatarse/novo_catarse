@@ -9,25 +9,27 @@
 
 <body class="bg-white">
 
-    <!-- Início da Save Bar -->
+    <!-- Início da Save Bar - A ideia é que ela seja distinha da NavBar, e pode inclusive aparecer por cima da NavBar, por isso coloquei o z-50 na classe dela -->
 
     <div
         class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-10 pr-3 lg:pl-6 shadow-sm bg-gray-600 fixed top-0 z-50">
 
-        <!-- Logos - versão com texto aparece somente em dispositivos maiores -->
+        <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
         <a href="#" class="absolute left-3">
+            <!-- Logo versão texto - só aparece em dispositivos maiores -->
             <div class="hidden xl:flex"><img src="../assets/LogoText.png" class="w-24"></div>
+            <!-- Logo versão símbolo - só aparece em dispositivos menores -->
             <div class="flex xl:hidden"><img src="../assets/LogoSymbol.png" class="w-4"></div>
         </a>
-        <!-- Content do SaveBar -->
+        <!-- Início do Content do SaveBar -->
         <div class="flex flex-row max-w-5xl w-full items-center gap-10">
             <!-- Title Wrapper -->
             <div class="flex-1 flex gap-2 items-center truncate">
                 <!-- Title -->
                 <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante</div>
-                <!-- Badge -->
+                <!-- Badge - o componente Badge já existe, mas vai ser preciso criar uma outra variante para ele, pois essa aqui embaixo não está exatamente como deveria ser -->
                 <div class="hidden sm:flex">
-                    <div class="py-0.5 px-2 border border-gray-200 rounded-md text-gray-200 text-[10px]">Não publicado
+                    <div class="py-0.5 px-2 border border-gray-200 rounded-md text-gray-200 text-[10px]">Rascunho
                     </div>
                 </div>
 
