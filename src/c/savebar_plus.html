@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+
+    <!-- Início da Save Bar -->
+
+    <div
+        class="flex flex-row w-full justify-center items-center py-3 pl-10 pr-6 lg:pl-6 shadow-sm bg-gray-600 fixed top-0 z-50">
+
+        <!-- Logos - versão com texto aparece somente em dispositivos maiores -->
+        <a href="#" class="absolute left-3">
+            <div class="hidden xl:flex"><img src="../assets/logo.png" class="w-24"></div>
+            <div class="flex xl:hidden"><img src="../assets/symbol.png" class="w-4"></div>
+        </a>
+        <!-- Content do SaveBar -->
+        <div class="flex flex-row max-w-5xl w-full items-center gap-10">
+            <!-- Title Wrapper -->
+            <div class="flex-1 flex gap-3 items-center truncate">
+                <!-- Title -->
+                <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante</div>
+                <!-- Badge -->
+                <div class="hidden sm:flex">
+                    <div class="py-0.5 px-2 border border-gray-200 rounded-md text-gray-200 text-[10px]">Não publicado
+                    </div>
+                </div>
+
+            </div>
+            <!-- Buttons Wrapper -->
+            <div class="shrink flex flex-row gap-3 items-center">
+                <!-- Tertiary actions -->
+                <div class="flex flex-row gap-3 items-center order-last sm:order-first">
+                    <div class="flex-row gap-3 items-center hidden sm:flex">
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                    stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                    stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Visualizar
+                        </button>
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                    stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Pré-lançar
+                        </button>
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                            Publicar
+                        </button>
+                    </div>
+                    <!-- Tertiary actions dropdown - only mobile -->
+                    <div class="flex gap-3 sm:hidden">
+                        <div class="relative z-0 inline-flex">
+                            <div class="-ml-px relative block">
+                                <button name="button" type="submit"
+                                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-2 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826] more-button">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 6C9.46957 6 8.96086 5.78929 8.58579 5.41421C8.21071 5.03914 8 4.53043 8 4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2C10.5304 2 11.0391 2.21071 11.4142 2.58579C11.7893 2.96086 12 3.46957 12 4C12 4.53043 11.7893 5.03914 11.4142 5.41421C11.0391 5.78929 10.5304 6 10 6ZM10 12C9.46957 12 8.96086 11.7893 8.58579 11.4142C8.21071 11.0391 8 10.5304 8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8C10.5304 8 11.0391 8.21071 11.4142 8.58579C11.7893 8.96086 12 9.46957 12 10C12 10.5304 11.7893 11.0391 11.4142 11.4142C11.0391 11.7893 10.5304 12 10 12ZM10 18C9.46957 18 8.96086 17.7893 8.58579 17.4142C8.21071 17.0391 8 16.5304 8 16C8 15.4696 8.21071 14.9609 8.58579 14.5858C8.96086 14.2107 9.46957 14 10 14C10.5304 14 11.0391 14.2107 11.4142 14.5858C11.7893 14.9609 12 15.4696 12 16C12 16.5304 11.7893 17.0391 11.4142 17.4142C11.0391 17.7893 10.5304 18 10 18Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </button>
+
+                                <!--
+                                Dropdown menu, show/hide based on menu state.
+                          
+                                Entering: "transition ease-out duration-100"
+                                  From: "transform opacity-0 scale-95"
+                                  To: "transform opacity-100 scale-100"
+                                Leaving: "transition ease-in duration-75"
+                                  From: "transform opacity-100 scale-100"
+                                  To: "transform opacity-0 scale-95"
+                              -->
+                                <div class="list-container origin-top-right absolute right-0 mt-2 -mr-1 w-fit whitespace-nowrap p-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                    role="menu" aria-orientation="vertical" aria-labelledby="option-menu-button"
+                                    tabindex="-1">
+                                    <div class="py-1" role="none">
+                                        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50"
+                                            role="menuitem" tabindex="-1" id="option-menu-item-0"> Salvar e
+                                            visualizar</a>
+
+                                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50"
+                                            role="menuitem" tabindex="-1" id="option-menu-item-1"> Salvar e Pré-lançar
+                                        </a>
+
+                                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-50"
+                                            role="menuitem" tabindex="-1" id="option-menu-item-2"> Salvar e Publicar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            document.querySelector('.more-button').addEventListener('click', function () {
+                                document.querySelector('.list-container').classList.toggle('hidden');
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!-- Primary and Secondary actions -->
+                <div class="flex flex-row gap-3 items-center">
+                    <div class="flex flex-row gap-3">
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            Cancelar
+                        </button>
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                            Salvar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Buttons em mobile -->
+
+
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- O que tem que fazer 
+1. Form fields tem que ficar dentro de um flex
+2. Helper tem que mudar para gray-500
+
+-->
