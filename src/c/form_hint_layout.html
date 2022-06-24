@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Inicio do componente grid
+    Desktop columns: [2fr,1fr]
+    Mobile columns: 1
+    Align: start
+    -->
+    <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+        <!-- Elementos do grid -->
+
+        <!-- Card com o form -->
+        <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+            <!-- Form -->
+            <div class="flex flex-col gap-8">
+                <!-- Não tem FormHeader -->
+
+                <!-- FormLayout-->
+                <!-- Input Field - Nome do projeto -->
+                <div class="flex flex-col gap-2">
+                    <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do
+                        projeto</label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                        <input
+                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                            id="preview-input" type="text" placeholder="" autofocus>
+                    </div>
+                    <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente.
+                        Não
+                        ultrapasse 50 caracteres.</p>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="order-first md:order-last">
+            <!-- Card com o Help -->
+            <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+            </div>
+        </div>
+
+
+        <!-- Fim dos elementos do grid -->
+    </div>
+    <!-- Fim do componente grid -->
+
+
+
+</body>
+
+</html>

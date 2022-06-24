@@ -653,6 +653,10 @@ video {
   order: 9999;
 }
 
+.order-first{
+  order: -9999;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1738,6 +1742,10 @@ video {
     order: -9999;
   }
 
+  .sm\:order-last{
+    order: 9999;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -1792,6 +1800,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:order-last{
+    order: 9999;
+  }
+
   .md\:flex{
     display: flex;
   }
