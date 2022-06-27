@@ -9,21 +9,33 @@
 
 <body class="bg-white">
 
-<!-- O componente grid tem 3 parâmetros
+<!-- O componente grid tem os seguintes parâmetros de tamanho de tela, que possuem os valores 1, 2, 3, 4 e [2fr,1fr]
 
-    * Desktop columns *: esse parâmetro define a quantidade de colunas nos dispositivos maiores. Ele afeta a parte final da classe md:grid-cols-x. As opções são 2, 3, 4 e [2fr,1fr]
+    XS: define a quantidade de colunas em dispositivos menores que 640 px (ou seja, mobile). Afeta a parte final da classe grid-cols-x  (OBS: essa é a única classe presente no componente em seu carregamento default, todas as outras classes são adicionadas ao componente caso tenham algum valor)
 
-    * Mobile columns *: esse parâmetro define a quantidade de colunas em mobile. Ele afeta a parte final da classe grid-cols-x. O valor default é 1 (ou seja, as colunas ficam stacked em mobile), mas podemos também ter a opção 2
+    SM: define a quantidade de colunas em dispositivos maiores que 640px. Adiciona a classe sm:grid-cols-x
 
-    * Align *: Define como os elementos internos se alinham. Esse parâmetro afeta a parte final da classe items-x . O defaul é o valor stretch, mas podemos ter também o valor start.
+    MD: define a quantidade de colunas em dispositivos maiores que 768px. Adiciona a classe md:grid-cols-x
 
+    LG: define a quantidade de colunas em dispositivos maiores que 1024px. Adiciona a classe lg:grid-cols-x
+
+    XL: define a quantidade de colunas em dispositivos maiores que 1280px. Adiciona a classe xl:grid-cols-x
+
+    2XL: define a quantidade de colunas em dispositivos maiores que 1536px. Adiciona a classe 2xl:grid-cols-x
+
+    Align:  Define como os elementos internos se alinham. Esse parâmetro afeta a parte final da classe items-x . O defaul é o valor stretch, mas podemos ter também o valor start.
 
 
 -->
 
     <div class="p-10">
         <p class="text-base font-medium mb-8 text-gray-900">4 equal columns</p>
-        <!-- Inicio do componente grid -->
+        <!-- Inicio do componente grid
+        
+            XS = 1
+            MD = 4
+
+        -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-6 2xl:gap-8 items-stretch">
             <!-- Elementos do grid -->
             <div class="p-10 bg-gray-500 text-white">Uma coluna</div>
@@ -38,7 +50,12 @@
     </div>
     <div class="p-10">
         <p class="text-base font-medium mb-8 text-gray-900">3 equal columns</p>
-        <!-- Inicio do componente grid -->
+        <!-- Inicio do componente grid
+        
+            XS = 1
+            MD = 3
+        
+        -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 2xl:gap-8 items-stretch">
             <!-- Elementos do grid -->
             <div class="p-10 bg-gray-500 text-white">Uma coluna</div>
@@ -53,7 +70,12 @@
     </div>
     <div class="p-10">
         <p class="text-base font-medium mb-8 text-gray-900">2 equal columns</p>
-        <!-- Inicio do componente grid -->
+        <!-- Inicio do componente grid 
+        
+            xs = 1
+            md = 2
+
+        -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 2xl:gap-8 items-stretch">
             <!-- Elementos do grid -->
             <div class="p-10 bg-gray-500 text-white">Uma coluna</div>
@@ -67,9 +89,12 @@
         <!-- Fim do componente grid -->
     </div>
     <div class="p-10">
-        <p class="text-base font-medium mb-8 text-gray-900">2 equal columns with 2 columns on mobile</p>
-        <!-- Inicio do componente grid -->
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+        <p class="text-base font-medium mb-8 text-gray-900">2 equal columns in all the screens</p>
+        <!-- Inicio do componente grid
+        
+            xs = 2
+        -->
+        <div class="grid grid-cols-2 gap-4 lg:gap-6 2xl:gap-8 items-stretch">
             <!-- Elementos do grid -->
             <div class="p-10 bg-gray-500 text-white">Uma coluna</div>
             <div class="p-10 bg-gray-500 text-white">Uma coluna com um texto maior</div>
@@ -83,7 +108,11 @@
     </div>
     <div class="p-10">
         <p class="text-base font-medium mb-8 text-gray-900">2 columns with Primary and Secondary</p>
-        <!-- Inicio do componente grid -->
+        <!-- Inicio do componente grid
+        
+            xs=1
+            md=[2fr,1fr]
+        -->
         <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
             <!-- Elementos do grid -->
             <div class="p-10 bg-gray-500 text-white">Uma coluna</div>
