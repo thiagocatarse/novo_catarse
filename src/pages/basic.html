@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 mt-[60px]">
+    <!-- Início da Save Bar - A ideia é que ela seja distinha da NavBar, e pode inclusive aparecer por cima da NavBar, por isso coloquei o z-50 na classe dela -->
+
+    <div
+        class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-10 pr-3 lg:pl-6 shadow-sm bg-gray-600 fixed top-0 z-50">
+
+        <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
+        <a href="#" class="absolute left-3">
+            <!-- Logo versão texto - só aparece em dispositivos maiores -->
+            <div class="hidden xl:flex"><img src="../assets/LogoText.png" class="w-24"></div>
+            <!-- Logo versão símbolo - só aparece em dispositivos menores -->
+            <div class="flex xl:hidden"><img src="../assets/LogoSymbol.png" class="w-4"></div>
+        </a>
+        <!-- Início do Content do SaveBar -->
+        <div class="flex flex-row max-w-5xl w-full items-center gap-10">
+            <!-- Title Wrapper -->
+            <div class="flex-1 flex gap-3 items-center truncate">
+                <!-- Title -->
+                <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante</div>
+                <!-- Badge - o componente Badge já existe, mas vai ser preciso criar uma outra variante para ele, pois essa aqui embaixo não está exatamente como deveria ser -->
+                <div class="hidden sm:flex">
+                    <span class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                        Rascunho
+                      </span>
+                </div>
+
+            </div>
+            <!-- Buttons Wrapper 
+            A ideia é que tenhamos dois slots de botões:
+            - Tertiary Actions: são ações adicionais, que não envolvem o "Salvar" e o "Cancelar" . Essas ações são exibidas em Desktop como botões, mas em Mobile elas passam a ser exibidas num dropdown -->
+            <div class="shrink flex flex-row gap-2 items-center">
+                <!-- Tertiary actions 
+                
+                    Button size=sm , color=white , plain=true
+
+                -->
+                <div class="flex flex-row gap-2 items-center order-last sm:order-first">
+                    <div class="flex-row gap-2 items-center hidden sm:flex">
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                    stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                    stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Visualizar
+                        </button>
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                    stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Pré-lançar
+                        </button>
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                            Publicar
+                        </button>
+                    </div>
+                    <!-- Tertiary actions dropdown - only mobile -->
+                    <div class="flex gap-2 sm:hidden">
+                        <div class="relative z-0 inline-flex">
+                            <div class="-ml-px relative block">
+                                <button name="button" type="submit"
+                                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-2 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826] more-button">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10 6C9.46957 6 8.96086 5.78929 8.58579 5.41421C8.21071 5.03914 8 4.53043 8 4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2C10.5304 2 11.0391 2.21071 11.4142 2.58579C11.7893 2.96086 12 3.46957 12 4C12 4.53043 11.7893 5.03914 11.4142 5.41421C11.0391 5.78929 10.5304 6 10 6ZM10 12C9.46957 12 8.96086 11.7893 8.58579 11.4142C8.21071 11.0391 8 10.5304 8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8C10.5304 8 11.0391 8.21071 11.4142 8.58579C11.7893 8.96086 12 9.46957 12 10C12 10.5304 11.7893 11.0391 11.4142 11.4142C11.0391 11.7893 10.5304 12 10 12ZM10 18C9.46957 18 8.96086 17.7893 8.58579 17.4142C8.21071 17.0391 8 16.5304 8 16C8 15.4696 8.21071 14.9609 8.58579 14.5858C8.96086 14.2107 9.46957 14 10 14C10.5304 14 11.0391 14.2107 11.4142 14.5858C11.7893 14.9609 12 15.4696 12 16C12 16.5304 11.7893 17.0391 11.4142 17.4142C11.0391 17.7893 10.5304 18 10 18Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </button>
+
+                                <!--
+                                Dropdown menu, show/hide based on menu state.
+                          
+                                Entering: "transition ease-out duration-100"
+                                  From: "transform opacity-0 scale-95"
+                                  To: "transform opacity-100 scale-100"
+                                Leaving: "transition ease-in duration-75"
+                                  From: "transform opacity-100 scale-100"
+                                  To: "transform opacity-0 scale-95"
+                              -->
+                                <div class="list-container origin-top-right absolute right-0 mt-2 -mr-1 w-fit whitespace-nowrap p-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                    role="menu" aria-orientation="vertical" aria-labelledby="option-menu-button"
+                                    tabindex="-1">
+                                    <div class="py-1" role="none">
+                                        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                        <a href="#"
+                                            class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                            role="menuitem" tabindex="-1" id="option-menu-item-0">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                                    stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                                    stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            Visualizar</a>
+                                        <a href="#"
+                                            class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                            role="menuitem" tabindex="-1" id="option-menu-item-1">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                    stroke="#353B44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                                            Pré-lançar</a>
+                                        <a href="#"
+                                            class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                            role="menuitem" tabindex="-1" id="option-menu-item-2">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                                fill="#353B44" />
+                                        </svg>
+                                            Publicar</a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            document.querySelector('.more-button').addEventListener('click', function () {
+                                document.querySelector('.list-container').classList.toggle('hidden');
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!-- Primary and Secondary actions
+                
+                    Main action -> Button size = sm , color = green
+                    Main action -> Button size = sm, color=white, plain=true
+                
+
+                -->
+                <div class="flex flex-row gap-2 items-center">
+                    <div class="flex flex-row gap-2">
+    
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                            Salvar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Fim da Savebar -->
+
+    <!-- Tabs -->
+    <div class="border-b border-gray-200 w-full bg-white">
+        <nav class="flex overflow-x-auto space-x-8 w-full px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
+            aria-label="Tabs">
+            <a
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5 fill-current">
+                    <path d="M13.586 4.08616C13.7705 3.89514 13.9912 3.74278 14.2352 3.63796C14.4792 3.53314 14.7416 3.47797 15.0072 3.47566C15.2728 3.47335 15.5361 3.52396 15.7819 3.62452C16.0277 3.72508 16.251 3.87359 16.4388 4.06137C16.6266 4.24916 16.7751 4.47246 16.8756 4.71825C16.9762 4.96405 17.0268 5.22741 17.0245 5.49296C17.0222 5.75852 16.967 6.02096 16.8622 6.26497C16.7574 6.50898 16.605 6.72967 16.414 6.91416L15.621 7.70716L12.793 4.87916L13.586 4.08616V4.08616ZM11.379 6.29316L3 14.6722V17.5002H5.828L14.208 9.12116L11.378 6.29316H11.379Z" fill="#5F656F"/>
+                    </svg>
+        
+                Básico
+            </a>
+            <a
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5 fill-current">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4.5C4 3.96957 4.21071 3.46086 4.58579 3.08579C4.96086 2.71071 5.46957 2.5 6 2.5H10.586C11.1164 2.50011 11.625 2.7109 12 3.086L15.414 6.5C15.7891 6.87499 15.9999 7.38361 16 7.914V16.5C16 17.0304 15.7893 17.5391 15.4142 17.9142C15.0391 18.2893 14.5304 18.5 14 18.5H6C5.46957 18.5 4.96086 18.2893 4.58579 17.9142C4.21071 17.5391 4 17.0304 4 16.5V4.5ZM6 10.5C6 10.2348 6.10536 9.98043 6.29289 9.79289C6.48043 9.60536 6.73478 9.5 7 9.5H13C13.2652 9.5 13.5196 9.60536 13.7071 9.79289C13.8946 9.98043 14 10.2348 14 10.5C14 10.7652 13.8946 11.0196 13.7071 11.2071C13.5196 11.3946 13.2652 11.5 13 11.5H7C6.73478 11.5 6.48043 11.3946 6.29289 11.2071C6.10536 11.0196 6 10.7652 6 10.5ZM7 13.5C6.73478 13.5 6.48043 13.6054 6.29289 13.7929C6.10536 13.9804 6 14.2348 6 14.5C6 14.7652 6.10536 15.0196 6.29289 15.2071C6.48043 15.3946 6.73478 15.5 7 15.5H13C13.2652 15.5 13.5196 15.3946 13.7071 15.2071C13.8946 15.0196 14 14.7652 14 14.5C14 14.2348 13.8946 13.9804 13.7071 13.7929C13.5196 13.6054 13.2652 13.5 13 13.5H7Z" fill="#5F656F"/>
+                    </svg>
+        
+                Imagens e Descrição
+            </a>
+            <a
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5 fill-current">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4.5C3.46957 4.5 2.96086 4.71071 2.58579 5.08579C2.21071 5.46086 2 5.96957 2 6.5V10.5C2 11.0304 2.21071 11.5391 2.58579 11.9142C2.96086 12.2893 3.46957 12.5 4 12.5V6.5H14C14 5.96957 13.7893 5.46086 13.4142 5.08579C13.0391 4.71071 12.5304 4.5 12 4.5H4ZM6 10.5C6 9.96957 6.21071 9.46086 6.58579 9.08579C6.96086 8.71071 7.46957 8.5 8 8.5H16C16.5304 8.5 17.0391 8.71071 17.4142 9.08579C17.7893 9.46086 18 9.96957 18 10.5V14.5C18 15.0304 17.7893 15.5391 17.4142 15.9142C17.0391 16.2893 16.5304 16.5 16 16.5H8C7.46957 16.5 6.96086 16.2893 6.58579 15.9142C6.21071 15.5391 6 15.0304 6 14.5V10.5ZM12 14.5C12.5304 14.5 13.0391 14.2893 13.4142 13.9142C13.7893 13.5391 14 13.0304 14 12.5C14 11.9696 13.7893 11.4609 13.4142 11.0858C13.0391 10.7107 12.5304 10.5 12 10.5C11.4696 10.5 10.9609 10.7107 10.5858 11.0858C10.2107 11.4609 10 11.9696 10 12.5C10 13.0304 10.2107 13.5391 10.5858 13.9142C10.9609 14.2893 11.4696 14.5 12 14.5Z" fill="#5F656F"/>
+                    </svg>
+        
+                Metas e Financiamento
+            </a>
+            <a
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5 fill-current">
+                    <path d="M7 3.5C6.73478 3.5 6.48043 3.60536 6.29289 3.79289C6.10536 3.98043 6 4.23478 6 4.5C6 4.76522 6.10536 5.01957 6.29289 5.20711C6.48043 5.39464 6.73478 5.5 7 5.5H13C13.2652 5.5 13.5196 5.39464 13.7071 5.20711C13.8946 5.01957 14 4.76522 14 4.5C14 4.23478 13.8946 3.98043 13.7071 3.79289C13.5196 3.60536 13.2652 3.5 13 3.5H7ZM4 7.5C4 7.23478 4.10536 6.98043 4.29289 6.79289C4.48043 6.60536 4.73478 6.5 5 6.5H15C15.2652 6.5 15.5196 6.60536 15.7071 6.79289C15.8946 6.98043 16 7.23478 16 7.5C16 7.76522 15.8946 8.01957 15.7071 8.20711C15.5196 8.39464 15.2652 8.5 15 8.5H5C4.73478 8.5 4.48043 8.39464 4.29289 8.20711C4.10536 8.01957 4 7.76522 4 7.5ZM2 11.5C2 10.9696 2.21071 10.4609 2.58579 10.0858C2.96086 9.71071 3.46957 9.5 4 9.5H16C16.5304 9.5 17.0391 9.71071 17.4142 10.0858C17.7893 10.4609 18 10.9696 18 11.5V15.5C18 16.0304 17.7893 16.5391 17.4142 16.9142C17.0391 17.2893 16.5304 17.5 16 17.5H4C3.46957 17.5 2.96086 17.2893 2.58579 16.9142C2.21071 16.5391 2 16.0304 2 15.5V11.5Z" fill="#5F656F"/>
+                    </svg>
+        
+                Recompensas
+            </a>
+            <a
+                class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5 fill-current">
+                    <path d="M13 6.5C13 7.29565 12.6839 8.05871 12.1213 8.62132C11.5587 9.18393 10.7956 9.5 10 9.5C9.20435 9.5 8.44129 9.18393 7.87868 8.62132C7.31607 8.05871 7 7.29565 7 6.5C7 5.70435 7.31607 4.94129 7.87868 4.37868C8.44129 3.81607 9.20435 3.5 10 3.5C10.7956 3.5 11.5587 3.81607 12.1213 4.37868C12.6839 4.94129 13 5.70435 13 6.5ZM18 8.5C18 9.03043 17.7893 9.53914 17.4142 9.91421C17.0391 10.2893 16.5304 10.5 16 10.5C15.4696 10.5 14.9609 10.2893 14.5858 9.91421C14.2107 9.53914 14 9.03043 14 8.5C14 7.96957 14.2107 7.46086 14.5858 7.08579C14.9609 6.71071 15.4696 6.5 16 6.5C16.5304 6.5 17.0391 6.71071 17.4142 7.08579C17.7893 7.46086 18 7.96957 18 8.5ZM14 15.5C14 14.4391 13.5786 13.4217 12.8284 12.6716C12.0783 11.9214 11.0609 11.5 10 11.5C8.93913 11.5 7.92172 11.9214 7.17157 12.6716C6.42143 13.4217 6 14.4391 6 15.5V18.5H14V15.5ZM6 8.5C6 9.03043 5.78929 9.53914 5.41421 9.91421C5.03914 10.2893 4.53043 10.5 4 10.5C3.46957 10.5 2.96086 10.2893 2.58579 9.91421C2.21071 9.53914 2 9.03043 2 8.5C2 7.96957 2.21071 7.46086 2.58579 7.08579C2.96086 6.71071 3.46957 6.5 4 6.5C4.53043 6.5 5.03914 6.71071 5.41421 7.08579C5.78929 7.46086 6 7.96957 6 8.5ZM16 18.5V15.5C16.0014 14.4833 15.7433 13.483 15.25 12.594C15.6933 12.4805 16.1568 12.4698 16.6049 12.5627C17.053 12.6556 17.474 12.8496 17.8357 13.1299C18.1974 13.4102 18.4903 13.7695 18.6921 14.1802C18.8939 14.591 18.9992 15.0424 19 15.5V18.5H16ZM4.75 12.594C4.25675 13.483 3.9986 14.4833 4 15.5V18.5H1V15.5C0.999808 15.042 1.10446 14.5901 1.30595 14.1789C1.50743 13.7676 1.80039 13.4079 2.16238 13.1274C2.52437 12.8469 2.94578 12.653 3.39431 12.5605C3.84284 12.4681 4.30658 12.4795 4.75 12.594Z" fill="#5F656F"/>
+                    </svg>
+        
+                Equipe
+            </a>
+        </nav>
+    </div>
+    <!-- Page -->
+    <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 md:px-0 gap-10 bg-gray-50 py-12">
+        <!-- PageHeader-->
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-2">
+            <h1 class="leading-none text-2xl font-semibold text-gray-900">Básico</h1>
+            <div class="text-sm font-normal text-gray-600">Prepare as informações essenciais sobre o seu projeto</div>
+          </div>
+        </div>
+        <!-- Inicio Form Layout Hint -->
+        <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+            <!-- Elementos do grid -->
+    
+            <!-- Card color=white com o form dentro -->
+            <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+                <!-- Inicio do Form -->
+                <div class="flex flex-col gap-8">
+                    <!-- Não tem FormHeader -->
+    
+                    <!-- FormLayout-->
+                    <!-- Input Field - Nome do projeto -->
+                    <div class="flex flex-col gap-2">
+                        <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do
+                            projeto</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                            <input
+                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                id="preview-input" type="text" placeholder="" autofocus>
+                        </div>
+                        <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente.
+                            Não
+                            ultrapasse 50 caracteres.</p>
+                    </div>
+
+<div class="flex flex-col gap-2">
+    <div class="flex">
+      <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Link para o seu projeto no Catarse</label>
+    </div>
+    
+    <div class="flex w-full rounded-md shadow-sm">
+      <span class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
+      <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md" id="preview-input" type="Link para o seu projeto no Catarse" placeholder="seulink">
+    </div>
+    <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar. Prefira algo simples, direto e que identifique bem seu projeto. Tente não usar hífen, underline etc.</p>
+  </div>
+    
+    
+    
+    
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="order-first md:order-last">
+                <!-- Card com o Help - color=gray with_border=false -->
+                <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                    <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                    <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                </div>
+            </div>
+    
+    
+            <!-- Fim dos elementos do grid -->
+        </div>
+        <!-- Fim Form Layout Hint -->
+        <!-- Inicio Form Layout Hint -->
+        <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+            <!-- Elementos do grid -->
+    
+            <!-- Card color=white com o form dentro -->
+            <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+                <!-- Inicio do Form -->
+                <div class="flex flex-col gap-8">
+                    <!-- Não tem FormHeader -->
+    
+                    <!-- FormLayout-->
+                    <!-- Input Field - Nome do projeto -->
+                    <div class="flex flex-col gap-2">
+                        <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do
+                            projeto</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                            <input
+                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                id="preview-input" type="text" placeholder="" autofocus>
+                        </div>
+                        <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente.
+                            Não
+                            ultrapasse 50 caracteres.</p>
+                    </div>
+    
+    
+    
+    
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="order-first md:order-last">
+                <!-- Card com o Help - color=gray with_border=false -->
+                <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                    <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                    <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                </div>
+            </div>
+    
+    
+            <!-- Fim dos elementos do grid -->
+        </div>
+        <!-- Fim Form Layout Hint -->
+        <!-- Inicio Form Layout Hint -->
+        <div class="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+            <!-- Elementos do grid -->
+    
+            <!-- Card color=white com o form dentro -->
+            <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white shadow">
+                <!-- Inicio do Form -->
+                <div class="flex flex-col gap-8">
+                    <!-- Não tem FormHeader -->
+    
+                    <!-- FormLayout-->
+                    <!-- Input Field - Nome do projeto -->
+                    <div class="flex flex-col gap-2">
+                        <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome do
+                            projeto</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                            <input
+                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                id="preview-input" type="text" placeholder="" autofocus>
+                        </div>
+                        <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem facilmente.
+                            Não
+                            ultrapasse 50 caracteres.</p>
+                    </div>
+    
+    
+    
+    
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="order-first md:order-last">
+                <!-- Card com o Help - color=gray with_border=false -->
+                <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                    <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                    <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                </div>
+            </div>
+    
+    
+            <!-- Fim dos elementos do grid -->
+        </div>
+        <!-- Fim Form Layout Hint -->
+        
+      <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
+        <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+          Cancelar
+        </button>
+        <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+          Próximo: personalizar
+        </button>
+        
+      </div> 
+      </div>
+
+
+
+</body>
+
+</html>
+
+<!-- 
+
+Remover dark:text-gray-400 dark:border-gray-700 da Tab
+Adicionar bg-white para tab
+Remover -mb-px da Tab
+Remover borda e fundo do <nav>
+Incluir wrapper para o nav
+Incluir parâmetro de largura para as tabs
+Helper tem que ser text-xs font-normal text-gray-500
+Adicionar mt no body quando tiver com savebar
+ -->
