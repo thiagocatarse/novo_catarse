@@ -840,6 +840,10 @@ video {
   margin-left: auto;
 }
 
+.-ml-6{
+  margin-left: -1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -2137,6 +2141,10 @@ video {
 
   .md\:mr-2{
     margin-right: 0.5rem;
+  }
+
+  .md\:ml-0{
+    margin-left: 0px;
   }
 
   .md\:flex{
