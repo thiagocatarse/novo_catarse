@@ -1862,9 +1862,23 @@ video {
     flex-direction: row;
   }
 
+  .md\:p-8{
+    padding: 2rem;
+  }
+
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pl-6{
