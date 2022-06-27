@@ -1956,6 +1956,10 @@ video {
     order: 9999;
   }
 
+  .md\:mr-2{
+    margin-right: 0.5rem;
+  }
+
   .md\:flex{
     display: flex;
   }
