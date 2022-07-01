@@ -68,238 +68,198 @@
             </a>
         </nav>
     </div>
-    <!-- Page -->
-    <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 lg:px-0 gap-10 bg-gray-50 py-12">
-        <!-- PageHeader-->
-        <div class="flex flex-col gap-3">
-            <div class="flex flex-col gap-2">
-                <h1 class="leading-none text-2xl font-semibold text-gray-900">Básico</h1>
-                <div class="text-sm font-normal text-gray-600">Prepare as informações essenciais sobre o seu
-                    projeto
-                </div>
-            </div>
-        </div>
-        <!-- Inicio Form Layout Hint -->
-        <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
-            <!-- Elementos do grid -->
+    <!-- Form -->
 
-            <!-- Card color=white com o form dentro -->
-            <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
-                <!-- Inicio do Form -->
-                <div class="flex flex-col gap-8">
-                    <!-- Não tem FormHeader -->
-
-                    <!-- FormLayout-->
-                    <!-- Input Field - Nome do projeto -->
-                    <div class="flex flex-col gap-2">
-                        <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
-                            do
-                            projeto</label>
-                        <div class="mt-1 flex rounded-md shadow-sm">
-                            <input
-                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                id="preview-input" type="text" placeholder="" autofocus>
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
-                            facilmente.
-                            Não
-                            ultrapasse 50 caracteres.</p>
+    <form action="submit">
+        <!-- Page -->
+        <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 lg:px-0 gap-10 bg-gray-50 py-12">
+            <!-- PageHeader-->
+            <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-2">
+                    <h1 class="leading-none text-2xl font-semibold text-gray-900">Básico</h1>
+                    <div class="text-sm font-normal text-gray-600">Prepare as informações essenciais sobre o seu
+                        projeto
                     </div>
-
-                    <div class="flex flex-col gap-2">
-                        <div class="flex">
-                            <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Link
-                                para
-                                o seu projeto no Catarse</label>
-                        </div>
-
-                        <div class="flex w-full rounded-md shadow-sm">
-                            <span
-                                class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
-                            <input
-                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
-                                id="preview-input" type="Link para o seu projeto no Catarse" placeholder="seulink">
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar. Prefira
-                            algo simples, direto e que identifique bem seu projeto.
-                        </p>
-                    </div>
-
-
-
-
-
-                </div>
-
-            </div>
-
-
-            <div class="order-first md:order-last -ml-6 md:ml-0">
-                <!-- Card com o Help - color=gray with_border=false -->
-                <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
-                    <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
-                    <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
                 </div>
             </div>
-
-
-            <!-- Fim dos elementos do grid -->
-        </div>
-        <!-- Fim Form Layout Hint -->
-        <!-- Inicio Form Layout Hint -->
-        <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
-            <!-- Elementos do grid -->
-
-            <!-- Card color=white com o form dentro -->
-            <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
-                <!-- Inicio do Form -->
-                <div class="flex flex-col gap-8">
-                    <!--FormHeader -->
-                    <div class="flex flex-row gap-6 pb-3">
-                        <div class="w-1 bg-gray-100"></div>
+            <!-- Inicio Form Layout Hint -->
+            <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <!-- Elementos do grid -->
+                <!-- Card color=white com o form dentro -->
+                <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
+                    <!-- Inicio do Form -->
+                    <div class="flex flex-col gap-8">
+                        <!-- Não tem FormHeader -->
+                        <!-- FormLayout-->
+                        <!-- Input Field - Nome do projeto -->
                         <div class="flex flex-col gap-2">
-                            <h2 class="text-lg font-semibold text-gray-800">Descoberta do seu projeto no Catarse
-                            </h2>
-                        </div>
-                    </div>
-
-                    <!-- FormLayout-->
-                    <!-- Select - Categoria -->
-
-                    <div class="flex flex-col gap-2">
-                        <div class="flex">
-                            <label class="flex-1 block text-sm font-medium text-gray-900">Categoria</label>
-                        </div>
-                        <select name="" id=""
-                            class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900">
-                            <option value="">Escolha uma categoria</option>
-                            <option value="Red">red</option>
-                            <option value="Green">green</option>
-                            <option value="Blue">blue</option>
-                        </select>
-                    </div>
-                    <!-- Tags (tópicos) -->
-                    <div class="flex flex-col gap-2">
-                        <div class="flex">
-                            <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Tópicos
-                                (palavras-chave)</label>
-                        </div>
-
-                        <div class="flex w-full rounded-md shadow-sm">
-                            <input
-                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                id="preview-input" type="text" placeholder="">
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">Liste até 5 palavras-chaves relacionadas a
-                            sua
-                            campanha e facilite a descoberta pelos apoiadores.</p>
-                    </div>
-                    <!-- Local  -->
-                    <div class="flex flex-col gap-2">
-                        <div class="flex">
-                            <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Local
+                            <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
                                 do
                                 projeto</label>
+                            <div class="mt-1 flex rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="" autofocus>
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
+                                facilmente.
+                                Não
+                                ultrapasse 50 caracteres.</p>
                         </div>
-
-                        <div class="flex w-full rounded-md shadow-sm">
-                            <input
-                                class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                id="preview-input" type="text" placeholder="Escolha uma cidade">
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">Caso seu projeto aconteça em mais de um
-                            lugar,
-                            uma
-                            dica é colocar a cidade onde sua rede de potenciais apoiadores é maior.</p>
-                    </div>
-
-
-
-
-
-                </div>
-
-            </div>
-
-
-            <div class="order-first md:order-last -ml-6 md:ml-0">
-                <!-- Card com o Help - color=gray with_border=false -->
-                <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
-                    <p class="text-base font-semibold tracking-tight text-gray-900 mb-2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z" fill="#BEC0C4"/>
-                        </svg>
-                        </p>
-                    <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
-                </div>
-            </div>
-
-
-            <!-- Fim dos elementos do grid -->
-        </div>
-        <!-- Fim Form Layout Hint -->
-        <!-- Inicio Form Layout Hint -->
-        <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
-            <!-- Elementos do grid -->
-
-            <!-- Card color=white com o form dentro -->
-            <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
-                <!-- Inicio do Form -->
-                <div class="flex flex-col gap-8">
-                    <!--FormHeader -->
-                    <div class="flex flex-row gap-6 pb-3">
-                        <div class="w-1 bg-gray-100"></div>
                         <div class="flex flex-col gap-2">
-                            <h2 class="text-lg font-semibold text-gray-800">Restrição de conteúdo
-                            </h2>
+                            <div class="flex">
+                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Link
+                                    para
+                                    o seu projeto no Catarse</label>
+                            </div>
+                            <div class="flex w-full rounded-md shadow-sm">
+                                <span
+                                    class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
+                                    id="preview-input" type="Link para o seu projeto no Catarse" placeholder="seulink">
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar. Prefira
+                                algo simples, direto e que identifique bem seu projeto.
+                            </p>
                         </div>
                     </div>
-
-                    <!-- FormLayout-->
-
-                    <!-- Choice List -->
-                    <div class="flex flex-col gap-2">
-                        <p class="flex-1 block text-sm font-medium text-gray-900 mb-2">O seu projeto contém material adulto, tal como nudez e/ou cenas de sexo explícito?</p>
-                        <div class="flex gap-2 items-center">
-                            <input type="checkbox" id="Some_content" value="1" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                            <label class="text-sm font-normal text-gray-900 dark:text-gray-300" for="Some_content">Sim, meu trabalho contém material adulto.
-                            </label>
-                          </div>
-                    </div>
-
-
-
-
-
                 </div>
-
-            </div>
-
-
-            <div class="order-first md:order-last -ml-6 md:ml-0">
-                <!-- Card com o Help - color=gray with_border=false -->
-                <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
-                    <p class="text-base font-semibold tracking-tight text-gray-900 mb-2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z" fill="#BEC0C4"/>
-                        </svg>
-                        </p>
-                    <div class="text-sm text-gray-500">Para que possamos acolher a todos os públicos, criamos algumas regras para conteúdo adulto. <a href="https://catarse.me" class="text-blue-600 hover:underline">Saiba o que pode e o que não pode.</a>
+                <div class="order-last -ml-6 md:ml-0">
+                    <!-- Card com o Help - color=gray with_border=false -->
+                    <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                        <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                        <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
                     </div>
                 </div>
+                <!-- Fim dos elementos do grid -->
             </div>
-
-
-            <!-- Fim dos elementos do grid -->
+            <!-- Fim Form Layout Hint -->
+            <!-- Inicio Form Layout Hint -->
+            <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <!-- Elementos do grid -->
+                <!-- Card color=white com o form dentro -->
+                <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
+                    <!-- Inicio do Form -->
+                    <div class="flex flex-col gap-8">
+                        <!--FormHeader -->
+                        <div class="flex flex-row gap-6 pb-3">
+                            <div class="w-1 bg-gray-100"></div>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-lg font-semibold text-gray-800">Descoberta do seu projeto no Catarse
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- FormLayout-->
+                        <!-- Select - Categoria -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label class="flex-1 block text-sm font-medium text-gray-900">Categoria</label>
+                            </div>
+                            <select name="" id=""
+                                class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900">
+                                <option value="">Escolha uma categoria</option>
+                                <option value="Red">red</option>
+                                <option value="Green">green</option>
+                                <option value="Blue">blue</option>
+                            </select>
+                        </div>
+                        <!-- Tags (tópicos) -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Tópicos
+                                    (palavras-chave)</label>
+                            </div>
+                            <div class="flex w-full rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="">
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Liste até 5 palavras-chaves relacionadas a
+                                sua
+                                campanha e facilite a descoberta pelos apoiadores.</p>
+                        </div>
+                        <!-- Local  -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Local
+                                    do
+                                    projeto</label>
+                            </div>
+                            <div class="flex w-full rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="Escolha uma cidade">
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Caso seu projeto aconteça em mais de um
+                                lugar,
+                                uma
+                                dica é colocar a cidade onde sua rede de potenciais apoiadores é maior.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-last -ml-6 md:ml-0">
+                    <!-- Card com o Help - color=gray with_border=false -->
+                    <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                        <p class="text-base font-semibold tracking-tight text-gray-900 mb-2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z" fill="#BEC0C4"/>
+                            </svg>
+                            </p>
+                        <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                    </div>
+                </div>
+                <!-- Fim dos elementos do grid -->
+            </div>
+            <!-- Fim Form Layout Hint -->
+            <!-- Inicio Form Layout Hint -->
+            <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <!-- Elementos do grid -->
+                <!-- Card color=white com o form dentro -->
+                <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
+                    <!-- Inicio do Form -->
+                    <div class="flex flex-col gap-8">
+                        <!--FormHeader -->
+                        <div class="flex flex-row gap-6 pb-3">
+                            <div class="w-1 bg-gray-100"></div>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-lg font-semibold text-gray-800">Declaração de conteúdo adulto
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- FormLayout-->
+                        <!-- Choice List -->
+                        <div class="flex flex-col gap-2">
+                            <p class="flex-1 block text-sm font-medium text-gray-900 mb-2">O seu projeto contém material adulto, tal como nudez e/ou cenas de sexo explícito?</p>
+                            <div class="flex gap-2 items-center">
+                                <input type="checkbox" id="Some_content" value="1" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                <label class="text-sm font-normal text-gray-900 dark:text-gray-300" for="Some_content">Sim, meu trabalho contém material adulto.
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-last -ml-6 md:ml-0">
+                    <!-- Card com o Help - color=gray with_border=false -->
+                    <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                        <p class="text-base font-semibold tracking-tight text-gray-900 mb-2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z" fill="#BEC0C4"/>
+                            </svg>
+                            </p>
+                        <div class="text-sm text-gray-500">Para que possamos acolher a todos os públicos, criamos algumas regras para conteúdo adulto. <a href="https://catarse.me" class="text-blue-600 hover:underline">Saiba o que pode e o que não pode.</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim dos elementos do grid -->
+            </div>
+            <!-- Fim Form Layout Hint -->
+            <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
+                <button name="button" type="submit"
+                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                    Salvar
+                </button>
+            </div>
         </div>
-        <!-- Fim Form Layout Hint -->
-
-        <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
-            <button name="button" type="submit"
-                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
-                Salvar
-            </button>
-
-        </div>
-    </div>
+    </form>
 
 
 
