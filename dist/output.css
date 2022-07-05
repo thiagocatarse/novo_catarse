@@ -1918,6 +1918,21 @@ video {
     color: rgb(126 132 139 / var(--tw-text-opacity));
   }
 
+  .dark\:placeholder-gray-400::-moz-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgb(126 132 139 / var(--tw-placeholder-opacity));
+  }
+
+  .dark\:placeholder-gray-400:-ms-input-placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgb(126 132 139 / var(--tw-placeholder-opacity));
+  }
+
+  .dark\:placeholder-gray-400::placeholder{
+    --tw-placeholder-opacity: 1;
+    color: rgb(126 132 139 / var(--tw-placeholder-opacity));
+  }
+
   .dark\:ring-offset-gray-800{
     --tw-ring-offset-color: #2a2f37;
   }
