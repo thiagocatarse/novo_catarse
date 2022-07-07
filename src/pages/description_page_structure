@@ -1,0 +1,36 @@
+<Tabs></Tabs>
+<page>
+    <pageheader></pageheader>
+    <layouthwithhint>
+        <main>
+            <formlayout>
+                <inputfield></inputfield>
+                <select></select>
+            </formlayout>
+        </main>
+        <secondary></secondary>
+    </layouthwithhint>
+    <layout></layout>
+</page>
+
+<TabsComponent>
+#75	<Pagecomponent>
+    #77	<PageHeader>
+    #87	<LayoutWithHint>
+    #92	    <Componente Form Layout>
+        #94	    <FormHeader>
+        #103	<File input - Imagem capa>
+        #114	<File input - Miniatura>
+        #126	<Vídeo do projeto>
+        #142	<Essa div aqui abaixo faz parte do componente Form Layout Hint>
+    #144	<Componente Card - color=gray with_border=false>
+    #157	<Componente Form Layout Hint - caso esse componente ainda não tenha sido criado, pode ser feito manualmente e depois componentizamos>
+    #158	<Componente Grid - caso esse componente não tenha sido criado, pode ser feito manualmente e depois componentizamos>
+    #160	<Componente Card color=white>
+    #162	<Componente Form Layout>
+    #164	<FormHeader>
+    #173	<Frase de efeito>
+    #186	<Descrição >
+    #203	<Card - color=gray with_border=false>
+    #217	<Componente Page Action>
+    #N : 23
