@@ -792,6 +792,10 @@ video {
   margin-top: -1.25rem;
 }
 
+.box-border{
+  box-sizing: border-box;
+}
+
 .block{
   display: block;
 }
@@ -1433,6 +1437,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .align-middle{

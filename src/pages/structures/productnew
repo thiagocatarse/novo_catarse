@@ -1,0 +1,19 @@
+↑↓ ↑↓
+<PageComponent>
+    <PageHeader></PageHeader>
+    <LayoutWithHint>
+        <InputField></InputField>
+        <Select></Select>
+        <LocalComponent_RadioGroup>
+            <LocalCompoent_RadioCard> </LocalCompoent_RadioCard>
+            <LocalCompoent_RadioCard> </LocalCompoent_RadioCard>
+            <LocalComponent_Options>
+                <GridComponent>
+                    <InputField></InputField>
+                    <InputField> </InputField>
+                </GridComponent>
+            </LocalComponent_Options>
+        </LocalComponent_RadioGroup>
+    </LayoutWithHint>
+    <PageAction></PageAction>
+</PageComponent>
