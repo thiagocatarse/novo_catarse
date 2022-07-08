@@ -11,7 +11,7 @@
     <!-- TabsComponent -->
     <div class="border-b border-gray-100 w-full bg-white pt-1">
         <nav class="flex overflow-x-auto gap-2 md:gap-6 w-full px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
-            aria-label="Tabs">
+            aria-label="Tabs" id="Tabs">
             <a
                 class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap" href="./basic_page.html">
                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@
                 Imagens e Descrição
             </a>
             <a
-                class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap" href="./fundandgoal.html">
+                class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap" href="./fundandgoal.html" id="tab_active">
                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="md:mr-2 w-5 h-5 fill-current">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -225,7 +225,12 @@
     </form>
 
 
+<script>
+    var myElement = document.getElementById('tab_active');
+var leftPos = myElement.offsetLeft;
+document.getElementById('Tabs').scrollLeft = leftPos;
 
+</script>
 
 </body>
 
