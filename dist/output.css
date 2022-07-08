@@ -1711,6 +1711,43 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-0::before{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:h-full::before{
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:w-1\/6::before{
+  content: var(--tw-content);
+  width: 16.666667%;
+}
+
+.before\:bg-gradient-to-l::before{
+  content: var(--tw-content);
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.before\:from-transparent::before{
+  content: var(--tw-content);
+  --tw-gradient-from: transparent;
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.before\:to-white::before{
+  content: var(--tw-content);
+  --tw-gradient-to: #fff;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1741,6 +1778,11 @@ video {
   left: 2px;
 }
 
+.after\:right-0::after{
+  content: var(--tw-content);
+  right: 0px;
+}
+
 .after\:h-6::after{
   content: var(--tw-content);
   height: 1.5rem;
@@ -1751,6 +1793,11 @@ video {
   height: 1.25rem;
 }
 
+.after\:h-full::after{
+  content: var(--tw-content);
+  height: 100%;
+}
+
 .after\:w-6::after{
   content: var(--tw-content);
   width: 1.5rem;
@@ -1759,6 +1806,11 @@ video {
 .after\:w-5::after{
   content: var(--tw-content);
   width: 1.25rem;
+}
+
+.after\:w-1\/6::after{
+  content: var(--tw-content);
+  width: 16.666667%;
 }
 
 .after\:rounded-full::after{
@@ -1781,6 +1833,23 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.after\:bg-gradient-to-r::after{
+  content: var(--tw-content);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.after\:from-transparent::after{
+  content: var(--tw-content);
+  --tw-gradient-from: transparent;
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:to-white::after{
+  content: var(--tw-content);
+  --tw-gradient-to: #fff;
 }
 
 .after\:transition-all::after{
