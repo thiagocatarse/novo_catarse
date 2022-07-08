@@ -1,0 +1,11 @@
+I.see("Relatórios exportados");
+I.see("Atenção: Ao realizar o download desses dados, você se compromete a armazená-los em local seguro e respeitar o direitos dos usuários conforme o que está previsto nos Termos de Uso e na política de privacidade do Catarse.");
+I.see("Pagamentos confirmados");
+I.see("Base de Assinantes");
+// I.count("Processando",2);
+I.wait(30);
+I.refreshPage();
+I.count("Finalizado",3);
+I.count(".fa-check-circle",2);
+I.count("Baixar arquivo",2);
+I.click("Baixar arquivo");
