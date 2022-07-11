@@ -101,7 +101,7 @@
                                 <div class="flex flex-1 flex-col">
 
                                     <label class="w-full h-full relative">
-                                        <input type="radio" name="product"
+                                        <input type="radio" name="product" id="flex_yes"
                                             class="peer absolute top-6 right-6 w-4 h-4 text-blue-600 bg-gray-50 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 transition-all"
                                             value="flex" />
 
@@ -315,15 +315,15 @@
                             </div>
                             <!-- </FormHeader> -->
                             <!-- <Toggle> -->
-                                <div class="flex">
-                                    <label class="inline-flex gap-2 relative items-center cursor-pointer" for="deadline">
-                                      <input type="checkbox" name="deadline" id="deadline" value="" class="sr-only peer" />
-                                      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
-                                      <span class="text-sm font-medium text-gray-900">Este projeto tem prazo para finalizar</span>
+                                <div class="flex" id="deadline_toggle">
+                                    <label class="inline-flex gap-2 relative cursor-pointer" for="deadline">
+                                      <input type="checkbox" name="deadline" id="deadline" value="" class="sr-only peer" checked />
+                                      <div class="w-11 h-6 shrink-0 flex-auto bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                                      <span class="text-sm font-medium text-gray-900 flex-auto">Este projeto tem prazo para finalizar</span>
                                     </label></div>
                             <!-- </Toggle> -->
                             <!-- <InputField> -->
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2" id="deadline_option">
                                     <div class="flex">
                                       <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Prazo de arrecadação</label>
                                     </div>
@@ -369,15 +369,15 @@
                             </div>
                             <!-- </FormHeader> -->
                             <!-- <Toggle> -->
-                                <div class="flex">
-                                    <label class="inline-flex gap-2 relative items-center cursor-pointer" for="goal">
-                                      <input type="checkbox" name="goal" id="goal" value="" class="sr-only peer" />
-                                      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                                <div class="flex" id="goal_toggle">
+                                    <label class="inline-flex gap-2 relative cursor-pointer" for="goal">
+                                      <input type="checkbox" name="goal" id="goal"  value="" class="sr-only peer" checked />
+                                      <div class="w-11 h-6 shrink-0 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
                                       <span class="text-sm font-medium text-gray-900">Este projeto tem metas de arrecadação</span>
                                     </label></div>
                             <!-- </Toggle> -->
                             <!-- <InputField> -->
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2" id="goal_amount">
                                     <div class="flex">
                                       <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Meta principal</label>
                                     </div>
@@ -390,7 +390,7 @@
                                   </div>
                             <!-- </InputField> -->
                             <!-- <InputField> -->
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2" id="goal_title">
                                     <div class="flex">
                                       <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Título</label>
                                     </div>
@@ -402,7 +402,7 @@
                                   </div>
                             <!-- </InputField> -->
                             <!-- <TextArea> -->
-                                <div class="flex flex-col gap-2">
+                                <div class="flex flex-col gap-2" id="goal_description">
                                     <div class="flex">
                                       <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Descrição</label>
                                     </div>
@@ -433,7 +433,7 @@
                 </div>
             <!-- </LayoutHint> -->
             <!-- <LayoutHint> -->
-                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch" id="extra_goal">
                     <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
                         <div class="flex flex-col gap-8">
                             <!-- <FormHeader> -->
@@ -487,7 +487,7 @@
                 </div>
             <!-- </LayoutHint> -->
             <!-- <LayoutHint> -->
-                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch" id="config">
                     <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
                         <div class="flex flex-col gap-8">
                             <!-- <FormHeader> -->
@@ -501,16 +501,16 @@
                             <!-- </FormHeader> -->
                             <!-- <Toggle> -->
                                 <div class="flex">
-                                    <label class="inline-flex gap-2 relative items-top cursor-pointer" for="public_goal">
-                                      <input type="checkbox" name="public_goal" id="public_goal" value="" class="sr-only peer" />
+                                    <label class="inline-flex gap-2 relative cursor-pointer" for="public_goal">
+                                      <input type="checkbox" name="public_goal" id="public_goal" value="" class="sr-only peer" checked />
                                       <div class="w-11 h-6 shrink-0 flex-auto bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
                                       <span class="text-sm font-medium text-gray-900 flex-auto">Quero que o total arrecadado seja exibido publicamente na página de projeto</span>
                                     </label></div>
                             <!-- </Toggle> -->
                             <!-- <Toggle> -->
                                 <div class="flex">
-                                    <label class="inline-flex gap-2 relative items-top cursor-pointer" for="public_backers">
-                                      <input type="checkbox" name="public_backers" id="public_backers" value="" class="sr-only justify-center peer" />
+                                    <label class="inline-flex gap-2 relative cursor-pointer" for="public_backers">
+                                      <input type="checkbox" name="public_backers" id="public_backers" value="" class="sr-only justify-center peer" checked />
                                       <div class="w-11 h-6 shrink-0 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[&#39;&#39;] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
                                       <span class="text-sm font-medium text-gray-900">Quero que o total de apoiadores seja exibido publicamente na página de projeto</span>
                                     </label></div>
@@ -543,7 +543,53 @@
 
     </section>
     <!-- </PageComponent> -->
-
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+          $("input[name='product']").click(function () {
+            if ($("#flex_yes").prop('checked')==true) {
+              $("#deadline_toggle").show();
+              $("#goal_toggle").show();
+              $("#config").show();
+            } else {
+              $("#deadline_toggle").hide();
+              $("#goal_toggle").hide();
+              $("#deadline_option").show();
+              $("#config").hide();
+              $("#extra_goal").show();
+            }
+          });
+        });
+        $(function () {
+          $("input[name='deadline']").click(function () {
+            if ($("#deadline").prop('checked')==true) {
+              $("#deadline_option").show();
+            } else {
+              $("#deadline_option").hide();
+            }
+          });
+        });
+        $(function () {
+          $("input[name='goal']").click(function () {
+            if ($("#goal").prop('checked')==true) {
+              $("#goal_amount").show();
+              $("#goal_title").show();
+              $("#goal_description").show();
+              $("#extra_goal").show();
+            } else {
+            $("#goal_amount").hide();
+              $("#goal_title").hide();
+              $("#goal_description").hide();
+              $("#extra_goal").hide();
+            }
+          });
+        });
+        
+        
+        
+      </script>
+      
 
 </body>
 
