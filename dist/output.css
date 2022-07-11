@@ -1756,6 +1756,11 @@ video {
   width: 1.25rem;
 }
 
+.after\:justify-center::after{
+  content: var(--tw-content);
+  justify-content: center;
+}
+
 .after\:rounded-full::after{
   content: var(--tw-content);
   border-radius: 9999px;
