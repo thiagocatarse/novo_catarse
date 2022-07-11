@@ -2192,6 +2192,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
   .md\:gap-6{
     gap: 1.5rem;
   }
