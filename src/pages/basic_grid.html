@@ -9,7 +9,7 @@
 
 <body class="bg-gray-50 ">
     
-    <div class="grid grid-cols-[auto,1fr] grid-rows-[56px,1fr]">
+    <div class="grid grid-cols-[56px_minmax(200px,1fr)] grid-rows-[56px,1fr] ">
         <!-- <Toast> -->
     <div
     class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400 z-50">
@@ -230,7 +230,7 @@
         </div>
         <!-- </SaveBar> -->
         <!-- <SideBar> -->
-        <div class="col-start-1 col-end-2 row-start-1 row-end-3 group fixed h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2 peer-checked:w-48 peer-checked:shadow-xl peer-checked:sticky peer-checked:flex peer-checked:self-stretch z-20"
+        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2 peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-20"
             id="sidebar">
             <nav class="flex flex-col gap-2 w-full pt-32">
                 <!-- Inicio section Nav Sidebar -->
@@ -319,10 +319,10 @@
         </div>
         <!-- </SideBar> -->
         <!-- <Main> -->
-        <div id="main" class="pl-14 col-start-2 col-end-3 row-start-2 row-end-3 relative flex flex-col flex-1 peer-checked:pl-0">
+        <div id="main" class="lg:pl-14 pl-0 col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 relative flex flex-col flex-1 peer-checked:pl-0">
             <!-- Tabs -->
-            <div class="border-b shrink border-gray-100 w-full bg-white pt-1 sticky top-14">
-                <nav class="flex overflow-x-auto gap-2 md:gap-6 w-full px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
+            <div class="border-b border-gray-100 w-full bg-white pt-1 sticky top-14 overflow-auto max-w-full flex flex-col">
+                <nav class="flex overflow-visible gap-2 md:gap-6 px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
                     aria-label="Tabs">
                     <a
                         class="p-4 rounded-t-lg border-b-2 border-blue-600  hover:text-blue-600 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap text-blue-600">
