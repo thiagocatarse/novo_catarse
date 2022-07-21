@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../dist/output.css" rel="stylesheet">
-    
 </head>
 
-<body class="bg-gray-50 mt-[70px]">
+<body class="bg-gray-50 ">
     <!-- Toast -->
     <div
         class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400">
@@ -33,106 +32,113 @@
 
         </button>
     </div>
-
-<!-- Início da Save Bar - A ideia é que ela seja distinha da NavBar, e pode inclusive aparecer por cima da NavBar, por isso coloquei o z-50 na classe dela -->
-
-<div
-class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 fixed top-0 z-50">
-
-<!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
-
-<div href="#" class="absolute left-3 flex items-center gap-3">
-
-    <label for="toggler">
+    
+    <div class="flex flex-row flex-wrap items-stretch">
+        
         <input type="checkbox" id="toggler" class="hidden peer" />
-        <div class="cursor-pointer p-1"><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H13C13.2652 0 13.5196 0.105357 13.7071 0.292893C13.8946 0.48043 14 0.734784 14 1C14 1.26522 13.8946 1.51957 13.7071 1.70711C13.5196 1.89464 13.2652 2 13 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1ZM0 6C0 5.73478 0.105357 5.48043 0.292893 5.29289C0.48043 5.10536 0.734784 5 1 5H13C13.2652 5 13.5196 5.10536 13.7071 5.29289C13.8946 5.48043 14 5.73478 14 6C14 6.26522 13.8946 6.51957 13.7071 6.70711C13.5196 6.89464 13.2652 7 13 7H1C0.734784 7 0.48043 6.89464 0.292893 6.70711C0.105357 6.51957 0 6.26522 0 6ZM0 11C0 10.7348 0.105357 10.4804 0.292893 10.2929C0.48043 10.1054 0.734784 10 1 10H13C13.2652 10 13.5196 10.1054 13.7071 10.2929C13.8946 10.4804 14 10.7348 14 11C14 11.2652 13.8946 11.5196 13.7071 11.7071C13.5196 11.8946 13.2652 12 13 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11Z"
-                    fill="#fff" />
-            </svg></div>
-        <!-- <div class="peer-checked:visible invisible">Olá mundo</div> --></label>
+        <!-- Início da Save Bar - A ideia é que ela seja distinha da NavBar, e pode inclusive aparecer por cima da NavBar, por isso coloquei o z-50 na classe dela -->
+        <div class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 sticky top-0 z-50 h-14"
+            id="savebar">
 
-        <!-- Logo versão texto - só aparece em dispositivos maiores -->
-        <!-- <div class="hidden xl:flex relative -top-1.5"><img src="../assets/LogoText.png" class="w-20"></div> -->
-        <!-- Logo versão símbolo - só aparece em dispositivos menores -->
-        <div class="flex"><img src="../assets/LogoSymbol.png" class="w-4"></div>
-</div>
-<!-- Início do Content do SaveBar -->
-<div class="flex flex-row max-w-5xl w-full items-center gap-10">
-    <!-- Title Wrapper -->
-    <div class="flex-1 flex gap-3 items-center truncate">
-        <!-- Title -->
-        <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante</div>
-        <!-- Badge - o componente Badge já existe, mas vai ser preciso criar uma outra variante para ele, pois essa aqui embaixo não está exatamente como deveria ser -->
-        <div class="hidden sm:flex">
-            <span
-                class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
-                Rascunho
-            </span>
-        </div>
+            <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
 
-    </div>
-    <!-- Buttons Wrapper 
+            <div href="#" class="absolute left-3 flex items-center gap-3">
+
+                <label for="toggler">
+
+                    <div class="cursor-pointer p-1"><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H13C13.2652 0 13.5196 0.105357 13.7071 0.292893C13.8946 0.48043 14 0.734784 14 1C14 1.26522 13.8946 1.51957 13.7071 1.70711C13.5196 1.89464 13.2652 2 13 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1ZM0 6C0 5.73478 0.105357 5.48043 0.292893 5.29289C0.48043 5.10536 0.734784 5 1 5H13C13.2652 5 13.5196 5.10536 13.7071 5.29289C13.8946 5.48043 14 5.73478 14 6C14 6.26522 13.8946 6.51957 13.7071 6.70711C13.5196 6.89464 13.2652 7 13 7H1C0.734784 7 0.48043 6.89464 0.292893 6.70711C0.105357 6.51957 0 6.26522 0 6ZM0 11C0 10.7348 0.105357 10.4804 0.292893 10.2929C0.48043 10.1054 0.734784 10 1 10H13C13.2652 10 13.5196 10.1054 13.7071 10.2929C13.8946 10.4804 14 10.7348 14 11C14 11.2652 13.8946 11.5196 13.7071 11.7071C13.5196 11.8946 13.2652 12 13 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11Z"
+                                fill="#fff" />
+                        </svg></div>
+                    <!-- <div class="peer-checked:visible invisible">Olá mundo</div> -->
+                </label>
+
+                <!-- Logo versão texto - só aparece em dispositivos maiores -->
+                <!-- <div class="hidden xl:flex relative -top-1.5"><img src="../assets/LogoText.png" class="w-20"></div> -->
+                <!-- Logo versão símbolo - só aparece em dispositivos menores -->
+                <div class="flex"><img src="../assets/LogoSymbol.png" class="w-4"></div>
+            </div>
+            <!-- Início do Content do SaveBar -->
+            <div class="flex flex-row max-w-5xl w-full items-center gap-10">
+                <!-- Title Wrapper -->
+                <div class="flex-1 flex gap-3 items-center truncate">
+                    <!-- Title -->
+                    <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante
+                    </div>
+                    <!-- Badge - o componente Badge já existe, mas vai ser preciso criar uma outra variante para ele, pois essa aqui embaixo não está exatamente como deveria ser -->
+                    <div class="hidden sm:flex">
+                        <span
+                            class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                            Rascunho
+                        </span>
+                    </div>
+
+                </div>
+                <!-- Buttons Wrapper 
     A ideia é que tenhamos dois slots de botões:
     - Tertiary Actions: são ações adicionais, que não envolvem o "Salvar" e o "Cancelar" . Essas ações são exibidas em Desktop como botões, mas em Mobile elas passam a ser exibidas num dropdown -->
-    <div class="shrink flex flex-row gap-2 items-center">
-        <!-- Tertiary actions 
+                <div class="shrink flex flex-row gap-2 items-center">
+                    <!-- Tertiary actions 
         
             Button size=sm , color=white , plain=true
 
         -->
-        <div class="flex flex-row gap-2 items-center order-last sm:order-first">
-            <div class="flex-row gap-2 items-center hidden sm:flex">
-                <button name="button" type="submit"
-                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
-                            stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
-                            stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    Visualizar
-                </button>
-                <button name="button" type="submit"
-                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
-                            stroke="#DDDFE1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    Pré-lançar
-                </button>
-                <button name="button" type="submit"
-                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                    Publicar
-                </button>
-            </div>
-            <!-- Tertiary actions dropdown - only mobile -->
-            <div class="flex gap-2 sm:hidden">
-                <div class="relative z-0 inline-flex">
-                    <div class="-ml-px relative block">
-                        <button name="button" type="submit"
-                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-2 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826] more-button">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10 6C9.46957 6 8.96086 5.78929 8.58579 5.41421C8.21071 5.03914 8 4.53043 8 4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2C10.5304 2 11.0391 2.21071 11.4142 2.58579C11.7893 2.96086 12 3.46957 12 4C12 4.53043 11.7893 5.03914 11.4142 5.41421C11.0391 5.78929 10.5304 6 10 6ZM10 12C9.46957 12 8.96086 11.7893 8.58579 11.4142C8.21071 11.0391 8 10.5304 8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8C10.5304 8 11.0391 8.21071 11.4142 8.58579C11.7893 8.96086 12 9.46957 12 10C12 10.5304 11.7893 11.0391 11.4142 11.4142C11.0391 11.7893 10.5304 12 10 12ZM10 18C9.46957 18 8.96086 17.7893 8.58579 17.4142C8.21071 17.0391 8 16.5304 8 16C8 15.4696 8.21071 14.9609 8.58579 14.5858C8.96086 14.2107 9.46957 14 10 14C10.5304 14 11.0391 14.2107 11.4142 14.5858C11.7893 14.9609 12 15.4696 12 16C12 16.5304 11.7893 17.0391 11.4142 17.4142C11.0391 17.7893 10.5304 18 10 18Z"
-                                    fill="white" />
-                            </svg>
+                    <div class="flex flex-row gap-2 items-center order-last sm:order-first">
+                        <div class="flex-row gap-2 items-center hidden sm:flex">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                        stroke="#DDDFE1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                        stroke="#DDDFE1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Visualizar
+                            </button>
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                        stroke="#DDDFE1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Pré-lançar
+                            </button>
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                        fill="#F8F8F8" />
+                                </svg>
+                                Publicar
+                            </button>
+                        </div>
+                        <!-- Tertiary actions dropdown - only mobile -->
+                        <div class="flex gap-2 sm:hidden">
+                            <div class="relative z-0 inline-flex">
+                                <div class="-ml-px relative block">
+                                    <button name="button" type="submit"
+                                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-2 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826] more-button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 6C9.46957 6 8.96086 5.78929 8.58579 5.41421C8.21071 5.03914 8 4.53043 8 4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2C10.5304 2 11.0391 2.21071 11.4142 2.58579C11.7893 2.96086 12 3.46957 12 4C12 4.53043 11.7893 5.03914 11.4142 5.41421C11.0391 5.78929 10.5304 6 10 6ZM10 12C9.46957 12 8.96086 11.7893 8.58579 11.4142C8.21071 11.0391 8 10.5304 8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8C10.5304 8 11.0391 8.21071 11.4142 8.58579C11.7893 8.96086 12 9.46957 12 10C12 10.5304 11.7893 11.0391 11.4142 11.4142C11.0391 11.7893 10.5304 12 10 12ZM10 18C9.46957 18 8.96086 17.7893 8.58579 17.4142C8.21071 17.0391 8 16.5304 8 16C8 15.4696 8.21071 14.9609 8.58579 14.5858C8.96086 14.2107 9.46957 14 10 14C10.5304 14 11.0391 14.2107 11.4142 14.5858C11.7893 14.9609 12 15.4696 12 16C12 16.5304 11.7893 17.0391 11.4142 17.4142C11.0391 17.7893 10.5304 18 10 18Z"
+                                                fill="white" />
+                                        </svg>
 
-                        </button>
+                                    </button>
 
-                        <!--
+                                    <!--
                         Dropdown menu, show/hide based on menu state.
                   
                         Entering: "transition ease-out duration-100"
@@ -142,92 +148,88 @@ class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 
                           From: "transform opacity-100 scale-100"
                           To: "transform opacity-0 scale-95"
                       -->
-                        <div class="list-container origin-top-right absolute right-0 mt-2 -mr-1 w-fit whitespace-nowrap p-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
-                            role="menu" aria-orientation="vertical" aria-labelledby="option-menu-button"
-                            tabindex="-1">
-                            <div class="py-1" role="none">
-                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                                <a href="#"
-                                    class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
-                                    role="menuitem" tabindex="-1" id="option-menu-item-0">
-                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
-                                            stroke="#353B44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
-                                            stroke="#353B44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Visualizar</a>
-                                <a href="#"
-                                    class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
-                                    role="menuitem" tabindex="-1" id="option-menu-item-1">
-                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
-                                            stroke="#353B44" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    Pré-lançar</a>
-                                <a href="#"
-                                    class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
-                                    role="menuitem" tabindex="-1" id="option-menu-item-2">
-                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
-                                            fill="#353B44" />
-                                    </svg>
-                                    Publicar</a>
+                                    <div class="list-container origin-top-right absolute right-0 mt-2 -mr-1 w-fit whitespace-nowrap p-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="option-menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="#"
+                                                class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                                role="menuitem" tabindex="-1" id="option-menu-item-0">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                                        stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                                        stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Visualizar</a>
+                                            <a href="#"
+                                                class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                                role="menuitem" tabindex="-1" id="option-menu-item-1">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                                        stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Pré-lançar</a>
+                                            <a href="#"
+                                                class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                                role="menuitem" tabindex="-1" id="option-menu-item-2">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                                        fill="#353B44" />
+                                                </svg>
+                                                Publicar</a>
 
 
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <script>
+                                document.querySelector('.more-button').addEventListener('click', function () {
+                                    document.querySelector('.list-container').classList.toggle('hidden');
+                                });
+                            </script>
                         </div>
                     </div>
-                </div>
-                <script>
-                    document.querySelector('.more-button').addEventListener('click', function () {
-                        document.querySelector('.list-container').classList.toggle('hidden');
-                    });
-                </script>
-            </div>
-        </div>
-        <!-- Primary and Secondary actions
+                    <!-- Primary and Secondary actions
         
             Main action -> Button size = sm , color = green
             Main action -> Button size = sm, color=white, plain=true
         
 
         -->
-        <div class="flex flex-row gap-2 items-center">
-            <div class="flex flex-row gap-2">
-                <button name="button" type="submit"
-                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
-                    Cancelar
-                </button>
-                <button name="button" type="submit"
-                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
-                    Salvar
-                </button>
+                    <div class="flex flex-row gap-2 items-center">
+                        <div class="flex flex-row gap-2">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                Cancelar
+                            </button>
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
-    </div>
-
-
-
-</div>
-</div>
-<!-- Fim da Savebar -->
-
-
-    <div class="flex flex-row">
         <!-- Sidebar -->
-        <div
-            class="group fixed flex top-16 h-full w-14 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2" id="sidebar">
+        <div class="group fixed h-full flex w-14 top-14 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2 peer-checked:w-48 peer-checked:shadow-xl peer-checked:sticky peer-checked:flex peer-checked:self-stretch z-20"
+            id="sidebar">
             <nav class="flex flex-col gap-2 w-full pt-16">
                 <!-- Inicio section Nav Sidebar -->
                 <div class="flex flex-col gap-2 mb-6">
@@ -242,7 +244,8 @@ class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 
                                 d="M14.1657 7.9345C14.3157 8.08452 14.3999 8.28797 14.3999 8.5001C14.3999 8.71223 14.3157 8.91567 14.1657 9.0657L8.5657 14.6657C8.41568 14.8157 8.21223 14.8999 8.0001 14.8999C7.78797 14.8999 7.58452 14.8157 7.4345 14.6657L1.8345 9.0657C1.7601 8.99151 1.70109 8.90335 1.66087 8.80628C1.62064 8.70922 1.59999 8.60517 1.6001 8.5001V4.5001C1.6001 3.86358 1.85295 3.25313 2.30304 2.80304C2.75313 2.35295 3.36358 2.1001 4.0001 2.1001H8.0001C8.2049 2.1001 8.4097 2.1785 8.5657 2.3345L14.1657 7.9345ZM4.0001 5.3001C4.21227 5.3001 4.41575 5.21581 4.56578 5.06578C4.71581 4.91575 4.8001 4.71227 4.8001 4.5001C4.8001 4.28792 4.71581 4.08444 4.56578 3.93441C4.41575 3.78438 4.21227 3.7001 4.0001 3.7001C3.78792 3.7001 3.58444 3.78438 3.43441 3.93441C3.28438 4.08444 3.2001 4.28792 3.2001 4.5001C3.2001 4.71227 3.28438 4.91575 3.43441 5.06578C3.58444 5.21581 3.78792 5.3001 4.0001 5.3001Z"
                                 fill="#317AAF" />
                         </svg>
-                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap hidden group-hover:flex">Produtos</div>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap hidden group-hover:flex">
+                            Produtos</div>
                     </a>
                     <a href="#" class="flex flex-row items-center gap-3 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
                             width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
@@ -297,7 +300,8 @@ class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 
                     <a href="#" class="flex flex-row items-center gap-3 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
                             width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5F656F" d="M5.6 2.9a.8.8 0 0 0 0 1.6h4.8a.8.8 0 0 0 0-1.6H5.6ZM3.2 6.1a.8.8 0 0 1 .8-.8h8a.8.8 0 0 1 0 1.6H4a.8.8 0 0 1-.8-.8ZM1.6 9.3a1.6 1.6 0 0 1 1.6-1.6h9.6a1.6 1.6 0 0 1 1.6 1.6v3.2a1.6 1.6 0 0 1-1.6 1.6H3.2a1.6 1.6 0 0 1-1.6-1.6V9.3Z"/>
+                            <path fill="#5F656F"
+                                d="M5.6 2.9a.8.8 0 0 0 0 1.6h4.8a.8.8 0 0 0 0-1.6H5.6ZM3.2 6.1a.8.8 0 0 1 .8-.8h8a.8.8 0 0 1 0 1.6H4a.8.8 0 0 1-.8-.8ZM1.6 9.3a1.6 1.6 0 0 1 1.6-1.6h9.6a1.6 1.6 0 0 1 1.6 1.6v3.2a1.6 1.6 0 0 1-1.6 1.6H3.2a1.6 1.6 0 0 1-1.6-1.6V9.3Z" />
                         </svg>
                         <div class="text-sm font-medium text-gray-600 whitespace-nowrap hidden group-hover:flex">
                             Biblioteca</div>
@@ -305,8 +309,10 @@ class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 
                     <a href="#" class="flex flex-row items-center gap-3 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
                             width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#fff" d="M10.978 8.953A4.667 4.667 0 1 0 2.354 5.38a4.667 4.667 0 0 0 8.624 3.572Z"/>
-  <path stroke="#5F656F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 14.5-4-4m1.333-3.333a4.667 4.667 0 1 1-9.334 0 4.667 4.667 0 0 1 9.334 0Z"/>
+                            <path fill="#fff"
+                                d="M10.978 8.953A4.667 4.667 0 1 0 2.354 5.38a4.667 4.667 0 0 0 8.624 3.572Z" />
+                            <path stroke="#5F656F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m14 14.5-4-4m1.333-3.333a4.667 4.667 0 1 1-9.334 0 4.667 4.667 0 0 1 9.334 0Z" />
                         </svg>
                         <div class="text-sm font-medium text-gray-600 whitespace-nowrap hidden group-hover:flex">
                             Explore projetos</div>
@@ -315,10 +321,10 @@ class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 
             </nav>
 
         </div>
-
-        <div id="main" class="w-full flex-1 pl-14">
+<!-- main -->
+        <div id="main" class="flex flex-col flex-1 pl-14 peer-checked:pl-0 overflow-auto">
             <!-- Tabs -->
-            <div class="border-b border-gray-100 w-full bg-white pt-1">
+            <div class="border-b shrink border-gray-100 w-full bg-white pt-1 sticky top-14">
                 <nav class="flex overflow-x-auto gap-2 md:gap-6 w-full px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
                     aria-label="Tabs">
                     <a
@@ -612,8 +618,6 @@ class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 
 
     </div>
 
-
-    
 
 </body>
 

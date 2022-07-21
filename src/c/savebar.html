@@ -12,15 +12,27 @@
     <!-- Início da Save Bar - A ideia é que ela seja distinha da NavBar, e pode inclusive aparecer por cima da NavBar, por isso coloquei o z-50 na classe dela -->
 
     <div
-        class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-10 pr-3 lg:pl-6 shadow-sm bg-gray-600 fixed top-0 z-50">
+        class="flex flex-row w-full justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 fixed top-0 z-50">
 
         <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
-        <a href="#" class="absolute left-3">
-            <!-- Logo versão texto - só aparece em dispositivos maiores -->
-            <div class="hidden xl:flex"><img src="../assets/LogoText.png" class="w-24"></div>
-            <!-- Logo versão símbolo - só aparece em dispositivos menores -->
-            <div class="flex xl:hidden"><img src="../assets/LogoSymbol.png" class="w-4"></div>
-        </a>
+
+        <div href="#" class="absolute left-3 flex items-center gap-3">
+
+            <label for="toggler">
+                <input type="checkbox" id="toggler" class="hidden peer" />
+                <div class="cursor-pointer p-1"><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H13C13.2652 0 13.5196 0.105357 13.7071 0.292893C13.8946 0.48043 14 0.734784 14 1C14 1.26522 13.8946 1.51957 13.7071 1.70711C13.5196 1.89464 13.2652 2 13 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1ZM0 6C0 5.73478 0.105357 5.48043 0.292893 5.29289C0.48043 5.10536 0.734784 5 1 5H13C13.2652 5 13.5196 5.10536 13.7071 5.29289C13.8946 5.48043 14 5.73478 14 6C14 6.26522 13.8946 6.51957 13.7071 6.70711C13.5196 6.89464 13.2652 7 13 7H1C0.734784 7 0.48043 6.89464 0.292893 6.70711C0.105357 6.51957 0 6.26522 0 6ZM0 11C0 10.7348 0.105357 10.4804 0.292893 10.2929C0.48043 10.1054 0.734784 10 1 10H13C13.2652 10 13.5196 10.1054 13.7071 10.2929C13.8946 10.4804 14 10.7348 14 11C14 11.2652 13.8946 11.5196 13.7071 11.7071C13.5196 11.8946 13.2652 12 13 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11Z"
+                            fill="#fff" />
+                    </svg></div>
+                <!-- <div class="peer-checked:visible invisible">Olá mundo</div> --></label>
+
+                <!-- Logo versão texto - só aparece em dispositivos maiores -->
+                <!-- <div class="hidden xl:flex relative -top-1.5"><img src="../assets/LogoText.png" class="w-20"></div> -->
+                <!-- Logo versão símbolo - só aparece em dispositivos menores -->
+                <div class="flex"><img src="../assets/LogoSymbol.png" class="w-4"></div>
+        </div>
         <!-- Início do Content do SaveBar -->
         <div class="flex flex-row max-w-5xl w-full items-center gap-10">
             <!-- Title Wrapper -->
@@ -29,9 +41,10 @@
                 <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante</div>
                 <!-- Badge - o componente Badge já existe, mas vai ser preciso criar uma outra variante para ele, pois essa aqui embaixo não está exatamente como deveria ser -->
                 <div class="hidden sm:flex">
-                    <span class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                    <span
+                        class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
                         Rascunho
-                      </span>
+                    </span>
                 </div>
 
             </div>
@@ -128,20 +141,22 @@
                                             class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
                                             role="menuitem" tabindex="-1" id="option-menu-item-1">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
-                                    stroke="#353B44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                                    stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                             Pré-lançar</a>
                                         <a href="#"
                                             class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
                                             role="menuitem" tabindex="-1" id="option-menu-item-2">
                                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
-                                                fill="#353B44" />
-                                        </svg>
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                                    fill="#353B44" />
+                                            </svg>
                                             Publicar</a>
 
 
@@ -186,4 +201,4 @@
 
 </body>
 
-</html> 
+</html>
