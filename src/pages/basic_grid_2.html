@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
     <link href="../../dist/output.css" rel="stylesheet">
+    
+
 </head>
 
 <body class="bg-gray-50 ">
@@ -69,13 +72,7 @@
                     <!-- Title -->
                     <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante
                     </div>
-                    <!-- Badge - o componente Badge já existe, mas vai ser preciso criar uma outra variante para ele, pois essa aqui embaixo não está exatamente como deveria ser -->
-                    <div class="hidden sm:flex">
-                        <span
-                            class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded inline-flex items-center bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300">
-                            Rascunho
-                        </span>
-                    </div>
+                    
 
                 </div>
                 <!-- Buttons Wrapper 
@@ -230,19 +227,16 @@
             </div>
         </div>
         <!-- </SaveBar> -->
+        
+        
+
         <!-- <SideBar> -->
-        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2 peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50"
+            
+        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2 peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer"
             id="sidebar">
             
             <nav class="flex flex-col gap-2 w-full pt-32">
-                <label for="toggler">
-
-                    <div class="cursor-pointer p-2 absolute top-2 hidden group-hover:block transition-all"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 5L20 12L13 19M5 5L12 12L5 19" stroke="#9EA2A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        </div>
-                    <!-- <div class="peer-checked:visible invisible">Olá mundo</div> -->
-                </label>
+                
                 <!-- Inicio section Nav Sidebar -->
                 <div class="flex flex-col gap-2 mb-6">
                     <a href="#"
@@ -327,6 +321,34 @@
             </nav>
 
         </div>
+        
+        <!-- Toggle Abrir -->
+        <label for="toggler" class="w-48 col-start-1 col-end-2 row-start-1 fixed flex justify-start items-start top-2 transition-all row-end-3 z-[80] opacity-0 peer-hover:opacity-100 peer-checked:hidden">
+
+            <div class="cursor-pointer p-2 transition-all left-2" data-tooltip-target="sidebar-tooltip" data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.8334 4.16675L16.6667 10.0001L10.8334 15.8334M4.16675 4.16675L10.0001 10.0001L4.16675 15.8334" stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                </div>
+                <div id="sidebar-tooltip" role="tooltip" class="inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+                    Fixar na posição aberta
+                </div>
+            
+        </label>
+        <!-- Toggle fechar -->
+        <label for="toggler" class="items-end w-48 col-start-1 col-end-2 row-start-1 fixed top-2 transition-all row-end-3 z-[80] hidden opacity-0 peer-hover:opacity-100 peer-checked:flex justify-end">
+
+            <div class="cursor-pointer p-2 transition-all left-36" data-tooltip-target="sidebar-tooltip-close" data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.16659 15.8334L3.33325 10.0001L9.16659 4.16675M15.8333 15.8334L9.99992 10.0001L15.8333 4.16675" stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                
+                </div>
+                <div id="sidebar-tooltip-close" role="tooltip" class="inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+                    Fechar barra
+                </div>
+            
+        </label>
         <!-- </SideBar> -->
         <!-- <Main> -->
         <div id="main" class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 relative flex flex-col flex-1 peer-checked:pl-0 transition-all">
@@ -629,7 +651,7 @@
 
     </div>
 
-
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 
 </html>
