@@ -12,10 +12,10 @@
 
 <body class="bg-gray-50 ">
     
-    <div class="grid grid-cols-[minmax(56px,auto)_minmax(200px,1fr)] grid-rows-[56px,1fr] transition-all">
+    <div class="grid grid-cols-[minmax(auto,auto)_minmax(200px,1fr)] grid-rows-[56px,1fr] transition-all">
         <!-- <Toast> -->
     <div
-    class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400 z-50">
+    class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400 z-20">
     <div
         class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-blue-500 bg-green-100 rounded-full dark:bg-blue-800 dark:text-blue-200">
         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@
         <input type="checkbox" id="toggler" class="hidden peer" />
 
         <!-- <SaveBar> -->
-        <div class="flex flex-row justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 sticky top-0 z-20 h-14 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1"
+        <div class="flex flex-row justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 sticky top-0 z-30 h-14 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1"
             id="savebar">
 
             <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
@@ -232,7 +232,7 @@
 
         <!-- <SideBar> -->
             
-        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2 peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer"
+        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed lg:sticky h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2  peer-checked:w-3/4 lg:peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer"
             id="sidebar">
             
             <nav class="flex flex-col gap-2 w-full pt-32">
@@ -322,8 +322,10 @@
 
         </div>
         
+        
+        
         <!-- Toggle Abrir -->
-        <label for="toggler" class="hidden lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:flex lg:justify-start lg:items-start lg:top-2 lg:transition-all  lg:z-[80] lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:hidden">
+        <label for="toggler" class="hidden lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:flex lg:justify-start lg:items-start lg:top-2 lg:transition-all  lg:z-50 lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:hidden">
 
             <div class="cursor-pointer p-2 transition-all left-2" data-tooltip-target="sidebar-tooltip" data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.8334 4.16675L16.6667 10.0001L10.8334 15.8334M4.16675 4.16675L10.0001 10.0001L4.16675 15.8334" stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -336,7 +338,7 @@
             
         </label>
         <!-- Toggle fechar -->
-        <label for="toggler" class="hidden lg:items-end lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:top-2 lg:transition-all  lg:z-[80] lg:hidden lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:flex lg:justify-end">
+        <label for="toggler" class="hidden lg:items-end lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:top-2 lg:transition-all  lg:z-50 lg:hidden lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:flex lg:justify-end">
 
             <div class="cursor-pointer p-2 transition-all left-36" data-tooltip-target="sidebar-tooltip-close" data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.16659 15.8334L3.33325 10.0001L9.16659 4.16675M15.8333 15.8334L9.99992 10.0001L15.8333 4.16675" stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -349,6 +351,11 @@
                 </div>
             
         </label>
+
+        <!-- Overlay -->
+        <label for="toggler" class="col-start-1 col-end-2 row-start-1 row-end-2 left-0 right-0 top-0 bottom-0 peer-checked:block peer-checked:z-40 peer-checked:fixed bg-gray-900 peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden hidden opacity-0"></label>
+
+
         <!-- </SideBar> -->
         <!-- <Main> -->
         <div id="main" class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 relative flex flex-col flex-1 peer-checked:pl-0 transition-all">
