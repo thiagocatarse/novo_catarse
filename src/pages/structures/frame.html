@@ -1,66 +1,157 @@
+<!-- Estrutura abaixo -->
+<Frame>
+    <div class="grid grid-cols-[minmax(auto,auto)_minmax(200px,1fr)] grid-rows-[56px,1fr] transition-all">
+        <Toast></Toast>
+        <Toggler><input type="checkbox" id="toggler" class="hidden peer" /></Toggler>
+        <SaveBar>
+            Incluir classes h-14 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1 na Contextual SaveBar
+        </SaveBar>
+        <NavBar>Se quiser, podemos criar um componente Placeholder aqui:
+            <div class="flex flex-row justify-center items-center py-2 sm:py-3 px-3 bg-gray-600 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1 h-14">NavBar</div>
+        </NavBar>
+        <SideBar>Destalhamento abaixo</SideBar>
+        <Main><div id="main"
+            class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col flex-1 peer-checked:pl-0 transition-all relative">É onde entram as páginas que fizemos</div></Main>
+        <Footer>Podemos criar um componente placeholder
+            <div class="col-start-2 col-end-3 row-start-3 row-end-4 p-10 bg-gray-200"></div>
+        </Footer>
+    </div>
+</Frame>
 
- <Toast>
- </Toast>
- <Toggler>
- </Toggler>
- <SaveBar>
- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse
- <div class="peer-checked:visible invisible">Olá mundo</div>
- Logo versão texto - só aparece em dispositivos maiores
- <div class="hidden xl:flex relative -top-1.5"><img src="../assets/LogoText.png" class="w-20"></div>
- Logo versão símbolo - só aparece em dispositivos menores
- Início do Content do SaveBar
- Title Wrapper
- Title
- Tertiary actions dropdown - only mobile
- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700"
- </SaveBar>
- <NavBar>
- </NavBar>
- <SideBar>
- Inicio section Nav Sidebar
- Inicio section Nav Sidebar
- Toggle Abrir
- Toggle fechar
- Overlay
- </SideBar>
- <Main>
- Tabs
- Page
- PageHeader-->
- Inicio Form Layout Hint
- Elementos do grid
- Card color=white com o form dentro
- Inicio do Form
- Não tem FormHeader
- FormLayout-->
- Input Field - Nome do projeto
- Card com o Help - color=gray with_border=false
- Fim dos elementos do grid
- Fim Form Layout Hint
- Inicio Form Layout Hint
- Elementos do grid
- Card color=white com o form dentro
- Inicio do Form
-FormHeader
- FormLayout-->
- Select - Categoria
- Tags (tópicos)
- Local 
- Card com o Help - color=gray with_border=false
- Fim dos elementos do grid
- Fim Form Layout Hint
- Inicio Form Layout Hint
- Elementos do grid
- Card color=white com o form dentro
- Inicio do Form
- Não tem FormHeader
- FormLayout-->
- Input Field - Nome do projeto
- Card com o Help - color=gray with_border=false
- Fim dos elementos do grid
- Fim Form Layout Hint
- </Main>
- <Footer>
- </Footer>
-N : 64
+
+
+
+<!-- Componente SideBar - pode se chamar Drawer tb -->
+<!-- <SideBar> -->
+    <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed lg:sticky h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2  peer-checked:w-3/4 lg:peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer"
+    id="sidebar">
+
+    <nav class="flex flex-col gap-2 w-full pt-32">
+
+        <!-- Inicio section Nav Sidebar -->
+        <div class="flex flex-col gap-2 mb-6">
+            <a href="#"
+                class="flex flex-row items-center gap-5 py-2 px-2 bg-blue-50 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.1657 7.9345C14.3157 8.08452 14.3999 8.28797 14.3999 8.5001C14.3999 8.71223 14.3157 8.91567 14.1657 9.0657L8.5657 14.6657C8.41568 14.8157 8.21223 14.8999 8.0001 14.8999C7.78797 14.8999 7.58452 14.8157 7.4345 14.6657L1.8345 9.0657C1.7601 8.99151 1.70109 8.90335 1.66087 8.80628C1.62064 8.70922 1.59999 8.60517 1.6001 8.5001V4.5001C1.6001 3.86358 1.85295 3.25313 2.30304 2.80304C2.75313 2.35295 3.36358 2.1001 4.0001 2.1001H8.0001C8.2049 2.1001 8.4097 2.1785 8.5657 2.3345L14.1657 7.9345ZM4.0001 5.3001C4.21227 5.3001 4.41575 5.21581 4.56578 5.06578C4.71581 4.91575 4.8001 4.71227 4.8001 4.5001C4.8001 4.28792 4.71581 4.08444 4.56578 3.93441C4.41575 3.78438 4.21227 3.7001 4.0001 3.7001C3.78792 3.7001 3.58444 3.78438 3.43441 3.93441C3.28438 4.08444 3.2001 4.28792 3.2001 4.5001C3.2001 4.71227 3.28438 4.91575 3.43441 5.06578C3.58444 5.21581 3.78792 5.3001 4.0001 5.3001Z"
+                        fill="#317AAF" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                    Produtos</div>
+            </a>
+            <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="text-blu">
+                    <path fill="#5F656F"
+                        d="M13.931 2.569a1.6 1.6 0 0 0-2.262 0L5.6 8.637V10.9h2.263l6.067-6.07a1.6 1.6 0 0 0 0-2.262Z" />
+                    <path fill="#5F656F" fill-rule="evenodd"
+                        d="M1.6 5.3a1.6 1.6 0 0 1 1.6-1.6h3.2a.8.8 0 1 1 0 1.6H3.2v8h8v-3.2a.8.8 0 0 1 1.6 0v3.2a1.6 1.6 0 0 1-1.6 1.6h-8a1.6 1.6 0 0 1-1.6-1.6v-8Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">Posts
+                </div>
+            </a>
+            <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#5F656F"
+                        d="M7.2 5.3a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0Zm6.4 0a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0Zm-3.256 8.8c.037-.262.056-.528.056-.8a5.576 5.576 0 0 0-1.2-3.464 4 4 0 0 1 6 3.464v.8h-4.856ZM4.8 9.3a4 4 0 0 1 4 4v.8h-8v-.8a4 4 0 0 1 4-4Z" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                    Apoiadores</div>
+            </a>
+            <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#5F656F"
+                        d="M1.6 9.3a.8.8 0 0 1 .8-.8H4a.8.8 0 0 1 .8.8v4a.8.8 0 0 1-.8.8H2.4a.8.8 0 0 1-.8-.8v-4Zm4.8-3.2a.8.8 0 0 1 .8-.8h1.6a.8.8 0 0 1 .8.8v7.2a.8.8 0 0 1-.8.8H7.2a.8.8 0 0 1-.8-.8V6.1Zm4.8-2.4a.8.8 0 0 1 .8-.8h1.6a.8.8 0 0 1 .8.8v9.6a.8.8 0 0 1-.8.8H12a.8.8 0 0 1-.8-.8V3.7Z" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                    Métricas</div>
+            </a>
+            <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="text-blu">
+                    <path fill="#5F656F"
+                        d="M3.2 3.7a1.6 1.6 0 0 0-1.6 1.6v.8h12.8v-.8a1.6 1.6 0 0 0-1.6-1.6H3.2Z" />
+                    <path fill="#5F656F" fill-rule="evenodd"
+                        d="M14.4 7.7H1.6v4a1.6 1.6 0 0 0 1.6 1.6h9.6a1.6 1.6 0 0 0 1.6-1.6v-4ZM3.2 10.9a.8.8 0 0 1 .8-.8h.8a.8.8 0 0 1 0 1.6H4a.8.8 0 0 1-.8-.8Zm4-.8a.8.8 0 0 0 0 1.6H8a.8.8 0 0 0 0-1.6h-.8Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                    Carteira digital</div>
+            </a>
+        </div>
+        <!-- Inicio section Nav Sidebar -->
+        <div class="flex flex-col gap-2 mb-6">
+
+
+            <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#5F656F"
+                        d="M5.6 2.9a.8.8 0 0 0 0 1.6h4.8a.8.8 0 0 0 0-1.6H5.6ZM3.2 6.1a.8.8 0 0 1 .8-.8h8a.8.8 0 0 1 0 1.6H4a.8.8 0 0 1-.8-.8ZM1.6 9.3a1.6 1.6 0 0 1 1.6-1.6h9.6a1.6 1.6 0 0 1 1.6 1.6v3.2a1.6 1.6 0 0 1-1.6 1.6H3.2a1.6 1.6 0 0 1-1.6-1.6V9.3Z" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                    Biblioteca</div>
+            </a>
+            <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                    width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff"
+                        d="M10.978 8.953A4.667 4.667 0 1 0 2.354 5.38a4.667 4.667 0 0 0 8.624 3.572Z" />
+                    <path stroke="#5F656F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m14 14.5-4-4m1.333-3.333a4.667 4.667 0 1 1-9.334 0 4.667 4.667 0 0 1 9.334 0Z" />
+                </svg>
+                <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                    Explore projetos</div>
+            </a>
+        </div>
+    </nav>
+
+</div>
+<!-- Toggle Abrir -->
+<label for="toggler"
+    class="hidden lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:flex lg:justify-start lg:items-start lg:top-2 lg:transition-all  lg:z-50 lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:hidden">
+
+    <div class="cursor-pointer p-2 transition-all left-2" data-tooltip-target="sidebar-tooltip"
+        data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M10.8334 4.16675L16.6667 10.0001L10.8334 15.8334M4.16675 4.16675L10.0001 10.0001L4.16675 15.8334"
+                stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+    </div>
+    <div id="sidebar-tooltip" role="tooltip"
+        class="inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+        Fixar na posição aberta
+    </div>
+
+</label>
+<!-- Toggle fechar -->
+<label for="toggler"
+    class="hidden lg:items-end lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:top-2 lg:transition-all  lg:z-50 lg:hidden lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:flex lg:justify-end">
+
+    <div class="cursor-pointer p-2 transition-all left-36" data-tooltip-target="sidebar-tooltip-close"
+        data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9.16659 15.8334L3.33325 10.0001L9.16659 4.16675M15.8333 15.8334L9.99992 10.0001L15.8333 4.16675"
+                stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+
+    </div>
+    <div id="sidebar-tooltip-close" role="tooltip"
+        class="inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+        Fechar barra
+    </div>
+
+</label>
+<!-- Overlay -->
+<label for="toggler"
+    class="col-start-1 col-end-3 row-start-1 row-end-3 left-0 right-0 top-0 bottom-0 peer-checked:block peer-checked:z-40 peer-checked:fixed bg-gray-900 peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden opacity-0 transition-all delay-75"></label>
+<!-- </SideBar> -->
