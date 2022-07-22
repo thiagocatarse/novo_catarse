@@ -1107,6 +1107,10 @@ video {
   cursor: not-allowed;
 }
 
+.touch-none{
+  touch-action: none;
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -1243,6 +1247,11 @@ video {
 
 .overflow-y-hidden{
   overflow-y: hidden;
+}
+
+.overscroll-none{
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
 
 .truncate{
@@ -2222,6 +2231,10 @@ video {
   position: fixed;
 }
 
+.peer:checked ~ .peer-checked\:absolute{
+  position: absolute;
+}
+
 .peer:checked ~ .peer-checked\:sticky{
   position: -webkit-sticky;
   position: sticky;
@@ -2286,6 +2299,21 @@ video {
 
 .peer:checked ~ .peer-checked\:overflow-clip{
   overflow: clip;
+}
+
+.peer:checked ~ .peer-checked\:overscroll-auto{
+  -ms-scroll-chaining: chained;
+      overscroll-behavior: auto;
+}
+
+.peer:checked ~ .peer-checked\:overscroll-contain{
+  -ms-scroll-chaining: none;
+      overscroll-behavior: contain;
+}
+
+.peer:checked ~ .peer-checked\:overscroll-none{
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
 }
 
 .peer:checked ~ .peer-checked\:border-blue-500{
