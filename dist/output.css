@@ -1165,6 +1165,18 @@ video {
   grid-template-columns: minmax(auto,auto) minmax(200px,1fr);
 }
 
+.grid-cols-\[minmax\(56px\)_minmax\(200px\2c 1fr\)\]{
+  grid-template-columns: minmax(56px) minmax(200px,1fr);
+}
+
+.grid-cols-\[minmax\(56px\2c 56px\)_minmax\(200px\2c 1fr\)\]{
+  grid-template-columns: minmax(56px,56px) minmax(200px,1fr);
+}
+
+.grid-cols-\[minmax\(56PX\2c auto\)_minmax\(200px\2c 1fr\)\]{
+  grid-template-columns: minmax(56PX,auto) minmax(200px,1fr);
+}
+
 .grid-rows-\[56px\2c 1fr\]{
   grid-template-rows: 56px 1fr;
 }
