@@ -12,7 +12,7 @@
 
 <body class="bg-gray-50">
 
-    <div class="grid grid-cols-[minmax(auto,auto)_minmax(200px,1fr)] grid-rows-[56px,1fr] transition-all">
+    <div class="grid grid-cols-[minmax(auto,auto)_minmax(200px,1fr)] grid-rows-[56px,1fr] transition-all  h-screen">
         <!-- <Toast> -->
         <div
             class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400 z-20">
@@ -228,11 +228,8 @@
             </div>
         </div>
         <!-- </SaveBar> -->
-        <!-- <NavBar> -->
-            <div class="flex flex-row justify-center items-center py-2 sm:py-3 px-3 bg-gray-600 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1 h-14">NavBar</div>
-            <!-- </NavBar> -->
         <!-- <SideBar> -->
-        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed lg:sticky h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2  peer-checked:w-3/4 lg:peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer"
+        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed lg:sticky h-[100vh] flex w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2  peer-checked:w-3/4 lg:peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer overflow-y-auto"
             id="sidebar">
 
             <nav class="flex flex-col gap-2 w-full pt-32">
@@ -366,11 +363,11 @@
         <!-- </SideBar> -->
         <!-- <Main> -->
         <div id="main"
-            class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col flex-1 peer-checked:pl-0 transition-all relative">
+            class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 relative flex flex-col flex-1 peer-checked:pl-0 transition-all ">
             <!-- Tabs -->
-            <div class="sticky top-14"><div
-                class="border-b border-gray-100 w-full bg-white pt-1  overflow-auto max-w-full flex flex-col">
-                <nav class="flex overflow-visible gap-2 md:gap-6 px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
+            <div
+                class="border-b border-gray-100 w-full bg-white pt-1 sticky top-0 h-full z-10 max-w-full flex flex-col">
+                <nav class="flex gap-2 md:gap-6 px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
                     aria-label="Tabs">
                     <a
                         class="p-4 rounded-t-lg border-b-2 border-blue-600  hover:text-blue-600 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap text-blue-600">
@@ -427,8 +424,7 @@
                         Equipe
                     </a>
                 </nav>
-            </div></div>
-            
+            </div>
             <!-- Page -->
             <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 lg:px-0 gap-10 bg-gray-50 py-12">
                 <!-- PageHeader-->
@@ -659,10 +655,11 @@
 
                 </div>
             </div>
+            <div class="p-10 bg-gray-200"></div>
         </div>
         <!-- </Main> -->
         <!-- <Footer> -->
-        <div class="col-start-2 col-end-3 row-start-3 row-end-4 p-10 bg-gray-200"></div>
+        
         <!-- </Footer> -->
 
 
