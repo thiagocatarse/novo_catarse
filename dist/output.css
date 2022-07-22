@@ -2507,12 +2507,40 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:fixed{
+    position: fixed;
+  }
+
   .lg\:left-0{
     left: 0px;
   }
 
+  .lg\:top-2{
+    top: 0.5rem;
+  }
+
+  .lg\:z-\[80\]{
+    z-index: 80;
+  }
+
   .lg\:col-start-2{
     grid-column-start: 2;
+  }
+
+  .lg\:col-start-1{
+    grid-column-start: 1;
+  }
+
+  .lg\:col-end-2{
+    grid-column-end: 2;
+  }
+
+  .lg\:row-start-1{
+    grid-row-start: 1;
+  }
+
+  .lg\:row-end-3{
+    grid-row-end: 3;
   }
 
   .lg\:flex{
@@ -2521,6 +2549,26 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-48{
+    width: 12rem;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
+  }
+
+  .lg\:items-end{
+    align-items: flex-end;
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-end{
+    justify-content: flex-end;
   }
 
   .lg\:gap-6{
@@ -2544,9 +2592,31 @@ video {
     padding-left: 3.5rem;
   }
 
+  .lg\:opacity-0{
+    opacity: 0;
+  }
+
+  .lg\:transition-all{
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .peer:checked ~ .lg\:peer-checked\:sticky{
     position: -webkit-sticky;
     position: sticky;
+  }
+
+  .peer:checked ~ .lg\:peer-checked\:flex{
+    display: flex;
+  }
+
+  .peer:checked ~ .lg\:peer-checked\:hidden{
+    display: none;
+  }
+
+  .peer:hover ~ .lg\:peer-hover\:opacity-100{
+    opacity: 1;
   }
 }
 
