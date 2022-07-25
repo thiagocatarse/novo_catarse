@@ -1,0 +1,675 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link href="../../dist/output.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-gray-50">
+    <div class="grid grid-cols-[minmax(56PX,auto)_minmax(200px,1fr)] grid-rows-[56px,1fr] transition-all">
+        <!-- <Toast> -->
+        <div
+            class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400 z-20">
+            <div
+                class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-full dark:bg-blue-800 dark:text-blue-200">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 fill-current">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.7069 6.28693C16.8944 6.47445 16.9997 6.72876 16.9997 6.99393C16.9997 7.25909 16.8944 7.5134 16.7069 7.70093L8.70692 15.7009C8.51939 15.8884 8.26508 15.9937 7.99992 15.9937C7.73475 15.9937 7.48045 15.8884 7.29292 15.7009L3.29292 11.7009C3.11076 11.5123 3.00997 11.2597 3.01224 10.9975C3.01452 10.7353 3.11969 10.4845 3.3051 10.2991C3.49051 10.1137 3.74132 10.0085 4.00352 10.0063C4.26571 10.004 4.51832 10.1048 4.70692 10.2869L7.99992 13.5799L15.2929 6.28693C15.4804 6.09946 15.7348 5.99414 15.9999 5.99414C16.2651 5.99414 16.5194 6.09946 16.7069 6.28693Z" />
+                </svg>
+
+            </div>
+            <div class="text-sm font-normal">Projeto salvo com sucesso.</div>
+            <button name="button" type="button"
+                class="ml-auto -mx-1.5 -my-1.5  text-gray-50 hover:text-white rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 inline-flex h-8 w-8">
+                <span class="sr-only">Fechar</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 fill-current">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.29303 4.29296C4.48056 4.10549 4.73487 4.00017 5.00003 4.00017C5.26519 4.00017 5.5195 4.10549 5.70703 4.29296L10 8.58596L14.293 4.29296C14.3853 4.19745 14.4956 4.12127 14.6176 4.06886C14.7396 4.01645 14.8709 3.98886 15.0036 3.98771C15.1364 3.98655 15.2681 4.01186 15.391 4.06214C15.5139 4.11242 15.6255 4.18667 15.7194 4.28056C15.8133 4.37446 15.8876 4.48611 15.9379 4.60901C15.9881 4.7319 16.0134 4.86358 16.0123 4.99636C16.0111 5.12914 15.9835 5.26036 15.9311 5.38236C15.8787 5.50437 15.8025 5.61471 15.707 5.70696L11.414 9.99996L15.707 14.293C15.8892 14.4816 15.99 14.7342 15.9877 14.9964C15.9854 15.2586 15.8803 15.5094 15.6948 15.6948C15.5094 15.8802 15.2586 15.9854 14.9964 15.9876C14.7342 15.9899 14.4816 15.8891 14.293 15.707L10 11.414L5.70703 15.707C5.51843 15.8891 5.26583 15.9899 5.00363 15.9876C4.74143 15.9854 4.49062 15.8802 4.30521 15.6948C4.1198 15.5094 4.01463 15.2586 4.01236 14.9964C4.01008 14.7342 4.11087 14.4816 4.29303 14.293L8.58603 9.99996L4.29303 5.70696C4.10556 5.51943 4.00024 5.26512 4.00024 4.99996C4.00024 4.73479 4.10556 4.48049 4.29303 4.29296Z" />
+                </svg>
+
+            </button>
+        </div>
+        <!-- </Toast> -->
+        <!-- <Toggler> -->
+        <input type="checkbox" id="toggler" class="hidden peer" />
+        <!-- </Toggler> -->
+        <!-- <SaveBar> -->
+        <div class="flex flex-row justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 sticky top-0 z-30 h-14 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1"
+            id="savebar">
+
+            <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
+
+            <div href="#" class="absolute left-3 flex items-center gap-3">
+                <label for="toggler" class="flex lg:hidden">
+
+                    <div class="cursor-pointer p-1"><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H13C13.2652 0 13.5196 0.105357 13.7071 0.292893C13.8946 0.48043 14 0.734784 14 1C14 1.26522 13.8946 1.51957 13.7071 1.70711C13.5196 1.89464 13.2652 2 13 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1ZM0 6C0 5.73478 0.105357 5.48043 0.292893 5.29289C0.48043 5.10536 0.734784 5 1 5H13C13.2652 5 13.5196 5.10536 13.7071 5.29289C13.8946 5.48043 14 5.73478 14 6C14 6.26522 13.8946 6.51957 13.7071 6.70711C13.5196 6.89464 13.2652 7 13 7H1C0.734784 7 0.48043 6.89464 0.292893 6.70711C0.105357 6.51957 0 6.26522 0 6ZM0 11C0 10.7348 0.105357 10.4804 0.292893 10.2929C0.48043 10.1054 0.734784 10 1 10H13C13.2652 10 13.5196 10.1054 13.7071 10.2929C13.8946 10.4804 14 10.7348 14 11C14 11.2652 13.8946 11.5196 13.7071 11.7071C13.5196 11.8946 13.2652 12 13 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11Z"
+                                fill="#fff" />
+                        </svg></div>
+                    <!-- <div class="peer-checked:visible invisible">Olá mundo</div> -->
+                </label>
+
+
+
+                <!-- Logo versão texto - só aparece em dispositivos maiores -->
+                <!-- <div class="hidden xl:flex relative -top-1.5"><img src="../assets/LogoText.png" class="w-20"></div> -->
+                <!-- Logo versão símbolo - só aparece em dispositivos menores -->
+                <div class="flex"><img src="../assets/LogoSymbol.png" class="w-4"></div>
+            </div>
+            <!-- Início do Content do SaveBar -->
+            <div class="flex flex-row max-w-5xl w-full items-center gap-10">
+                <!-- Title Wrapper -->
+                <div class="flex-1 flex gap-3 items-center truncate">
+                    <!-- Title -->
+                    <div class="text-base font-semibold text-white truncate">Nome do projeto grande pra ficar gigante
+                    </div>
+
+
+                </div>
+                <!-- Buttons Wrapper 
+    A ideia é que tenhamos dois slots de botões:
+    - Tertiary Actions: são ações adicionais, que não envolvem o "Salvar" e o "Cancelar" . Essas ações são exibidas em Desktop como botões, mas em Mobile elas passam a ser exibidas num dropdown -->
+                <div class="shrink flex flex-row gap-2 items-center">
+                    <!-- Tertiary actions 
+        
+            Button size=sm , color=white , plain=true
+
+        -->
+                    <div class="flex flex-row gap-2 items-center order-last sm:order-first">
+                        <div class="flex-row gap-2 items-center hidden sm:flex">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                        stroke="#DDDFE1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                        stroke="#DDDFE1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Visualizar
+                            </button>
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                        stroke="#DDDFE1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Pré-lançar
+                            </button>
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                        fill="#F8F8F8" />
+                                </svg>
+                                Publicar
+                            </button>
+                        </div>
+                        <!-- Tertiary actions dropdown - only mobile -->
+                        <div class="flex gap-2 sm:hidden">
+                            <div class="relative z-0 inline-flex">
+                                <div class="-ml-px relative block">
+                                    <button name="button" type="submit"
+                                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-2 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826] more-button">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 6C9.46957 6 8.96086 5.78929 8.58579 5.41421C8.21071 5.03914 8 4.53043 8 4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2C10.5304 2 11.0391 2.21071 11.4142 2.58579C11.7893 2.96086 12 3.46957 12 4C12 4.53043 11.7893 5.03914 11.4142 5.41421C11.0391 5.78929 10.5304 6 10 6ZM10 12C9.46957 12 8.96086 11.7893 8.58579 11.4142C8.21071 11.0391 8 10.5304 8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8C10.5304 8 11.0391 8.21071 11.4142 8.58579C11.7893 8.96086 12 9.46957 12 10C12 10.5304 11.7893 11.0391 11.4142 11.4142C11.0391 11.7893 10.5304 12 10 12ZM10 18C9.46957 18 8.96086 17.7893 8.58579 17.4142C8.21071 17.0391 8 16.5304 8 16C8 15.4696 8.21071 14.9609 8.58579 14.5858C8.96086 14.2107 9.46957 14 10 14C10.5304 14 11.0391 14.2107 11.4142 14.5858C11.7893 14.9609 12 15.4696 12 16C12 16.5304 11.7893 17.0391 11.4142 17.4142C11.0391 17.7893 10.5304 18 10 18Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </button>
+
+                                    <!--
+                        Dropdown menu, show/hide based on menu state.
+                  
+                        Entering: "transition ease-out duration-100"
+                          From: "transform opacity-0 scale-95"
+                          To: "transform opacity-100 scale-100"
+                        Leaving: "transition ease-in duration-75"
+                          From: "transform opacity-100 scale-100"
+                          To: "transform opacity-0 scale-95"
+                      -->
+                                    <div class="list-container origin-top-right absolute right-0 mt-2 -mr-1 w-fit whitespace-nowrap p-2 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="option-menu-button"
+                                        tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="#"
+                                                class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                                role="menuitem" tabindex="-1" id="option-menu-item-0">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.41421 9.91421C9.78929 9.53914 10 9.03043 10 8.5C10 7.96957 9.78929 7.46086 9.41421 7.08579C9.03914 6.71071 8.53043 6.5 8 6.5C7.46957 6.5 6.96086 6.71071 6.58579 7.08579C6.21071 7.46086 6 7.96957 6 8.5C6 9.03043 6.21071 9.53914 6.58579 9.91421C6.96086 10.2893 7.46957 10.5 8 10.5C8.53043 10.5 9.03914 10.2893 9.41421 9.91421Z"
+                                                        stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M1.63867 8.50065C2.48801 5.79598 5.01534 3.83398 8 3.83398C10.9853 3.83398 13.512 5.79598 14.3613 8.50065C13.512 11.2053 10.9853 13.1673 8 13.1673C5.01534 13.1673 2.48801 11.2053 1.63867 8.50065Z"
+                                                        stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Visualizar</a>
+                                            <a href="#"
+                                                class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                                role="menuitem" tabindex="-1" id="option-menu-item-1">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.66602 2.5V7.16667H13.3327L7.33268 14.5V9.83333H2.66602L8.66602 2.5Z"
+                                                        stroke="#353B44" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Pré-lançar</a>
+                                            <a href="#"
+                                                class="text-gray-700 hover:text-gray-700 px-4 py-2 text-sm hover:bg-gray-50 flex gap-2 items-center w-full"
+                                                role="menuitem" tabindex="-1" id="option-menu-item-2">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.71457 2.54311C8.64806 2.4104 8.54594 2.29882 8.41963 2.22084C8.29332 2.14286 8.14781 2.10156 7.99937 2.10156C7.85093 2.10156 7.70542 2.14286 7.57911 2.22084C7.4528 2.29882 7.35068 2.4104 7.28417 2.54311L1.68417 13.7431C1.61469 13.882 1.58712 14.0381 1.60483 14.1923C1.62254 14.3466 1.68477 14.4924 1.78392 14.6119C1.88308 14.7314 2.01486 14.8195 2.16321 14.8654C2.31156 14.9112 2.47006 14.913 2.61937 14.8703L6.61937 13.7271C6.78655 13.6793 6.9336 13.5783 7.03825 13.4394C7.14291 13.3006 7.19947 13.1314 7.19937 12.9575V9.30071C7.19937 9.08854 7.28366 8.88505 7.43369 8.73502C7.58371 8.58499 7.7872 8.50071 7.99937 8.50071C8.21154 8.50071 8.41503 8.58499 8.56506 8.73502C8.71508 8.88505 8.79937 9.08854 8.79937 9.30071V12.9575C8.79927 13.1314 8.85583 13.3006 8.96049 13.4394C9.06514 13.5783 9.21219 13.6793 9.37937 13.7271L13.3794 14.8695C13.5286 14.9123 13.6871 14.9106 13.8355 14.8649C13.9838 14.8191 14.1157 14.7311 14.2149 14.6117C14.3141 14.4923 14.3765 14.3466 14.3943 14.1924C14.4121 14.0381 14.3847 13.882 14.3154 13.7431L8.71537 2.54311H8.71457Z"
+                                                        fill="#353B44" />
+                                                </svg>
+                                                Publicar</a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                document.querySelector('.more-button').addEventListener('click', function () {
+                                    document.querySelector('.list-container').classList.toggle('hidden');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!-- Primary and Secondary actions
+        
+            Main action -> Button size = sm , color = green
+            Main action -> Button size = sm, color=white, plain=true
+        
+
+        -->
+                    <div class="flex flex-row gap-2 items-center">
+                        <div class="flex flex-row gap-2">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-50 hover:bg-[#F8F8F826] active:bg-[#F8F8F826]">
+                                Cancelar
+                            </button>
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- </SaveBar> -->
+        <!-- <NavBar> -->
+            <div class="flex flex-row justify-center items-center py-2 sm:py-3 px-3 bg-gray-600 col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1 h-14">NavBar</div>
+            <!-- </NavBar> -->
+        <!-- <SideBar> -->
+        <div class="-left-14 lg:left-0 col-start-1 col-end-2 row-start-1 row-end-3 group fixed lg:fixed h-[100vh] flex flex-col w-14 top-0 hover:w-48 hover:shadow-xl transition-all bg-white border-r border-r-gray-100 overflow-x-hidden overflow-y-auto px-2  peer-checked:w-3/4 lg:peer-checked:w-48 peer-checked:shadow-xl lg:peer-checked:sticky peer-checked:fixed peer-checked:self-stretch peer-checked:left-0 z-50 peer group"
+            id="sidebar">
+            <!-- Toggle Abrir -->
+        <label for="toggler"
+        class="hidden lg:w-48 lg:sticky lg:flex lg:justify-start lg:items-start lg:top-2 lg:transition-all  lg:z-50 lg:opacity-0 lg:group-hover:opacity-100 lg:group-checked:hidden">
+
+        <div class="cursor-pointer p-2 transition-all left-2" data-tooltip-target="sidebar-tooltip"
+            data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10.8334 4.16675L16.6667 10.0001L10.8334 15.8334M4.16675 4.16675L10.0001 10.0001L4.16675 15.8334"
+                    stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </div>
+        <div id="sidebar-tooltip" role="tooltip"
+            class="inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+            Fixar na posição aberta
+        </div>
+
+    </label>
+    <!-- Toggle fechar -->
+    <label for="toggler"
+        class="hidden lg:items-end lg:w-48 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:fixed lg:top-2 lg:transition-all  lg:z-50 lg:hidden lg:opacity-0 lg:peer-hover:opacity-100 lg:peer-checked:flex lg:justify-end">
+
+        <div class="cursor-pointer p-2 transition-all left-36" data-tooltip-target="sidebar-tooltip-close"
+            data-tooltip-placement="bottom"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9.16659 15.8334L3.33325 10.0001L9.16659 4.16675M15.8333 15.8334L9.99992 10.0001L15.8333 4.16675"
+                    stroke="#BEC0C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+        </div>
+        <div id="sidebar-tooltip-close" role="tooltip"
+            class="inline-block absolute invisible z-10 py-1 px-2 text-xs font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+            Fechar barra
+        </div>
+
+    </label>
+
+            <nav class="flex flex-col gap-2 w-full pt-32">
+
+                <!-- Inicio section Nav Sidebar -->
+                <div class="flex flex-col gap-2 mb-6">
+                    <a href="#"
+                        class="flex flex-row items-center gap-5 py-2 px-2 bg-blue-50 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.1657 7.9345C14.3157 8.08452 14.3999 8.28797 14.3999 8.5001C14.3999 8.71223 14.3157 8.91567 14.1657 9.0657L8.5657 14.6657C8.41568 14.8157 8.21223 14.8999 8.0001 14.8999C7.78797 14.8999 7.58452 14.8157 7.4345 14.6657L1.8345 9.0657C1.7601 8.99151 1.70109 8.90335 1.66087 8.80628C1.62064 8.70922 1.59999 8.60517 1.6001 8.5001V4.5001C1.6001 3.86358 1.85295 3.25313 2.30304 2.80304C2.75313 2.35295 3.36358 2.1001 4.0001 2.1001H8.0001C8.2049 2.1001 8.4097 2.1785 8.5657 2.3345L14.1657 7.9345ZM4.0001 5.3001C4.21227 5.3001 4.41575 5.21581 4.56578 5.06578C4.71581 4.91575 4.8001 4.71227 4.8001 4.5001C4.8001 4.28792 4.71581 4.08444 4.56578 3.93441C4.41575 3.78438 4.21227 3.7001 4.0001 3.7001C3.78792 3.7001 3.58444 3.78438 3.43441 3.93441C3.28438 4.08444 3.2001 4.28792 3.2001 4.5001C3.2001 4.71227 3.28438 4.91575 3.43441 5.06578C3.58444 5.21581 3.78792 5.3001 4.0001 5.3001Z"
+                                fill="#317AAF" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                            Produtos</div>
+                    </a>
+                    <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="text-blu">
+                            <path fill="#5F656F"
+                                d="M13.931 2.569a1.6 1.6 0 0 0-2.262 0L5.6 8.637V10.9h2.263l6.067-6.07a1.6 1.6 0 0 0 0-2.262Z" />
+                            <path fill="#5F656F" fill-rule="evenodd"
+                                d="M1.6 5.3a1.6 1.6 0 0 1 1.6-1.6h3.2a.8.8 0 1 1 0 1.6H3.2v8h8v-3.2a.8.8 0 0 1 1.6 0v3.2a1.6 1.6 0 0 1-1.6 1.6h-8a1.6 1.6 0 0 1-1.6-1.6v-8Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">Posts
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#5F656F"
+                                d="M7.2 5.3a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0Zm6.4 0a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0Zm-3.256 8.8c.037-.262.056-.528.056-.8a5.576 5.576 0 0 0-1.2-3.464 4 4 0 0 1 6 3.464v.8h-4.856ZM4.8 9.3a4 4 0 0 1 4 4v.8h-8v-.8a4 4 0 0 1 4-4Z" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                            Apoiadores</div>
+                    </a>
+                    <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#5F656F"
+                                d="M1.6 9.3a.8.8 0 0 1 .8-.8H4a.8.8 0 0 1 .8.8v4a.8.8 0 0 1-.8.8H2.4a.8.8 0 0 1-.8-.8v-4Zm4.8-3.2a.8.8 0 0 1 .8-.8h1.6a.8.8 0 0 1 .8.8v7.2a.8.8 0 0 1-.8.8H7.2a.8.8 0 0 1-.8-.8V6.1Zm4.8-2.4a.8.8 0 0 1 .8-.8h1.6a.8.8 0 0 1 .8.8v9.6a.8.8 0 0 1-.8.8H12a.8.8 0 0 1-.8-.8V3.7Z" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                            Métricas</div>
+                    </a>
+                    <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="text-blu">
+                            <path fill="#5F656F"
+                                d="M3.2 3.7a1.6 1.6 0 0 0-1.6 1.6v.8h12.8v-.8a1.6 1.6 0 0 0-1.6-1.6H3.2Z" />
+                            <path fill="#5F656F" fill-rule="evenodd"
+                                d="M14.4 7.7H1.6v4a1.6 1.6 0 0 0 1.6 1.6h9.6a1.6 1.6 0 0 0 1.6-1.6v-4ZM3.2 10.9a.8.8 0 0 1 .8-.8h.8a.8.8 0 0 1 0 1.6H4a.8.8 0 0 1-.8-.8Zm4-.8a.8.8 0 0 0 0 1.6H8a.8.8 0 0 0 0-1.6h-.8Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                            Carteira digital</div>
+                    </a>
+                </div>
+                <!-- Inicio section Nav Sidebar -->
+                <div class="flex flex-col gap-2 mb-6">
+
+
+                    <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#5F656F"
+                                d="M5.6 2.9a.8.8 0 0 0 0 1.6h4.8a.8.8 0 0 0 0-1.6H5.6ZM3.2 6.1a.8.8 0 0 1 .8-.8h8a.8.8 0 0 1 0 1.6H4a.8.8 0 0 1-.8-.8ZM1.6 9.3a1.6 1.6 0 0 1 1.6-1.6h9.6a1.6 1.6 0 0 1 1.6 1.6v3.2a1.6 1.6 0 0 1-1.6 1.6H3.2a1.6 1.6 0 0 1-1.6-1.6V9.3Z" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                            Biblioteca</div>
+                    </a>
+                    <a href="#" class="flex flex-row items-center gap-5 py-2 px-2 hover:bg-blue-50 rounded-lg"><svg
+                            width="16" height="17" viewBox="0 0 16 17" class="w-5 h-5 flex-none" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#fff"
+                                d="M10.978 8.953A4.667 4.667 0 1 0 2.354 5.38a4.667 4.667 0 0 0 8.624 3.572Z" />
+                            <path stroke="#5F656F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m14 14.5-4-4m1.333-3.333a4.667 4.667 0 1 1-9.334 0 4.667 4.667 0 0 1 9.334 0Z" />
+                        </svg>
+                        <div class="text-sm font-medium text-gray-600 whitespace-nowrap flex">
+                            Explore projetos</div>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+        
+        <!-- Overlay -->
+        <label for="toggler"
+            class="col-start-1 col-end-3 row-start-1 row-end-3 left-0 right-0 top-0 bottom-0 peer-checked:block peer-checked:z-40 peer-checked:fixed bg-gray-900 peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden opacity-0 transition-all delay-75"></label>
+        <!-- </SideBar> -->
+        <!-- <Main> -->
+        <div id="main"
+            class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col flex-1 peer-checked:pl-0 transition-all relative">
+            <!-- Tabs -->
+            <div class="sticky top-14"><div
+                class="border-b border-gray-100 w-full bg-white pt-1  overflow-auto max-w-full flex flex-col">
+                <nav class="flex overflow-visible gap-2 md:gap-6 px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
+                    aria-label="Tabs">
+                    <a
+                        class="p-4 rounded-t-lg border-b-2 border-blue-600  hover:text-blue-600 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap text-blue-600">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="md:mr-2 w-5 h-5 fill-current">
+                            <path
+                                d="M13.586 4.08616C13.7705 3.89514 13.9912 3.74278 14.2352 3.63796C14.4792 3.53314 14.7416 3.47797 15.0072 3.47566C15.2728 3.47335 15.5361 3.52396 15.7819 3.62452C16.0277 3.72508 16.251 3.87359 16.4388 4.06137C16.6266 4.24916 16.7751 4.47246 16.8756 4.71825C16.9762 4.96405 17.0268 5.22741 17.0245 5.49296C17.0222 5.75852 16.967 6.02096 16.8622 6.26497C16.7574 6.50898 16.605 6.72967 16.414 6.91416L15.621 7.70716L12.793 4.87916L13.586 4.08616V4.08616ZM11.379 6.29316L3 14.6722V17.5002H5.828L14.208 9.12116L11.378 6.29316H11.379Z" />
+                        </svg>
+
+                        Básico
+                    </a>
+                    <a
+                        class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="md:mr-2 w-5 h-5 fill-current">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 4.5C4 3.96957 4.21071 3.46086 4.58579 3.08579C4.96086 2.71071 5.46957 2.5 6 2.5H10.586C11.1164 2.50011 11.625 2.7109 12 3.086L15.414 6.5C15.7891 6.87499 15.9999 7.38361 16 7.914V16.5C16 17.0304 15.7893 17.5391 15.4142 17.9142C15.0391 18.2893 14.5304 18.5 14 18.5H6C5.46957 18.5 4.96086 18.2893 4.58579 17.9142C4.21071 17.5391 4 17.0304 4 16.5V4.5ZM6 10.5C6 10.2348 6.10536 9.98043 6.29289 9.79289C6.48043 9.60536 6.73478 9.5 7 9.5H13C13.2652 9.5 13.5196 9.60536 13.7071 9.79289C13.8946 9.98043 14 10.2348 14 10.5C14 10.7652 13.8946 11.0196 13.7071 11.2071C13.5196 11.3946 13.2652 11.5 13 11.5H7C6.73478 11.5 6.48043 11.3946 6.29289 11.2071C6.10536 11.0196 6 10.7652 6 10.5ZM7 13.5C6.73478 13.5 6.48043 13.6054 6.29289 13.7929C6.10536 13.9804 6 14.2348 6 14.5C6 14.7652 6.10536 15.0196 6.29289 15.2071C6.48043 15.3946 6.73478 15.5 7 15.5H13C13.2652 15.5 13.5196 15.3946 13.7071 15.2071C13.8946 15.0196 14 14.7652 14 14.5C14 14.2348 13.8946 13.9804 13.7071 13.7929C13.5196 13.6054 13.2652 13.5 13 13.5H7Z"
+                                fill="#5F656F" />
+                        </svg>
+
+                        Imagens e Descrição
+                    </a>
+                    <a
+                        class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="md:mr-2 w-5 h-5 fill-current">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 4.5C3.46957 4.5 2.96086 4.71071 2.58579 5.08579C2.21071 5.46086 2 5.96957 2 6.5V10.5C2 11.0304 2.21071 11.5391 2.58579 11.9142C2.96086 12.2893 3.46957 12.5 4 12.5V6.5H14C14 5.96957 13.7893 5.46086 13.4142 5.08579C13.0391 4.71071 12.5304 4.5 12 4.5H4ZM6 10.5C6 9.96957 6.21071 9.46086 6.58579 9.08579C6.96086 8.71071 7.46957 8.5 8 8.5H16C16.5304 8.5 17.0391 8.71071 17.4142 9.08579C17.7893 9.46086 18 9.96957 18 10.5V14.5C18 15.0304 17.7893 15.5391 17.4142 15.9142C17.0391 16.2893 16.5304 16.5 16 16.5H8C7.46957 16.5 6.96086 16.2893 6.58579 15.9142C6.21071 15.5391 6 15.0304 6 14.5V10.5ZM12 14.5C12.5304 14.5 13.0391 14.2893 13.4142 13.9142C13.7893 13.5391 14 13.0304 14 12.5C14 11.9696 13.7893 11.4609 13.4142 11.0858C13.0391 10.7107 12.5304 10.5 12 10.5C11.4696 10.5 10.9609 10.7107 10.5858 11.0858C10.2107 11.4609 10 11.9696 10 12.5C10 13.0304 10.2107 13.5391 10.5858 13.9142C10.9609 14.2893 11.4696 14.5 12 14.5Z"
+                                fill="#5F656F" />
+                        </svg>
+
+                        Metas e Financiamento
+                    </a>
+                    <a
+                        class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="md:mr-2 w-5 h-5 fill-current">
+                            <path
+                                d="M7 3.5C6.73478 3.5 6.48043 3.60536 6.29289 3.79289C6.10536 3.98043 6 4.23478 6 4.5C6 4.76522 6.10536 5.01957 6.29289 5.20711C6.48043 5.39464 6.73478 5.5 7 5.5H13C13.2652 5.5 13.5196 5.39464 13.7071 5.20711C13.8946 5.01957 14 4.76522 14 4.5C14 4.23478 13.8946 3.98043 13.7071 3.79289C13.5196 3.60536 13.2652 3.5 13 3.5H7ZM4 7.5C4 7.23478 4.10536 6.98043 4.29289 6.79289C4.48043 6.60536 4.73478 6.5 5 6.5H15C15.2652 6.5 15.5196 6.60536 15.7071 6.79289C15.8946 6.98043 16 7.23478 16 7.5C16 7.76522 15.8946 8.01957 15.7071 8.20711C15.5196 8.39464 15.2652 8.5 15 8.5H5C4.73478 8.5 4.48043 8.39464 4.29289 8.20711C4.10536 8.01957 4 7.76522 4 7.5ZM2 11.5C2 10.9696 2.21071 10.4609 2.58579 10.0858C2.96086 9.71071 3.46957 9.5 4 9.5H16C16.5304 9.5 17.0391 9.71071 17.4142 10.0858C17.7893 10.4609 18 10.9696 18 11.5V15.5C18 16.0304 17.7893 16.5391 17.4142 16.9142C17.0391 17.2893 16.5304 17.5 16 17.5H4C3.46957 17.5 2.96086 17.2893 2.58579 16.9142C2.21071 16.5391 2 16.0304 2 15.5V11.5Z"
+                                fill="#5F656F" />
+                        </svg>
+
+                        Recompensas
+                    </a>
+                    <a
+                        class="p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 flex-col md:flex-row items-center inline-flex group whitespace-nowrap">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="md:mr-2 w-5 h-5 fill-current">
+                            <path
+                                d="M13 6.5C13 7.29565 12.6839 8.05871 12.1213 8.62132C11.5587 9.18393 10.7956 9.5 10 9.5C9.20435 9.5 8.44129 9.18393 7.87868 8.62132C7.31607 8.05871 7 7.29565 7 6.5C7 5.70435 7.31607 4.94129 7.87868 4.37868C8.44129 3.81607 9.20435 3.5 10 3.5C10.7956 3.5 11.5587 3.81607 12.1213 4.37868C12.6839 4.94129 13 5.70435 13 6.5ZM18 8.5C18 9.03043 17.7893 9.53914 17.4142 9.91421C17.0391 10.2893 16.5304 10.5 16 10.5C15.4696 10.5 14.9609 10.2893 14.5858 9.91421C14.2107 9.53914 14 9.03043 14 8.5C14 7.96957 14.2107 7.46086 14.5858 7.08579C14.9609 6.71071 15.4696 6.5 16 6.5C16.5304 6.5 17.0391 6.71071 17.4142 7.08579C17.7893 7.46086 18 7.96957 18 8.5ZM14 15.5C14 14.4391 13.5786 13.4217 12.8284 12.6716C12.0783 11.9214 11.0609 11.5 10 11.5C8.93913 11.5 7.92172 11.9214 7.17157 12.6716C6.42143 13.4217 6 14.4391 6 15.5V18.5H14V15.5ZM6 8.5C6 9.03043 5.78929 9.53914 5.41421 9.91421C5.03914 10.2893 4.53043 10.5 4 10.5C3.46957 10.5 2.96086 10.2893 2.58579 9.91421C2.21071 9.53914 2 9.03043 2 8.5C2 7.96957 2.21071 7.46086 2.58579 7.08579C2.96086 6.71071 3.46957 6.5 4 6.5C4.53043 6.5 5.03914 6.71071 5.41421 7.08579C5.78929 7.46086 6 7.96957 6 8.5ZM16 18.5V15.5C16.0014 14.4833 15.7433 13.483 15.25 12.594C15.6933 12.4805 16.1568 12.4698 16.6049 12.5627C17.053 12.6556 17.474 12.8496 17.8357 13.1299C18.1974 13.4102 18.4903 13.7695 18.6921 14.1802C18.8939 14.591 18.9992 15.0424 19 15.5V18.5H16ZM4.75 12.594C4.25675 13.483 3.9986 14.4833 4 15.5V18.5H1V15.5C0.999808 15.042 1.10446 14.5901 1.30595 14.1789C1.50743 13.7676 1.80039 13.4079 2.16238 13.1274C2.52437 12.8469 2.94578 12.653 3.39431 12.5605C3.84284 12.4681 4.30658 12.4795 4.75 12.594Z"
+                                fill="#5F656F" />
+                        </svg>
+
+                        Equipe
+                    </a>
+                </nav>
+            </div></div>
+            
+            <!-- Page -->
+            <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 lg:px-0 gap-10 bg-gray-50 py-12">
+                <!-- PageHeader-->
+                <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-2">
+                        <h1 class="leading-none text-2xl font-semibold text-gray-900">Básico</h1>
+                        <div class="text-sm font-normal text-gray-600">Prepare as informações essenciais sobre o seu
+                            projeto
+                        </div>
+                    </div>
+                </div>
+                <!-- Inicio Form Layout Hint -->
+                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                    <!-- Elementos do grid -->
+
+                    <!-- Card color=white com o form dentro -->
+                    <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
+                        <!-- Inicio do Form -->
+                        <div class="flex flex-col gap-8">
+                            <!-- Não tem FormHeader -->
+
+                            <!-- FormLayout-->
+                            <!-- Input Field - Nome do projeto -->
+                            <div class="flex flex-col gap-2">
+                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
+                                    do
+                                    projeto</label>
+                                <div class="mt-1 flex rounded-md shadow-sm">
+                                    <input
+                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                        id="preview-input" type="text" placeholder="" autofocus>
+                                </div>
+                                <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
+                                    facilmente.
+                                    Não
+                                    ultrapasse 50 caracteres.</p>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <div class="flex">
+                                    <label for="preview-input"
+                                        class="flex-1 block text-sm font-medium text-gray-900">Link
+                                        para
+                                        o seu projeto no Catarse</label>
+                                </div>
+
+                                <div class="flex w-full rounded-md shadow-sm">
+                                    <span
+                                        class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
+                                    <input
+                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
+                                        id="preview-input" type="Link para o seu projeto no Catarse"
+                                        placeholder="seulink">
+                                </div>
+                                <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar.
+                                    Prefira
+                                    algo simples, direto e que identifique bem seu projeto. Tente não usar hífen,
+                                    underline
+                                    etc.
+                                </p>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-first md:order-last -ml-6 md:ml-0">
+                        <!-- Card com o Help - color=gray with_border=false -->
+                        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                            <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                            <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Fim dos elementos do grid -->
+                </div>
+                <!-- Fim Form Layout Hint -->
+                <!-- Inicio Form Layout Hint -->
+                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                    <!-- Elementos do grid -->
+
+                    <!-- Card color=white com o form dentro -->
+                    <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
+                        <!-- Inicio do Form -->
+                        <div class="flex flex-col gap-8">
+                            <!--FormHeader -->
+                            <div class="flex flex-row gap-6 pb-3">
+                                <div class="w-1 bg-gray-100"></div>
+                                <div class="flex flex-col gap-2">
+                                    <h2 class="text-lg font-semibold text-gray-800">Descoberta do seu projeto no Catarse
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <!-- FormLayout-->
+                            <!-- Select - Categoria -->
+
+                            <div class="flex flex-col gap-2">
+                                <div class="flex">
+                                    <label class="flex-1 block text-sm font-medium text-gray-900">Categoria</label>
+                                </div>
+                                <select name="" id=""
+                                    class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900">
+                                    <option value="">Escolha uma categoria</option>
+                                    <option value="Red">red</option>
+                                    <option value="Green">green</option>
+                                    <option value="Blue">blue</option>
+                                </select>
+                            </div>
+                            <!-- Tags (tópicos) -->
+                            <div class="flex flex-col gap-2">
+                                <div class="flex">
+                                    <label for="preview-input"
+                                        class="flex-1 block text-sm font-medium text-gray-900">Tópicos
+                                        (palavras-chave)</label>
+                                </div>
+
+                                <div class="flex w-full rounded-md shadow-sm">
+                                    <input
+                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                        id="preview-input" type="text" placeholder="">
+                                </div>
+                                <p class="text-xs font-normal text-gray-500">Liste até 5 palavras-chaves relacionadas a
+                                    sua
+                                    campanha e facilite a descoberta pelos apoiadores.</p>
+                            </div>
+                            <!-- Local  -->
+                            <div class="flex flex-col gap-2">
+                                <div class="flex">
+                                    <label for="preview-input"
+                                        class="flex-1 block text-sm font-medium text-gray-900">Local
+                                        do
+                                        projeto</label>
+                                </div>
+
+                                <div class="flex w-full rounded-md shadow-sm">
+                                    <input
+                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                        id="preview-input" type="text" placeholder="Escolha uma cidade">
+                                </div>
+                                <p class="text-xs font-normal text-gray-500">Caso seu projeto aconteça em mais de um
+                                    lugar,
+                                    uma
+                                    dica é colocar a cidade onde sua rede de potenciais apoiadores é maior.</p>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-first md:order-last -ml-6 md:ml-0">
+                        <!-- Card com o Help - color=gray with_border=false -->
+                        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                            <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                            <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Fim dos elementos do grid -->
+                </div>
+                <!-- Fim Form Layout Hint -->
+                <!-- Inicio Form Layout Hint -->
+                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                    <!-- Elementos do grid -->
+
+                    <!-- Card color=white com o form dentro -->
+                    <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
+                        <!-- Inicio do Form -->
+                        <div class="flex flex-col gap-8">
+                            <!-- Não tem FormHeader -->
+
+                            <!-- FormLayout-->
+                            <!-- Input Field - Nome do projeto -->
+                            <div class="flex flex-col gap-2">
+                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
+                                    do
+                                    projeto</label>
+                                <div class="mt-1 flex rounded-md shadow-sm">
+                                    <input
+                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                        id="preview-input" type="text" placeholder="" autofocus>
+                                </div>
+                                <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
+                                    facilmente.
+                                    Não
+                                    ultrapasse 50 caracteres.</p>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-first md:order-last -ml-6 md:ml-0">
+                        <!-- Card com o Help - color=gray with_border=false -->
+                        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                            <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                            <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Fim dos elementos do grid -->
+                </div>
+                <!-- Fim Form Layout Hint -->
+
+                <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
+                    <button name="button" type="submit"
+                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                        Salvar
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <!-- </Main> -->
+        <!-- <Footer> -->
+        <div class="lg:col-start-2 col-start-1 col-end-3 row-start-3 row-end-4 p-10 bg-gray-200"></div>
+        <!-- </Footer> -->
+
+
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+
+</html>
+

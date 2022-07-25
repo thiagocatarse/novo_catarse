@@ -2572,6 +2572,14 @@ video {
     transition-duration: 150ms;
   }
 
+  .group:checked .lg\:group-checked\:hidden{
+    display: none;
+  }
+
+  .group:hover .lg\:group-hover\:opacity-100{
+    opacity: 1;
+  }
+
   .peer:checked ~ .lg\:peer-checked\:sticky{
     position: -webkit-sticky;
     position: sticky;
