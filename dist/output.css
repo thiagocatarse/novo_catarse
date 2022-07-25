@@ -2162,12 +2162,24 @@ video {
   z-index: 40;
 }
 
+.peer:checked ~ .peer-checked\:row-start-1{
+  grid-row-start: 1;
+}
+
 .peer:checked ~ .peer-checked\:block{
   display: block;
 }
 
 .peer:checked ~ .peer-checked\:flex{
   display: flex;
+}
+
+.peer:checked ~ .peer-checked\:hidden{
+  display: none;
+}
+
+.peer:checked ~ .peer-checked\:h-screen{
+  height: 100vh;
 }
 
 .peer:checked ~ .peer-checked\:w-48{
@@ -2180,6 +2192,10 @@ video {
 
 .peer:checked ~ .peer-checked\:self-stretch{
   align-self: stretch;
+}
+
+.peer:checked ~ .peer-checked\:overflow-hidden{
+  overflow: hidden;
 }
 
 .peer:checked ~ .peer-checked\:border-blue-500{
