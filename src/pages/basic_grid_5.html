@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-gray-50">
-    <div class="grid grid-cols-[minmax(56PX,auto)_minmax(200px,1fr)] grid-rows-[minmax(112px,auto)_minmax(200px,1fr)] transition-all">
+    <div class="grid grid-cols-[minmax(56px,_auto)_1fr] grid-rows-[auto] transition-all">
         <!-- <Toast> -->
         <div
             class="flex gap-2 items-center justify-center w-full max-w-xs p-4 text-white bg-gray-700 rounded-lg shadow fixed bottom-5 left-1/2 -translate-x-1/2 border-l-4 border-l-green-400 z-20">
@@ -40,9 +40,10 @@
         <!-- <Toggler> -->
         <input type="checkbox" id="toggler" class="hidden peer" />
         <!-- </Toggler> -->
-        <div class="col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1 flex flex-col h-fit">
+        <!-- Content -->
+        <div class="col-start-1 lg:col-start-2 col-end-3 row-start-1 row-end-1 flex flex-col h-fit peer-checked:overflow-hidden peer-checked:h-screen lg:peer-checked:overflow-visible lg:peer-checked:h-full">
             <!-- <SaveBar> -->
-            <nav class="flex flex-row justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 w-full fixed top-0 z-30 h-14"
+            <nav class="flex flex-row justify-center items-center py-2 sm:py-3 pl-16 pr-3 lg:pl-12 shadow-sm bg-gray-600 w-full sticky top-0 z-30 h-14"
                 id="savebar">
 
                 <!-- Logos - ainda não está definido para onde esse link leva - possivelmente para a HOME do Catarse -->
@@ -233,7 +234,7 @@ A ideia é que tenhamos dois slots de botões:
             <nav class="flex flex-row justify-center items-center py-2 sm:py-3 px-3 bg-gray-600 h-14">NavBar</nav>
             <!-- </NavBar> -->
             <!-- Tabs -->
-            <div class="fixed top-14 w-full z-30">
+            <div class="sticky top-14 w-full z-30">
                 <div class="border-b border-gray-100 w-full bg-white pt-1  overflow-auto max-w-full flex flex-col">
                     <nav class="flex overflow-visible gap-2 md:gap-6 px-3 text-sm font-medium text-center text-gray-500 max-w-screen-lg mx-auto"
                         aria-label="Tabs">
@@ -294,6 +295,246 @@ A ideia é que tenhamos dois slots de botões:
                     </nav>
                 </div>
             </div>
+            <!-- <Main> -->
+        <main id="main"
+        class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col flex-1 peer-checked:pl-0 transition-all relative">
+
+
+        <!-- Page -->
+        <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 lg:px-0 gap-10 bg-gray-50 py-12">
+            <!-- PageHeader-->
+            <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-2">
+                    <h1 class="leading-none text-2xl font-semibold text-gray-900">Básico</h1>
+                    <div class="text-sm font-normal text-gray-600">Prepare as informações essenciais sobre o seu
+                        projeto
+                    </div>
+                </div>
+            </div>
+            <!-- Inicio Form Layout Hint -->
+            <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <!-- Elementos do grid -->
+
+                <!-- Card color=white com o form dentro -->
+                <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
+                    <!-- Inicio do Form -->
+                    <div class="flex flex-col gap-8">
+                        <!-- Não tem FormHeader -->
+
+                        <!-- FormLayout-->
+                        <!-- Input Field - Nome do projeto -->
+                        <div class="flex flex-col gap-2">
+                            <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
+                                do
+                                projeto</label>
+                            <div class="mt-1 flex rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="" autofocus>
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
+                                facilmente.
+                                Não
+                                ultrapasse 50 caracteres.</p>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label for="preview-input"
+                                    class="flex-1 block text-sm font-medium text-gray-900">Link
+                                    para
+                                    o seu projeto no Catarse</label>
+                            </div>
+
+                            <div class="flex w-full rounded-md shadow-sm">
+                                <span
+                                    class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
+                                    id="preview-input" type="Link para o seu projeto no Catarse"
+                                    placeholder="seulink">
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar.
+                                Prefira
+                                algo simples, direto e que identifique bem seu projeto. Tente não usar hífen,
+                                underline
+                                etc.
+                            </p>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="order-first md:order-last -ml-6 md:ml-0">
+                    <!-- Card com o Help - color=gray with_border=false -->
+                    <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                        <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                        <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                    </div>
+                </div>
+
+
+                <!-- Fim dos elementos do grid -->
+            </div>
+            <!-- Fim Form Layout Hint -->
+            <!-- Inicio Form Layout Hint -->
+            <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <!-- Elementos do grid -->
+
+                <!-- Card color=white com o form dentro -->
+                <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
+                    <!-- Inicio do Form -->
+                    <div class="flex flex-col gap-8">
+                        <!--FormHeader -->
+                        <div class="flex flex-row gap-6 pb-3">
+                            <div class="w-1 bg-gray-100"></div>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-lg font-semibold text-gray-800">Descoberta do seu projeto no Catarse
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- FormLayout-->
+                        <!-- Select - Categoria -->
+
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label class="flex-1 block text-sm font-medium text-gray-900">Categoria</label>
+                            </div>
+                            <select name="" id=""
+                                class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900">
+                                <option value="">Escolha uma categoria</option>
+                                <option value="Red">red</option>
+                                <option value="Green">green</option>
+                                <option value="Blue">blue</option>
+                            </select>
+                        </div>
+                        <!-- Tags (tópicos) -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label for="preview-input"
+                                    class="flex-1 block text-sm font-medium text-gray-900">Tópicos
+                                    (palavras-chave)</label>
+                            </div>
+
+                            <div class="flex w-full rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="">
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Liste até 5 palavras-chaves relacionadas a
+                                sua
+                                campanha e facilite a descoberta pelos apoiadores.</p>
+                        </div>
+                        <!-- Local  -->
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                                <label for="preview-input"
+                                    class="flex-1 block text-sm font-medium text-gray-900">Local
+                                    do
+                                    projeto</label>
+                            </div>
+
+                            <div class="flex w-full rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="Escolha uma cidade">
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Caso seu projeto aconteça em mais de um
+                                lugar,
+                                uma
+                                dica é colocar a cidade onde sua rede de potenciais apoiadores é maior.</p>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="order-first md:order-last -ml-6 md:ml-0">
+                    <!-- Card com o Help - color=gray with_border=false -->
+                    <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                        <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                        <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                    </div>
+                </div>
+
+
+                <!-- Fim dos elementos do grid -->
+            </div>
+            <!-- Fim Form Layout Hint -->
+            <!-- Inicio Form Layout Hint -->
+            <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                <!-- Elementos do grid -->
+
+                <!-- Card color=white com o form dentro -->
+                <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
+                    <!-- Inicio do Form -->
+                    <div class="flex flex-col gap-8">
+                        <!-- Não tem FormHeader -->
+
+                        <!-- FormLayout-->
+                        <!-- Input Field - Nome do projeto -->
+                        <div class="flex flex-col gap-2">
+                            <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
+                                do
+                                projeto</label>
+                            <div class="mt-1 flex rounded-md shadow-sm">
+                                <input
+                                    class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                    id="preview-input" type="text" placeholder="" autofocus>
+                            </div>
+                            <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
+                                facilmente.
+                                Não
+                                ultrapasse 50 caracteres.</p>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="order-first md:order-last -ml-6 md:ml-0">
+                    <!-- Card com o Help - color=gray with_border=false -->
+                    <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
+                        <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
+                        <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
+                    </div>
+                </div>
+
+
+                <!-- Fim dos elementos do grid -->
+            </div>
+            <!-- Fim Form Layout Hint -->
+
+            <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
+                <button name="button" type="submit"
+                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                    Salvar
+                </button>
+
+            </div>
+        </div>
+    </main>
+    <!-- </Main> -->
+    <!-- <Footer> -->
+        <footer class="p-10 bg-gray-200"></footer>
+        <!-- </Footer> -->
 
         </div>
 
@@ -430,246 +671,8 @@ A ideia é que tenhamos dois slots de botões:
         <label for="toggler"
             class="col-start-1 col-end-3 row-start-1 row-end-3 left-0 right-0 top-0 bottom-0 peer-checked:block peer-checked:z-40 peer-checked:fixed bg-gray-900 peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden opacity-0 transition-all delay-75"></label>
         <!-- </SideBar> -->
-        <!-- <Main> -->
-        <main id="main"
-            class="col-start-1 lg:col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col flex-1 peer-checked:pl-0 transition-all relative">
-
-
-            <!-- Page -->
-            <div class="flex flex-col max-w-screen-lg mx-auto my-0 px-4 lg:px-0 gap-10 bg-gray-50 py-12">
-                <!-- PageHeader-->
-                <div class="flex flex-col gap-3">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="leading-none text-2xl font-semibold text-gray-900">Básico</h1>
-                        <div class="text-sm font-normal text-gray-600">Prepare as informações essenciais sobre o seu
-                            projeto
-                        </div>
-                    </div>
-                </div>
-                <!-- Inicio Form Layout Hint -->
-                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
-                    <!-- Elementos do grid -->
-
-                    <!-- Card color=white com o form dentro -->
-                    <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
-                        <!-- Inicio do Form -->
-                        <div class="flex flex-col gap-8">
-                            <!-- Não tem FormHeader -->
-
-                            <!-- FormLayout-->
-                            <!-- Input Field - Nome do projeto -->
-                            <div class="flex flex-col gap-2">
-                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
-                                    do
-                                    projeto</label>
-                                <div class="mt-1 flex rounded-md shadow-sm">
-                                    <input
-                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                        id="preview-input" type="text" placeholder="" autofocus>
-                                </div>
-                                <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
-                                    facilmente.
-                                    Não
-                                    ultrapasse 50 caracteres.</p>
-                            </div>
-
-                            <div class="flex flex-col gap-2">
-                                <div class="flex">
-                                    <label for="preview-input"
-                                        class="flex-1 block text-sm font-medium text-gray-900">Link
-                                        para
-                                        o seu projeto no Catarse</label>
-                                </div>
-
-                                <div class="flex w-full rounded-md shadow-sm">
-                                    <span
-                                        class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">catarse.com.br/</span>
-                                    <input
-                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
-                                        id="preview-input" type="Link para o seu projeto no Catarse"
-                                        placeholder="seulink">
-                                </div>
-                                <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao ar.
-                                    Prefira
-                                    algo simples, direto e que identifique bem seu projeto. Tente não usar hífen,
-                                    underline
-                                    etc.
-                                </p>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="order-first md:order-last -ml-6 md:ml-0">
-                        <!-- Card com o Help - color=gray with_border=false -->
-                        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
-                            <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
-                            <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
-                        </div>
-                    </div>
-
-
-                    <!-- Fim dos elementos do grid -->
-                </div>
-                <!-- Fim Form Layout Hint -->
-                <!-- Inicio Form Layout Hint -->
-                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
-                    <!-- Elementos do grid -->
-
-                    <!-- Card color=white com o form dentro -->
-                    <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white ">
-                        <!-- Inicio do Form -->
-                        <div class="flex flex-col gap-8">
-                            <!--FormHeader -->
-                            <div class="flex flex-row gap-6 pb-3">
-                                <div class="w-1 bg-gray-100"></div>
-                                <div class="flex flex-col gap-2">
-                                    <h2 class="text-lg font-semibold text-gray-800">Descoberta do seu projeto no Catarse
-                                    </h2>
-                                </div>
-                            </div>
-
-                            <!-- FormLayout-->
-                            <!-- Select - Categoria -->
-
-                            <div class="flex flex-col gap-2">
-                                <div class="flex">
-                                    <label class="flex-1 block text-sm font-medium text-gray-900">Categoria</label>
-                                </div>
-                                <select name="" id=""
-                                    class="bg-white border rounded-lg block w-full outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out p-3 text-sm border-gray-300 text-gray-900">
-                                    <option value="">Escolha uma categoria</option>
-                                    <option value="Red">red</option>
-                                    <option value="Green">green</option>
-                                    <option value="Blue">blue</option>
-                                </select>
-                            </div>
-                            <!-- Tags (tópicos) -->
-                            <div class="flex flex-col gap-2">
-                                <div class="flex">
-                                    <label for="preview-input"
-                                        class="flex-1 block text-sm font-medium text-gray-900">Tópicos
-                                        (palavras-chave)</label>
-                                </div>
-
-                                <div class="flex w-full rounded-md shadow-sm">
-                                    <input
-                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                        id="preview-input" type="text" placeholder="">
-                                </div>
-                                <p class="text-xs font-normal text-gray-500">Liste até 5 palavras-chaves relacionadas a
-                                    sua
-                                    campanha e facilite a descoberta pelos apoiadores.</p>
-                            </div>
-                            <!-- Local  -->
-                            <div class="flex flex-col gap-2">
-                                <div class="flex">
-                                    <label for="preview-input"
-                                        class="flex-1 block text-sm font-medium text-gray-900">Local
-                                        do
-                                        projeto</label>
-                                </div>
-
-                                <div class="flex w-full rounded-md shadow-sm">
-                                    <input
-                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                        id="preview-input" type="text" placeholder="Escolha uma cidade">
-                                </div>
-                                <p class="text-xs font-normal text-gray-500">Caso seu projeto aconteça em mais de um
-                                    lugar,
-                                    uma
-                                    dica é colocar a cidade onde sua rede de potenciais apoiadores é maior.</p>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="order-first md:order-last -ml-6 md:ml-0">
-                        <!-- Card com o Help - color=gray with_border=false -->
-                        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
-                            <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
-                            <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
-                        </div>
-                    </div>
-
-
-                    <!-- Fim dos elementos do grid -->
-                </div>
-                <!-- Fim Form Layout Hint -->
-                <!-- Inicio Form Layout Hint -->
-                <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
-                    <!-- Elementos do grid -->
-
-                    <!-- Card color=white com o form dentro -->
-                    <div class="flex flex-col p-6 rounded-lg border border-gray-100 bg-white">
-                        <!-- Inicio do Form -->
-                        <div class="flex flex-col gap-8">
-                            <!-- Não tem FormHeader -->
-
-                            <!-- FormLayout-->
-                            <!-- Input Field - Nome do projeto -->
-                            <div class="flex flex-col gap-2">
-                                <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Nome
-                                    do
-                                    projeto</label>
-                                <div class="mt-1 flex rounded-md shadow-sm">
-                                    <input
-                                        class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
-                                        id="preview-input" type="text" placeholder="" autofocus>
-                                </div>
-                                <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
-                                    facilmente.
-                                    Não
-                                    ultrapasse 50 caracteres.</p>
-                            </div>
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="order-first md:order-last -ml-6 md:ml-0">
-                        <!-- Card com o Help - color=gray with_border=false -->
-                        <div class="flex flex-col p-6 rounded-lg border-0 border-gray-100 bg-gray-50">
-                            <h5 class="text-base font-semibold tracking-tight text-gray-900 mb-2">Dica</h5>
-                            <div class="text-sm text-gray-900">Nossa Central de ajuda tem tudo o que você precisa.</div>
-                        </div>
-                    </div>
-
-
-                    <!-- Fim dos elementos do grid -->
-                </div>
-                <!-- Fim Form Layout Hint -->
-
-                <div class="flex flex-row gap-6 justify-end py-6 border-t border-gray-100">
-                    <button name="button" type="submit"
-                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
-                        Salvar
-                    </button>
-
-                </div>
-            </div>
-        </main>
-        <!-- </Main> -->
-        <!-- <Footer> -->
-        <footer class="lg:col-start-2 col-start-1 col-end-3 row-start-3 row-end-4 p-10 bg-gray-200"></footer>
-        <!-- </Footer> -->
+        
+        
 
 
     </div>
