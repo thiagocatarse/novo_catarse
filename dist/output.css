@@ -1638,6 +1638,18 @@ video {
   background-image: url('https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg');
 }
 
+.bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/reward\/uploaded_image\/273267\/thumb_reward_da69e138-6125-47c3-86af-501de24fadf2\.jpg\'\)\]{
+  background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/273267/thumb_reward_da69e138-6125-47c3-86af-501de24fadf2.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/redactor_rails\/picture\/data\/431141\/3f364289-69ef-4aa0-8a26-5b826aecb9f0\.jpg\'\)\]{
+  background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/redactor_rails/picture/data/431141/3f364289-69ef-4aa0-8a26-5b826aecb9f0.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/reward\/uploaded_image\/275259\/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb\.jpg\'\)\]{
+  background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg');
+}
+
 .bg-cover{
   background-size: cover;
 }

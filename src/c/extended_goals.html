@@ -5,168 +5,452 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../dist/output.css" rel="stylesheet">
-    
+
 </head>
 
 <body class="bg-white">
 
-<section class="bg-white">
-    <div class="flex flex-col mx-auto my-0 px-4 md:px-0 py-12 gap-10 max-w-[748px]">
-      <!-- <card> -->
-        <div class="flex flex-col p-6 rounded-lg border-gray-100 bg-white border shadow-sm">
-            <!-- <FormLayout> -->
-            <div class="flex flex-col gap-7">
-                <div class="flex flex-row gap-6 pb-3">
-                  <div class="w-1 bg-gray-100"></div>
-                  <div class="flex flex-col gap-2">
-                    <h2 class="text-lg font-semibold text-gray-800">Metas estendidas</h2>
-                  </div>
-                </div>
-                <!-- Empty state default -->
-                <div class="flex flex-col gap-8 p-2 items-center m-auto md:p-8">
-                    <div class="flex flex-col gap-6 items-center">
-                      <img src="../assets/extended_goal.png" class="max-w-xs"/>
-                      <div class="flex flex-col items-center gap-3 text-center">
-                        <p class="text-sm font-normal text-gray-500">Você pode adicionar metas extras para atingir um ou mais valores além da meta principal. 
-                            Assim você pode melhorar a execução do seu produto.</p>
-                      </div>
+    <section class="bg-white">
+        <div class="flex flex-col mx-auto my-0 px-4 md:px-0 py-12 gap-10 max-w-[748px]">
+            <!-- Card com empty state-->
+            <!-- <Card> -->
+            <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow">
+                <!-- <Card_header> -->
+                <div class="flex flex-row px-4 py-6 gap-4">
+                    <!-- <Card_header__text> -->
+                    <div class="flex flex-col flex-1 gap-0.5">
+                        <div class="text-lg font-bold text-gray-800">Metas estendidas</div>
                     </div>
-                    <div class="flex flex-col items-center gap-2 p-2">
-                      <div class="flex flex-row gap-3">
-                        <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
-                          Adicionar meta estendida
-                        </button>
-                        <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                          Saiba mais
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- </EmptyState> -->
-              </div>
-              <!-- </FormLayout> -->
-          </div>
-          <!-- </card> -->
-          <!-- <card> -->
-        <div class="flex flex-col p-6 rounded-lg border-gray-100 bg-white border shadow-sm">
-            <!-- <FormLayout> -->
-            <div class="flex flex-col gap-7">
-                <div class="flex flex-row gap-6 pb-3">
-                  <div class="w-1 bg-gray-100"></div>
-                  <div class="flex flex-col gap-2">
-                    <h2 class="text-lg font-semibold text-gray-800">Metas estendidas</h2>
-                  </div>
-                </div>
-                 <!-- <Card> -->
-    <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow-xl">
-        
-        <!-- <Card_header> -->
-        <div class="flex flex-row px-4 py-6 gap-4">
-          
-          <!-- <Card_header__text> -->
-          <div class="flex flex-col flex-1 gap-0.5">
-            <div class="text-lg font-medium text-gray-800">Criar meta estendida</div>
-        
-          </div>
-          <!-- </Card_header__text> -->
-          <!-- <Card_header__action> -->
-          <div class="shrink">
-            <!-- <ButtonGroup> -->
-            <div class="flex flex-row gap-3">
-              <button name="button" type="submit"
-                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292787 1.29308C0.480314 1.10561 0.734622 1.00029 0.999786 1.00029C1.26495 1.00029 1.51926 1.10561 1.70679 1.29308L5.99979 5.58608L10.2928 1.29308C10.385 1.19757 10.4954 1.12139 10.6174 1.06898C10.7394 1.01657 10.8706 0.988985 11.0034 0.987831C11.1362 0.986677 11.2678 1.01198 11.3907 1.06226C11.5136 1.11254 11.6253 1.18679 11.7192 1.28069C11.8131 1.37458 11.8873 1.48623 11.9376 1.60913C11.9879 1.73202 12.0132 1.8637 12.012 1.99648C12.0109 2.12926 11.9833 2.26048 11.9309 2.38249C11.8785 2.50449 11.8023 2.61483 11.7068 2.70708L7.41379 7.00008L11.7068 11.2931C11.8889 11.4817 11.9897 11.7343 11.9875 11.9965C11.9852 12.2587 11.88 12.5095 11.6946 12.6949C11.5092 12.8803 11.2584 12.9855 10.9962 12.9878C10.734 12.99 10.4814 12.8892 10.2928 12.7071L5.99979 8.41408L1.70679 12.7071C1.51818 12.8892 1.26558 12.99 1.00339 12.9878C0.741188 12.9855 0.490376 12.8803 0.304968 12.6949C0.11956 12.5095 0.0143906 12.2587 0.0121121 11.9965C0.00983372 11.7343 0.110629 11.4817 0.292787 11.2931L4.58579 7.00008L0.292787 2.70708C0.105316 2.51955 0 2.26525 0 2.00008C0 1.73492 0.105316 1.48061 0.292787 1.29308Z" fill="#3F4752"/>
-                    </svg>
-                    
-              </button>
-            </div>
-            <!-- </ButtonGroup> -->
-          </div>
-  
-          <!-- </Card_header__action> -->
-        </div>
-        <!-- </Card_header> -->
-        <!-- <Card_content> -->
-        <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
-          <!-- <FormLayout> -->
-            <div class="flex flex-col gap-7">
-                <!-- <InputField> -->
-                    <div class="flex flex-col gap-2" id="goal_amount">
-                        <div class="flex">
-                          <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Valor</label>
-                        </div>
-                        
-                        <div class="flex w-full rounded-md shadow-sm">
-                          <span class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">R$</span>
-                          <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md" id="preview-input" type="number" placeholder="0,00">
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">O mínimo que você precisa para realizar seu projeto</p>
-                      </div>
-                <!-- </InputField> -->
-                <!-- <InputField> -->
-                    <div class="flex flex-col gap-2" id="goal_title">
-                        <div class="flex">
-                          <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Título</label>
-                        </div>
-                        
-                        <div class="flex w-full rounded-md shadow-sm">
-                          <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md" id="preview-input" type="text" placeholder="">
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">O objetivo da meta em até 50 caracteres</p>
-                      </div>
-                <!-- </InputField> -->
-                <!-- <TextArea> -->
-                    <div class="flex flex-col gap-2" id="goal_description">
-                        <div class="flex">
-                          <label for="preview-input" class="flex-1 block text-sm font-medium text-gray-900">Descrição</label>
-                        </div>
-                        
-                        <div class="flex w-full rounded-md shadow-sm">
-                          <textarea class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md" id="preview-input" type="text" placeholder=""></textarea>
-                        </div>
-                        <p class="text-xs font-normal text-gray-500">Fale mais sobre sua meta em até 140 caracteres</p>
-                      </div>
-                <!-- </TextArea> -->
-             
-            </div>
-<!-- </FormLayout> -->
-        </div>
-        <!-- </Card_content> -->
-        <!-- <Card_footer> -->
-        <div class="px-4 pt-6 pb-5 flex flex-row gap-4">
-          <!-- <Card_footer_left> -->
-          <div class="flex-1">
-            <!-- <ButtonGroup> -->
-            <div class="flex flex-row gap-3">
-              
-            </div>
-            <!-- </ButtonGroup> -->
-          </div>
-          <!-- </Card_footer_left> -->
-          <!-- <Card_footer_righ> -->
-          <div>
-            <!-- <ButtonGroup> -->
-            <div class="flex flex-row gap-3">
-                <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
-                    Salvar
-                  </button>
-            
-            </div>
-            <!-- </ButtonGroup> -->
-          </div>
-          <!-- </Card_footer_right> -->
-        </div>
-        <!-- </Card_footer> -->
-  
-  
-      </div>
-    </div>
-  </section>
-    
+                    <!-- </Card_header__text> -->
+                    <!-- <Card_header__action> -->
 
 
+                    <!-- </Card_header__action> -->
+                </div>
+                <!-- </Card_header> -->
+                <!-- <Card_content> -->
+                <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
+                    <!-- Empty state default -->
+                    <div class="flex flex-col gap-8 p-2 items-center m-auto md:p-8">
+                        <div class="flex flex-col gap-6 items-center">
+                            <img src="../assets/extended_goal.png" class="max-w-xs" />
+                            <div class="flex flex-col items-center gap-3 text-center">
+                                <p class="text-sm font-normal text-gray-500">Você pode adicionar metas extras para
+                                    atingir um ou mais valores além da meta principal.
+                                    Assim você pode melhorar a execução do seu produto.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center gap-2 p-2">
+                            <div class="flex flex-row gap-3">
+                                <button name="button" type="submit"
+                                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                    Adicionar meta estendida
+                                </button>
+                                <button name="button" type="submit"
+                                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </EmptyState> -->
+                </div>
+                <!-- </Card_content> -->
+
+
+            </div>
+            <!-- </Card> -->
+
+            <!-- Card com form aberto -->
+            <!-- <Card> -->
+            <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow">
+                <!-- <Card_header> -->
+                <div class="flex flex-row px-4 py-6 gap-4">
+                    <!-- <Card_header__text> -->
+                    <div class="flex flex-col flex-1 gap-0.5">
+                        <div class="text-lg font-bold text-gray-800">Metas estendidas</div>
+                    </div>
+                    <!-- </Card_header__text> -->
+                    <!-- <Card_header__action> -->
+                    <div class="shrink">
+                        <!-- <ButtonGroup> -->
+                        <div class="flex flex-row gap-3">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                Adicionar meta estendida
+                            </button>
+                        </div>
+                        <!-- </ButtonGroup> -->
+                    </div>
+
+                    <!-- </Card_header__action> -->
+                </div>
+                <!-- </Card_header> -->
+                <!-- <Card_content> -->
+                <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
+                    <!-- <Card> -->
+                    <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow-xl">
+
+                        <!-- <Card_header> -->
+                        <div class="flex flex-row px-4 py-6 gap-4">
+
+                            <!-- <Card_header__text> -->
+                            <div class="flex flex-col flex-1 gap-0.5">
+                                <div class="text-lg font-medium text-gray-800">Criar meta estendida</div>
+
+                            </div>
+                            <!-- </Card_header__text> -->
+                            <!-- <Card_header__action> -->
+                            <div class="shrink">
+                                <!-- <ButtonGroup> -->
+                                <div class="flex flex-row gap-3">
+                                    <button name="button" type="submit"
+                                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.292787 1.29308C0.480314 1.10561 0.734622 1.00029 0.999786 1.00029C1.26495 1.00029 1.51926 1.10561 1.70679 1.29308L5.99979 5.58608L10.2928 1.29308C10.385 1.19757 10.4954 1.12139 10.6174 1.06898C10.7394 1.01657 10.8706 0.988985 11.0034 0.987831C11.1362 0.986677 11.2678 1.01198 11.3907 1.06226C11.5136 1.11254 11.6253 1.18679 11.7192 1.28069C11.8131 1.37458 11.8873 1.48623 11.9376 1.60913C11.9879 1.73202 12.0132 1.8637 12.012 1.99648C12.0109 2.12926 11.9833 2.26048 11.9309 2.38249C11.8785 2.50449 11.8023 2.61483 11.7068 2.70708L7.41379 7.00008L11.7068 11.2931C11.8889 11.4817 11.9897 11.7343 11.9875 11.9965C11.9852 12.2587 11.88 12.5095 11.6946 12.6949C11.5092 12.8803 11.2584 12.9855 10.9962 12.9878C10.734 12.99 10.4814 12.8892 10.2928 12.7071L5.99979 8.41408L1.70679 12.7071C1.51818 12.8892 1.26558 12.99 1.00339 12.9878C0.741188 12.9855 0.490376 12.8803 0.304968 12.6949C0.11956 12.5095 0.0143906 12.2587 0.0121121 11.9965C0.00983372 11.7343 0.110629 11.4817 0.292787 11.2931L4.58579 7.00008L0.292787 2.70708C0.105316 2.51955 0 2.26525 0 2.00008C0 1.73492 0.105316 1.48061 0.292787 1.29308Z"
+                                                fill="#3F4752" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <!-- </ButtonGroup> -->
+                            </div>
+
+                            <!-- </Card_header__action> -->
+                        </div>
+                        <!-- </Card_header> -->
+                        <!-- <Card_content> -->
+                        <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
+                            <!-- <FormLayout> -->
+                            <div class="flex flex-col gap-7">
+                                <!-- <InputField> -->
+                                <div class="flex flex-col gap-2" id="goal_amount">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Valor</label>
+                                    </div>
+
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <span
+                                            class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">R$</span>
+                                        <input
+                                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
+                                            id="preview-input" type="number" placeholder="0,00">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">O mínimo que você precisa para realizar
+                                        seu projeto</p>
+                                </div>
+                                <!-- </InputField> -->
+                                <!-- <InputField> -->
+                                <div class="flex flex-col gap-2" id="goal_title">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Título</label>
+                                    </div>
+
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <input
+                                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                            id="preview-input" type="text" placeholder="">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">O objetivo da meta em até 50 caracteres
+                                    </p>
+                                </div>
+                                <!-- </InputField> -->
+                                <!-- <TextArea> -->
+                                <div class="flex flex-col gap-2" id="goal_description">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Descrição</label>
+                                    </div>
+
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <textarea
+                                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                            id="preview-input" type="text" placeholder=""></textarea>
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">Fale mais sobre sua meta em até 140
+                                        caracteres</p>
+                                </div>
+                                <!-- </TextArea> -->
+
+                            </div>
+                            <!-- </FormLayout> -->
+                        </div>
+                        <!-- </Card_content> -->
+                        <!-- <Card_footer> -->
+                        <div class="px-4 pt-6 pb-5 flex flex-row gap-4">
+                            <!-- <Card_footer_left> -->
+                            <div class="flex-1">
+                                <!-- <ButtonGroup> -->
+                                <div class="flex flex-row gap-3">
+
+                                </div>
+                                <!-- </ButtonGroup> -->
+                            </div>
+                            <!-- </Card_footer_left> -->
+                            <!-- <Card_footer_righ> -->
+                            <div>
+                                <!-- <ButtonGroup> -->
+                                <div class="flex flex-row gap-3">
+                                    <button name="button" type="submit"
+                                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                        Salvar
+                                    </button>
+
+                                </div>
+                                <!-- </ButtonGroup> -->
+                            </div>
+                            <!-- </Card_footer_right> -->
+                        </div>
+                        <!-- </Card_footer> -->
+
+
+                    </div>
+                </div>
+                <!-- </Card_content> -->
+
+
+
+            </div>
+            <!-- </Card> -->
+
+            <!-- Card com listagem -->
+            <!-- <Card> -->
+            <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow">
+                <!-- <Card_header> -->
+                <div class="flex flex-row px-4 py-6 gap-4">
+                    <!-- <Card_header__text> -->
+                    <div class="flex flex-col flex-1 gap-0.5">
+                        <div class="text-lg font-bold text-gray-800">Metas estendidas</div>
+                    </div>
+                    <!-- </Card_header__text> -->
+                    <!-- <Card_header__action> -->
+                    <div class="shrink">
+                        <!-- <ButtonGroup> -->
+                        <div class="flex flex-row gap-3">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                Adicionar meta estendida
+                            </button>
+                        </div>
+                        <!-- </ButtonGroup> -->
+                    </div>
+
+                    <!-- </Card_header__action> -->
+                </div>
+                <!-- </Card_header> -->
+                <!-- <Card_content> -->
+                <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
+                    <div class="flex flex-col gap-4">
+                        <!-- Card de meta -->
+                        <!-- <Card> -->
+                        <div class="flex flex-row gap-2 rounded-lg border border-gray-100 overflow-hidden shadow">
+                            <!-- FirstColumn -->
+                            <!-- <Card_media> -->
+                            <div
+                                class="mb-6 first:mb-0 flex-0 w-1/4 bg-[url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg')] bg-cover">
+                            </div>
+                            <!-- </Card_media> -->
+                            <!-- </Firstcolumn> -->
+                            <!-- <SecondColumn> -->
+                            <div class="flex flex-col flex-1">
+                                <!-- <Card_header> -->
+                                <div class="flex flex-row px-4 py-6 gap-4 ">
+
+
+                                    <!-- <Card_header__text> -->
+                                    <div class="flex flex-col flex-1 gap-0.5">
+                                        <div class="text-lg font-bold text-gray-800">R$50.000,00</div>
+                                        <div class="text-sm font-medium text-gray-500">Um novo marca página</div>
+                                    </div>
+                                    <!-- </Card_header__text> -->
+                                    <!-- <Card_header__action> -->
+                                    <div class="shrink">
+                                        <!-- <ButtonGroup> -->
+                                        <div class="flex flex-row gap-3">
+                                            <button name="button" type="submit"
+                                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.414 6.58606C21.0389 6.21112 20.5303 6.00049 20 6.00049C19.4697 6.00049 18.9611 6.21112 18.586 6.58606L11 14.1721V17.0001H13.828L21.414 9.41406C21.7889 9.03901 21.9996 8.53039 21.9996 8.00006C21.9996 7.46973 21.7889 6.96112 21.414 6.58606Z"
+                                                        fill="#5F656F" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6 10C6 9.46957 6.21071 8.96086 6.58579 8.58579C6.96086 8.21071 7.46957 8 8 8H12C12.2652 8 12.5196 8.10536 12.7071 8.29289C12.8946 8.48043 13 8.73478 13 9C13 9.26522 12.8946 9.51957 12.7071 9.70711C12.5196 9.89464 12.2652 10 12 10H8V20H18V16C18 15.7348 18.1054 15.4804 18.2929 15.2929C18.4804 15.1054 18.7348 15 19 15C19.2652 15 19.5196 15.1054 19.7071 15.2929C19.8946 15.4804 20 15.7348 20 16V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H8C7.46957 22 6.96086 21.7893 6.58579 21.4142C6.21071 21.0391 6 20.5304 6 20V10Z"
+                                                        fill="#5F656F" />
+                                                </svg>
+
+                                            </button>
+                                        </div>
+                                        <!-- </ButtonGroup> -->
+                                    </div>
+
+                                    <!-- </Card_header__action> -->
+                                </div>
+                                <!-- </Card_header> -->
+                                <!-- <Card_content> -->
+                                <div class="pt-2 pb-3 px-4 last:pt-1 last:pb-6 flex-1">
+                                    <p class="text-sm font-medium text-gray-500">
+                                        Mais um tipo de marca página para todos os apoios do livro impresso.
+                                    </p>
+                                </div>
+                                <!-- </Card_content> -->
+
+                            </div>
+                            <!-- </SecondColumn> -->
+
+
+
+
+
+                        </div>
+                        <!-- </Card> -->
+                        <!-- <Card> -->
+                            <div class="flex flex-row gap-2 rounded-lg border border-gray-100 overflow-hidden shadow">
+                                <!-- FirstColumn -->
+                                <!-- <Card_media> -->
+                                <div
+                                    class="mb-6 first:mb-0 flex-0 w-1/4 bg-[url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg')] bg-cover">
+                                </div>
+                                <!-- </Card_media> -->
+                                <!-- </Firstcolumn> -->
+                                <!-- <SecondColumn> -->
+                                <div class="flex flex-col flex-1">
+                                    <!-- <Card_header> -->
+                                    <div class="flex flex-row px-4 py-6 gap-4 ">
     
+    
+                                        <!-- <Card_header__text> -->
+                                        <div class="flex flex-col flex-1 gap-0.5">
+                                            <div class="text-lg font-bold text-gray-800">R$50.000,00</div>
+                                            <div class="text-sm font-medium text-gray-500">Um novo marca página</div>
+                                        </div>
+                                        <!-- </Card_header__text> -->
+                                        <!-- <Card_header__action> -->
+                                        <div class="shrink">
+                                            <!-- <ButtonGroup> -->
+                                            <div class="flex flex-row gap-3">
+                                                <button name="button" type="submit"
+                                                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.414 6.58606C21.0389 6.21112 20.5303 6.00049 20 6.00049C19.4697 6.00049 18.9611 6.21112 18.586 6.58606L11 14.1721V17.0001H13.828L21.414 9.41406C21.7889 9.03901 21.9996 8.53039 21.9996 8.00006C21.9996 7.46973 21.7889 6.96112 21.414 6.58606Z"
+                                                            fill="#5F656F" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M6 10C6 9.46957 6.21071 8.96086 6.58579 8.58579C6.96086 8.21071 7.46957 8 8 8H12C12.2652 8 12.5196 8.10536 12.7071 8.29289C12.8946 8.48043 13 8.73478 13 9C13 9.26522 12.8946 9.51957 12.7071 9.70711C12.5196 9.89464 12.2652 10 12 10H8V20H18V16C18 15.7348 18.1054 15.4804 18.2929 15.2929C18.4804 15.1054 18.7348 15 19 15C19.2652 15 19.5196 15.1054 19.7071 15.2929C19.8946 15.4804 20 15.7348 20 16V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H8C7.46957 22 6.96086 21.7893 6.58579 21.4142C6.21071 21.0391 6 20.5304 6 20V10Z"
+                                                            fill="#5F656F" />
+                                                    </svg>
+    
+                                                </button>
+                                            </div>
+                                            <!-- </ButtonGroup> -->
+                                        </div>
+    
+                                        <!-- </Card_header__action> -->
+                                    </div>
+                                    <!-- </Card_header> -->
+                                    <!-- <Card_content> -->
+                                    <div class="pt-2 pb-3 px-4 last:pt-1 last:pb-6 flex-1">
+                                        <p class="text-sm font-medium text-gray-500">
+                                            Mais um tipo de marca página para todos os apoios do livro impresso.
+                                        </p>
+                                    </div>
+                                    <!-- </Card_content> -->
+    
+                                </div>
+                                <!-- </SecondColumn> -->
+    
+    
+    
+    
+    
+                            </div>
+                            <!-- </Card> -->
+                            <!-- <Card> -->
+                        <div class="flex flex-row gap-2 rounded-lg border border-gray-100 overflow-hidden shadow">
+                            <!-- FirstColumn -->
+                            <!-- <Card_media> -->
+                            <div
+                                class="mb-6 first:mb-0 flex-0 w-1/4 bg-[url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg')] bg-cover">
+                            </div>
+                            <!-- </Card_media> -->
+                            <!-- </Firstcolumn> -->
+                            <!-- <SecondColumn> -->
+                            <div class="flex flex-col flex-1">
+                                <!-- <Card_header> -->
+                                <div class="flex flex-row px-4 py-6 gap-4 ">
+
+
+                                    <!-- <Card_header__text> -->
+                                    <div class="flex flex-col flex-1 gap-0.5">
+                                        <div class="text-lg font-bold text-gray-800">R$50.000,00</div>
+                                        <div class="text-sm font-medium text-gray-500">Um novo marca página</div>
+                                    </div>
+                                    <!-- </Card_header__text> -->
+                                    <!-- <Card_header__action> -->
+                                    <div class="shrink">
+                                        <!-- <ButtonGroup> -->
+                                        <div class="flex flex-row gap-3">
+                                            <button name="button" type="submit"
+                                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.414 6.58606C21.0389 6.21112 20.5303 6.00049 20 6.00049C19.4697 6.00049 18.9611 6.21112 18.586 6.58606L11 14.1721V17.0001H13.828L21.414 9.41406C21.7889 9.03901 21.9996 8.53039 21.9996 8.00006C21.9996 7.46973 21.7889 6.96112 21.414 6.58606Z"
+                                                        fill="#5F656F" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M6 10C6 9.46957 6.21071 8.96086 6.58579 8.58579C6.96086 8.21071 7.46957 8 8 8H12C12.2652 8 12.5196 8.10536 12.7071 8.29289C12.8946 8.48043 13 8.73478 13 9C13 9.26522 12.8946 9.51957 12.7071 9.70711C12.5196 9.89464 12.2652 10 12 10H8V20H18V16C18 15.7348 18.1054 15.4804 18.2929 15.2929C18.4804 15.1054 18.7348 15 19 15C19.2652 15 19.5196 15.1054 19.7071 15.2929C19.8946 15.4804 20 15.7348 20 16V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H8C7.46957 22 6.96086 21.7893 6.58579 21.4142C6.21071 21.0391 6 20.5304 6 20V10Z"
+                                                        fill="#5F656F" />
+                                                </svg>
+
+                                            </button>
+                                        </div>
+                                        <!-- </ButtonGroup> -->
+                                    </div>
+
+                                    <!-- </Card_header__action> -->
+                                </div>
+                                <!-- </Card_header> -->
+                                <!-- <Card_content> -->
+                                <div class="pt-2 pb-3 px-4 last:pt-1 last:pb-6 flex-1">
+                                    <p class="text-sm font-medium text-gray-500">
+                                        Mais um tipo de marca página para todos os apoios do livro impresso.
+                                    </p>
+                                </div>
+                                <!-- </Card_content> -->
+
+                            </div>
+                            <!-- </SecondColumn> -->
+
+
+
+
+
+                        </div>
+                        <!-- </Card> -->
+                    </div>
+                </div>
+                <!-- </Card_content> -->
+
+
+            </div>
+            <!-- </Card> -->
+
+
+
+
+
+
+
+    </section>
+
+
+
+
 
 </body>
 
