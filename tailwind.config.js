@@ -54,6 +54,18 @@ module.exports = {
         '800': '#873234',
         '900': '#652627'
         }
+      },
+      animation: {
+        'flash_message': '0s ease-in 5s forwards'
+      },
+      keyframes: {
+        'flash_message': {
+          'to': {
+            width: '0',
+            height: '0',
+            visibility: 'hidden',
+          },
+        }
       }
       // ...
     },
