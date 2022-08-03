@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../dist/output.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+
+    <section class="bg-white">
+        <div class="flex flex-col mx-auto my-0 px-4 md:px-0 py-12 gap-10 max-w-[748px]">
+
+            <!-- Card com form aberto -->
+            <!-- <Card> -->
+            <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow">
+                <!-- <Card_header> -->
+                <div class="flex flex-row px-4 py-6 gap-4">
+                    <!-- <Card_header__text> -->
+                    <div class="flex flex-col flex-1 gap-0.5">
+                        <div class="text-lg font-bold text-gray-800">Metas estendidas</div>
+                    </div>
+                    <!-- </Card_header__text> -->
+                    <!-- <Card_header__action> -->
+                    <div class="shrink">
+                        <!-- <ButtonGroup> -->
+                        <div class="flex flex-row gap-3">
+                            <button name="button" type="submit"
+                                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                                Adicionar meta
+                            </button>
+                        </div>
+                        <!-- </ButtonGroup> -->
+                    </div>
+
+                    <!-- </Card_header__action> -->
+                </div>
+                <!-- </Card_header> -->
+                <!-- <Card_content> -->
+                <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
+                    <!-- <Card> -->
+                    <div class="flex flex-col rounded-lg border border-gray-100 overflow-hidden shadow-xl">
+
+                        <!-- <Card_header> -->
+                        <div class="flex flex-row px-4 py-6 gap-4">
+
+                            <!-- <Card_header__text> -->
+                            <div class="flex flex-col flex-1 gap-0.5">
+                                <div class="text-lg font-medium text-gray-800">Criar meta estendida</div>
+
+                            </div>
+                            <!-- </Card_header__text> -->
+                            <!-- <Card_header__action> -->
+                            <div class="shrink">
+                                <!-- <ButtonGroup> -->
+                                <div class="flex flex-row gap-3">
+                                    <button name="button" type="submit"
+                                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.292787 1.29308C0.480314 1.10561 0.734622 1.00029 0.999786 1.00029C1.26495 1.00029 1.51926 1.10561 1.70679 1.29308L5.99979 5.58608L10.2928 1.29308C10.385 1.19757 10.4954 1.12139 10.6174 1.06898C10.7394 1.01657 10.8706 0.988985 11.0034 0.987831C11.1362 0.986677 11.2678 1.01198 11.3907 1.06226C11.5136 1.11254 11.6253 1.18679 11.7192 1.28069C11.8131 1.37458 11.8873 1.48623 11.9376 1.60913C11.9879 1.73202 12.0132 1.8637 12.012 1.99648C12.0109 2.12926 11.9833 2.26048 11.9309 2.38249C11.8785 2.50449 11.8023 2.61483 11.7068 2.70708L7.41379 7.00008L11.7068 11.2931C11.8889 11.4817 11.9897 11.7343 11.9875 11.9965C11.9852 12.2587 11.88 12.5095 11.6946 12.6949C11.5092 12.8803 11.2584 12.9855 10.9962 12.9878C10.734 12.99 10.4814 12.8892 10.2928 12.7071L5.99979 8.41408L1.70679 12.7071C1.51818 12.8892 1.26558 12.99 1.00339 12.9878C0.741188 12.9855 0.490376 12.8803 0.304968 12.6949C0.11956 12.5095 0.0143906 12.2587 0.0121121 11.9965C0.00983372 11.7343 0.110629 11.4817 0.292787 11.2931L4.58579 7.00008L0.292787 2.70708C0.105316 2.51955 0 2.26525 0 2.00008C0 1.73492 0.105316 1.48061 0.292787 1.29308Z"
+                                                fill="#3F4752" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <!-- </ButtonGroup> -->
+                            </div>
+
+                            <!-- </Card_header__action> -->
+                        </div>
+                        <!-- </Card_header> -->
+                        <!-- <Card_content> -->
+                        <div class="flex-1 pt-2 pb-3 px-4 last:pt-1 last:pb-6">
+                            <!-- <FormLayout> -->
+                            <div class="flex flex-col gap-7">
+                                <!-- <InputField> -->
+                                <div class="flex flex-col gap-2" id="goal_amount">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Valor</label>
+                                    </div>
+
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <span
+                                            class="inline-flex items-center px-3 border-gray-300 bg-gray-50 sm:text-sm text-gray-500 rounded-l-md border-r-0 border">R$</span>
+                                        <input
+                                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-r-md"
+                                            id="preview-input" type="number" placeholder="0,00">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">O mínimo que você precisa para realizar
+                                        seu projeto</p>
+                                </div>
+                                <!-- </InputField> -->
+                                <!-- <InputField> -->
+                                <div class="flex flex-col gap-2" id="goal_title">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Título</label>
+                                    </div>
+
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <input
+                                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                            id="preview-input" type="text" placeholder="">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">O objetivo da meta em até 50 caracteres
+                                    </p>
+                                </div>
+                                <!-- </InputField> -->
+                                <!-- <TextArea> -->
+                                <div class="flex flex-col gap-2" id="goal_description">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Descrição</label>
+                                    </div>
+
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <textarea
+                                            class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out rounded-md"
+                                            id="preview-input" type="text" placeholder=""></textarea>
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">Fale mais sobre sua meta em até 140
+                                        caracteres</p>
+                                </div>
+                                <!-- </TextArea> -->
+
+                            </div>
+                            <!-- </FormLayout> -->
+                        </div>
+                        <!-- </Card_content> -->
+                        <!-- <Card_footer> -->
+                        <div class="px-4 pt-6 pb-5 flex flex-row gap-4">
+                            <!-- <Card_footer_left> -->
+                            <div class="flex-1">
+                                <!-- <ButtonGroup> -->
+                                <div class="flex flex-row gap-3">
+
+                                </div>
+                                <!-- </ButtonGroup> -->
+                            </div>
+                            <!-- </Card_footer_left> -->
+                            <!-- <Card_footer_righ> -->
+                            <div>
+                                <!-- <ButtonGroup> -->
+                                <div class="flex flex-row gap-3">
+                                    <button name="button" type="submit"
+                                        class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" href="./3.html">
+                                        Salvar
+                                    </button>
+
+                                </div>
+                                <!-- </ButtonGroup> -->
+                            </div>
+                            <!-- </Card_footer_right> -->
+                        </div>
+                        <!-- </Card_footer> -->
+
+
+                    </div>
+                </div>
+                <!-- </Card_content> -->
+
+
+
+            </div>
+            <!-- </Card> -->
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- 
+
+
+Tabs:
+Remover dark:text-gray-400 dark:border-gray-700 da Tab
+Adicionar bg-white para tab
+Border do tab é gray-100
+Remover -mb-px da Tab
+Remover borda e fundo do <nav>
+Trocar space-x-8 por gap-2 md:gap-6 nas tabs
+Incluir wrapper para o nav
+Incluir max-w-screen para tabs
+Adicionar whitespace-nowrap no link da tab
+Remover inline-block dos links da tab
+adicionar md: no mr-w do svg das tabs
+
+Fields:
+Helper tem que ser text-xs font-normal text-gray-500
+
+Adicionar mt no body quando tiver com savebar
+
+Toast:
+Remover dark: do toast
+Aplicar fundo escuro no Toast
+Modificar botão de fechar do toast para não pter hover do fundo
+Aplicar rounded-full no toast e borda esquerda
+Mudar toast para ficar somente no meio
+
+Pages:
+px-0 no pages deve ser somente lg
+ -->
