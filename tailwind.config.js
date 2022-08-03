@@ -80,7 +80,7 @@ module.exports = {
         }
       },
       animation: {
-        'fade-in-down': 'fade-in-down 4s cubic-bezier(0,1.46,1,.96) forwards'
+        'fade-in-down': 'fade-in-down 3500ms cubic-bezier(0,1.46,.5,.92) forwards'
       }
       // ...
     },
