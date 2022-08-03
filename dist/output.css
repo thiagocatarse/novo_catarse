@@ -686,6 +686,14 @@ video {
   right: 1.5rem;
 }
 
+.-bottom-20{
+  bottom: -5rem;
+}
+
+.bottom-20{
+  bottom: 5rem;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1117,9 +1125,63 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.animate-flash_message{
-  -webkit-animation: 0s ease-in 5s forwards;
-          animation: 0s ease-in 5s forwards;
+@-webkit-keyframes fade-in-down{
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  20%{
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  80%{
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  99%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-down{
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  20%{
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  80%{
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
+  99%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down{
+  -webkit-animation: fade-in-down 4s cubic-bezier(0,1.46,1,.96) forwards;
+          animation: fade-in-down 4s cubic-bezier(0,1.46,1,.96) forwards;
 }
 
 .cursor-pointer{
