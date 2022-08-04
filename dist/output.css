@@ -916,6 +916,50 @@ video {
   display: none;
 }
 
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-\[1_1\]{
+  aspect-ratio: 1 1;
+}
+
+.aspect-\[1\/1\]{
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-\[unset\]{
+  aspect-ratio: unset;
+}
+
+.aspect-\[inherited\]{
+  aspect-ratio: inherited;
+}
+
+.aspect-\[inherit\]{
+  aspect-ratio: inherit;
+}
+
+.aspect-\[2\/1\]{
+  aspect-ratio: 2 / 1;
+}
+
+.aspect-\[4\/1\]{
+  aspect-ratio: 4 / 1;
+}
+
+.aspect-\[6\/1\]{
+  aspect-ratio: 6 / 1;
+}
+
+.aspect-\[10\/1\]{
+  aspect-ratio: 10 / 1;
+}
+
 .h-full{
   height: 100%;
 }
@@ -956,6 +1000,10 @@ video {
 
 .h-1{
   height: 0.25rem;
+}
+
+.h-auto{
+  height: auto;
 }
 
 .w-full{
@@ -1603,16 +1651,12 @@ video {
   background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg');
 }
 
-.bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/redactor_rails\/picture\/data\/432151\/dc88f454-d571-4e76-8f08-8ced31bb9eb5\.png\'\)\]{
-  background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/redactor_rails/picture/data/432151/dc88f454-d571-4e76-8f08-8ced31bb9eb5.png');
+.bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/cb3e61444f688dcf6988e173534532a6\.png\'\)\]{
+  background-image: url('https://cdn.zappy.app/cb3e61444f688dcf6988e173534532a6.png');
 }
 
 .bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/3006ae4499e622ad373a2639eda0e566\.png\'\)\]{
   background-image: url('https://cdn.zappy.app/3006ae4499e622ad373a2639eda0e566.png');
-}
-
-.bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/cb3e61444f688dcf6988e173534532a6\.png\'\)\]{
-  background-image: url('https://cdn.zappy.app/cb3e61444f688dcf6988e173534532a6.png');
 }
 
 .bg-cover{
@@ -1627,9 +1671,23 @@ video {
   fill: #fff;
 }
 
+.fill-inherit{
+  fill: inherit;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-none{
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.object-scale-down{
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .p-10{
@@ -2838,8 +2896,24 @@ video {
     display: none;
   }
 
+  .lg\:aspect-auto{
+    aspect-ratio: auto;
+  }
+
+  .lg\:aspect-video{
+    aspect-ratio: 16 / 9;
+  }
+
+  .lg\:aspect-\[10\/1\]{
+    aspect-ratio: 10 / 1;
+  }
+
   .lg\:h-auto{
     height: auto;
+  }
+
+  .lg\:h-full{
+    height: 100%;
   }
 
   .lg\:w-1\/4{
@@ -2848,6 +2922,10 @@ video {
 
   .lg\:w-48{
     width: 12rem;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:grid-cols-4{
