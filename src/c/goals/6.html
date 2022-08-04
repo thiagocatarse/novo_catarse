@@ -223,6 +223,11 @@
                         <div class="px-4 pt-6 pb-5 flex flex-row gap-4">
                             <!-- <Card_footer_left> -->
                             <div class="flex-1">
+                                <button name="button" type="submit" onclick="confirmDelete()" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-red-600 hover:bg-red-50 active:bg-red-100">
+                                    <svg class="w-5 h-5 fill-current">
+                                        <path fill="#D3696B" fill-rule="evenodd" d="M9 2.5a1 1 0 0 0-.894.553L7.382 4.5H4a1 1 0 0 0 0 2v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-10a1 1 0 1 0 0-2h-3.382l-.724-1.447A1 1 0 0 0 11 2.5H9Zm-2 6a1 1 0 0 1 2 0v6a1 1 0 1 1-2 0v-6Zm5-1a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0v-6a1 1 0 0 0-1-1Z" clip-rule="evenodd"/>
+                                    </svg>
+                                  </button>
                                 <!-- <ButtonGroup> -->
                                 <div class="flex flex-row gap-3">
 
@@ -272,6 +277,12 @@
         window.open('5.html',"_self");
         }
         </script>
+        <script>
+            function confirmDelete() {
+            if(!confirm("Você tem certeza que deseja deletar essa meta?")) return;
+            window.open('3.html',"_self");
+            }
+            </script>
 
 </body>
 
