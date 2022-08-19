@@ -1,0 +1,54 @@
+<!-- Empty -->
+<card color="white" border="gray">
+    <card_header title="Metas estendidas"></card_header>
+    <card_content>
+        <empty_state>            
+        </empty_state>
+    </card_content>
+</card>
+
+<!-- criacao de metas -->
+<card color="white" border="gray" shadow="sm">
+    <card_header title="Metas estendidas"></card_header>
+    <card_content>
+        <card color="white" border=""blue" shadow="lg">
+            <card_header title="Nova meta">
+                <card_header_action>Aqui é o X do dismiss</card_header_action>
+            </card_header>
+            <card_content>
+                <form_layout>
+                    <textfield>Valor</textfield>
+                    <textfield>Titulo</textfield>
+                    <textarea>Descrição</textarea>
+                    <fileinput>Miniatura da meta</fileinput>
+                </form_layout>
+            </card_content>
+            <card_footer>
+                <button size="default" color="green">Salvar</button>
+            </card_footer>
+        </card>
+    </card_content>
+</card>
+
+<!-- Listagem de meta -->
+<card color="white" border="gray" shadow="sm">
+    <card_header title="Metas estendidas">
+        <card_header_action>
+            <button size="base" color="green">Adicionar meta</button>
+        </card_header_action>
+    </card_header>
+    <card_content>
+        <card color="white" direction="horizontal" border=""gray" shadow="sm">
+            <card_media>A imagem da meta</card_media>
+            <card_header title="R$50.000" subtitle="É o titulo da meta">
+                <card_header_action>Aqui é o pencil do editar, um <button> color blue, plain, size xs, com o ícone pencil</card_header_action>
+            </card_header>
+            <card_content>
+                A descrição da meta
+            </card_content>
+            <card_footer>
+                <button size="default" color="green">Salvar</button>
+            </card_footer>
+        </card>
+    </card_content>
+</card>
