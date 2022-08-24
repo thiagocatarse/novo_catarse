@@ -7,3 +7,6 @@ html { font-family: 'Inter', sans-serif; }
 @tailwind components;
 @tailwind utilities;
 
+.global_toggler:checked  ~ body {
+  @apply overflow-hidden;
+}
