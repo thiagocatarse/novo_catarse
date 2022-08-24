@@ -1862,6 +1862,22 @@ video {
   padding-left: 0px;
 }
 
+.pl-2{
+  padding-left: 0.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
+}
+
+.pl-1{
+  padding-left: 0.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -3091,6 +3107,11 @@ video {
     padding-bottom: 0.25rem;
   }
 
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .lg\:pl-12{
     padding-left: 3rem;
   }
@@ -3109,6 +3130,10 @@ video {
 
   .lg\:pl-14{
     padding-left: 3.5rem;
+  }
+
+  .lg\:pl-0{
+    padding-left: 0px;
   }
 
   .lg\:text-\[9px\]{

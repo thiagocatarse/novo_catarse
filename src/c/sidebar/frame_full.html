@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <div class="flex flex-col lg:gap-8 lg:flex-row frame">
+        <!-- nav -->
+        <div class="sticky top-0 left-0 flex flex-col h-auto lg:flex-row lg:h-screen">
+            <!-- Global Nav -->
+            <div
+                class="top-0 flex flex-row justify-start w-full h-full gap-6 py-3 pl-2 overflow-hidden bg-gray-900 lg:pl-0 lg:py-0 lg:flex-col lg:w-20 lg:left-0 lg:h-full">
+                <!-- Header -->
+                <input type="checkbox" id="global_toggler" class="hidden peer flex-0" />
+                <label for="global_toggler" class="absolute flex left-2 flex-0 lg:hidden">
+
+                    <div class="p-1 cursor-pointer"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
+                                fill="#DDDFE1" />
+                        </svg>
+                    </div>
+                    <!-- <div class="invisible peer-checked:visible">Olá mundo</div> -->
+                </label>
+                <div class="flex flex-col items-center flex-1 lg:hidden">
+                    <h1 class="text-sm font-semibold text-white">Meu projeto</h1>
+                </div>
+
+                <!-- Content -->
+                <div
+                    class="fixed top-0 z-10 flex flex-col w-3/4 h-full overflow-hidden transition-all bg-gray-900 lg:pt-0 lg:w-auto -left-3/4 lg:left-0 peer-checked:left-0 lg:relative">
+                    <!-- Logo -->
+
+                    <div
+                        class="z-20 flex flex-row items-center gap-2 px-4 pt-4 pb-6 flex-0 lg:flex-0 lg:flex-col lg:sticky lg:top-0">
+                        <!-- Hamburger menu -->
+
+                        <a href="">
+                            <img src="../../assets/Catarse_logo.png" alt="Logo do Catarse" class="w-6">
+                        </a>
+                    </div>
+                    <!-- links -->
+                    <div class="flex flex-col flex-1 gap-12 px-4 overflow-auto lg:pb-40 lg:px-0">
+                        <!-- Section -->
+                        <div class="flex flex-col items-stretch gap-2 lg:items-center">
+                            <!-- div class="text-[8px] font-extrabold text-gray-200 uppercase">admin</!-->
+                            <!-- List -->
+                            <div class="flex flex-col gap-3">
+
+                                <!-- List item responsive -->
+                                <a href="#"
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" class="fill-current">
+                                            <path fill-rule="evenodd"
+                                                d="M17.707 9.293a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7A.996.996 0 0 1 2 10V5a3 3 0 0 1 3-3h5c.256 0 .512.098.707.293l7 7ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div
+                                        class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
+                                        Projetos</div>
+                                </a>
+                                <!-- List item responsive -->
+                                <a href="#"
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" class="fill-current">
+                                            <path
+                                                d="M17.414 2.586a2 2 0 0 0-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 0 0 0-2.828Z" />
+                                            <path fill-rule="evenodd"
+                                                d="M2 6a2 2 0 0 1 2-2h4a1 1 0 0 1 0 2H4v10h10v-4a1 1 0 0 1 2 0v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div
+                                        class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
+                                        Posts</div>
+                                </a>
+                                <!-- List item responsive -->
+                                <a href="#"
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" class="fill-current">
+                                            <path
+                                                d="M13 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm5 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-4 7a4 4 0 1 0-8 0v3h8v-3ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm10 10v-3a5.972 5.972 0 0 0-.75-2.906A3.004 3.004 0 0 1 19 15v3h-3ZM4.75 12.094A5.973 5.973 0 0 0 4 15v3H1v-3a3 3 0 0 1 3.75-2.906Z" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div
+                                        class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
+                                        Apoiadores</div>
+                                </a>
+                                <!-- List item responsive -->
+                                <a href="#"
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" class="fill-current">
+                                            <path
+                                                d="M2 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-5Zm6-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7Zm6-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4Z" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div
+                                        class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
+                                        Métricas</div>
+                                </a>
+                                <!-- List item responsive -->
+                                <a href="#"
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" class="fill-current">
+                                            <path
+                                                d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 0 1-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582ZM11 12.848v-1.697c.22.07.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.306 2.306 0 0 1-.567.267Z" />
+                                            <path fill-rule="evenodd"
+                                                d="M10 18a8 8 0 1 0 0-16.001A8 8 0 0 0 10 18Zm1-13a1 1 0 0 0-2 0v.092a4.535 4.535 0 0 0-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 1 0-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 1 0 2 0v-.092a4.534 4.534 0 0 0 1.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0 0 11 9.092V7.151c.391.127.68.317.843.504a1 1 0 1 0 1.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div
+                                        class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
+                                        Conta</div>
+                                </a>
+                                <!-- List item responsive -->
+                                <a href="#"
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" class="fill-current">
+                                            <path
+                                                d="M8.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l2-2a1 1 0 0 0-1.414-1.414L11 7.586V3a1 1 0 1 0-2 0v4.586l-.293-.293Z" />
+                                            <path
+                                                d="M3 5a2 2 0 0 1 2-2h1a1 1 0 0 1 0 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 1 1 0-2h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Z" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div
+                                        class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
+                                        Inbox</div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <!-- Section -->
+                        <div class="flex flex-col items-center gap-2">
+                            <!-- div class="text-[8px] font-extrabold text-gray-200 uppercase">apoios</!-->
+                            <!-- List -->
+                            <!-- Divider -->
+                            <div class="flex flex-col gap-3">
+                                <!-- div class="flex flex-col py-4">
+                                    <div class="bg-gray-500 h-[1px]"></div>
+                                </!-->
+                                <!-- List item -->
+                                <a href="#"
+                                    class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white group">
+                                    <div class="flex px-2 py-1 rounded group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" class="fill-current">
+                                            <path fill-rule="evenodd"
+                                                d="M9.6 4.8a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6ZM2.4 9.6a7.2 7.2 0 1 1 13.068 4.171l5.78 5.78a1.2 1.2 0 0 1-1.696 1.698l-5.78-5.78A7.2 7.2 0 0 1 2.4 9.6Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div class="text-[9px] fill-current font-bold">Explore</div>
+                                </a>
+                                <!-- List item -->
+                                <a href="#"
+                                    class="flex flex-col items-center gap-0.5 text-gray-400 hover:text-white group">
+                                    <div class="flex px-2 py-1 rounded group-hover:bg-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16"
+                                            viewBox="0 0 20 16" class="fill-current">
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm2 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM18 14H2V6h16v8Z" />
+                                        </svg>
+
+
+                                    </div>
+                                    <div class="text-[9px] fill-current font-bold">Feed</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div><!-- Section -->
+
+                    <!-- Footer -->
+                    <a href="#"
+                        class="z-30 block items-center p-4 bg-gray-900 hover:bg-gray-700 lg:bottom-0 lg:sticky shadow-[0px_-12px_32px_0px_rgba(0,0,0,0.5)]">
+                        <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full"><img
+                                class="object-cover w-full h-full"
+                                src="https://uploads-ssl.webflow.com/582a84edec4e2d344cf6c6d9/5dc243cd73f230bfe2ceb608_T0256U9U6-UQ21GE31A-d5931ea29b1b-512.png" />
+                        </div>
+
+                    </a>
+                </div>
+
+
+
+            </div>
+            <!-- fim da global nav -->
+            <!-- Internal navigation -->
+            <div class="flex flex-col gap-1 bg-gray-600 w-full lg:w-[256px]  top-16 lg:relative lg:top-0  left-0">
+                <input type="checkbox" id="internal_toggler" class="hidden peer" />
+
+                <!-- Header  -->
+                <div class="flex flex-col">
+                    <!-- header desktop -->
+                    <div class="flex-col hidden gap-0.5 px-5 py-4 lg:flex">
+                        <h2 class="text-lg font-semibold text-white">Amantikir</h2>
+                        <div class="flex flex-row items-center gap-1">
+                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4.5" cy="5" r="4.5" fill="#D9D9D9" />
+                            </svg>
+                            <div class="text-xs font-normal text-white"> Rascunho</div>
+
+                        </div>
+                    </div>
+                    <!-- header mobile -->
+                    <label for="internal_toggler"
+                        class="flex flex-row items-center flex-1 gap-2 px-2 py-3 lg:flex-0 lg:flex-col lg:hidden">
+                        <!-- List item -->
+                        <div class="flex flex-row flex-1 px-1 text-white rounded group">
+                            <div class="flex flex-row items-start flex-1 gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    class="fill-current">
+                                    <path
+                                        d="M11 17a1 1 0 0 0 1.447.894l4-2A1 1 0 0 0 17 15V9.236a1 1 0 0 0-1.447-.894l-4 2a.998.998 0 0 0-.553.894V17Zm4.211-10.724a1 1 0 0 0 0-1.788l-4.764-2.382a1 1 0 0 0-.894 0L4.789 4.488a1 1 0 0 0 0 1.788l4.764 2.382a1 1 0 0 0 .894 0l4.764-2.382ZM4.447 8.342A1 1 0 0 0 3 9.236V15a1 1 0 0 0 .553.894l4 2A1 1 0 0 0 9 17v-5.764a1 1 0 0 0-.553-.894l-4-2Z" />
+                                </svg>
+                                <div class="text-sm font-medium text-white">Básico</div>
+                            </div>
+                            <div class="flex-0">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                        fill="white" />
+                                </svg>
+
+                            </div>
+                        </div>
+
+
+                    </label>
+                </div>
+                <!-- Content -->
+                <div
+                    class="py-4 px-3 gap-3 lg:flex flex-col fixed lg:relative hidden peer-checked:block bg-gray-600 h-full w-full top-[116px] overflow-auto z-10 lg:h-auto lg:w-auto lg:top-auto">
+                    <!-- List -->
+                    <div class="flex flex-col gap-4">
+                        <!-- List item -->
+                        <a href="#" class="flex flex-row px-2 py-1 rounded hover:bg-gray-500 group">
+                            <div class="flex flex-row items-start flex-1 gap-3 text-gray-200 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    class="fill-current">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 1.414 1.414L4 10.414V17a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6.586l.293.293a1 1 0 0 0 1.414-1.414l-7-7Z" />
+                                </svg>
+
+                                <div class="text-sm font-medium text-white">Início</div>
+                            </div>
+                            <!-- div class="flex-0">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                        fill="white" />
+                                </svg>
+
+                            </!-->
+                        </a>
+                        <!-- List item ACTIVE -->
+                        <a href="#" class="flex flex-row px-2 py-1 text-white bg-gray-500 rounded group">
+                            <div class="flex flex-row items-start flex-1 gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    class="fill-current">
+                                    <path
+                                        d="M11 17a1 1 0 0 0 1.447.894l4-2A1 1 0 0 0 17 15V9.236a1 1 0 0 0-1.447-.894l-4 2a.998.998 0 0 0-.553.894V17Zm4.211-10.724a1 1 0 0 0 0-1.788l-4.764-2.382a1 1 0 0 0-.894 0L4.789 4.488a1 1 0 0 0 0 1.788l4.764 2.382a1 1 0 0 0 .894 0l4.764-2.382ZM4.447 8.342A1 1 0 0 0 3 9.236V15a1 1 0 0 0 .553.894l4 2A1 1 0 0 0 9 17v-5.764a1 1 0 0 0-.553-.894l-4-2Z" />
+                                </svg>
+
+
+                                <div class="text-sm font-medium text-white">Básico</div>
+                            </div>
+                            <!-- div class="flex-0">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                        fill="white" />
+                                </svg>
+
+                            </!-div>
+                        </a>
+                        <!-- List item -->
+                            <a href="#"
+                                class="flex flex-row px-2 py-1 text-gray-200 rounded hover:bg-gray-500 group hover:text-white">
+                                <div class="flex flex-row items-start flex-1 gap-3 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        class="fill-current">
+                                        <path fill-rule="evenodd"
+                                            d="M4 4a2 2 0 0 1 2-2h4.586A2 2 0 0 1 12 2.586L15.414 6A2 2 0 0 1 16 7.414V16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4Zm2 6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm1 3a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2H7Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+
+
+                                    <div class="text-sm font-medium text-white">Texto e imagens</div>
+                                </div>
+                                <!-- div class="flex-0">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                        fill="white" />
+                                </svg>
+
+                            </!-->
+                            </a>
+                            <!-- List item -->
+                            <a href="#"
+                                class="flex flex-row px-2 py-1 text-gray-200 rounded hover:bg-gray-500 group hover:text-white">
+                                <div class="flex flex-row items-start flex-1 gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        class="fill-current">
+                                        <path d="M4 4a2 2 0 0 0-2 2v1h16V6a2 2 0 0 0-2-2H4Z" />
+                                        <path fill-rule="evenodd"
+                                            d="M18 9H2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9ZM4 13a1 1 0 0 1 1-1h1a1 1 0 0 1 0 2H5a1 1 0 0 1-1-1Zm5-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2H9Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+
+
+
+                                    <div class="text-sm font-medium text-white">Financiamento</div>
+                                </div>
+                                <!-- div class="flex-0">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                        fill="white" />
+                                </svg>
+
+                            </!-->
+                            </a>
+                            <!-- List item -->
+                            <a href="#"
+                                class="flex flex-row px-2 py-1 text-gray-200 rounded hover:bg-gray-500 group hover:text-white">
+                                <div class="flex flex-row items-start flex-1 gap-3 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        class="fill-current">
+                                        <path fill-rule="evenodd"
+                                            d="M5 5a3 3 0 0 1 5-2.236A3 3 0 0 1 14.83 6H16a2 2 0 0 1 0 4h-5V9a1 1 0 0 0-2 0v1H4a2 2 0 1 1 0-4h1.17C5.06 5.687 5 5.35 5 5Zm4 1V5a1 1 0 1 0-1 1h1Zm3 0a1 1 0 1 0-1-1v1h1Z"
+                                            clip-rule="evenodd" />
+                                        <path d="M9 11H3v5a2 2 0 0 0 2 2h4v-7Zm2 7h4a2 2 0 0 0 2-2v-5h-6v7Z" />
+                                    </svg>
+
+
+
+
+
+                                    <div class="text-sm font-medium text-white">Recompensas</div>
+                                </div>
+                                <!-- div class="flex-0">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                        fill="white" />
+                                </svg>
+
+                            </!-->
+                            </a>
+
+                            <!-- List divider -->
+                            <div class="flex flex-col py-4">
+                                <div class="bg-gray-500 h-[1px]"></div>
+                            </div>
+                            <!-- List item -->
+                            <a href="#" class="flex flex-row px-2 py-1 rounded hover:bg-gray-500 group">
+                                <div class="flex flex-row items-start flex-1 gap-3">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5 5.00001C5.00001 4.42089 5.16765 3.85415 5.48266 3.3682C5.79768 2.88225 6.24662 2.49787 6.77529 2.26145C7.30395 2.02503 7.88975 1.94668 8.46196 2.03586C9.03418 2.12504 9.56835 2.37793 10 2.76401C10.4964 2.31912 11.1268 2.05222 11.7918 2.00544C12.4567 1.95867 13.1183 2.13469 13.6721 2.50572C14.2259 2.87674 14.6403 3.42164 14.85 4.05439C15.0597 4.68714 15.0526 5.3717 14.83 6.00001H16C16.5304 6.00001 17.0391 6.21073 17.4142 6.5858C17.7893 6.96087 18 7.46958 18 8.00001C18 8.53045 17.7893 9.03915 17.4142 9.41423C17.0391 9.7893 16.5304 10 16 10H11V9.00001C11 8.7348 10.8946 8.48044 10.7071 8.29291C10.5196 8.10537 10.2652 8.00001 10 8.00001C9.73478 8.00001 9.48043 8.10537 9.29289 8.29291C9.10536 8.48044 9 8.7348 9 9.00001V10H4C3.46957 10 2.96086 9.7893 2.58579 9.41423C2.21071 9.03915 2 8.53045 2 8.00001C2 7.46958 2.21071 6.96087 2.58579 6.5858C2.96086 6.21073 3.46957 6.00001 4 6.00001H5.17C5.06 5.68701 5 5.35001 5 5.00001ZM9 6.00001V5.00001C9 4.80223 8.94135 4.60889 8.83147 4.44444C8.72159 4.27999 8.56541 4.15182 8.38268 4.07613C8.19996 4.00044 7.99889 3.98064 7.80491 4.01923C7.61093 4.05781 7.43275 4.15305 7.29289 4.29291C7.15304 4.43276 7.0578 4.61094 7.01921 4.80492C6.98063 4.9989 7.00043 5.19997 7.07612 5.38269C7.15181 5.56542 7.27998 5.7216 7.44443 5.83148C7.60888 5.94136 7.80222 6.00001 8 6.00001H9ZM12 6.00001C12.1978 6.00001 12.3911 5.94136 12.5556 5.83148C12.72 5.7216 12.8482 5.56542 12.9239 5.38269C12.9996 5.19997 13.0194 4.9989 12.9808 4.80492C12.9422 4.61094 12.847 4.43276 12.7071 4.29291C12.5673 4.15305 12.3891 4.05781 12.1951 4.01923C12.0011 3.98064 11.8 4.00044 11.6173 4.07613C11.4346 4.15182 11.2784 4.27999 11.1685 4.44444C11.0586 4.60889 11 4.80223 11 5.00001V6.00001H12Z"
+                                            fill="#BEC0C4" />
+                                        <path
+                                            d="M9 11H3V16C3 16.5304 3.21071 17.0391 3.58579 17.4142C3.96086 17.7893 4.46957 18 5 18H9V11ZM11 18H15C15.5304 18 16.0391 17.7893 16.4142 17.4142C16.7893 17.0391 17 16.5304 17 16V11H11V18Z"
+                                            fill="#BEC0C4" />
+                                    </svg>
+                                    <div class="text-sm font-medium text-white">Recompensas</div>
+                                </div>
+                                <div class="flex-0">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                            <!-- List item -->
+                            <a href="#" class="flex flex-row px-2 py-1 rounded hover:bg-gray-500 group">
+                                <div class="flex flex-row items-start flex-1 gap-3">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5 5.00001C5.00001 4.42089 5.16765 3.85415 5.48266 3.3682C5.79768 2.88225 6.24662 2.49787 6.77529 2.26145C7.30395 2.02503 7.88975 1.94668 8.46196 2.03586C9.03418 2.12504 9.56835 2.37793 10 2.76401C10.4964 2.31912 11.1268 2.05222 11.7918 2.00544C12.4567 1.95867 13.1183 2.13469 13.6721 2.50572C14.2259 2.87674 14.6403 3.42164 14.85 4.05439C15.0597 4.68714 15.0526 5.3717 14.83 6.00001H16C16.5304 6.00001 17.0391 6.21073 17.4142 6.5858C17.7893 6.96087 18 7.46958 18 8.00001C18 8.53045 17.7893 9.03915 17.4142 9.41423C17.0391 9.7893 16.5304 10 16 10H11V9.00001C11 8.7348 10.8946 8.48044 10.7071 8.29291C10.5196 8.10537 10.2652 8.00001 10 8.00001C9.73478 8.00001 9.48043 8.10537 9.29289 8.29291C9.10536 8.48044 9 8.7348 9 9.00001V10H4C3.46957 10 2.96086 9.7893 2.58579 9.41423C2.21071 9.03915 2 8.53045 2 8.00001C2 7.46958 2.21071 6.96087 2.58579 6.5858C2.96086 6.21073 3.46957 6.00001 4 6.00001H5.17C5.06 5.68701 5 5.35001 5 5.00001ZM9 6.00001V5.00001C9 4.80223 8.94135 4.60889 8.83147 4.44444C8.72159 4.27999 8.56541 4.15182 8.38268 4.07613C8.19996 4.00044 7.99889 3.98064 7.80491 4.01923C7.61093 4.05781 7.43275 4.15305 7.29289 4.29291C7.15304 4.43276 7.0578 4.61094 7.01921 4.80492C6.98063 4.9989 7.00043 5.19997 7.07612 5.38269C7.15181 5.56542 7.27998 5.7216 7.44443 5.83148C7.60888 5.94136 7.80222 6.00001 8 6.00001H9ZM12 6.00001C12.1978 6.00001 12.3911 5.94136 12.5556 5.83148C12.72 5.7216 12.8482 5.56542 12.9239 5.38269C12.9996 5.19997 13.0194 4.9989 12.9808 4.80492C12.9422 4.61094 12.847 4.43276 12.7071 4.29291C12.5673 4.15305 12.3891 4.05781 12.1951 4.01923C12.0011 3.98064 11.8 4.00044 11.6173 4.07613C11.4346 4.15182 11.2784 4.27999 11.1685 4.44444C11.0586 4.60889 11 4.80223 11 5.00001V6.00001H12Z"
+                                            fill="#BEC0C4" />
+                                        <path
+                                            d="M9 11H3V16C3 16.5304 3.21071 17.0391 3.58579 17.4142C3.96086 17.7893 4.46957 18 5 18H9V11ZM11 18H15C15.5304 18 16.0391 17.7893 16.4142 17.4142C16.7893 17.0391 17 16.5304 17 16V11H11V18Z"
+                                            fill="#BEC0C4" />
+                                    </svg>
+                                    <div class="text-sm font-medium text-white">Recompensas</div>
+                                </div>
+                                <div class="flex-0">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- fim da internal nav -->
+        </div>
+        <!-- content -->
+        <article class="flex-1">
+            <form action="submit">
+                <!-- Componente Page size=base bg-color=gray -->
+                <div class="flex flex-col max-w-screen-lg gap-10 px-4 py-12 mx-auto my-0 lg:px-0 bg-gray-50">
+                    <!-- PageHeader-->
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-2xl font-semibold leading-none text-gray-900">Infos básicas</h1>
+                            <div class="text-sm font-normal text-gray-600">O essencial sobre o seu
+                                projeto no Catarse
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Componente Form Layout Hint - caso esse componente ainda não tenha sido criado, pode ser feito manualmente e depois componentizamos -->
+                    <!-- Componente Grid - caso esse componente não tenha sido criado, pode ser feito manualmente e depois componentizamos -->
+                    <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                        <!-- Componente Card color=white-->
+                        <div class="flex flex-col p-6 bg-white border border-gray-100 rounded-lg">
+                            <!-- Componente Form Layout -->
+                            <div class="flex flex-col gap-8">
+                                <!-- Input -->
+                                <div class="flex flex-col gap-2">
+                                    <label for="preview-input"
+                                        class="flex-1 block text-sm font-medium text-gray-900">Nome
+                                        do
+                                        projeto</label>
+                                    <div class="flex mt-1 rounded-md shadow-sm">
+                                        <input
+                                            class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 rounded-md outline-none focus:ring-blue-500 hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700"
+                                            id="preview-input" type="text" placeholder="" autofocus>
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">Dê um nome que as pessoas se lembrem
+                                        facilmente.
+                                        Não
+                                        ultrapasse 50 caracteres.</p>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Link
+                                            para
+                                            o seu projeto no Catarse</label>
+                                    </div>
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <span
+                                            class="inline-flex items-center px-3 text-gray-500 border border-r-0 border-gray-300 bg-gray-50 sm:text-sm rounded-l-md">catarse.com.br/</span>
+                                        <input
+                                            class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 outline-none focus:ring-blue-500 hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 rounded-r-md"
+                                            id="preview-input" type="Link para o seu projeto no Catarse"
+                                            placeholder="seulink">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">Você pode editá-lo até o projeto ir ao
+                                        ar.
+                                        Prefira
+                                        algo simples, direto e que identifique bem seu projeto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Essa div aqui abaixo faz parte do componente Form Layout Hint -->
+                        <div class="-mt-4 md:mt-0">
+                            <!-- Componente Card - color=gray with_border=false -->
+                            <div class="flex flex-col p-6 border-0 border-gray-100 rounded-lg bg-gray-50">
+                                <p class="mb-2 text-base font-semibold tracking-tight text-gray-900"><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z"
+                                            fill="#BEC0C4" />
+                                    </svg>
+                                </p>
+                                <div class="text-sm text-gray-500">Nossa Central de ajuda tem tudo o que você precisa.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Componente Form Layout Hint - caso esse componente ainda não tenha sido criado, pode ser feito manualmente e depois componentizamos -->
+                    <!-- Componente Grid - caso esse componente não tenha sido criado, pode ser feito manualmente e depois componentizamos -->
+                    <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                        <!-- Componente Card color=white -->
+                        <div class="flex flex-col p-6 bg-white border border-gray-100 rounded-lg ">
+                            <!-- Componente Form Layout -->
+                            <div class="flex flex-col gap-8">
+                                <!--FormHeader -->
+                                <div class="flex flex-row gap-6 pb-3">
+                                    <div class="w-1 bg-gray-100"></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="text-lg font-semibold text-gray-800">Descoberta do seu projeto no
+                                            Catarse
+                                        </h2>
+                                    </div>
+                                </div>
+                                <!-- Select - Categoria -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex">
+                                        <label class="flex-1 block text-sm font-medium text-gray-900">Categoria</label>
+                                    </div>
+                                    <select name="" id=""
+                                        class="block w-full p-3 text-sm text-gray-900 transition-all duration-150 ease-in-out bg-white border border-gray-300 rounded-lg outline-none hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700">
+                                        <option value="">Escolha uma categoria</option>
+                                        <option value="23">Arquitetura e Urbanismo</option>
+                                        <option value="1">Artes</option>
+                                        <option value="18">Ciência e Tecnologia</option>
+                                        <option value="13">Cinema e Vídeo</option>
+                                        <option value="9">Design e Moda</option>
+                                        <option value="31">Educação</option>
+                                        <option value="21">Esporte</option>
+                                        <option value="10">Eventos</option>
+                                        <option value="17">Fotografia</option>
+                                        <option value="12">Gastronomia</option>
+                                        <option value="14">Jogos</option>
+                                        <option value="15">Jornalismo</option>
+                                        <option value="20">Literatura</option>
+                                        <option value="16">Música</option>
+                                        <option value="35">Pessoais</option>
+                                        <option value="36">Podcast</option>
+                                        <option value="7">Quadrinhos</option>
+                                        <option value="4">Socioambiental</option>
+                                        <option value="19">Teatro e Dança</option>
+                                    </select>
+                                </div>
+                                <!-- Tags (tópicos) - componente Multi-select ainda não foi feito -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Tópicos
+                                            (palavras-chave)</label>
+                                    </div>
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <input
+                                            class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 rounded-md outline-none focus:ring-blue-500 hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700"
+                                            id="preview-input" type="text" placeholder="">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">Liste até 5 palavras-chaves
+                                        relacionadas a
+                                        sua
+                                        campanha e facilite a descoberta pelos apoiadores.</p>
+                                </div>
+                                <!-- Local - componente Combobox ainda não foi feito  -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex">
+                                        <label for="preview-input"
+                                            class="flex-1 block text-sm font-medium text-gray-900">Local
+                                            do
+                                            projeto</label>
+                                    </div>
+                                    <div class="flex w-full rounded-md shadow-sm">
+                                        <input
+                                            class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 rounded-md outline-none focus:ring-blue-500 hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700"
+                                            id="preview-input" type="text" placeholder="Escolha uma cidade">
+                                    </div>
+                                    <p class="text-xs font-normal text-gray-500">Caso seu projeto aconteça em mais de um
+                                        lugar,
+                                        uma
+                                        dica é colocar a cidade onde sua rede de potenciais apoiadores é maior.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-last -mt-4 md:mt-0">
+                            <!-- Card - color=gray with_border=false -->
+                            <div class="flex flex-col p-6 border-0 border-gray-100 rounded-lg bg-gray-50">
+                                <p class="mb-2 text-base font-semibold tracking-tight text-gray-900"><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z"
+                                            fill="#BEC0C4" />
+                                    </svg>
+                                </p>
+                                <div class="text-sm text-gray-500">Nossa Central de ajuda tem tudo o que você precisa.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Componente Form Layout Hint - caso esse componente ainda não tenha sido criado, pode ser feito manualmente e depois componentizamos -->
+                    <!-- Componente Grid - caso esse componente não tenha sido criado, pode ser feito manualmente e depois componentizamos -->
+                    <div class="grid grid-cols-1 md:grid-cols-[3fr,1fr] gap-4 lg:gap-6 2xl:gap-8 items-stretch">
+                        <!-- Card color=white com o form dentro -->
+                        <div class="flex flex-col p-6 bg-white border border-gray-100 rounded-lg">
+                            <!-- Componente Form Layout -->
+                            <div class="flex flex-col gap-8">
+                                <!--FormHeader -->
+                                <div class="flex flex-row gap-6 pb-3">
+                                    <div class="w-1 bg-gray-100"></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="text-lg font-semibold text-gray-800">Declaração de conteúdo adulto
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="flex-1 block mb-2 text-sm font-medium text-gray-900">O seu projeto contém
+                                        material
+                                        adulto, tal como nudez e/ou cenas de sexo explícito?</p>
+                                    <!-- Em tese o Checkbox só inicia aqui embaixo, portanto temos que pensar como iremos abordar essa questão de ter um "Title" aqui para o checkbox acima -->
+                                    <div class="flex items-center gap-2">
+                                        <input type="checkbox" id="Some_content" value="1"
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                        <label class="text-sm font-normal text-gray-900 dark:text-gray-300"
+                                            for="Some_content">Sim, meu trabalho contém material adulto.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-last -mt-4 md:mt-0">
+                            <!-- Card com o Help - color=gray with_border=false -->
+                            <div class="flex flex-col p-6 border-0 border-gray-100 rounded-lg bg-gray-50">
+                                <p class="mb-2 text-base font-semibold tracking-tight text-gray-900"><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.1999 1.5999C11.1999 1.28164 11.0735 0.976418 10.8484 0.751374C10.6234 0.526331 10.3182 0.399902 9.9999 0.399902C9.68164 0.399902 9.37642 0.526331 9.15137 0.751374C8.92633 0.976418 8.7999 1.28164 8.7999 1.5999V2.7999C8.7999 3.11816 8.92633 3.42339 9.15137 3.64843C9.37642 3.87347 9.68164 3.9999 9.9999 3.9999C10.3182 3.9999 10.6234 3.87347 10.8484 3.64843C11.0735 3.42339 11.1999 3.11816 11.1999 2.7999V1.5999ZM16.7883 4.9083C17.0069 4.68198 17.1278 4.37886 17.1251 4.06422C17.1224 3.74958 16.9962 3.44861 16.7737 3.22612C16.5512 3.00363 16.2502 2.87743 15.9356 2.87469C15.6209 2.87196 15.3178 2.99291 15.0915 3.2115L14.2431 4.0599C14.0245 4.28623 13.9036 4.58935 13.9063 4.90398C13.909 5.21862 14.0352 5.51959 14.2577 5.74208C14.4802 5.96457 14.7812 6.09078 15.0958 6.09351C15.4105 6.09625 15.7136 5.97529 15.9399 5.7567L16.7883 4.9083ZM19.5999 9.9999C19.5999 10.3182 19.4735 10.6234 19.2484 10.8484C19.0234 11.0735 18.7182 11.1999 18.3999 11.1999H17.1999C16.8816 11.1999 16.5764 11.0735 16.3514 10.8484C16.1263 10.6234 15.9999 10.3182 15.9999 9.9999C15.9999 9.68164 16.1263 9.37642 16.3514 9.15137C16.5764 8.92633 16.8816 8.7999 17.1999 8.7999H18.3999C18.7182 8.7999 19.0234 8.92633 19.2484 9.15137C19.4735 9.37642 19.5999 9.68164 19.5999 9.9999ZM4.0599 5.7567C4.1706 5.87132 4.30301 5.96273 4.44942 6.02562C4.59582 6.08851 4.75329 6.12162 4.91262 6.123C5.07196 6.12439 5.22997 6.09403 5.37745 6.03369C5.52492 5.97335 5.65891 5.88425 5.77158 5.77158C5.88425 5.65891 5.97335 5.52492 6.03369 5.37745C6.09403 5.22997 6.12439 5.07196 6.123 4.91262C6.12162 4.75329 6.08851 4.59582 6.02562 4.44942C5.96273 4.30301 5.87132 4.1706 5.7567 4.0599L4.9083 3.2115C4.68198 2.99291 4.37886 2.87196 4.06422 2.87469C3.74958 2.87743 3.44861 3.00363 3.22612 3.22612C3.00363 3.44861 2.87743 3.74958 2.87469 4.06422C2.87196 4.37886 2.99291 4.68198 3.2115 4.9083L4.0599 5.7567V5.7567ZM3.9999 9.9999C3.9999 10.3182 3.87347 10.6234 3.64843 10.8484C3.42339 11.0735 3.11816 11.1999 2.7999 11.1999H1.5999C1.28164 11.1999 0.976418 11.0735 0.751374 10.8484C0.526331 10.6234 0.399902 10.3182 0.399902 9.9999C0.399902 9.68164 0.526331 9.37642 0.751374 9.15137C0.976418 8.92633 1.28164 8.7999 1.5999 8.7999H2.7999C3.11816 8.7999 3.42339 8.92633 3.64843 9.15137C3.87347 9.37642 3.9999 9.68164 3.9999 9.9999ZM7.5999 17.1999V15.9999H12.3999V17.1999C12.3999 17.8364 12.147 18.4469 11.697 18.897C11.2469 19.347 10.6364 19.5999 9.9999 19.5999C9.36338 19.5999 8.75293 19.347 8.30285 18.897C7.85276 18.4469 7.5999 17.8364 7.5999 17.1999V17.1999ZM12.3999 14.7999C12.4179 14.3919 12.6495 14.0247 12.9723 13.7691C13.7555 13.1514 14.3268 12.3051 14.6069 11.3477C14.8869 10.3903 14.8617 9.36949 14.5348 8.4271C14.2079 7.4847 13.5955 6.66756 12.7828 6.08924C11.9701 5.51093 10.9974 5.20017 9.9999 5.20017C9.00242 5.20017 8.02971 5.51093 7.21699 6.08924C6.40426 6.66756 5.79189 7.4847 5.46499 8.4271C5.13809 9.36949 5.1129 10.3903 5.39293 11.3477C5.67296 12.3051 6.24428 13.1514 7.0275 13.7691C7.3515 14.0247 7.5819 14.3919 7.5987 14.7999H12.4011H12.3999Z"
+                                            fill="#BEC0C4" />
+                                    </svg>
+                                </p>
+                                <div class="text-sm text-gray-500">Para que possamos acolher a todos os públicos,
+                                    criamos
+                                    algumas regras para conteúdo adulto. <a href="https://catarse.me"
+                                        class="text-blue-600 hover:underline">Saiba o que pode e o que não pode.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Componente Page Action -->
+                    <div class="flex flex-row justify-end gap-6 py-6 border-t border-gray-100">
+                        <button name="button" type="submit"
+                            class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white">
+                            Salvar projeto
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </article>
+
+        <!-- fim do content -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $("input:checkbox").on('change', function () {
+
+            if (($(this).attr('id') == 'global_toggler' || $(this).attr('id') == 'internal_toggler') && $(this)
+                .prop('checked')) {
+                $('body').css("overflow", "hidden");
+            } else
+
+                $('body').css("overflow", "visible");
+
+        });
+    </script>
+
+</body>
+
+</html>
