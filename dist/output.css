@@ -900,6 +900,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.-mt-0\.5{
+  margin-top: -0.125rem;
+}
+
+.-mt-0{
+  margin-top: -0px;
+}
+
+.-mt-\[1px\]{
+  margin-top: -1px;
+}
+
 .block{
   display: block;
 }
@@ -2600,6 +2612,10 @@ video {
 
 .peer:checked ~ .peer-checked\:z-20{
   z-index: 20;
+}
+
+.peer:checked ~ .peer-checked\:z-30{
+  z-index: 30;
 }
 
 .peer:checked ~ .peer-checked\:block{
