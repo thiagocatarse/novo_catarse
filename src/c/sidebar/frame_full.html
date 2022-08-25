@@ -13,9 +13,13 @@
         <div class="sticky top-0 left-0 flex flex-col h-auto lg:flex-row lg:h-screen">
             <!-- Global Nav -->
             <div
-                class="top-0 flex flex-row justify-start w-full h-full gap-6 py-3 pl-2 overflow-hidden bg-gray-900 lg:pl-0 lg:py-0 lg:flex-col lg:w-20 lg:left-0 lg:h-full">
+                class="top-0 flex flex-row justify-start w-full h-full gap-6 py-3.5 pl-2 overflow-hidden bg-gray-900 lg:pl-0 lg:py-0 lg:flex-col lg:w-20 lg:left-0 lg:h-full">
+                
                 <!-- Header -->
                 <input type="checkbox" id="global_toggler" class="hidden peer flex-0" />
+                <!-- Overlay -->
+                <label for="global_toggler"
+            class="top-0 bottom-0 left-0 right-0 col-start-1 col-end-3 row-start-1 row-end-3 transition-all delay-75 bg-gray-900 opacity-0 peer-checked:block peer-checked:z-20 peer-checked:fixed peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden"></label>
                 <label for="global_toggler" class="absolute flex left-2 flex-0 lg:hidden">
 
                     <div class="p-1 cursor-pointer"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"
@@ -28,16 +32,16 @@
                     <!-- <div class="invisible peer-checked:visible">Olá mundo</div> -->
                 </label>
                 <div class="flex flex-col items-center flex-1 lg:hidden">
-                    <h1 class="text-sm font-semibold text-white">Meu projeto</h1>
+                    <h1 class="text-base font-semibold text-white">Meu projeto</h1>
                 </div>
 
                 <!-- Content -->
                 <div
-                    class="fixed top-0 z-10 flex flex-col w-3/4 h-full overflow-hidden transition-all bg-gray-900 lg:pt-0 lg:w-auto -left-3/4 lg:left-0 peer-checked:left-0 lg:relative">
+                    class="fixed top-0 z-30 flex flex-col w-3/4 h-full overflow-hidden transition-all bg-gray-900 lg:pt-0 lg:w-auto -left-3/4 lg:left-0 peer-checked:left-0 lg:relative">
                     <!-- Logo -->
 
                     <div
-                        class="z-20 flex flex-row items-center gap-2 px-4 pt-4 pb-6 flex-0 lg:flex-0 lg:flex-col lg:sticky lg:top-0">
+                        class="z-30 flex flex-row items-center gap-2 px-4 pt-4 pb-6 flex-0 lg:flex-0 lg:flex-col lg:sticky lg:top-0">
                         <!-- Hamburger menu -->
 
                         <a href="">
@@ -239,16 +243,16 @@
                     </div>
                     <!-- header mobile -->
                     <label for="internal_toggler"
-                        class="flex flex-row items-center flex-1 gap-2 px-2 py-3 lg:flex-0 lg:flex-col lg:hidden">
+                        class="flex flex-row items-center flex-1 gap-2 px-3 py-3 lg:flex-0 lg:flex-col lg:hidden">
                         <!-- List item -->
                         <div class="flex flex-row flex-1 px-1 text-white rounded group">
-                            <div class="flex flex-row items-start flex-1 gap-3">
+                            <div class="flex flex-row items-center flex-1 gap-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                     class="fill-current">
                                     <path
                                         d="M11 17a1 1 0 0 0 1.447.894l4-2A1 1 0 0 0 17 15V9.236a1 1 0 0 0-1.447-.894l-4 2a.998.998 0 0 0-.553.894V17Zm4.211-10.724a1 1 0 0 0 0-1.788l-4.764-2.382a1 1 0 0 0-.894 0L4.789 4.488a1 1 0 0 0 0 1.788l4.764 2.382a1 1 0 0 0 .894 0l4.764-2.382ZM4.447 8.342A1 1 0 0 0 3 9.236V15a1 1 0 0 0 .553.894l4 2A1 1 0 0 0 9 17v-5.764a1 1 0 0 0-.553-.894l-4-2Z" />
                                 </svg>
-                                <div class="text-sm font-medium text-white">Básico</div>
+                                <div class="text-base font-medium text-white">Básico</div>
                             </div>
                             <div class="flex-0">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none"

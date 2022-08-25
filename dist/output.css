@@ -1803,6 +1803,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-3\.5{
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
 }
@@ -2591,6 +2596,10 @@ video {
 
 .peer:checked ~ .peer-checked\:z-40{
   z-index: 40;
+}
+
+.peer:checked ~ .peer-checked\:z-20{
+  z-index: 20;
 }
 
 .peer:checked ~ .peer-checked\:block{
