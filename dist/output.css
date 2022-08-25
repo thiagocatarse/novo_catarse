@@ -1824,6 +1824,11 @@ video {
   padding-bottom: 0.875rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
 }
@@ -1902,6 +1907,10 @@ video {
 
 .pl-1{
   padding-left: 0.25rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .text-center{
@@ -3198,6 +3207,11 @@ video {
 
   .lg\:font-bold{
     font-weight: 700;
+  }
+
+  .lg\:text-gray-400{
+    --tw-text-opacity: 1;
+    color: rgb(126 132 139 / var(--tw-text-opacity));
   }
 
   .lg\:opacity-0{
