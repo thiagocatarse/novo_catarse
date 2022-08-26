@@ -8,6 +8,7 @@
 </head>
 
 <body class="bg-gray-50">
+    
     <!-- Inicio do Frame -->
     <div class="flex flex-col lg:gap-8 lg:flex-row">
         <!-- Inicio da Area Nav do Frame -->
@@ -15,13 +16,14 @@
             <!-- Inicio da Global Nav -->
             <nav
                 class="top-0 flex flex-row justify-start w-full h-full gap-0 py-3.5 overflow-hidden bg-gray-900 lg:pl-0 lg:py-0 lg:flex-col lg:w-20 lg:left-0 lg:h-full">
-                <!-- Header -->
+                <!-- Esse input controla a abertura da Global Nav em mobile -->
                 <input type="checkbox" id="global_toggler" class="hidden peer flex-0" />
-                <!-- Overlay -->
+                <!-- Inicio do Overlay que só aparece em mobile -->
                 <label for="global_toggler"
             class="top-0 bottom-0 left-0 right-0 transition-all bg-gray-900 opacity-0 peer-checked:block peer-checked:z-30 peer-checked:fixed peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden"></label>
+            <!-- Fim do Overlay -->
+            <!-- Inicio do Header da Global Nav -->
                 <label for="global_toggler" class="absolute flex left-2 flex-0 lg:hidden">
-
                     <div class="p-1 cursor-pointer"><svg width="18" height="16" viewBox="0 0 18 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -30,33 +32,34 @@
                         </svg>
                     </div>
                 </label>
+                <!-- Inicio do Title da Página, só aparece em mobile -->
                 <div class="flex flex-col items-center flex-1 lg:hidden">
                     <h1 class="text-base font-semibold text-white">Meu projeto</h1>
                 </div>
-
-                <!-- Content -->
+                <!-- Fim do Title da Página -->
+                <!-- Fim do Header da Global Nav -->
+                <!-- Inicio do Content da Global Nav -->
                 <div
                     class="fixed top-0 z-40 flex flex-col w-3/4 h-full overflow-hidden transition-all bg-gray-900 lg:pt-0 lg:w-auto -left-3/4 lg:left-0 peer-checked:left-0 lg:relative">
-                    <!-- Logo -->
-
+                    <!-- Inicio dos Logos da Global Nav, temos um para mobile e outro para desktop -->
                     <div
                         class="z-40 flex flex-row items-center gap-2 px-6 pt-4 pb-6 flex-0 lg:flex-0 lg:flex-col lg:sticky lg:top-0">
-                        <!-- Hamburger menu -->
 
                         <a href="">
                             <img src="https://thiagocatarse.github.io/novo_catarse/src/assets/Catarse_logo.png" alt="Logo do Catarse" class="hidden w-6 lg:flex">
                             <img src="https://thiagocatarse.github.io/novo_catarse/src/assets/LogoText.png" alt="Logo do Catarse" class="flex h-8 lg:hidden">
                         </a>
                     </div>
-                    <!-- links -->
+                    <!-- Fim dos logos -->
+                    <!-- Início do conjunto de links da Global Nav -->
                     <div class="flex flex-col flex-1 gap-12 px-4 pt-6 overflow-auto lg:pb-40 lg:px-0">
-                        <!-- Section -->
+                        <!-- Inicio da Section de links da Global Nav. Poderíamos considerar a Section como um componente que engloba uma ou mais Lists, que por sua vez são compostas por List items -->
                         <div class="flex flex-col items-stretch gap-2 lg:items-center">
+                            <!-- Essa div abaixo foi um teste pro caso de queremos ter um Title pra Section, mas está comentada pois não iremos com ela a princípio -->
                             <!-- div class="text-[8px] font-extrabold text-gray-200 uppercase">admin</!-->
                             <!-- List -->
                             <div class="flex flex-col gap-3">
-
-                                <!-- List item responsive ACTIVE -->
+                                <!-- List item responsive ACTIVE. OBS: o active aqui embaixo estea manualmente forçado a ficar active, mas o comportamento do active é que ele é igual ao HOVER do list item -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white group py-1 lg:py-0 px-2 lg:px-0 bg-gray-500 lg:bg-gray-900 lg:hover:bg-gray-900 rounded">
                                     <div class="flex rounded lg:px-2 lg:py-1 lg:bg-gray-700">
@@ -73,7 +76,8 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Criações</div>
                                 </a>
-                                <!-- List item responsive -->
+                                <!-- Fim de list item -->
+                                <!-- List item responsive - coloquei o termo "responsive" aqui pois ele é um item que tem uma aparência diferente no mobile em relação ao desktop -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
                                     <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
@@ -92,6 +96,7 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Posts</div>
                                 </a>
+                                <!-- Fim do list item -->
                                 <!-- List item responsive -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
@@ -108,6 +113,7 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Apoiadores</div>
                                 </a>
+                                <!-- Fim do list item -->
                                 <!-- List item responsive -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
@@ -124,6 +130,7 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Métricas</div>
                                 </a>
+                                <!-- Fim do list item -->
                                 <!-- List item responsive -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
@@ -143,6 +150,7 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Conta</div>
                                 </a>
+                                <!-- Fim do list item -->
                                 <!-- List item responsive -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
@@ -161,14 +169,16 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Inbox</div>
                                 </a>
-
+                                <!-- Fim do list item -->
                             </div>
+                            <!-- Fim da List -->
                         </div>
+                        <!-- Fim da Section -->
 
-                        <!-- Section -->
+                        <!-- Inicio de Section -->
                         <div class="flex flex-col items-stretch gap-2 lg:items-center">
                             <!-- div class="text-[8px] font-extrabold text-gray-200 uppercase">apoios</!-->
-                            <!-- List -->
+                            <!-- Inicio da List -->
                             <div class="flex flex-col gap-3">
                                 <!-- div class="flex flex-col py-4">
                                     <div class="bg-gray-500 h-[1px]"></div>
@@ -190,7 +200,7 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Explore</div>
                                 </a>
-
+                                <!-- Fim do list item -->
                                 <!-- List item responsive -->
                                 <a href="#"
                                     class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded">
@@ -207,14 +217,14 @@
                                         class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold">
                                         Feed</div>
                                 </a>
-                            
-                                
-
+                                <!-- Fim do list item -->
                             </div>
+                            <!-- Fim da List -->
                         </div>
-                    </div><!-- Section -->
+                        <!-- Fim da Section -->
+                    </div>
 
-                    <!-- Footer -->
+                    <!-- Inicio do Footer do Global Nav-->
                     <a href="#"
                         class="z-40 flex lg:flex-col flex-row items-center gap-3 p-4 bg-gray-900 hover:bg-gray-700 lg:bottom-0 lg:sticky shadow-[0px_-12px_32px_0px_rgba(0,0,0,0.5)]">
                         <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full"><img
@@ -222,22 +232,19 @@
                                 src="https://uploads-ssl.webflow.com/582a84edec4e2d344cf6c6d9/5dc243cd73f230bfe2ceb608_T0256U9U6-UQ21GE31A-d5931ea29b1b-512.png" />
                         </div>
                         <div class="block text-sm font-medium text-white lg:hidden">Nome da usuária</div>
-
                     </a>
                 </div>
-
-
-
             </nav>
             <!-- Fim da Global Nav -->
-            <!-- Internal Nav -->
+            
+            <!-- Inicio da Internal Nav -->
             <nav class="flex flex-col gap-1 bg-gray-600 w-full lg:w-[256px] top-16 lg:relative lg:top-0 left-0 -mt-[1px]">
+                <!-- Esse input é quem controla a abertura da Internal Nav em mobile -->
                 <input type="checkbox" id="internal_toggler" class="hidden peer" />
-
-                <!-- Header  -->
+                <!-- Inicio do Header Wrapper da Internal Nav  -->
                 <div class="flex flex-col">
-                    <!-- header desktop -->
-                    <div class="flex-col hidden gap-0.5 px-5 py-4 lg:flex">
+                    <!-- Inicio do Header desktop . O Header em desktop tem a possibilidade de exibir um Title e um Subtitle-->
+                    <div class="flex-col hidden gap-0.5 px-5 py-4 lg:flex lg:min-h-[72px]">
                         <h2 class="text-lg font-semibold text-white">Amantikir</h2>
                         <div class="flex flex-row items-center gap-1">
                             <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
@@ -248,7 +255,8 @@
 
                         </div>
                     </div>
-                    <!-- header mobile -->
+                    <!-- Fim do Header em desktop -->
+                    <!-- Inicio Header mobile . Aqui no caso o header em mobile exibe o nome do List item active -->
                     <label for="internal_toggler"
                         class="z-20 flex flex-row items-center flex-1 gap-2 px-3 py-3 lg:flex-0 lg:flex-col lg:hidden">
                         <!-- List item -->
@@ -274,11 +282,13 @@
 
 
                     </label>
+                    <!-- Fim do Header mobile-->
                 </div>
-                <!-- Content -->
+                <!-- Fim do Header Wrapper da Internal Nav -->
+                <!-- Inicio do Content da Internal Nav -->
                 <div
                     class="fixed z-10 flex-col hidden w-full h-full gap-3 px-3 py-4 pt-16 overflow-auto bg-gray-600 lg:pt-4 lg:flex lg:relative peer-checked:block lg:h-auto lg:w-auto lg:top-auto">
-                    <!-- List -->
+                    <!-- Inicio da List -->
                     <div class="flex flex-col gap-4">
                         <!-- List item -->
                         <a href="#" class="flex flex-row px-2 py-1 rounded hover:bg-gray-500 group">
@@ -288,20 +298,11 @@
                                     <path
                                         d="M10.707 2.293a1 1 0 0 0-1.414 0l-7 7a1 1 0 0 0 1.414 1.414L4 10.414V17a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6.586l.293.293a1 1 0 0 0 1.414-1.414l-7-7Z" />
                                 </svg>
-
                                 <div class="text-sm font-medium text-white">Início</div>
                             </div>
-                            <!-- div class="flex-0">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
-                                        fill="white" />
-                                </svg>
-
-                            </!-->
                         </a>
-                        <!-- List item ACTIVE -->
+                        <!-- Fim do List Item -->
+                        <!-- List item ACTIVE - é exatamente a aparência do List Item com HOVER -->
                         <a href="#" class="flex flex-row px-2 py-1 text-white bg-gray-500 rounded group">
                             <div class="flex flex-row items-start flex-1 gap-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -313,16 +314,8 @@
 
                                 <div class="text-sm font-medium text-white">Básico</div>
                             </div>
-                            <!-- div class="flex-0">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M5.29279 7.79296C5.48031 7.60549 5.73462 7.50017 5.99979 7.50017C6.26495 7.50017 6.51926 7.60549 6.70679 7.79296L9.99979 11.086L13.2928 7.79296C13.385 7.69745 13.4954 7.62127 13.6174 7.56886C13.7394 7.51645 13.8706 7.48886 14.0034 7.48771C14.1362 7.48655 14.2678 7.51186 14.3907 7.56214C14.5136 7.61242 14.6253 7.68667 14.7192 7.78056C14.8131 7.87446 14.8873 7.98611 14.9376 8.10901C14.9879 8.2319 15.0132 8.36358 15.012 8.49636C15.0109 8.62914 14.9833 8.76036 14.9309 8.88236C14.8785 9.00437 14.8023 9.11471 14.7068 9.20696L10.7068 13.207C10.5193 13.3944 10.265 13.4997 9.99979 13.4997C9.73462 13.4997 9.48031 13.3944 9.29279 13.207L5.29279 9.20696C5.10532 9.01943 5 8.76512 5 8.49996C5 8.23479 5.10532 7.98049 5.29279 7.79296Z"
-                                        fill="white" />
-                                </svg>
-
-                            </!-div>
                         </a>
+                        <!-- Fim do List Item -->
                         <!-- List item -->
                             <a href="#"
                                 class="flex flex-row px-2 py-1 text-gray-200 rounded hover:bg-gray-500 group hover:text-white">
@@ -348,6 +341,7 @@
 
                             </!-->
                             </a>
+                            <!-- Fim do List Item -->
                             <!-- List item -->
                             <a href="#"
                                 class="flex flex-row px-2 py-1 text-gray-200 rounded hover:bg-gray-500 group hover:text-white">
@@ -375,6 +369,7 @@
 
                             </!-->
                             </a>
+                            <!-- Fim do List Item -->
                             <!-- List item -->
                             <a href="#"
                                 class="flex flex-row px-2 py-1 text-gray-200 rounded hover:bg-gray-500 group hover:text-white">
@@ -403,11 +398,13 @@
 
                             </!-->
                             </a>
+                            <!-- Fim do List Item -->
 
                             <!-- List divider -->
                             <div class="flex flex-col py-4">
                                 <div class="bg-gray-500 h-[1px]"></div>
                             </div>
+                            <!-- Fim do List Divider -->
                             <!-- List item -->
                             <a href="#" class="flex flex-row px-2 py-1 rounded hover:bg-gray-500 group">
                                 <div class="flex flex-row items-start flex-1 gap-3">
@@ -432,6 +429,7 @@
 
                                 </div>
                             </a>
+                            <!-- Fim do List Item -->
                             <!-- List item -->
                             <a href="#" class="flex flex-row px-2 py-1 rounded hover:bg-gray-500 group">
                                 <div class="flex flex-row items-start flex-1 gap-3">
@@ -456,9 +454,11 @@
 
                                 </div>
                             </a>
-
+                            <!-- Fim do List Item -->
                     </div>
+                    <!-- Fim do List -->
                 </div>
+                <!-- Fim do Content da Internal Nav -->
             </nav>
             <!-- Fim da Internal Nav -->
         </div>
@@ -694,7 +694,6 @@
                 </div>
                 <!-- Fim da Page -->
         </article>
-
         <!-- Fim da Area Content do Frame -->
     </div>
     <!-- Fim do Frame -->
