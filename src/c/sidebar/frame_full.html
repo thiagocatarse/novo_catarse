@@ -8,13 +8,13 @@
 </head>
 
 <body class="bg-gray-50">
-    <div class="flex flex-col lg:gap-8 lg:flex-row frame">
-        <!-- nav -->
+    <!-- Inicio do Frame -->
+    <div class="flex flex-col lg:gap-8 lg:flex-row">
+        <!-- Inicio da Area Nav do Frame -->
         <div class="sticky top-0 left-0 flex flex-col h-auto lg:flex-row lg:h-screen">
-            <!-- Global Nav -->
+            <!-- Inicio da Global Nav -->
             <nav
                 class="top-0 flex flex-row justify-start w-full h-full gap-0 py-3.5 overflow-hidden bg-gray-900 lg:pl-0 lg:py-0 lg:flex-col lg:w-20 lg:left-0 lg:h-full">
-                
                 <!-- Header -->
                 <input type="checkbox" id="global_toggler" class="hidden peer flex-0" />
                 <!-- Overlay -->
@@ -44,8 +44,8 @@
                         <!-- Hamburger menu -->
 
                         <a href="">
-                            <img src="../../assets/Catarse_logo.png" alt="Logo do Catarse" class="hidden w-6 lg:flex">
-                            <img src="../../assets/LogoText.png" alt="Logo do Catarse" class="flex h-8 lg:hidden">
+                            <img src="https://thiagocatarse.github.io/novo_catarse/src/assets/Catarse_logo.png" alt="Logo do Catarse" class="hidden w-6 lg:flex">
+                            <img src="https://thiagocatarse.github.io/novo_catarse/src/assets/LogoText.png" alt="Logo do Catarse" class="flex h-8 lg:hidden">
                         </a>
                     </div>
                     <!-- links -->
@@ -58,8 +58,8 @@
 
                                 <!-- List item responsive ACTIVE -->
                                 <a href="#"
-                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 bg-gray-500 lg:hover:bg-gray-900 rounded">
-                                    <div class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
+                                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white group py-1 lg:py-0 px-2 lg:px-0 bg-gray-500 lg:bg-gray-900 lg:hover:bg-gray-900 rounded">
+                                    <div class="flex rounded lg:px-2 lg:py-1 lg:bg-gray-700">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                             viewBox="0 0 20 20" class="fill-current">
                                             <path fill-rule="evenodd"
@@ -229,8 +229,8 @@
 
 
             </nav>
-            <!-- fim da global nav -->
-            <!-- Internal navigation -->
+            <!-- Fim da Global Nav -->
+            <!-- Internal Nav -->
             <nav class="flex flex-col gap-1 bg-gray-600 w-full lg:w-[256px] top-16 lg:relative lg:top-0 left-0 -mt-[1px]">
                 <input type="checkbox" id="internal_toggler" class="hidden peer" />
 
@@ -460,12 +460,12 @@
                     </div>
                 </div>
             </nav>
-            <!-- fim da internal nav -->
+            <!-- Fim da Internal Nav -->
         </div>
-        <!-- content -->
+        <!-- Fim da Area Nav do Frame -->
+        <!-- Inicio da Area Main do Frame -->
         <article class="flex-1">
-            <form action="submit">
-                <!-- Componente Page size=base bg-color=gray -->
+                <!-- Inicio da Page -->
                 <div class="flex flex-col max-w-screen-lg gap-10 px-4 py-8 mx-auto my-0 lg:py-12 lg:px-0 bg-gray-50">
                     <!-- PageHeader-->
                     <div class="flex flex-col gap-3">
@@ -692,11 +692,12 @@
                         </button>
                     </div>
                 </div>
-            </form>
+                <!-- Fim da Page -->
         </article>
 
-        <!-- fim do content -->
+        <!-- Fim da Area Content do Frame -->
     </div>
+    <!-- Fim do Frame -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>

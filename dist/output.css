@@ -3090,6 +3090,16 @@ video {
     gap: 0px;
   }
 
+  .lg\:bg-gray-900{
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 36 41 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-gray-700{
+    --tw-bg-opacity: 1;
+    background-color: rgb(53 59 68 / var(--tw-bg-opacity));
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
