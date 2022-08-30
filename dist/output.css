@@ -2468,6 +2468,11 @@ video {
   transition-duration: 150ms;
 }
 
+.after\:content-\[\'\:\'\]::after{
+  --tw-content: ':';
+  content: var(--tw-content);
+}
+
 .first\:mb-0:first-child{
   margin-bottom: 0px;
 }
