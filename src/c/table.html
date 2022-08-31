@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../../dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></!-->
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></!-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
 
     <script>
       $(function () {
         $("#sortable").sortable({
-          cursor: "grabbing",
-          placeholder: "bg-blue-50 h-20",
-          classes: {
-            "ui-sortable-helper":
-              "outline outline-[1px] outline-blue-400 shadow-blue-50 shadow-lg [&>:not(:first-child)]:invisible",
-          },
+          ghostClass: 'sortable-ghost',
+          dragClass: 'sortable-drag'
         });
       });
     </script>
@@ -211,7 +209,7 @@
                   />
                 </div>
                 <span class="text-base lg:text-sm"
-                  >Lambidinha da Salvação 🐶</span
+                  >Recompensa 2</span
                 >
               </div>
 
@@ -311,7 +309,7 @@
                   />
                 </div>
                 <span class="text-base lg:text-sm"
-                  >Lambidinha da Salvação 🐶</span
+                  >Recompensa 3</span
                 >
               </div>
 
@@ -411,7 +409,7 @@
                   />
                 </div>
                 <span class="text-base lg:text-sm"
-                  >Lambidinha da Salvação 🐶</span
+                  >Recompensa 4</span
                 >
               </div>
 
