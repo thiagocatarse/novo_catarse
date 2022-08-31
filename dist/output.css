@@ -1655,14 +1655,14 @@ video {
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(53 59 68 / var(--tw-bg-opacity));
-}
-
 .bg-blue-50{
   --tw-bg-opacity: 1;
   background-color: rgb(235 242 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 59 68 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900{
@@ -2245,20 +2245,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sortable-ghost{
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 242 246 / var(--tw-bg-opacity));
-}
-
-.sortable-drag{
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: #ebf2f6;
-  --tw-shadow: var(--tw-shadow-colored);
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: #75a6c9;
+.chosen_sortable .handle{
+  display: none;
 }
 
 .before\:absolute::before{
@@ -3395,5 +3383,10 @@ video {
     gap: 2rem;
   }
 }
+
+.\[\&\>_\.handle\]\:invisible> .handle{
+  visibility: hidden;
+}
+
 
 

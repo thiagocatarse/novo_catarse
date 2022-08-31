@@ -7,7 +7,7 @@ html { font-family: 'Inter', sans-serif; }
 @tailwind components;
 @tailwind utilities;
 
-.sortable-ghost {@apply bg-blue-50;};
-.sortable-drag {@apply outline outline-[1px] outline-blue-400 shadow-blue-50 shadow-lg;};
+.chosen_sortable .handle {@apply hidden;}
+
 
 

@@ -13,8 +13,10 @@
     <script>
       $(function () {
         $("#sortable").sortable({
-          ghostClass: 'sortable-ghost',
-          dragClass: 'sortable-drag'
+          ghostClass: 'bg-blue-50',
+          chosenClass: 'chosen_sortable',
+          delay: 100,
+          delayOnTouchOnly: 'true'
         });
       });
     </script>
@@ -69,7 +71,7 @@
           id="sortable"
         >
           <!-- Inicio do Item (row)) -->
-          <tr class="bg-white group last:rounded-b-lg">
+          <tr class="bg-white group last:rounded-b-lg [&>_.handle]:invisible">
             <!-- Inicio do Name Cell (obrigatoria) -->
             <td
               class="relative w-full py-4 pl-4 pr-3 text-sm font-medium text-gray-900 max-w-0 sm:w-auto sm:max-w-none sm:pl-6 group-last:first:rounded-bl-lg group-last:last:rounded-br-lg"
