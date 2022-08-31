@@ -7,7 +7,6 @@ html { font-family: 'Inter', sans-serif; }
 @tailwind components;
 @tailwind utilities;
 
-.chosen_sortable .handle {@apply hidden;}
 
 
 
