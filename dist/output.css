@@ -2659,6 +2659,11 @@ video {
   background-color: rgb(53 59 68 / var(--tw-bg-opacity));
 }
 
+.group:hover .group-hover\:bg-blue-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 242 246 / var(--tw-bg-opacity));
+}
+
 .peer:checked ~ .peer-checked\:visible{
   visibility: visible;
 }
