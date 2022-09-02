@@ -2554,6 +2554,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.empty\:border-none:empty{
+  border-style: none;
+}
+
+.empty\:p-0:empty{
+  padding: 0px;
+}
+
 .focus-within\:outline-2:focus-within{
   outline-width: 2px;
 }
