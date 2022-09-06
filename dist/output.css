@@ -1037,6 +1037,18 @@ video {
   height: 0.5rem;
 }
 
+.h-20{
+  height: 5rem;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
+.min-h-\[400px\]{
+  min-height: 400px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1113,6 +1125,22 @@ video {
   width: 0.01%;
 }
 
+.w-4\/12{
+  width: 33.333333%;
+}
+
+.w-8\/12{
+  width: 66.666667%;
+}
+
+.w-\[850px\]{
+  width: 850px;
+}
+
+.w-\[416px\]{
+  width: 416px;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -1155,6 +1183,18 @@ video {
 
 .max-w-\[48px\]{
   max-width: 48px;
+}
+
+.max-w-\[216px\]{
+  max-width: 216px;
+}
+
+.max-w-\[462px\]{
+  max-width: 462px;
+}
+
+.max-w-screen-xl{
+  max-width: 1280px;
 }
 
 .flex-1{
@@ -1770,6 +1810,11 @@ video {
   background-color: rgb(248 248 248 / 0.5);
 }
 
+.bg-\[\#0E375A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 55 90 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/reward\/uploaded_image\/275259\/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb\.jpg\'\)\]{
   background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg');
 }
@@ -2012,6 +2057,10 @@ video {
   padding-left: 0px;
 }
 
+.pb-14{
+  padding-bottom: 3.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2064,6 +2113,11 @@ video {
 
 .text-\[9px\]{
   font-size: 9px;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -2218,6 +2272,26 @@ video {
 
 .opacity-100{
   opacity: 1;
+}
+
+.opacity-25{
+  opacity: 0.25;
+}
+
+.opacity-30{
+  opacity: 0.3;
+}
+
+.opacity-10{
+  opacity: 0.1;
+}
+
+.opacity-\[10\]{
+  opacity: 10;
+}
+
+.opacity-\[10\%\]{
+  opacity: 10%;
 }
 
 .shadow{
@@ -2506,6 +2580,31 @@ video {
 
 .after\:content-\[\'\:\'\]::after{
   --tw-content: ':';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'h\'\]::after{
+  --tw-content: 'h';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'m\'\]::after{
+  --tw-content: 'm';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'2\'\]::after{
+  --tw-content: '2';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'s\'\]::after{
+  --tw-content: 's';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'d\'\]::after{
+  --tw-content: 'd';
   content: var(--tw-content);
 }
 

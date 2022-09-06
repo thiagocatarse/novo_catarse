@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Hero -->
+    <div class="relative flex flex-col min-h-screen bg-[#0E375A] pb-14">
+    <!-- bg -->
+    <img src="./assets/bg.png" alt="Background" class="absolute object-cover w-full h-full opacity-10">
+      <!-- Hero Container -->
+      <div class="z-10 flex flex-col items-stretch max-w-screen-xl gap-8 pt-16 mx-auto">
+        <!-- Hero Header -->
+        <div class="flex flex-col items-center gap-1 max-w-[462px] mx-auto">
+          <div>
+            <h1 class="sr-only">desConfronto</h1>
+            <img
+              src="./assets/Logo Desconfronto.png"
+              alt="Nome do projeto"
+              class="max-w-[216px] h-full"
+            />
+          </div>
+          <h2 class="text-sm font-normal text-center text-white">
+            Salve Sempreterna dos monstros corrompidos pela terrível escuridão
+            que ameaça o mundo!
+          </h2>
+        </div>
+        <!-- Hero Content -->
+        <div class="flex flex-row gap-4">
+          <!-- Hero Media -->
+          <div class="w-[850px] min-h-[400px] flex-1">
+            <iframe
+              src="https://www.youtube.com/embed/Mvbnxt7OaRI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="w-full h-full"
+            ></iframe>
+          </div>
+          <!-- Hero Card -->
+          <div
+            class="bg-white w-[416px] shrink-0 rounded-lg shadow flex flex-col gap-5"
+          >
+            <!-- Banner -->
+            <!-- Main Stats -->
+            <div class="flex flex-col flex-1 gap-6 px-6 py-4">
+              <!-- Total funded -->
+              <div class="flex flex-col gap-1">
+                <div class="text-4xl font-semibold text-gray-800">
+                  R$ 83.316
+                </div>
+                <div class="text-sm font-semibold text-gray-500">
+                  arrecadados por <span class="font-bold">3456 pessoas</span>
+                </div>
+              </div>
+
+              <!-- Progress Goal Area -->
+              <div class="flex flex-col gap-2">
+                <!-- Progress Bar -->
+                <div
+                  class="w-full bg-gray-50 rounded-full h-2.5 border border-gray-100 overflow-hidden flex flex-col items-start"
+                >
+                  <div
+                    class="bg-green-600 h-2.5 rounded-full"
+                    style="width: 72%"
+                  ></div>
+                </div>
+                <!-- % Goal -->
+                <div class="flex flex-row">
+                  <div class="flex-1 text-xs font-bold text-gray-500">
+                    72% da meta estendida de R$90.000
+                  </div>
+                  <div class="flex-0">
+                    <div class="text-xs font-semibold">
+                      <a
+                        class="text-blue-600 hover:underline"
+                        href="https://catarse.me"
+                        >Ver metas</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Link ver metas -->
+              </div>
+              <!-- Time left -->
+              <div class="flex flex-col gap-0.5">
+                <div class="flex flex-row items-center gap-1">
+                  <!-- Icon -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.757 2.03399C12.034 2.10699 12.266 2.29597 12.395 2.55297C12.878 3.51997 13.239 4.107 13.602 4.583C13.97 5.065 14.358 5.45898 14.95 6.04998C16.316 7.41698 17 9.20999 17 11C17 12.79 16.316 14.583 14.95 15.95C12.216 18.683 7.784 18.683 5.05 15.95C3.684 14.583 3 12.79 3 11C3 9.20999 3.684 7.41698 5.05 6.04998C5.336 5.76398 5.766 5.67898 6.14 5.83398C6.514 5.98798 6.757 6.35301 6.757 6.75701C6.757 7.87701 6.827 8.73 7.155 9.411C7.335 9.785 7.61601 10.151 8.10001 10.478C8.21601 9.41702 8.428 8.124 8.714 6.898C8.939 5.932 9.21899 4.96799 9.55299 4.16399C9.71999 3.76099 9.909 3.37897 10.123 3.04797C10.331 2.72597 10.599 2.39902 10.945 2.16802C11.184 2.00902 11.48 1.95999 11.757 2.03399ZM12.121 15.121C10.95 16.293 9.05 16.293 7.879 15.121C7.293 14.536 7 13.768 7 13C7 13 7.879 13.5 9.5 13.5C9.5 12.5 10 9.49999 10.75 8.99999C11.25 9.99999 11.536 10.293 12.121 10.879C12.707 11.464 13 12.232 13 13C13 13.768 12.707 14.536 12.121 15.121Z"
+                      fill="#D3696B"
+                    />
+                  </svg>
+
+                  <!-- Countdown -->
+                  <div class="flex flex-row gap-2">
+                    <div
+                      id="days"
+                      class="text-2xl font-semibold after:content-['d'] hidden"
+                    ></div>
+                    <div
+                      id="hours"
+                      class="text-2xl font-semibold after:content-['h']"
+                    ></div>
+                    <div
+                      id="minutes"
+                      class="text-2xl font-semibold after:content-['m']"
+                    ></div>
+                    <div
+                      id="seconds"
+                      class="text-2xl font-semibold after:content-['s']"
+                    ></div>
+                  </div>
+                </div>
+                <div class="text-sm font-medium text-gray-500">
+                  restantes para apoiar
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex flex-col gap-2 px-6 py-4">
+              <button
+                name="button"
+                type="submit"
+                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
+              >
+                Apoiar projeto
+              </button>
+            </div>
+            <!-- Footer -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <!-- Project Main -->
+    <!-- Project First Column -->
+    <!-- Project Second Column -->
+    <!-- Project Third Column -->
+    <!-- Project Rewards -->
+    <!-- Project Risks -->
+    <!-- Recommended Projects -->
+    <!-- Footer -->
+    <script>
+      const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+      let countDown = new Date("Sep 8, 2022 20:00:00").getTime(),
+        x = setInterval(function () {
+          let now = new Date().getTime(),
+            distance = countDown - now;
+
+          (document.getElementById("days").innerText = Math.floor(
+            distance / day
+          )),
+            (document.getElementById("hours").innerText = Math.floor(
+              (distance % day) / hour
+            )),
+            (document.getElementById("minutes").innerText = Math.floor(
+              (distance % hour) / minute
+            )),
+            (document.getElementById("seconds").innerText = Math.floor(
+              (distance % minute) / second
+            ));
+        }, second);
+    </script>
+  </body>
+</html>
