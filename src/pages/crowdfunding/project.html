@@ -10,7 +10,8 @@
     <!-- Hero -->
     <div class="relative flex flex-col min-h-screen bg-[#0E375A] pb-14">
     <!-- bg -->
-    <img src="./assets/bg.png" alt="Background" class="absolute object-cover w-full h-full opacity-10">
+    <div class="absolute top-0 h-1/3 w-full bg-gradient-to-b from-gray-900 to-transparent z-[5]"></div>
+    <img src="./assets/bg.png" alt="Background" class="absolute object-cover w-full h-full opacity-20 ">
       <!-- Hero Container -->
       <div class="z-10 flex flex-col items-stretch max-w-screen-xl gap-8 pt-16 mx-auto">
         <!-- Hero Header -->
@@ -43,11 +44,21 @@
           </div>
           <!-- Hero Card -->
           <div
-            class="bg-white w-[416px] shrink-0 rounded-lg shadow flex flex-col gap-5"
+            class="bg-white w-[416px] shrink-0 rounded-lg shadow flex flex-col gap-2"
           >
             <!-- Banner -->
+            <div class="px-6 pt-4">
+                <div id="banner-1662425884" class="p-4 pt-2 pb-2 mb-4 text-xs font-semibold text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+                    <div class="flex flex-row">
+                      <div>
+                        Meta mínima alcançada em 5 horas!
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
             <!-- Main Stats -->
-            <div class="flex flex-col flex-1 gap-6 px-6 py-4">
+            <div class="flex flex-col flex-1 gap-6 px-6 pt-0 pb-4 first:pt-4 ">
               <!-- Total funded -->
               <div class="flex flex-col gap-1">
                 <div class="text-4xl font-semibold text-gray-800">
@@ -132,7 +143,7 @@
             </div>
 
             <!-- Actions -->
-            <div class="flex flex-col gap-2 px-6 py-4">
+            <div class="flex flex-col gap-4 px-6 py-4">
               <button
                 name="button"
                 type="submit"
@@ -140,6 +151,20 @@
               >
                 Apoiar projeto
               </button>
+              <div class="flex flex-row gap-2">
+                <button name="button" type="submit" class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1 -ml-1 fill-current">
+                        <path d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Seguir projeto     
+                  </button>
+                  <button name="button" type="submit" class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1 -ml-1 fill-current">
+                        <path d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Compartilhar     
+                  </button>
+              </div>
             </div>
             <!-- Footer -->
           </div>
