@@ -1839,6 +1839,14 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-gray-600\/50{
+  background-color: rgb(63 71 82 / 0.5);
+}
+
+.bg-gray-800\/50{
+  background-color: rgb(42 47 55 / 0.5);
+}
+
 .bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/reward\/uploaded_image\/275259\/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb\.jpg\'\)\]{
   background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg');
 }
