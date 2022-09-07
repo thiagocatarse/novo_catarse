@@ -8,12 +8,20 @@
 
   <body class="bg-gray-50">
     <!-- Hero -->
-    <div class="relative flex flex-col min-h-screen bg-[#0E375A] pb-14">
-    <!-- bg -->
-    <div class="absolute top-0 h-1/3 w-full bg-gradient-to-b from-gray-900 to-transparent z-[5]"></div>
-    <img src="./assets/bg.png" alt="Background" class="absolute object-cover w-full h-full opacity-20 ">
+    <div class="relative flex flex-col bg-[#0E375A] pb-20">
+      <!-- bg -->
+      <div
+        class="absolute top-0 h-1/3 w-full bg-gradient-to-b from-gray-900 to-transparent z-[5]"
+      ></div>
+      <img
+        src="./assets/bg.png"
+        alt="Background"
+        class="absolute object-cover w-full h-full opacity-20"
+      />
       <!-- Hero Container -->
-      <div class="z-10 flex flex-col items-stretch gap-8 px-4 pt-16 mx-auto lg:max-w-screen-xl">
+      <div
+        class="z-10 flex flex-col items-stretch gap-8 px-4 pt-16 mx-auto lg:max-w-screen-xl"
+      >
         <!-- Hero Header -->
         <div class="flex flex-col items-center gap-1 lg:max-w-[462px] mx-auto">
           <div>
@@ -48,17 +56,19 @@
           >
             <!-- Banner -->
             <div class="px-6 pt-4">
-                <div id="banner-1662425884" class="p-4 pt-2 pb-2 mb-4 text-xs font-semibold text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
-                    <div class="flex flex-row">
-                      <div>
-                        Meta mínima alcançada em 5 horas!
-                      </div>
-                    </div>
-                  </div>
+              <div
+                id="banner-1662425884"
+                class="p-4 pt-2 pb-2 mb-4 text-xs font-semibold text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
+                role="alert"
+              >
+                <div class="flex flex-row">
+                  <div>Meta mínima alcançada em 5 horas!</div>
+                </div>
+              </div>
             </div>
-            
+
             <!-- Main Stats -->
-            <div class="flex flex-col flex-1 gap-6 px-6 pt-0 pb-4 first:pt-4 ">
+            <div class="flex flex-col flex-1 gap-6 px-6 pt-0 pb-4 first:pt-4">
               <!-- Total funded -->
               <div class="flex flex-col gap-1">
                 <div class="text-4xl font-semibold text-gray-800">
@@ -152,18 +162,42 @@
                 Apoiar projeto
               </button>
               <div class="flex flex-row gap-2">
-                <button name="button" type="submit" class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1 -ml-1 fill-current">
-                        <path d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    Seguir projeto     
-                  </button>
-                  <button name="button" type="submit" class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1 -ml-1 fill-current">
-                        <path d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    Compartilhar     
-                  </button>
+                <button
+                  name="button"
+                  type="submit"
+                  class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 mr-1 -ml-1 fill-current"
+                  >
+                    <path
+                      d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Seguir projeto
+                </button>
+                <button
+                  name="button"
+                  type="submit"
+                  class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 mr-1 -ml-1 fill-current"
+                  >
+                    <path
+                      d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Compartilhar
+                </button>
               </div>
             </div>
             <!-- Footer -->
@@ -173,6 +207,62 @@
     </div>
 
     <!-- Tabs Navigation -->
+    <div class="flex flex-row items-center w-full bg-white">
+      <!-- Component Tab -->
+
+      <div class="flex flex-row items-center w-full bg-white border-b border-gray-100">
+
+        <nav
+          class="flex items-center w-full max-w-screen-xl gap-2 px-3 mx-auto overflow-x-auto text-sm font-medium text-center text-gray-500 md:gap-6"
+          aria-label="Tabs"
+        >
+        <!-- Logo -->
+        <div class="pr-8"><img src="./assets/logo_sm.png" alt="Marca Pequena" class="w-20"></div>
+        
+          <a
+            class="inline-flex flex-col items-center p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg whitespace-nowrap active dark:text-blue-500 dark:border-blue-500 group md:flex-row"
+          >
+            Sobre
+          </a>
+          <a
+            class="p-4 border-b-2 border-transparent rounded-t-lg whitespace-nowrap hover:text-gray-600 hover:border-gray-300"
+          >
+            Recompensas
+          </a>
+          <a
+            class="p-4 border-b-2 border-transparent rounded-t-lg whitespace-nowrap hover:text-gray-600 hover:border-gray-300"
+          >
+            Metas
+          </a>
+          <a
+            class="p-4 border-b-2 border-transparent rounded-t-lg whitespace-nowrap hover:text-gray-600 hover:border-gray-300"
+          >
+            Posts
+          </a>
+          <div class="flex flex-row items-center justify-end flex-1">
+            <button
+                  name="button"
+                  type="submit"
+                  class="inline-flex items-center justify-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 mr-1 -ml-1 fill-current"
+                  >
+                    <path
+                      d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Seguir projeto
+                </button>
+          </div>
+        </nav>
+      </div>  
+    </div>
+    
     <!-- Project Main -->
     <!-- Project First Column -->
     <!-- Project Second Column -->
@@ -196,7 +286,7 @@
             distance / day
           )),
             (document.getElementById("hours").innerText = Math.floor(
-              (distance) / hour
+              distance / hour
             )),
             (document.getElementById("minutes").innerText = Math.floor(
               (distance % hour) / minute
