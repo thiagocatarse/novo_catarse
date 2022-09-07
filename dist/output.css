@@ -2108,6 +2108,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pb-16{
+  padding-bottom: 4rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -3793,9 +3797,17 @@ video {
   .xl\:hidden{
     display: none;
   }
+
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1536px){
+  .\32xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .\32xl\:gap-8{
     gap: 2rem;
   }
