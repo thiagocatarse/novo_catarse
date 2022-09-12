@@ -1085,6 +1085,10 @@ video {
   min-height: fit-content;
 }
 
+.min-h-\[200px\]{
+  min-height: 200px;
+}
+
 .w-full{
   width: 100%;
 }
