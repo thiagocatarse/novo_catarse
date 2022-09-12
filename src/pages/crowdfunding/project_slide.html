@@ -12,7 +12,7 @@
 
   <body class="bg-gray-50">
     <!-- Hero -->
-    <section class="relative bg-[#0E375A] pb-20 w-full">
+    <section class="relative bg-[#0E375A] pb-20 w-full overflow-x-hidden">
       <!-- bg -->
       <div
         class="absolute top-0 w-full h-1/3 bg-gradient-to-b from-gray-900 to-transparent -z-0"
@@ -47,7 +47,7 @@
           <div class="flex flex-col w-full lg:w-2/3 ">
             <div
               id="default-carousel"
-              class="relative flex-1 lg:aspect-video"
+              class="relative flex-1 aspect-video"
               data-carousel="static"
             >
               <!-- Carousel wrapper -->
@@ -376,13 +376,14 @@
 
             <!-- Actions -->
             <div class="flex flex-col gap-4 px-6 py-4">
-              <button
-                name="button"
-                type="submit"
-                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
-              >
-                Apoiar projeto
-              </button>
+                <div class="fixed bottom-0 left-0 right-0 w-full px-4 py-2 bg-white lg:flex lg:relative lg:px-0 lg:py-0"><button
+                    name="button"
+                    type="submit"
+                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
+                  >
+                    Apoiar projeto
+                  </button></div>
+              
               <div class="flex flex-row gap-2">
                 <button
                   name="button"

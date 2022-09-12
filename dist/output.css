@@ -3950,6 +3950,11 @@ video {
     white-space: nowrap;
   }
 
+  .lg\:rounded-b-lg{
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
   .lg\:border-0{
     border-width: 0px;
   }
