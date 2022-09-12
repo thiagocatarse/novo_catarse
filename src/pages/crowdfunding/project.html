@@ -3,29 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
     <link href="../../../dist/output.css" rel="stylesheet" />
-    
   </head>
 
   <body class="bg-gray-50">
     <!-- Hero -->
-    <section class="relative flex flex-col bg-[#0E375A] pb-20">
+    <section class="relative bg-[#0E375A] pb-20 w-full overflow-x-hidden">
       <!-- bg -->
       <div
-        class="absolute top-0 h-1/3 w-full bg-gradient-to-b from-gray-900 to-transparent z-[5]"
+        class="absolute top-0 w-full h-1/3 bg-gradient-to-b from-gray-900 to-transparent -z-0"
       ></div>
       <img
         src="./assets/bg.png"
         alt="Background"
-        class="absolute object-cover w-full h-full opacity-20"
+        class="absolute object-cover w-full h-full opacity-20 -z-0"
       />
       <!-- Hero Container -->
       <div
-        class="z-10 flex flex-col items-stretch gap-8 px-4 pt-16 mx-auto lg:max-w-screen-xl"
+        class="z-10 flex flex-col gap-8 px-4 pt-12 mx-auto lg:max-w-screen-xl"
       >
         <!-- Hero Header -->
-        <div class="flex flex-col items-center gap-1 lg:max-w-[462px] mx-auto">
+        <div class="flex flex-col items-center gap-1 lg:max-w-[462px] mx-auto z-10">
           <div>
             <h1 class="sr-only">desConfronto</h1>
             <img
@@ -40,23 +42,134 @@
           </h2>
         </div>
         <!-- Hero Content -->
-        <div class="flex flex-col gap-4 lg:flex-row">
+        <div class="z-10 flex flex-col items-start w-full gap-4 lg:flex-row">
           <!-- Hero Media -->
+          <div class="z-10 flex flex-col w-full lg:w-2/3 ">
+            <div class="relative z-10 flex-1 aspect-video">
+              <!-- Media wrapper -->
+              <div class="relative z-10 h-full overflow-hidden rounded-t-lg">
+                <!-- Item 1 -->
+                <div
+                  class="absolute inset-0 z-20 transition-all duration-700 ease-in-out transform translate-x-0 bg-white"
+                  data-carousel-item=""
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/Mvbnxt7OaRI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="w-full h-full"
+                  ></iframe>
+                </div>
 
+               </div> 
+            </div>
+            <!-- Author -->
+            <div
+              class="z-20 flex flex-row px-3 py-4 rounded-b-lg bg-gray-800/50"
+            >
+              <!-- Author block -->
+              <div
+                class="z-20 flex flex-row items-center gap-3 cursor-pointer"
+                data-popover-target="popover-user-profile"
+                data-popover-placement="right"
+              >
+                <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
+                  />
+                </div>
+                <div class="text-base font-semibold text-white">
+                  nat20 Games
+                </div>
+              </div>
+              <!-- Author popover -->
 
-          <div class="lg:w-[850px] lg:aspect-video flex-1">
-            <iframe
-              src="https://www.youtube.com/embed/Mvbnxt7OaRI"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              class="w-full h-full"
-            ></iframe>
+              <div
+                data-popover=""
+                id="popover-user-profile"
+                role="tooltip"
+                class="absolute z-20 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                data-popper-reference-hidden=""
+                data-popper-escaped=""
+                data-popper-placement="bottom"
+                style="
+                  position: absolute;
+                  z-index: 20;
+                  inset: 0px auto auto 0px;
+                  margin: 0px;
+                  transform: translate3d(0px, 277px, 0px);
+                "
+              >
+                <div class="p-3">
+                  <div class="flex items-center justify-between mb-2">
+                    <a href="#">
+                      <img
+                        class="w-8 h-8 rounded-full"
+                        src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
+                        alt="nat20 Games"
+                      />
+                    </a>
+                    <div>
+                      <button
+                        type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                      >
+                        Seguir
+                      </button>
+                    </div>
+                  </div>
+                  <p
+                    class="text-base font-semibold leading-none text-gray-900 dark:text-white"
+                  >
+                    <a href="#">nat20 Games</a>
+                  </p>
+                  <p class="mb-3 text-sm font-normal">
+                    <a href="#" class="hover:underline">@nat20games</a>
+                  </p>
+                  <p class="mb-4 text-sm font-light">
+                    Somos uma desenvolvedora Indie de boardgames.Fazendo jogos
+                    com a comunidade e para a comunidade. Juntos tornamos
+                    projetos em realidade!
+                  </p>
+                  <ul class="flex text-sm font-light">
+                    <li class="mr-2">
+                      <a href="#" class="hover:underline">
+                        <span
+                          class="font-semibold text-gray-900 dark:text-white"
+                          >2</span
+                        >
+                        <spa>Criados </spa></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:underline">
+                        <span
+                          class="font-semibold text-gray-900 dark:text-white"
+                          >10</span
+                        >
+                        <span>Apoiados</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  data-popper-arrow=""
+                  style="
+                    position: absolute;
+                    left: 0px;
+                    transform: translate3d(0px, 0px, 0px);
+                  "
+                ></div>
+              </div>
+            </div>
           </div>
+
           <!-- Hero Card -->
           <div
-            class="bg-white lg:w-[416px] shrink-0 rounded-lg shadow flex flex-col gap-2"
+            class="flex flex-col w-full gap-2 bg-white rounded-lg shadow lg:w-1/3"
           >
             <!-- Banner -->
             <div class="px-6 pt-4">
@@ -158,13 +271,14 @@
 
             <!-- Actions -->
             <div class="flex flex-col gap-4 px-6 py-4">
-              <button
-                name="button"
-                type="submit"
-                class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
-              >
-                Apoiar projeto
-              </button>
+                <div class="fixed bottom-0 left-0 right-0 z-20 w-full px-4 py-4 bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:shadow-none lg:flex lg:relative lg:px-0 lg:py-0"><button
+                    name="button"
+                    type="submit"
+                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
+                  >
+                    Apoiar projeto
+                  </button></div>
+              
               <div class="flex flex-row gap-2">
                 <button
                   name="button"
@@ -210,352 +324,8 @@
       </div>
     </section>
 
-    <!-- Tabs Navigation -->
-    <div class="sticky top-0 z-10 flex flex-row items-center w-full pt-4 bg-white">
-      <!-- Component Tab -->
 
-      <div
-        class="flex flex-row items-center w-full bg-white border-b border-gray-100"
-      >
-        <nav
-          class="flex items-center w-full max-w-screen-xl gap-2 px-3 mx-auto overflow-x-auto text-sm font-medium text-center text-gray-500 md:gap-6"
-          aria-label="Tabs"
-        >
-          <!-- Logo -->
-          <div class="pr-8">
-            <img src="./assets/logo_sm.png" alt="Marca Pequena" class="w-20" />
-          </div>
-
-          <a
-            class="inline-flex flex-col items-center p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg whitespace-nowrap active dark:text-blue-500 dark:border-blue-500 group md:flex-row"
-          >
-            Sobre
-          </a>
-          <a href="#rewards" class="p-4 border-b-2 border-transparent rounded-t-lg whitespace-nowrap hover:text-gray-600 hover:border-gray-300"
-          >
-            Recompensas
-          </a>
-          <a
-            class="p-4 border-b-2 border-transparent rounded-t-lg whitespace-nowrap hover:text-gray-600 hover:border-gray-300"
-          >
-            Metas
-          </a>
-          <a
-            class="p-4 border-b-2 border-transparent rounded-t-lg whitespace-nowrap hover:text-gray-600 hover:border-gray-300"
-          >
-            Posts
-          </a>
-          <div class="flex flex-row items-center justify-end flex-1">
-            <button
-              name="button"
-              type="submit"
-              class="inline-flex items-center justify-center gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 mr-1 -ml-1 fill-current"
-              >
-                <path
-                  d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              Seguir projeto
-            </button>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-    <!-- Project Main -->
-    <section class="px-3 pt-10 pb-20">
-      <!-- Layout -->
-      <div class="flex flex-row max-w-screen-xl gap-4 mx-auto">
-        <!-- Project First Column -->
-        <div class="w-2/12 p-10 bg-green-500 flex-0">First</div>
-        <!-- Project Second Column -->
-        <div class="flex-1">
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-1 px-4 pt-2 pb-3 first:pt-6 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-base font-normal text-gray-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas elit a diam volutpat, quis sollicitudin erat hendrerit. Nunc luctus magna arcu, sit amet tristique ante efficitur a. Maecenas velit erat, pretium a blandit ut, finibus ut libero. Proin finibus, dui eget semper congue, leo nisl auctor tellus, vitae maximus mi urna vitae erat. Aenean pretium orci ligula, a ultrices ligula maximus et. Sed eget sapien molestie, ornare velit quis, hendrerit justo. Aenean id massa in sem cursus mollis. Mauris fringilla ex ut molestie luctus. Sed et sem arcu. Vestibulum odio tellus, convallis eget libero sit amet, mollis dapibus lectus. Vivamus sagittis augue venenatis felis lobortis, at accumsan sapien pretium. Nullam malesuada, nulla non ullamcorper efficitur, arcu neque finibus ante, nec tempor dolor sapien sed risus. Curabitur euismod, mi at porttitor dapibus, dolor mauris auctor lacus, et condimentum diam risus hendrerit erat. In posuere interdum mauris at vulputate. Proin id magna arcu. Duis consequat, nisl quis consectetur lacinia, lorem lectus tempus est, ac tristique orci tellus dignissim libero.
-
-                Sed tempor blandit leo eu sagittis. Aenean tristique augue in nibh imperdiet hendrerit. In hac habitasse platea dictumst. Etiam pellentesque turpis et suscipit euismod. Phasellus quis porttitor magna, quis congue sapien. Integer consectetur eros neque, vel viverra urna tempus quis. Phasellus sit amet libero facilisis, volutpat nunc a, porttitor neque. Duis id nisl est.
-                
-                Donec tempor ex scelerisque neque pulvinar, vitae pretium massa tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas venenatis ullamcorper. Proin vitae dolor finibus, accumsan tellus non, luctus arcu. Curabitur luctus molestie metus eu egestas. Sed interdum, metus at dignissim blandit, augue erat interdum urna, ut scelerisque tellus turpis sed massa. Ut velit ipsum, volutpat eu eros id, imperdiet condimentum dui. Sed et porta mi. Ut sollicitudin tristique ipsum, sit amet commodo sapien porttitor a. Praesent auctor ante purus, non commodo enim vestibulum eget. Ut facilisis dignissim fringilla. In eget nibh quis quam posuere malesuada ut ac lectus. Suspendisse viverra magna mauris, at gravida neque condimentum laoreet. Donec felis nibh, eleifend nec pharetra a, vehicula quis justo.
-                
-                Etiam aliquet neque et libero elementum accumsan. Morbi nec turpis a libero lobortis posuere. Suspendisse nec sollicitudin velit. Nullam aliquet, metus vitae tincidunt posuere, est erat ullamcorper arcu, vitae varius lorem urna sed nunc. Sed mauris tortor, maximus vel ipsum nec, dignissim fringilla dolor. Nam tincidunt imperdiet mauris sed varius. Mauris iaculis imperdiet posuere.
-                
-                Aliquam lectus lacus, convallis eu scelerisque quis, tincidunt id massa. Morbi fermentum condimentum lorem non lobortis. Praesent ut orci vel dui semper tincidunt in et elit. Sed a lectus in nisl volutpat sagittis. Mauris non neque eget arcu condimentum cursus id consequat tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Phasellus vehicula lectus at diam auctor faucibus. Donec auctor felis turpis, a dignissim lorem bibendum et. Mauris lacus dolor, rutrum sed mauris at, tristique feugiat orci. Vivamus condimentum massa quam, id dapibus sapien pulvinar id. Vivamus vehicula interdum neque, vel laoreet eros imperdiet in. Fusce eleifend, ligula eu sodales molestie, purus mi cursus elit, sit amet laoreet neque magna nec orci.
-                
-                Aliquam aliquam quam ut lacus malesuada, nec congue felis egestas. Aenean finibus sem sit amet elit imperdiet, ac gravida velit iaculis. Pellentesque sit amet viverra leo. Ut vehicula ullamcorper orci vitae molestie. Praesent euismod feugiat lectus sed porta. Praesent id libero pellentesque, laoreet mauris quis, vehicula lacus. Phasellus tellus lectus, tincidunt ut quam in, auctor aliquet justo. Etiam efficitur magna lectus, eget vulputate lacus scelerisque id. Duis condimentum ex at turpis sagittis vulputate.
-                
-                Mauris tempor arcu a auctor pellentesque. Cras congue, neque viverra blandit viverra, augue metus aliquet sapien, vel sollicitudin nunc odio eu tellus. Fusce eget luctus mauris, at feugiat turpis. Suspendisse mattis neque sed purus dapibus varius. Aliquam sed metus vel est porttitor porta eget fermentum tellus. Duis ultrices nisi in faucibus condimentum. Sed tincidunt massa pretium erat volutpat, non faucibus massa lobortis. Aliquam nulla nunc, dignissim sed dui non, lacinia fringilla diam. Vestibulum id rhoncus sapien. Nunc feugiat dolor non rhoncus molestie. Pellentesque feugiat massa eu laoreet suscipit. Proin volutpat commodo ipsum mollis semper. Phasellus consectetur nisi sed ante luctus, non bibendum nisi finibus. Nulla interdum ligula leo, ut feugiat ex placerat eu. Praesent fermentum est at felis molestie, id vestibulum tellus consectetur.
-                
-                Maecenas fermentum nulla ac eros porttitor luctus. Ut sapien massa, ultrices eget dui in, tincidunt interdum urna. Nunc luctus est id mollis feugiat. Praesent non vestibulum libero. Mauris tristique pharetra elit sit amet placerat. Proin ultrices erat neque, at pulvinar velit aliquet ac. Etiam sit amet metus ac magna vulputate elementum.
-                
-                In pulvinar fringilla blandit. Donec blandit sed enim sit amet posuere. Aliquam malesuada, diam eget convallis feugiat, leo ante viverra magna, eget commodo dui metus a nisi. Suspendisse tellus ligula, egestas quis nisl ut, varius ornare elit. Aenean sed mi magna. Curabitur nisl nibh, ultricies sed eros at, pharetra porttitor nibh. Aenean id lobortis metus, et scelerisque mauris. Cras lectus justo, fermentum non bibendum quis, posuere et quam. Mauris eu ligula sed purus congue hendrerit at eu urna. Suspendisse metus orci, sollicitudin sed cursus sit amet, condimentum quis augue. Aliquam erat volutpat. Suspendisse varius tincidunt lacus, scelerisque elementum sapien sagittis at. Curabitur leo lorem, rutrum ut luctus nec, congue sit amet tortor.
-                
-                Etiam semper, quam sed rhoncus iaculis, ex urna porta dui, a scelerisque turpis est at enim. Sed in pulvinar tortor, ac tempor lectus. Ut tempor ex nec efficitur ullamcorper. Maecenas vel sapien ut diam euismod eleifend quis eget arcu. Praesent vitae consectetur arcu. Nullam iaculis elementum velit, sit amet interdum ipsum porta sit amet. Curabitur dolor dolor, laoreet sit amet nunc sed, aliquam aliquam velit. Vivamus non dui ut lorem blandit faucibus at sit amet massa. Vestibulum sagittis consequat ex, nec lacinia leo rhoncus sit amet.
-                
-                </div></div>
-              
-            </div>
-          </div>
-        </div>
-        <!-- Project Third Column -->
-        <div class="sticky w-3/12 h-full top-24 flex-0">
-          <!-- Reward -->
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover w-full first:rounded-tr-lg">
-                <img src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
-              </div>
-              <div class="flex flex-row gap-4 px-4 py-6">
-                
-                <div class="flex flex-1 flex-col gap-0.5">
-                  <div class="text-lg font-bold text-green-700">R$199</div>
-                  <div class="text-base font-semibold text-gray-800">Herói</div>
-                </div>
-                <div class="shrink"><svg class="w-6 h-6 fill-current">
-                    <use xlink:href="#x" />
-                  </svg></div>
-              </div>
-              <div class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-xs text-gray-800">Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.
-
-                ⚔️ Dados exclusivos e temáticos;
-                
-                ⚔️ Playmats de Neoprene para cada classe do jogo base;
-                
-                - Playmat de Neoprene para as Criaturas;</div></div>
-              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
-                <div class="flex-1">      
-                  <div class="flex flex-row gap-3">
-                    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-blue-600 hover:bg-blue-50 active:bg-blue-100">
-                      Editar
-                    </button>
-                  </div>
-                </div>
-                <div>  <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg class="w-6 h-6 fill-current">
-                      <use xlink:href="#trash" />
-                    </svg>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Project Rewards -->
-    <section class="pt-24 pb-16 bg-white" id="rewards">
-      <div class="max-w-screen-xl mx-auto">
-        <div
-          class="grid items-stretch gap-3 lg:gap-6 2xl:gap-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4">
-          <!-- Reward -->
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover w-full first:rounded-tr-lg">
-                <img src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
-              </div>
-              <div class="flex flex-row gap-4 px-4 py-6">
-                
-                <div class="flex flex-1 flex-col gap-0.5">
-                  <div class="text-lg font-bold text-green-700">R$199</div>
-                  <div class="text-base font-semibold text-gray-800">Herói</div>
-                </div>
-                <div class="shrink"><svg class="w-6 h-6 fill-current">
-                    <use xlink:href="#x" />
-                  </svg></div>
-              </div>
-              <div class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-xs text-gray-800">Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.
-
-                ⚔️ Dados exclusivos e temáticos;
-                
-                ⚔️ Playmats de Neoprene para cada classe do jogo base;
-                
-                - Playmat de Neoprene para as Criaturas;</div></div>
-              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
-                <div class="flex-1">      
-                  <div class="flex flex-row gap-3">
-                    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-blue-600 hover:bg-blue-50 active:bg-blue-100">
-                      Editar
-                    </button>
-                  </div>
-                </div>
-                <div>  <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg class="w-6 h-6 fill-current">
-                      <use xlink:href="#trash" />
-                    </svg>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-          <!-- Reward -->
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover w-full first:rounded-tr-lg">
-                <img src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
-              </div>
-              <div class="flex flex-row gap-4 px-4 py-6">
-                
-                <div class="flex flex-1 flex-col gap-0.5">
-                  <div class="text-lg font-bold text-green-700">R$199</div>
-                  <div class="text-base font-semibold text-gray-800">Herói</div>
-                </div>
-                <div class="shrink"><svg class="w-6 h-6 fill-current">
-                    <use xlink:href="#x" />
-                  </svg></div>
-              </div>
-              <div class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-xs text-gray-800">Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.
-
-                ⚔️ Dados exclusivos e temáticos;
-                
-                ⚔️ Playmats de Neoprene para cada classe do jogo base;
-                
-                - Playmat de Neoprene para as Criaturas;</div></div>
-              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
-                <div class="flex-1">      
-                  <div class="flex flex-row gap-3">
-                    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-blue-600 hover:bg-blue-50 active:bg-blue-100">
-                      Editar
-                    </button>
-                  </div>
-                </div>
-                <div>  <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg class="w-6 h-6 fill-current">
-                      <use xlink:href="#trash" />
-                    </svg>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-          <!-- Reward -->
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover w-full first:rounded-tr-lg">
-                <img src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
-              </div>
-              <div class="flex flex-row gap-4 px-4 py-6">
-                
-                <div class="flex flex-1 flex-col gap-0.5">
-                  <div class="text-lg font-bold text-green-700">R$199</div>
-                  <div class="text-base font-semibold text-gray-800">Herói</div>
-                </div>
-                <div class="shrink"><svg class="w-6 h-6 fill-current">
-                    <use xlink:href="#x" />
-                  </svg></div>
-              </div>
-              <div class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-xs text-gray-800">Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.
-
-                ⚔️ Dados exclusivos e temáticos;
-                
-                ⚔️ Playmats de Neoprene para cada classe do jogo base;
-                
-                - Playmat de Neoprene para as Criaturas;</div></div>
-              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
-                <div class="flex-1">      
-                  <div class="flex flex-row gap-3">
-                    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-blue-600 hover:bg-blue-50 active:bg-blue-100">
-                      Editar
-                    </button>
-                  </div>
-                </div>
-                <div>  <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg class="w-6 h-6 fill-current">
-                      <use xlink:href="#trash" />
-                    </svg>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-          <!-- Reward -->
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover w-full first:rounded-tr-lg">
-                <img src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
-              </div>
-              <div class="flex flex-row gap-4 px-4 py-6">
-                
-                <div class="flex flex-1 flex-col gap-0.5">
-                  <div class="text-lg font-bold text-green-700">R$199</div>
-                  <div class="text-base font-semibold text-gray-800">Herói</div>
-                </div>
-                <div class="shrink"><svg class="w-6 h-6 fill-current">
-                    <use xlink:href="#x" />
-                  </svg></div>
-              </div>
-              <div class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-xs text-gray-800">Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.
-
-                ⚔️ Dados exclusivos e temáticos;
-                
-                ⚔️ Playmats de Neoprene para cada classe do jogo base;
-                
-                - Playmat de Neoprene para as Criaturas;</div></div>
-              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
-                <div class="flex-1">      
-                  <div class="flex flex-row gap-3">
-                    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-blue-600 hover:bg-blue-50 active:bg-blue-100">
-                      Editar
-                    </button>
-                  </div>
-                </div>
-                <div>  <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg class="w-6 h-6 fill-current">
-                      <use xlink:href="#trash" />
-                    </svg>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-          <!-- Reward -->
-          <div class="bg-white border border-gray-100 rounded-lg shadow">
-            <div class="flex flex-col">      
-              <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover w-full first:rounded-tr-lg">
-                <img src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
-              </div>
-              <div class="flex flex-row gap-4 px-4 py-6">
-                
-                <div class="flex flex-1 flex-col gap-0.5">
-                  <div class="text-lg font-bold text-green-700">R$199</div>
-                  <div class="text-base font-semibold text-gray-800">Herói</div>
-                </div>
-                <div class="shrink"><svg class="w-6 h-6 fill-current">
-                    <use xlink:href="#x" />
-                  </svg></div>
-              </div>
-              <div class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"><div class="text-xs text-gray-800">Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.
-
-                ⚔️ Dados exclusivos e temáticos;
-                
-                ⚔️ Playmats de Neoprene para cada classe do jogo base;
-                
-                - Playmat de Neoprene para as Criaturas;</div></div>
-              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
-                <div class="flex-1">      
-                  <div class="flex flex-row gap-3">
-                    <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-blue-600 hover:bg-blue-50 active:bg-blue-100">
-                      Editar
-                    </button>
-                  </div>
-                </div>
-                <div>  <button name="button" type="submit" class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100">
-                    <svg class="w-6 h-6 fill-current">
-                      <use xlink:href="#trash" />
-                    </svg>
-                  </button></div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <!-- Project Risks -->
-    <!-- Recommended Projects -->
-    <!-- Footer -->
+    
     <script>
       const second = 1000,
         minute = second * 60,
@@ -581,7 +351,43 @@
             ));
         }, second);
     </script>
-<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-  
-</body>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script>
+      var element = document.querySelector(".truncated_text");
+      if (
+        element.offsetHeight < element.scrollHeight ||
+        element.offsetWidth < element.scrollWidth
+      ) {
+        // your element have overflow
+        element.classList.toggle("[&>:first-child]:visible");
+        element.classList.toggle("[&>:last-child]:invisible");
+      } else {
+        //your element don't have overflow
+        element.classList.toggle("[&>:first-child]:invisible");
+        element.classList.toggle("[&>:last-child]:invisible");
+        
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+              $(document).ready(function(){
+          $('.truncated_text > :first-child').on('click', function(e) {
+              $(this).parent().toggleClass('line-clamp-5');
+              $(this).parent().toggleClass('[&>:first-child]:invisible');
+              $(this).parent().toggleClass('[&>:last-child]:visible');
+              
+          });
+      });
+    </script>
+    <script>
+        $(document).ready(function(){
+    $('.truncated_text > :last-child').on('click', function(e) {
+        $(this).parent().toggleClass('line-clamp-5');
+        $(this).parent().toggleClass('[&>:first-child]:visible');
+        $(this).parent().toggleClass('[&>:last-child]:invisible');
+    });
+});
+</script>
+  </body>
 </html>
