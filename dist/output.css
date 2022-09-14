@@ -2267,6 +2267,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -3969,6 +3974,11 @@ video {
 
   .lg\:text-\[9px\]{
     font-size: 9px;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:font-bold{
