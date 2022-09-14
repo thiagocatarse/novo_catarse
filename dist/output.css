@@ -3797,6 +3797,10 @@ video {
     max-width: 462px;
   }
 
+  .lg\:flex-1{
+    flex: 1 1 0%;
+  }
+
   .lg\:border-collapse{
     border-collapse: collapse;
   }
@@ -3860,6 +3864,10 @@ video {
 
   .lg\:gap-0{
     gap: 0px;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
 
   .lg\:divide-y > :not([hidden]) ~ :not([hidden]){
@@ -3937,6 +3945,11 @@ video {
   .lg\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:pl-12{

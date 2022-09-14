@@ -27,7 +27,9 @@
         class="z-10 flex flex-col gap-8 px-3 pt-12 mx-auto lg:px-4 lg:max-w-screen-xl"
       >
         <!-- Hero Header -->
-        <div class="flex flex-col items-center gap-1 lg:max-w-[462px] mx-auto z-10">
+        <div
+          class="flex flex-col items-center gap-1 lg:max-w-[462px] mx-auto z-10"
+        >
           <div>
             <h1 class="sr-only">desConfronto</h1>
             <img
@@ -44,17 +46,20 @@
         <!-- Hero Content -->
         <div class="z-10 flex flex-col items-start w-full gap-4 lg:flex-row">
           <!-- Hero Media -->
-          <div class="z-10 flex flex-col w-full overflow-hidden rounded-t-lg lg:w-2/3">
-            <div class="relative z-10 flex-1 object-cover w-full h-auto aspect-video">
+          <div
+            class="z-10 flex flex-col w-full overflow-hidden rounded-t-lg lg:w-2/3"
+          >
+            <div
+              class="relative z-10 flex-1 object-cover w-full h-auto aspect-video"
+            >
               <iframe
-                    src="https://www.youtube.com/embed/Mvbnxt7OaRI"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="absolute top-0 left-0 w-full h-full"
-                  ></iframe>
-
+                src="https://www.youtube.com/embed/Mvbnxt7OaRI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="absolute top-0 left-0 w-full h-full"
+              ></iframe>
             </div>
             <!-- Author -->
             <div
@@ -63,118 +68,160 @@
               <!-- Author block -->
               <div class="">
                 <div
-                class="z-20 flex flex-row items-center gap-3 cursor-pointer"
-                data-popover-target="popover-user-profile"
-                data-popover-placement="right"
-              >
-                <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full">
-                  <img
-                    class="object-cover w-full h-full"
-                    src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
-                  />
-                </div>
-                <div class="text-base font-semibold text-white">
-                  nat20 Games
-                </div>
-              </div>
-              <!-- Author popover -->
-
-              <div
-                data-popover=""
-                id="popover-user-profile"
-                role="tooltip"
-                class="absolute z-20 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
-                data-popper-reference-hidden=""
-                data-popper-escaped=""
-                data-popper-placement="bottom"
-                style="
-                  position: absolute;
-                  z-index: 20;
-                  inset: 0px auto auto 0px;
-                  margin: 0px;
-                  transform: translate3d(0px, 277px, 0px);
-                "
-              >
-                <div class="p-3">
-                  <div class="flex items-center justify-between mb-2">
-                    <a href="#">
-                      <img
-                        class="w-8 h-8 rounded-full"
-                        src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
-                        alt="nat20 Games"
-                      />
-                    </a>
-                    <div>
-                      <button
-                        type="button"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                      >
-                        Seguir
-                      </button>
-                    </div>
+                  class="z-20 flex flex-row items-center gap-3 cursor-pointer"
+                  data-popover-target="popover-user-profile"
+                  data-popover-placement="right"
+                >
+                  <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full">
+                    <img
+                      class="object-cover w-full h-full"
+                      src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
+                    />
                   </div>
-                  <p
-                    class="text-base font-semibold leading-none text-gray-900 dark:text-white"
-                  >
-                    <a href="#">nat20 Games</a>
-                  </p>
-                  <p class="mb-3 text-sm font-normal">
-                    <a href="#" class="hover:underline">@nat20games</a>
-                  </p>
-                  <p class="mb-4 text-sm font-light">
-                    Somos uma desenvolvedora Indie de boardgames.Fazendo jogos
-                    com a comunidade e para a comunidade. Juntos tornamos
-                    projetos em realidade!
-                  </p>
-                  <ul class="flex text-sm font-light">
-                    <li class="mr-2">
-                      <a href="#" class="hover:underline">
-                        <span
-                          class="font-semibold text-gray-900 dark:text-white"
-                          >2</span
-                        >
-                        <spa>Criados </spa></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="hover:underline">
-                        <span
-                          class="font-semibold text-gray-900 dark:text-white"
-                          >10</span
-                        >
-                        <span>Apoiados</span>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="text-base font-semibold text-white">
+                    nat20 Games
+                  </div>
                 </div>
+                <!-- Author popover -->
+
                 <div
-                  data-popper-arrow=""
+                  data-popover=""
+                  id="popover-user-profile"
+                  role="tooltip"
+                  class="absolute z-20 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                  data-popper-reference-hidden=""
+                  data-popper-escaped=""
+                  data-popper-placement="bottom"
                   style="
                     position: absolute;
-                    left: 0px;
-                    transform: translate3d(0px, 0px, 0px);
+                    z-index: 20;
+                    inset: 0px auto auto 0px;
+                    margin: 0px;
+                    transform: translate3d(0px, 277px, 0px);
                   "
-                ></div>
+                >
+                  <div class="p-3">
+                    <div class="flex items-center justify-between mb-2">
+                      <a href="#">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
+                          alt="nat20 Games"
+                        />
+                      </a>
+                      <div>
+                        <button
+                          type="button"
+                          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                        >
+                          Seguir
+                        </button>
+                      </div>
+                    </div>
+                    <p
+                      class="text-base font-semibold leading-none text-gray-900 dark:text-white"
+                    >
+                      <a href="#">nat20 Games</a>
+                    </p>
+                    <p class="mb-3 text-sm font-normal">
+                      <a href="#" class="hover:underline">@nat20games</a>
+                    </p>
+                    <p class="mb-4 text-sm font-light">
+                      Somos uma desenvolvedora Indie de boardgames.Fazendo jogos
+                      com a comunidade e para a comunidade. Juntos tornamos
+                      projetos em realidade!
+                    </p>
+                    <ul class="flex text-sm font-light">
+                      <li class="mr-2">
+                        <a href="#" class="hover:underline">
+                          <span
+                            class="font-semibold text-gray-900 dark:text-white"
+                            >2</span
+                          >
+                          <spa>Criados </spa></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="hover:underline">
+                          <span
+                            class="font-semibold text-gray-900 dark:text-white"
+                            >10</span
+                          >
+                          <span>Apoiados</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    data-popper-arrow=""
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      transform: translate3d(0px, 0px, 0px);
+                    "
+                  ></div>
+                </div>
               </div>
-              </div>
-              
+
               <!-- Categories -->
               <div class="flex flex-row gap-5">
-                <a href="#" class="flex flex-row gap-1.5 text-xs font-medium text-gray-100 hover:underline"><svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.80967 2.5C2.59493 2.5 2.38899 2.5853 2.23715 2.73715C2.0853 2.88899 2 3.09493 2 3.30967V7.02282C2.00005 7.23754 2.08538 7.44344 2.23723 7.59525L7.90492 13.2629C8.05676 13.4147 8.26266 13.5 8.47736 13.5C8.69205 13.5 8.89796 13.4147 9.04979 13.2629L12.7629 9.54979C12.9147 9.39796 13 9.19205 13 8.97736C13 8.76266 12.9147 8.55676 12.7629 8.40492L7.09525 2.73723C6.94344 2.58538 6.73754 2.50005 6.52282 2.5H2.80967ZM6.04835 5.33384C6.04835 5.65595 5.92039 5.96486 5.69263 6.19263C5.46486 6.42039 5.15595 6.54835 4.83384 6.54835C4.51174 6.54835 4.20282 6.42039 3.97506 6.19263C3.7473 5.96486 3.61934 5.65595 3.61934 5.33384C3.61934 5.01174 3.7473 4.70282 3.97506 4.47506C4.20282 4.2473 4.51174 4.11934 4.83384 4.11934C5.15595 4.11934 5.46486 4.2473 5.69263 4.47506C5.92039 4.70282 6.04835 5.01174 6.04835 5.33384V5.33384Z" fill="#DDDFE1"/>
-                  </svg>Jornalismo
-                  </a>
-                  <a href="#" class="flex flex-row gap-1.5 text-xs font-medium text-gray-100 hover:underline"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.37967 10.617L5.18986 9.45536L4.11874 8.1811L7.9989 3.76961V3.76081L6.44021 2.14599C4.96562 0.619176 2.57704 0.617416 1.10584 2.14423C-0.367906 3.67017 -0.369605 6.14212 1.10669 7.67158L2.67982 9.30048L7.98106 14.8586L7.9989 14.841V10.617H7.37967Z" fill="#DC3481"/>
-                    <path d="M8.00181 8.93585L7.14984 8.05496C6.34544 7.21895 5.03903 7.21807 4.23462 8.05232C3.43022 8.88657 3.42852 10.2374 4.23547 11.0725L5.09594 11.9631L7.99247 15L8.00181 14.9894V8.93585Z" fill="#F6937A"/>
-                    <path d="M8.00181 8.93585L7.14984 8.05496C6.34544 7.21895 5.03903 7.21807 4.23462 8.05232C3.43022 8.88657 3.42852 10.2374 4.23547 11.0725L5.09594 11.9631L7.99247 15L8.00181 14.9894V8.93585Z" fill="#81BA41"/>
-                    <path d="M8.63587 10.6229L8.60105 9.66549L8.24854 9.54316L7.99456 8.94124V10.6229H8.63587Z" fill="#FAB678"/>
-                    <path d="M14.8861 2.14992C13.4132 0.623981 11.0255 0.625741 9.55006 2.15256L8.08736 3.66794L7.99392 3.77442L4.11376 8.18679C4.14944 8.14279 4.18596 8.09967 4.22673 8.05831C5.03114 7.22406 6.33755 7.22494 7.14195 8.06095L7.99456 8.94124L14.7978 2.0672C14.8275 2.09448 14.859 2.12 14.8861 2.14992Z" fill="#E66825"/>
-                    <path d="M8.00024 8.93585L8.85136 8.05496C9.65746 7.21895 10.9622 7.21807 11.7666 8.05232C12.5727 8.88657 12.5727 10.2374 11.7657 11.0725L10.9061 11.9631L8.01043 15L8.00024 14.9894V8.93585Z" fill="#1DA149"/>
-                    <path d="M14.8937 2.14358C14.8666 2.11366 14.8351 2.08902 14.8054 2.05998L9.05141 7.87509C9.86091 7.22476 11.0242 7.28319 11.7666 8.05232C12.4138 8.72465 12.5417 9.72927 12.145 10.5318L13.3206 9.29983L14.8937 7.67093C16.3709 6.14147 16.3666 3.66952 14.8937 2.14358Z" fill="#EE9121"/>
-                    </svg>
-                    Projeto em Destaque
-                    </a>
+                <a
+                  href="#"
+                  class="flex flex-row gap-1.5 text-xs font-medium text-gray-100 hover:underline"
+                  ><svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.80967 2.5C2.59493 2.5 2.38899 2.5853 2.23715 2.73715C2.0853 2.88899 2 3.09493 2 3.30967V7.02282C2.00005 7.23754 2.08538 7.44344 2.23723 7.59525L7.90492 13.2629C8.05676 13.4147 8.26266 13.5 8.47736 13.5C8.69205 13.5 8.89796 13.4147 9.04979 13.2629L12.7629 9.54979C12.9147 9.39796 13 9.19205 13 8.97736C13 8.76266 12.9147 8.55676 12.7629 8.40492L7.09525 2.73723C6.94344 2.58538 6.73754 2.50005 6.52282 2.5H2.80967ZM6.04835 5.33384C6.04835 5.65595 5.92039 5.96486 5.69263 6.19263C5.46486 6.42039 5.15595 6.54835 4.83384 6.54835C4.51174 6.54835 4.20282 6.42039 3.97506 6.19263C3.7473 5.96486 3.61934 5.65595 3.61934 5.33384C3.61934 5.01174 3.7473 4.70282 3.97506 4.47506C4.20282 4.2473 4.51174 4.11934 4.83384 4.11934C5.15595 4.11934 5.46486 4.2473 5.69263 4.47506C5.92039 4.70282 6.04835 5.01174 6.04835 5.33384V5.33384Z"
+                      fill="#DDDFE1"
+                    /></svg
+                  >Jornalismo
+                </a>
+                <a
+                  href="#"
+                  class="flex flex-row gap-1.5 text-xs font-medium text-gray-100 hover:underline"
+                  ><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.37967 10.617L5.18986 9.45536L4.11874 8.1811L7.9989 3.76961V3.76081L6.44021 2.14599C4.96562 0.619176 2.57704 0.617416 1.10584 2.14423C-0.367906 3.67017 -0.369605 6.14212 1.10669 7.67158L2.67982 9.30048L7.98106 14.8586L7.9989 14.841V10.617H7.37967Z"
+                      fill="#DC3481"
+                    />
+                    <path
+                      d="M8.00181 8.93585L7.14984 8.05496C6.34544 7.21895 5.03903 7.21807 4.23462 8.05232C3.43022 8.88657 3.42852 10.2374 4.23547 11.0725L5.09594 11.9631L7.99247 15L8.00181 14.9894V8.93585Z"
+                      fill="#F6937A"
+                    />
+                    <path
+                      d="M8.00181 8.93585L7.14984 8.05496C6.34544 7.21895 5.03903 7.21807 4.23462 8.05232C3.43022 8.88657 3.42852 10.2374 4.23547 11.0725L5.09594 11.9631L7.99247 15L8.00181 14.9894V8.93585Z"
+                      fill="#81BA41"
+                    />
+                    <path
+                      d="M8.63587 10.6229L8.60105 9.66549L8.24854 9.54316L7.99456 8.94124V10.6229H8.63587Z"
+                      fill="#FAB678"
+                    />
+                    <path
+                      d="M14.8861 2.14992C13.4132 0.623981 11.0255 0.625741 9.55006 2.15256L8.08736 3.66794L7.99392 3.77442L4.11376 8.18679C4.14944 8.14279 4.18596 8.09967 4.22673 8.05831C5.03114 7.22406 6.33755 7.22494 7.14195 8.06095L7.99456 8.94124L14.7978 2.0672C14.8275 2.09448 14.859 2.12 14.8861 2.14992Z"
+                      fill="#E66825"
+                    />
+                    <path
+                      d="M8.00024 8.93585L8.85136 8.05496C9.65746 7.21895 10.9622 7.21807 11.7666 8.05232C12.5727 8.88657 12.5727 10.2374 11.7657 11.0725L10.9061 11.9631L8.01043 15L8.00024 14.9894V8.93585Z"
+                      fill="#1DA149"
+                    />
+                    <path
+                      d="M14.8937 2.14358C14.8666 2.11366 14.8351 2.08902 14.8054 2.05998L9.05141 7.87509C9.86091 7.22476 11.0242 7.28319 11.7666 8.05232C12.4138 8.72465 12.5417 9.72927 12.145 10.5318L13.3206 9.29983L14.8937 7.67093C16.3709 6.14147 16.3666 3.66952 14.8937 2.14358Z"
+                      fill="#EE9121"
+                    />
+                  </svg>
+                  Projeto em Destaque
+                </a>
               </div>
             </div>
           </div>
@@ -191,13 +238,18 @@
                 role="alert"
               >
                 <div class="flex flex-row">
-                  <div>Meta mínima já alcançada. <span class="font-extrabold">Rumo à próxima meta!</span></div>
+                  <div>
+                    Meta mínima já alcançada.
+                    <span class="font-extrabold">Rumo à próxima meta!</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Main Stats -->
-            <div class="flex flex-col flex-1 gap-6 px-3 pt-0 pb-4 lg:px-6 first:pt-4">
+            <div
+              class="flex flex-col flex-1 gap-6 px-3 pt-0 pb-4 lg:px-6 first:pt-4"
+            >
               <!-- Total funded -->
               <div class="flex flex-col gap-1">
                 <div class="text-3xl font-semibold text-gray-800 lg:text-4xl">
@@ -240,13 +292,18 @@
               <div class="flex flex-col gap-0.5">
                 <div class="flex flex-row items-center gap-1">
                   <!-- Icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#D3696B" class="w-6 h-6">
-  <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z" clip-rule="evenodd" />
-</svg>
-
-
-
-                  
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="#D3696B"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
 
                   <!-- Countdown -->
                   <div class="flex flex-row gap-2">
@@ -275,16 +332,52 @@
             </div>
 
             <!-- Actions -->
-            <div class="flex flex-col gap-4 px-3 py-4 lg:px-6">
-                <div class="fixed bottom-0 left-0 right-0 z-20 w-full px-4 py-4 bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:shadow-none lg:flex lg:relative lg:px-0 lg:py-0"><button
+            <div class="flex flex-col gap-4 px-3 py-0 lg:py-4 lg:px-6">
+              <div
+                class="fixed bottom-0 left-0 right-0 z-20 w-full px-4 py-4 bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:shadow-none flex flex-row gap-1 lg:relative lg:px-0 lg:py-0 items-center"
+              >
+                <button
+                  name="button"
+                  type="submit"
+                  class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
+                >
+                  Apoiar projeto
+                </button>
+                <div class="flex flex-row gap-1 lg:hidden">
+                  <button
                     name="button"
                     type="submit"
-                    class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
+                    class="inline-flex items-center justify-center w-full gap-0 py-3.5 px-6 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
                   >
-                    Apoiar projeto
-                  </button></div>
-              
-              <div class="flex flex-row gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="w-5 h-5 fill-current"
+                    >
+                      <path
+                        d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    name="button"
+                    type="submit"
+                    class="inline-flex items-center justify-center w-full gap-0 py-3.5 px-6 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="w-5 h-5 fill-current"
+                    >
+                      <path
+                        d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="hidden lg:flex-row lg:gap-2 lg:flex">
                 <button
                   name="button"
                   type="submit"
@@ -292,15 +385,14 @@
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
                     class="w-5 h-5 mr-1 -ml-1 fill-current"
                   >
                     <path
-                      d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
                     />
                   </svg>
+
                   Seguir projeto
                 </button>
                 <button
@@ -310,34 +402,38 @@
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
                     class="w-5 h-5 mr-1 -ml-1 fill-current"
                   >
                     <path
-                      d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z"
                     />
                   </svg>
+
                   Compartilhar
                 </button>
               </div>
             </div>
             <!-- Footer -->
-            <div class="flex flex-row items-center px-4 py-3 border-t border-gray-50">
+            <div
+              class="flex flex-row items-center px-4 py-3 border-t border-gray-50"
+            >
               <div class="flex-1">
-                <img src="./assets/logo-modalidade-aon.png" alt="Tudo ou Nada" class="w-28">
+                <img
+                  src="./assets/logo-modalidade-aon.png"
+                  alt="Tudo ou Nada"
+                  class="w-28"
+                />
               </div>
-              <div class="text-[10px] text-gray-400">Você pode apoiar até 30/08/2022 às 23h59.</div>
-              
+              <div class="text-[10px] text-gray-400">
+                Você pode apoiar até 30/08/2022 às 23h59.
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-
-    
     <script>
       const second = 1000,
         minute = second * 60,
@@ -364,6 +460,5 @@
         }, second);
     </script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-    
   </body>
 </html>
