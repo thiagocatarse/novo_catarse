@@ -2229,6 +2229,10 @@ video {
   text-align: right;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
 .align-super{
   vertical-align: super;
 }
@@ -2283,6 +2287,10 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-\[11px\]{
+  font-size: 11px;
 }
 
 .font-bold{
