@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link href="../../dist/output.css" rel="stylesheet" />
+    
+
+  </head>
+
+  <body>
+    <section class="bg-gray-50">
+      <div
+        class="flex flex-col max-w-screen-lg gap-10 px-4 py-12 mx-auto my-0 md:px-0"
+      >
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-2">
+            <h1 class="text-2xl font-semibold leading-none text-gray-900">
+              Personalização da página
+            </h1>
+            <div class="text-sm font-normal text-gray-600">
+              Uma boa narrativa é o que encantará as pessoas e trará apoiadores.
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="grid items-stretch grid-cols-1 gap-3 lg:gap-6 2xl:gap-8">
+            <div
+              class="grid grid-cols-1 items-stretch gap-3 md:grid-cols-[3fr,1fr] lg:gap-6 2xl:gap-8"
+            >
+              <div class="bg-white rounded-lg shadow">
+                <div class="flex flex-col">
+                  <div class="flex flex-row gap-4 px-4 py-6">
+                    <div class="flex flex-1 flex-col gap-0.5">
+                      <div class="text-lg font-bold text-gray-800">Card do projeto</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6"
+                  >
+                    <div class="flex flex-col gap-7">
+                      
+                      <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label class="text-sm font-medium text-gray-900"
+                            >Miniatura do projeto</label
+                          >
+                        </div>
+                        <input
+                          class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder-gray-400"
+                          type="file"
+                          state="normal"
+                          name="crowdfunding_project[thumbnail_image]"
+                          id="crowdfunding_project_thumbnail_image"
+                        />
+
+                        <p class="text-xs font-normal text-gray-500">
+                          Imagem deve ser horizontal (PNG, JPG tamanho
+                          recomendado 720 x 400 px)
+                        </p>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label for="crowdfunding_project_blurb" class="text-sm font-medium text-gray-900">Frase de efeito</label>
+                        </div>
+                        <div class="flex w-full rounded-md shadow-sm">
+                          <textarea class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 rounded-md outline-none hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500" name="crowdfunding_project[blurb]" id="crowdfunding_project_blurb"></textarea>
+                        </div>
+    
+                        <p class="text-xs font-normal text-gray-500">Uma descrição em até 140 caracteres do seu projeto</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-0 rounded-lg bg-gray-50">
+                <div class="flex flex-col">
+                  <div class="flex flex-row gap-4 px-4 py-6">
+                    <div class="flex flex-1 flex-col gap-0.5">
+                      <div class="text-lg font-bold text-gray-800">
+                        <svg class="w-6 h-6 fill-current">
+                          <use xlink:href="#light"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6"
+                  >
+                    Nossa Central de ajuda tem tudo o que você precisa.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid items-stretch grid-cols-1 gap-3 lg:gap-6 2xl:gap-8">
+            <div
+              class="grid grid-cols-1 items-stretch gap-3 md:grid-cols-[3fr,1fr] lg:gap-6 2xl:gap-8"
+            >
+              <div class="bg-white rounded-lg shadow">
+                <div class="flex flex-col">
+                  <div class="flex flex-row gap-4 px-4 py-6">
+                    <div class="flex flex-1 flex-col gap-0.5">
+                      <div class="text-lg font-bold text-gray-800">Seção inicial da página de projeto</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6"
+                  >
+                    <div class="flex flex-col gap-7">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex">
+                              <label class="text-sm font-medium text-gray-900"
+                                >Logomarca do projeto</label
+                              >
+                            </div>
+                            <input
+                              class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder-gray-400"
+                              type="file"
+                              state="normal"
+                              name="crowdfunding_project[thumbnail_image]"
+                              id="crowdfunding_project_thumbnail_image"
+                            />
+    
+                            <p class="text-xs font-normal text-gray-500">
+                              Imagem deve ser horizontal (PNG, JPG tamanho
+                              recomendado 720 x 400 px)
+                            </p>
+                          </div>
+                        <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label class="text-sm font-medium text-gray-900"
+                            >Imagem de fundo</label
+                          >
+                        </div>
+                        <input
+                          class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:placeholder-gray-400"
+                          type="file"
+                          state="normal"
+                          name="crowdfunding_project[cover_image]"
+                          id="crowdfunding_project_cover_image"
+                        />
+
+                        <p class="text-xs font-normal text-gray-500">
+                          Imagem deve ser horizontal (PNG, JPG tamanho
+                          recomendado 1280 x 720 px)
+                        </p>
+                      </div>
+                      <div class="flex flex-col w-1/2 gap-2">
+                        <div class="flex">
+                          <label for="preview-input" class="text-sm font-medium text-gray-900">Opacidade da imagem de fundo</label>
+                        </div>
+                        
+                        <div class="flex w-full rounded-md shadow-sm">
+                          <input class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 outline-none focus:ring-blue-500 hover:border-gray-600 focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 rounded-l-md" id="preview-input" type="number" placeholder="100">
+                          <span class="inline-flex items-center px-3 text-gray-500 border border-l-0 border-gray-300 bg-gray-50 sm:text-sm rounded-r-md">%</span>
+                        </div>
+                        <p class="text-xs font-normal text-gray-500">Escolha uma opacidade de 0 (transparente) a 100 (opaco) para a imagem de fundo</p>
+                      </div>
+                      <div class="flex flex-col w-1/2 gap-2">
+                        <div class="flex">
+                          <label
+                            for="crowdfunding_project_color"
+                            class="text-sm font-medium text-gray-900"
+                            >Cor de fundo personalizada</label
+                          >
+                        </div>
+                        <div class="flex flex-row gap-4 py-2">
+                          <label
+                            title="Denim"
+                            class="h-10 w-10 rounded-full bg-[#22549F] cursor-pointer relative flex items-center justify-center text-white">
+                            <input
+                              data-tag="radio-#22549F"
+                              name="color"
+                              type="radio"
+                              class="absolute opacity-0 peer"
+                              value="Denim"
+                          />
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 opacity-0 peer-checked:opacity-100">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                          </svg>
+                          </label>
+                          <label
+                            title="Denim"
+                            class="h-10 w-10 rounded-full bg-[#22549F] cursor-pointer relative flex items-center justify-center text-white">
+                            <input
+                              data-tag="radio-#22549F"
+                              name="color"
+                              type="radio"
+                              class="absolute opacity-0 peer"
+                              value="Denim"
+                          />
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 opacity-0 peer-checked:opacity-100">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                          </svg>
+                          </label>
+                          <label
+                            title="Denim"
+                            class="h-10 w-10 rounded-full bg-[#22549F] cursor-pointer relative flex items-center justify-center text-white">
+                            <input
+                              data-tag="radio-#22549F"
+                              name="color"
+                              type="radio"
+                              class="absolute opacity-0 peer"
+                              value="Denim"
+                          />
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 opacity-0 peer-checked:opacity-100">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                          </svg>
+                          </label>
+                          <label
+                            title="Denim"
+                            class="h-10 w-10 rounded-full bg-[#22549F] cursor-pointer relative flex items-center justify-center text-white">
+                            <input
+                              data-tag="radio-#22549F"
+                              name="color"
+                              type="radio"
+                              class="absolute opacity-0 peer"
+                              value="Denim"
+                          />
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 opacity-0 peer-checked:opacity-100">
+                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                          </svg>
+                          </label>
+                          <label
+                            title="Denim"
+                            class="relative flex items-center justify-center w-10 h-10 text-blue-700 bg-blue-200 rounded-full cursor-pointer">
+                            <input
+                              data-tag="radio-#22549F"
+                              name="color"
+                              type="color"
+                              class="absolute opacity-0 cursor-pointer peer"
+                              value="Denim"
+                          />
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                          </svg>
+                          
+                          </label>
+                        </div>
+
+                        <p class="text-xs font-normal text-gray-500">
+                            As cores acima são sugestões básicas. Escolha qualquer cor, escura o suficiente para ser legível, clicando na opção com o ícone de lápis.
+
+                        </p>
+                      </div>
+                      
+                      
+                      <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label
+                            for="crowdfunding_project_video_url"
+                            class="text-sm font-medium text-gray-900"
+                            >Vídeo principal</label
+                          >
+                        </div>
+                        <div class="flex w-full rounded-md shadow-sm">
+                          <input
+                            class="block w-full p-3 text-sm text-gray-900 placeholder-gray-300 transition-all duration-150 ease-in-out bg-white border border-gray-300 rounded-md outline-none hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                            name="crowdfunding_project[video_url]"
+                            id="crowdfunding_project_video_url"
+                          />
+                        </div>
+
+                        <p class="text-xs font-normal text-gray-500">
+                          Link do Vimeo ou Youtube.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-0 rounded-lg bg-gray-50">
+                <div class="flex flex-col">
+                  <div class="flex flex-row gap-4 px-4 py-6">
+                    <div class="flex flex-1 flex-col gap-0.5">
+                      <div class="text-lg font-bold text-gray-800">
+                        <svg class="w-6 h-6 fill-current">
+                          <use xlink:href="#light"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6"
+                  >
+                    Nossa Central de ajuda tem tudo o que você precisa.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="flex flex-row gap-6 py-6 border-t border-gray-100">
+          <div class="flex justify-end flex-1">
+            <div class="flex flex-row gap-3">
+              <a
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent py-2.5 px-5 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                href="/crowdfunding/projects"
+              >
+                Cancelar
+              </a>
+              <button
+                name="button"
+                type="submit"
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900"
+                form="crowdfunding-project-visual-info-form"
+              >
+                Salvar projeto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
