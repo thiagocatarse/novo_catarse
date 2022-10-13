@@ -7,6 +7,12 @@ html { font-family: 'Inter', sans-serif; }
 @tailwind components;
 @tailwind utilities;
 
+.interactive_tab[aria-selected="true"] {
+  @apply 
+  [&>h2]:text-gray-600 [&>h3]:flex bg-blue-50/50;
+}
+
+
 
 
 

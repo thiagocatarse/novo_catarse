@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link href="../../dist/output.css" rel="stylesheet">
 </head>
 
@@ -31,33 +32,34 @@
 
             <!-- Tabs -->
             <div class="flex flex-row gap-8 p-6">
-                <!-- Links -->
-                <div class="flex flex-col gap-4">
+                <!-- Tab -->
+                <div class="flex flex-col gap-4" data-tabs-toggle="#TabContent" role="tablist">
                     <!-- Link aberto -->
-                    <div class="pl-5 border-l-[3px] border-gray-200  py-2">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-base font-bold text-gray-600">Ative e personalize sua página</p>
-                            <p class="text-sm font-normal text-gray-600">Inicie o seu pré-lançamento e aumente suas chances de receber apoios</p>
-                        </div>
-                    </div>
+                    <a class="interactive_tab pl-5 border-l-[3px] border-gray-100 hover:border-blue-500  hover:bg-blue-50/50 py-2 cursor-pointer flex flex-col gap-2 [&>h2]:text-blue-600 [&>h3]:hidden" id="customize-tab" data-tabs-target="#customize" type="button" role="tab" aria-controls="customize" aria-selected="false">
+                            <h2 class="text-base font-bold">Ative e personalize sua página</h2>
+                            <h3 class="text-sm font-normal text-gray-600">Inicie o seu pré-lançamento e aumente suas chances de receber apoios</h3>
+                    </a>
                     <!-- Link fechado -->
-                    <div class="pl-5 border-l-[3px] border-gray-100 hover:border-gray-200 hover:bg-blue-50/50 cursor-pointer py-2">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-base font-bold text-blue-600">Construa sua lista de emails</p>
-                            <p class="hidden text-sm font-normal text-gray-600">Crie e gerencie a lista de emails de pessoas interessadas em apoiar sua campanha.</p>
-                        </div>
-                    </div>
+                    <a class="interactive_tab pl-5 border-l-[3px] hover:border-blue-500 border-gray-100 hover:bg-blue-50/50 py-2 cursor-pointer flex flex-col gap-2 [&>h2]:text-blue-600 [&>h3]:hidden" id="email-tab" data-tabs-target="#email" type="button" role="tab" aria-controls="email" aria-selected="false">
+                      
+                            <h2 class="text-base font-bold">Construa sua lista de emails</>
+                            <h3 class="text-sm font-normal text-gray-600">Crie e gerencie a lista de emails de pessoas interessadas em apoiar sua campanha.</h3>
+                        
+                    </a>
                     <!-- Link fechado -->
-                    <div class="pl-5 border-l-[3px] border-gray-100 hover:border-gray-200 hover:bg-blue-50/50 cursor-pointer py-2">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-base font-bold text-blue-600">Envie mensagens</p>
-                            <p class="hidden text-sm font-normal text-gray-600">Envie mensagens, atualizações e novidades de campanha para pessoas interessadas.</p>
-                        </div>
-                    </div>
+                    <a class="interactive_tab pl-5 border-l-[3px] border-gray-100 hover:border-blue-500 hover:bg-blue-50/50 py-2 cursor-pointer flex flex-col gap-2 [&>h2]:text-blue-600 [&>h3]:hidden" id="posts-tab" data-tabs-target="#posts" type="button" role="tab" aria-controls="posts" aria-selected="false">
+                        
+                            <h2 class="text-base font-bold ">Envie mensagens</h2>
+                            <h3 class="text-sm font-normal text-gray-600">Envie mensagens, atualizações e novidades de campanha para pessoas interessadas.</h3>
+                        
+                    </a>
                 </div>
-                <!-- Imagens -->
-                <div>
-                    <img src="../assets/pre-launch-01.svg" alt="" class="w-full">
+                <!-- TabContent -->
+                <div id="TabContent">
+                  <div class="w-full" id="customize" role="tabpanel" aria-labelledby="customize-tab"><img src="../assets/pre-launch-01.svg" alt="" class="w-full"></div>
+                  <div class="w-full" id="email" role="tabpanel" aria-labelledby="email-tab"><img src="../assets/pre-launch-02.svg" alt="" class="w-full"></div>
+                  <div class="w-full" id="posts" role="tabpanel" aria-labelledby="posts-tab"><img src="../assets/pre-launch-03.svg" alt="" class="w-full"></div>
+                    
                 </div>
             </div>
 
@@ -94,7 +96,7 @@
   </div>
 </section>
     
-
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
 
 </html>
