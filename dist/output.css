@@ -1907,6 +1907,10 @@ video {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-blue-50\/50{
+  background-color: rgb(235 242 246 / 0.5);
+}
+
 .bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/reward\/uploaded_image\/275259\/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb\.jpg\'\)\]{
   background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg');
 }
@@ -4166,6 +4170,15 @@ video {
 .\[\&\>h2\]\:text-blue-600>h2{
   --tw-text-opacity: 1;
   color: rgb(49 122 175 / var(--tw-text-opacity));
+}
+
+.\[\&\>h2\]\:text-gray-600>h2{
+  --tw-text-opacity: 1;
+  color: rgb(63 71 82 / var(--tw-text-opacity));
+}
+
+.\[\&\>h3\]\:flex>h3{
+  display: flex;
 }
 
 .\[\&\>h3\]\:hidden>h3{
