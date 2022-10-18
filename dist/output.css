@@ -1560,6 +1560,10 @@ video {
   gap: 0.375rem;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
 .gap-y-6{
   row-gap: 1.5rem;
 }
@@ -2241,6 +2245,10 @@ video {
 
 .pl-0{
   padding-left: 0px;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .text-left{
