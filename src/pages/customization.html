@@ -45,7 +45,7 @@
                   <div
                     class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
                     <div class="flex flex-col gap-7">
-                      <!-- Uploader -->
+                      <!-- Uploader Miniatura -->
                       <div class="flex flex-col gap-2">
                         <!-- Campo escondido pro browser conseguir abrir o seletor de arquivos -->
                         <input type="file" id="temp" hidden />
@@ -106,7 +106,8 @@
                             </div>
                             <img
                               src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/151169/project_thumb_large_d602943b-88a1-4fd9-aadf-f5b1a3f71ca2.png"
-                              alt="" />
+                              alt=""
+                              class="mx-auto max-h-96 object-contain" />
                           </div>
                         </div>
                       </div>
@@ -136,9 +137,9 @@
             </div>
 
             <!-- Preview do card -->
-            <div class="rounded-lg py-6 px-4">
-              <div class="sticky top-0">
-                <div class="mb-6 text-lg font-bold text-gray-400">
+            <div class="rounded-lg px-4 pb-6">
+              <div class="sticky top-0 flex flex-col gap-6">
+                <div class="pt-6 text-lg font-bold text-gray-400">
                   Pré-visualização
                 </div>
                 <div class="rounded-lg border border-gray-100 bg-white shadow">
@@ -169,6 +170,22 @@
                       Salve Sempreterna dos monstros corrompidos pela terrível
                       escuridão que ameaça o mundo!
                     </div>
+                  </div>
+                </div>
+                <!-- Banner -->
+                <div
+                  id="banner-1666208292"
+                  class="mb-4 rounded-lg bg-gray-100 p-4 text-sm text-gray-700 dark:bg-gray-700 dark:text-gray-300"
+                  role="alert">
+                  <div class="flex flex-row">
+                    <svg class="mr-3 inline h-5 w-5 flex-shrink-0 fill-current">
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                    <div>Salve a página para atualizar a pré-visualização.</div>
                   </div>
                 </div>
               </div>
@@ -233,7 +250,73 @@
                   <div
                     class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
                     <div class="flex flex-col gap-7">
-                      <!-- Uploader -->
+                      <!-- Uploader Logomarca -->
+                      <div class="flex flex-col gap-2">
+                        <!-- Campo escondido pro browser conseguir abrir o seletor de arquivos -->
+                        <input type="file" id="temp" hidden />
+                        <div class="flex">
+                          <label class="text-sm font-medium text-gray-900"
+                            >Logomarca do projeto</label
+                          >
+                        </div>
+                        <!-- Label para o campo escondido, ele que ativa o seletor de arquivos -->
+                        <!-- Aqui a gente pode aplicar os estilos que quisermos, pra fazer parecer um botão por exemplo -->
+
+                        <label
+                          for="temp"
+                          name="button"
+                          type="submit"
+                          class="inline-flex w-fit cursor-pointer items-center justify-center gap-1 rounded-lg border-gray-600 bg-gray-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-800 active:bg-gray-900">
+                          <svg class="mr-1 -ml-1 h-5 w-5 fill-current">
+                            <path
+                              d="M9.25 13.25a.75.75 0 001.5 0V4.636l2.955 3.129a.75.75 0 001.09-1.03l-4.25-4.5a.75.75 0 00-1.09 0l-4.25 4.5a.75.75 0 101.09 1.03L9.25 4.636v8.614z" />
+                            <path
+                              d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                          </svg>
+                          Fazer upload
+                        </label>
+                        <p class="text-xs font-normal text-gray-500">
+                          As imagens devem ser horizontais, pelo menos
+                          1280x720px, e 72 DPI (pontos por polegada).
+                        </p>
+                        <!-- Wrapper files -->
+                        <div class="flex w-full flex-col gap-3 py-3">
+                          <!-- Done -->
+                          <div
+                            class="flex flex-col gap-4 rounded-lg border border-gray-100 bg-white px-6 py-4">
+                            <div class="flex flex-1 flex-row items-center">
+                              <div
+                                class="flex flex-1 flex-col gap-1 text-sm font-normal leading-tight text-gray-800">
+                                <p>nome_do_arquivo.png</p>
+                              </div>
+                              <div role="status">
+                                <button
+                                  name="button"
+                                  type="submit"
+                                  class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent py-2 px-3 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
+                                      clip-rule="evenodd" />
+                                  </svg>
+                                </button>
+
+                                <span class="sr-only">Completo</span>
+                              </div>
+                            </div>
+                            <img
+                              src="https://thiagocatarse.github.io//novo_catarse/src/pages/crowdfunding/assets/Logo%20Desconfronto.png"
+                              alt=""
+                              class="mx-auto max-h-96 object-contain" />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Uploader Imagem de Fundo -->
                       <div class="flex flex-col gap-2">
                         <!-- Campo escondido pro browser conseguir abrir o seletor de arquivos -->
                         <input type="file" id="temp" hidden />
@@ -294,99 +377,38 @@
                             </div>
                             <img
                               src="https://thiagocatarse.github.io/novo_catarse/src/pages/crowdfunding/assets/bg.png"
-                              alt="" />
+                              alt=""
+                              class="mx-auto max-h-96 object-contain" />
                           </div>
                         </div>
                       </div>
-                      <!-- Uploader -->
-                      <div class="flex flex-col gap-2">
-                        <!-- Campo escondido pro browser conseguir abrir o seletor de arquivos -->
-                        <input type="file" id="temp" hidden />
+
+                      <div class="flex w-full flex-col gap-2 lg:w-1/2">
                         <div class="flex">
-                          <label class="text-sm font-medium text-gray-900"
-                            >Imagem de capa</label
+                          <label
+                            for="preview-input"
+                            class="text-sm font-medium text-gray-900"
+                            >Opacidade da imagem de fundo</label
                           >
                         </div>
-                        <!-- Label para o campo escondido, ele que ativa o seletor de arquivos -->
-                        <!-- Aqui a gente pode aplicar os estilos que quisermos, pra fazer parecer um botão por exemplo -->
 
-                        <label
-                          for="temp"
-                          name="button"
-                          type="submit"
-                          class="inline-flex w-fit cursor-pointer items-center justify-center gap-1 rounded-lg border-gray-600 bg-gray-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-800 active:bg-gray-900">
-                          <svg class="mr-1 -ml-1 h-5 w-5 fill-current">
-                            <path
-                              d="M9.25 13.25a.75.75 0 001.5 0V4.636l2.955 3.129a.75.75 0 001.09-1.03l-4.25-4.5a.75.75 0 00-1.09 0l-4.25 4.5a.75.75 0 101.09 1.03L9.25 4.636v8.614z" />
-                            <path
-                              d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
-                          </svg>
-                          Fazer upload
-                        </label>
-                        <p class="text-xs font-normal text-gray-500">
-                          As imagens devem ser horizontais, pelo menos
-                          1280x720px, e 72 DPI (pontos por polegada).
-                        </p>
-                        <!-- Wrapper files -->
-                        <div class="flex w-full flex-col gap-3 py-3">
-                          <!-- Done -->
-                          <div
-                            class="flex flex-col gap-4 rounded-lg border border-gray-100 bg-white px-6 py-4">
-                            <div class="flex flex-1 flex-row items-center">
-                              <div
-                                class="flex flex-1 flex-col gap-1 text-sm font-normal leading-tight text-gray-800">
-                                <p>nome_do_arquivo.png</p>
-                              </div>
-                              <div role="status">
-                                <button
-                                  name="button"
-                                  type="submit"
-                                  class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent py-2 px-3 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    class="h-5 w-5">
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
-                                      clip-rule="evenodd" />
-                                  </svg>
-                                </button>
-
-                                <span class="sr-only">Completo</span>
-                              </div>
-                            </div>
-                            <img src="../assets/bg_browser.svg" alt="" />
-                          </div>
+                        <div class="flex w-full rounded-md shadow-sm">
+                          <input
+                            class="block w-full rounded-l-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                            id="preview-input"
+                            type="number"
+                            placeholder="100" />
+                          <span
+                            class="inline-flex items-center rounded-r-md border border-l-0 border-gray-300 bg-gray-50 px-3 text-gray-500 sm:text-sm"
+                            >%</span
+                          >
                         </div>
+                        <p class="text-xs font-normal text-gray-500">
+                          Escolha uma opacidade de 0 (transparente) a 100
+                          (sólido) para a imagem de fundo
+                        </p>
                       </div>
-                      <!-- div class="flex w-full flex-col gap-2 lg:w-1/2">
-                    <div class="flex">
-                      <label
-                        for="preview-input"
-                        class="text-sm font-medium text-gray-900"
-                        >Opacidade da imagem de fundo</label
-                      >
-                    </div>
-
-                    <div class="flex w-full rounded-md shadow-sm">
-                      <input
-                        class="block w-full rounded-l-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
-                        id="preview-input"
-                        type="number"
-                        placeholder="100" />
-                      <span
-                        class="inline-flex items-center rounded-r-md border border-l-0 border-gray-300 bg-gray-50 px-3 text-gray-500 sm:text-sm"
-                        >%</span
-                      >
-                    </div>
-                    <p class="text-xs font-normal text-gray-500">
-                      Escolha uma opacidade de 0 (transparente) a 100 (opaco)
-                      para a imagem de fundo
-                    </p>
-                  </!-->
-                      <div class="flex w-full flex-col gap-2">
+                      <!-- div class="flex w-full flex-col gap-2">
                         <label
                           for="background-opacity"
                           class="text-sm font-medium text-gray-900"
@@ -397,9 +419,9 @@
                           type="range"
                           value="50"
                           class="range-lg h-3 w-full cursor-pointer appearance-none rounded-lg bg-gray-100 dark:bg-gray-700" />
-                      </div>
+                      </!-->
 
-                      <div class="flex w-full flex-col gap-2">
+                      <!-- div class="flex w-full flex-col gap-2">
                         <div class="flex">
                           <label
                             for="crowdfunding_project_color"
@@ -537,6 +559,27 @@
                           cor, escura o suficiente para ser legível, clicando na
                           opção com o ícone de lápis.
                         </p>
+                      </!-->
+                      <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label
+                            for="preview-input"
+                            class="text-sm font-medium text-gray-900"
+                            >Cor do fundo</label
+                          >
+                        </div>
+
+                        <div class="flex rounded-md">
+                          <input
+                            class="block h-10 w-40 rounded-md border border-gray-300 bg-white px-1 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                            id="color"
+                            type="color"
+                            value="#383B47" />
+                        </div>
+                        <p class="text-xs font-normal text-gray-500">
+                          Escolha qualquer cor, escura o suficiente para ser
+                          legível.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -544,9 +587,9 @@
               </div>
             </div>
             <!-- Preview da secao inicial -->
-            <div class="rounded-lg py-6 px-4">
-              <div class="sticky top-0">
-                <div class="mb-6 text-lg font-bold text-gray-400">
+            <div class="rounded-lg px-4 pb-6">
+              <div class="sticky top-0 flex flex-col gap-6">
+                <div class="pt-6 text-lg font-bold text-gray-400">
                   Pré-visualização
                 </div>
                 <!-- Pagina do projeto -->
@@ -598,6 +641,22 @@
                     </div>
                   </div>
                 </section>
+                <!-- Banner -->
+                <div
+                  id="banner-1666208292"
+                  class="mb-4 rounded-lg bg-gray-100 p-4 text-sm text-gray-700 dark:bg-gray-700 dark:text-gray-300"
+                  role="alert">
+                  <div class="flex flex-row">
+                    <svg class="mr-3 inline h-5 w-5 flex-shrink-0 fill-current">
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
+                        clip-rule="evenodd" />
+                    </svg>
+
+                    <div>Salve a página para atualizar a pré-visualização.</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

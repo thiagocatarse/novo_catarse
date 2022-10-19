@@ -957,6 +957,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mr-3{
+  margin-right: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1071,6 +1075,10 @@ video {
   height: 0.75rem;
 }
 
+.max-h-96{
+  max-height: 24rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1163,6 +1171,14 @@ video {
 
 .w-3{
   width: 0.75rem;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .min-w-full{
@@ -1988,6 +2004,11 @@ video {
 
 .fill-white{
   fill: #fff;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover{
