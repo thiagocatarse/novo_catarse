@@ -5,32 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
-    />
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link href="../../../dist/output.css" rel="stylesheet" />
   </head>
 
   <body class="bg-gray-50">
     <!-- Hero -->
     <!-- bg-[#0E375A] -->
-    <section class="relative w-full pb-20 overflow-x-hidden bg-gray-900">
+    <section class="relative w-full overflow-x-hidden bg-gray-900 pb-20">
       <!-- bg -->
       <div
-        class="absolute top-0 w-full h-1/3 bg-gradient-to-b from-gray-900 to-transparent -z-0"
-      ></div>
+        class="absolute top-0 -z-0 h-1/3 w-full bg-gradient-to-b from-gray-900 to-transparent"></div>
       <img
         src="./assets/bg.png"
         alt="Background"
-        class="absolute object-cover w-full h-full opacity-20 -z-0"
-      />
+        class="absolute -z-0 h-full w-full object-cover opacity-20" />
       <!-- Hero Container -->
       <div
-        class="z-10 flex flex-col gap-8 px-3 pt-12 mx-auto lg:px-4 lg:max-w-screen-xl"
-      >
+        class="z-10 mx-auto flex flex-col gap-8 px-3 pt-12 lg:max-w-screen-xl lg:px-4">
         <!-- Hero Header -->
         <div
-          class="flex flex-col pb-2 items-center gap-1 lg:max-w-[462px] mx-auto z-10"
-        >
+          class="z-10 mx-auto flex flex-col items-center gap-1 pb-2 lg:max-w-[462px]">
           <div>
             <h1 class="mb-2 text-3xl font-semibold text-white lg:text-4xl">
               desConfronto
@@ -41,45 +36,39 @@
               class="max-w-[216px] h-full"
             /> -->
           </div>
-          <h2 class="text-sm font-normal text-center text-white">
+          <h2 class="text-center text-sm font-normal text-white">
             Salve Sempreterna dos monstros corrompidos pela terrível escuridão
             que ameaça o mundo!
           </h2>
         </div>
         <!-- Hero Content -->
-        <div class="z-10 flex flex-col items-start w-full gap-4 lg:flex-row">
+        <div class="z-10 flex w-full flex-col items-start gap-4 lg:flex-row">
           <!-- Hero Media -->
           <div
-            class="z-10 flex flex-col w-full overflow-hidden rounded-t-lg lg:w-2/3"
-          >
+            class="z-10 flex w-full flex-col overflow-hidden rounded-t-lg lg:w-2/3">
             <div
-              class="relative z-10 flex-1 object-cover w-full h-auto aspect-video"
-            >
+              class="relative z-10 aspect-video h-auto w-full flex-1 object-cover">
               <iframe
                 src="https://www.youtube.com/embed/Mvbnxt7OaRI"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-                class="absolute top-0 left-0 w-full h-full"
-              ></iframe>
+                class="absolute top-0 left-0 h-full w-full"></iframe>
             </div>
             <!-- Author -->
             <div
-              class="z-20 flex flex-col items-start justify-between gap-3 px-3 py-4 rounded-b-lg lg:items-center lg:flex-row first:rounded-t-lg bg-gray-900/50"
-            >
+              class="z-20 flex flex-col items-start justify-between gap-3 rounded-b-lg bg-gray-900/50 px-3 py-4 first:rounded-t-lg lg:flex-row lg:items-center">
               <!-- Author block -->
               <div class="">
                 <div
-                  class="z-20 flex flex-row items-center gap-3 cursor-pointer"
+                  class="z-20 flex cursor-pointer flex-row items-center gap-3"
                   data-popover-target="popover-user-profile"
-                  data-popover-placement="right"
-                >
-                  <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full">
+                  data-popover-placement="right">
+                  <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
                     <img
-                      class="object-cover w-full h-full"
-                      src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
-                    />
+                      class="h-full w-full object-cover"
+                      src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png" />
                   </div>
                   <div class="text-base font-semibold text-white">
                     nat20 Games
@@ -91,7 +80,7 @@
                   data-popover=""
                   id="popover-user-profile"
                   role="tooltip"
-                  class="absolute z-20 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                  class="invisible absolute z-20 inline-block w-64 rounded-lg border border-gray-200 bg-white text-sm font-light text-gray-500 opacity-0 shadow-sm transition-opacity duration-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"
                   data-popper-reference-hidden=""
                   data-popper-escaped=""
                   data-popper-placement="bottom"
@@ -101,29 +90,25 @@
                     inset: 0px auto auto 0px;
                     margin: 0px;
                     transform: translate3d(0px, 277px, 0px);
-                  "
-                >
+                  ">
                   <div class="p-3">
-                    <div class="flex items-center justify-between mb-2">
+                    <div class="mb-2 flex items-center justify-between">
                       <a href="#">
                         <img
-                          class="w-8 h-8 rounded-full"
+                          class="h-8 w-8 rounded-full"
                           src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
-                          alt="nat20 Games"
-                        />
+                          alt="nat20 Games" />
                       </a>
                       <div>
                         <button
                           type="button"
-                          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                        >
+                          class="rounded-lg bg-blue-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                           Seguir
                         </button>
                       </div>
                     </div>
                     <p
-                      class="text-base font-semibold leading-none text-gray-900 dark:text-white"
-                    >
+                      class="text-base font-semibold leading-none text-gray-900 dark:text-white">
                       <a href="#">nat20 Games</a>
                     </p>
                     <p class="mb-3 text-sm font-normal">
@@ -161,8 +146,7 @@
                       position: absolute;
                       left: 0px;
                       transform: translate3d(0px, 0px, 0px);
-                    "
-                  ></div>
+                    "></div>
                 </div>
               </div>
 
@@ -176,12 +160,10 @@
                     height="16"
                     viewBox="0 0 15 16"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.80967 2.5C2.59493 2.5 2.38899 2.5853 2.23715 2.73715C2.0853 2.88899 2 3.09493 2 3.30967V7.02282C2.00005 7.23754 2.08538 7.44344 2.23723 7.59525L7.90492 13.2629C8.05676 13.4147 8.26266 13.5 8.47736 13.5C8.69205 13.5 8.89796 13.4147 9.04979 13.2629L12.7629 9.54979C12.9147 9.39796 13 9.19205 13 8.97736C13 8.76266 12.9147 8.55676 12.7629 8.40492L7.09525 2.73723C6.94344 2.58538 6.73754 2.50005 6.52282 2.5H2.80967ZM6.04835 5.33384C6.04835 5.65595 5.92039 5.96486 5.69263 6.19263C5.46486 6.42039 5.15595 6.54835 4.83384 6.54835C4.51174 6.54835 4.20282 6.42039 3.97506 6.19263C3.7473 5.96486 3.61934 5.65595 3.61934 5.33384C3.61934 5.01174 3.7473 4.70282 3.97506 4.47506C4.20282 4.2473 4.51174 4.11934 4.83384 4.11934C5.15595 4.11934 5.46486 4.2473 5.69263 4.47506C5.92039 4.70282 6.04835 5.01174 6.04835 5.33384V5.33384Z"
-                      fill="#DDDFE1"
-                    /></svg
+                      fill="#DDDFE1" /></svg
                   >Jornalismo
                 </a>
                 <a
@@ -192,36 +174,28 @@
                     height="16"
                     viewBox="0 0 16 16"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.37967 10.617L5.18986 9.45536L4.11874 8.1811L7.9989 3.76961V3.76081L6.44021 2.14599C4.96562 0.619176 2.57704 0.617416 1.10584 2.14423C-0.367906 3.67017 -0.369605 6.14212 1.10669 7.67158L2.67982 9.30048L7.98106 14.8586L7.9989 14.841V10.617H7.37967Z"
-                      fill="#DC3481"
-                    />
+                      fill="#DC3481" />
                     <path
                       d="M8.00181 8.93585L7.14984 8.05496C6.34544 7.21895 5.03903 7.21807 4.23462 8.05232C3.43022 8.88657 3.42852 10.2374 4.23547 11.0725L5.09594 11.9631L7.99247 15L8.00181 14.9894V8.93585Z"
-                      fill="#F6937A"
-                    />
+                      fill="#F6937A" />
                     <path
                       d="M8.00181 8.93585L7.14984 8.05496C6.34544 7.21895 5.03903 7.21807 4.23462 8.05232C3.43022 8.88657 3.42852 10.2374 4.23547 11.0725L5.09594 11.9631L7.99247 15L8.00181 14.9894V8.93585Z"
-                      fill="#81BA41"
-                    />
+                      fill="#81BA41" />
                     <path
                       d="M8.63587 10.6229L8.60105 9.66549L8.24854 9.54316L7.99456 8.94124V10.6229H8.63587Z"
-                      fill="#FAB678"
-                    />
+                      fill="#FAB678" />
                     <path
                       d="M14.8861 2.14992C13.4132 0.623981 11.0255 0.625741 9.55006 2.15256L8.08736 3.66794L7.99392 3.77442L4.11376 8.18679C4.14944 8.14279 4.18596 8.09967 4.22673 8.05831C5.03114 7.22406 6.33755 7.22494 7.14195 8.06095L7.99456 8.94124L14.7978 2.0672C14.8275 2.09448 14.859 2.12 14.8861 2.14992Z"
-                      fill="#E66825"
-                    />
+                      fill="#E66825" />
                     <path
                       d="M8.00024 8.93585L8.85136 8.05496C9.65746 7.21895 10.9622 7.21807 11.7666 8.05232C12.5727 8.88657 12.5727 10.2374 11.7657 11.0725L10.9061 11.9631L8.01043 15L8.00024 14.9894V8.93585Z"
-                      fill="#1DA149"
-                    />
+                      fill="#1DA149" />
                     <path
                       d="M14.8937 2.14358C14.8666 2.11366 14.8351 2.08902 14.8054 2.05998L9.05141 7.87509C9.86091 7.22476 11.0242 7.28319 11.7666 8.05232C12.4138 8.72465 12.5417 9.72927 12.145 10.5318L13.3206 9.29983L14.8937 7.67093C16.3709 6.14147 16.3666 3.66952 14.8937 2.14358Z"
-                      fill="#EE9121"
-                    />
+                      fill="#EE9121" />
                   </svg>
                   Projeto em Destaque
                 </a>
@@ -231,15 +205,13 @@
 
           <!-- Hero Card -->
           <div
-            class="flex flex-col w-full gap-2 overflow-hidden bg-white rounded-lg shadow lg:w-1/3"
-          >
+            class="flex w-full flex-col gap-2 overflow-hidden rounded-lg bg-white shadow lg:w-1/3">
             <!-- Banner -->
             <div class="px-3 pt-4 lg:px-6">
               <div
                 id="banner-1662425884"
-                class="p-4 pt-2 pb-2 mb-4 text-xs font-semibold text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
-                role="alert"
-              >
+                class="mb-4 rounded-lg bg-green-100 p-4 pt-2 pb-2 text-xs font-semibold text-green-700 dark:bg-green-200 dark:text-green-800"
+                role="alert">
                 <div class="flex flex-row">
                   <div>
                     Meta mínima já alcançada.
@@ -251,8 +223,7 @@
 
             <!-- Main Stats -->
             <div
-              class="flex flex-col flex-1 gap-6 px-3 pt-0 pb-4 lg:px-6 first:pt-4"
-            >
+              class="flex flex-1 flex-col gap-6 px-3 pt-0 pb-4 first:pt-4 lg:px-6">
               <!-- Total funded -->
               <div class="flex flex-col gap-1">
                 <div class="text-3xl font-semibold text-gray-800 lg:text-4xl">
@@ -267,12 +238,10 @@
               <div class="flex flex-col gap-2">
                 <!-- Progress Bar -->
                 <div
-                  class="w-full bg-gray-50 rounded-full h-2.5 border border-gray-100 overflow-hidden flex flex-col items-start"
-                >
+                  class="flex h-2.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
                   <div
-                    class="bg-green-600 h-2.5 rounded-full"
-                    style="width: 72%"
-                  ></div>
+                    class="h-2.5 rounded-full bg-green-600"
+                    style="width: 72%"></div>
                 </div>
                 <!-- % Goal -->
                 <div class="flex flex-row">
@@ -299,33 +268,27 @@
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="#D3696B"
-                    class="w-6 h-6"
-                  >
+                    class="h-6 w-6">
                     <path
                       fill-rule="evenodd"
                       d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
-                      clip-rule="evenodd"
-                    />
+                      clip-rule="evenodd" />
                   </svg>
 
                   <!-- Countdown -->
                   <div class="flex flex-row gap-2">
                     <div
                       id="days"
-                      class="text-2xl font-semibold after:content-['d'] hidden"
-                    ></div>
+                      class="hidden text-2xl font-semibold after:content-['d']"></div>
                     <div
                       id="hours"
-                      class="text-2xl font-semibold after:content-['h']"
-                    ></div>
+                      class="text-2xl font-semibold after:content-['h']"></div>
                     <div
                       id="minutes"
-                      class="text-2xl font-semibold after:content-['m']"
-                    ></div>
+                      class="text-2xl font-semibold after:content-['m']"></div>
                     <div
                       id="seconds"
-                      class="text-2xl font-semibold after:content-['s']"
-                    ></div>
+                      class="text-2xl font-semibold after:content-['s']"></div>
                   </div>
                 </div>
                 <div class="text-sm font-medium text-gray-500">
@@ -337,13 +300,11 @@
             <!-- Actions -->
             <div class="flex flex-col gap-4 px-3 py-0 lg:py-4 lg:px-6">
               <div
-                class="fixed bottom-0 left-0 right-0 z-20 w-full px-4 py-4 bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:shadow-none flex flex-row gap-1 lg:relative lg:px-0 lg:py-0 items-center"
-              >
+                class="fixed bottom-0 left-0 right-0 z-20 flex w-full flex-row items-center gap-1 bg-white px-4 py-4 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:relative lg:px-0 lg:py-0 lg:shadow-none">
                 <button
                   name="button"
                   type="submit"
-                  class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
-                >
+                  class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
                   Apoiar projeto
                 </button>
                 <!-- Share e Follow Mobile -->
@@ -351,51 +312,42 @@
                   <button
                     name="button"
                     type="submit"
-                    class="inline-flex items-center justify-center w-full gap-0 py-3.5 px-6 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                  >
+                    class="inline-flex w-full items-center justify-center gap-0 rounded-lg bg-transparent py-3.5 px-6 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
-                      class="w-5 h-5 fill-current"
-                    >
+                      class="h-5 w-5 fill-current">
                       <path
-                        d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-                      />
+                        d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z" />
                     </svg>
                   </button>
                   <button
                     name="button"
                     type="submit"
-                    class="inline-flex items-center justify-center w-full gap-0 py-3.5 px-6 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                  >
+                    class="inline-flex w-full items-center justify-center gap-0 rounded-lg bg-transparent py-3.5 px-6 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
-                      class="w-5 h-5 fill-current"
-                    >
+                      class="h-5 w-5 fill-current">
                       <path
-                        d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z"
-                      />
+                        d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z" />
                     </svg>
                   </button>
                 </div>
               </div>
 
               <!-- Share e Follow Desktop -->
-              <div class="hidden lg:flex-row lg:gap-2 lg:flex">
+              <div class="hidden lg:flex lg:flex-row lg:gap-2">
                 <button
                   name="button"
                   type="submit"
-                  class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                >
+                  class="inline-flex w-full items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
-                    class="w-5 h-5 mr-1 -ml-1 fill-current"
-                  >
+                    class="mr-1 -ml-1 h-5 w-5 fill-current">
                     <path
-                      d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-                    />
+                      d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z" />
                   </svg>
 
                   Seguir projeto
@@ -403,16 +355,13 @@
                 <button
                   name="button"
                   type="submit"
-                  class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                >
+                  class="inline-flex w-full items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
-                    class="w-5 h-5 mr-1 -ml-1 fill-current"
-                  >
+                    class="mr-1 -ml-1 h-5 w-5 fill-current">
                     <path
-                      d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z"
-                    />
+                      d="M13 4.5a2.5 2.5 0 11.702 1.737L6.97 9.604a2.518 2.518 0 010 .792l6.733 3.367a2.5 2.5 0 11-.671 1.341l-6.733-3.367a2.5 2.5 0 110-3.475l6.733-3.366A2.52 2.52 0 0113 4.5z" />
                   </svg>
 
                   Compartilhar
@@ -421,14 +370,12 @@
             </div>
             <!-- Footer -->
             <div
-              class="flex flex-row items-center px-4 py-3 border-t border-gray-50 bg-gray-50/50"
-            >
+              class="flex flex-row items-center border-t border-gray-50 bg-gray-50/50 px-4 py-3">
               <div class="flex-1">
                 <img
                   src="./assets/logo-modalidade-aon.png"
                   alt="Tudo ou Nada"
-                  class="w-28"
-                />
+                  class="w-28" />
               </div>
               <div class="text-[10px] text-gray-400">
                 Apoie até 30/08/2022 às 23h59!
@@ -438,6 +385,770 @@
         </div>
       </div>
     </section>
+
+    <!-- Tabs Navigation -->
+    <div
+      class="sticky top-0 z-10 flex w-full flex-row items-center bg-white pt-4">
+      <!-- Component Tab -->
+
+      <div
+        class="flex w-full flex-row items-center border-b border-gray-100 bg-white">
+        <nav
+          class="mx-auto flex w-full max-w-screen-xl items-center gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-6"
+          aria-label="Tabs">
+          <!-- Logo -->
+          <div class="pr-8">
+            <img src="./assets/logo_sm.png" alt="Marca Pequena" class="w-20" />
+          </div>
+
+          <a
+            href="#about"
+            class="active group inline-flex flex-col items-center whitespace-nowrap rounded-t-lg border-b-2 border-blue-600 p-4 text-blue-600 dark:border-blue-500 dark:text-blue-500 md:flex-row">
+            Sobre
+          </a>
+          <a
+            href="#rewards"
+            class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600">
+            Recompensas
+          </a>
+          <a
+            class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600">
+            Metas
+          </a>
+          <a
+            class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600">
+            Posts
+          </a>
+          <div class="flex flex-1 flex-row items-center justify-end">
+            <button
+              name="button"
+              type="submit"
+              class="inline-flex items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-1 -ml-1 h-5 w-5 fill-current">
+                <path
+                  d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Seguir projeto
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Project Main -->
+    <section class="px-3 pt-12 pb-20" id="about">
+      <!-- Layout -->
+      <div class="mx-auto flex max-w-screen-xl flex-row gap-4">
+        <!-- Project First Column -->
+        <div class="flex-0 w-2/12 bg-green-500 p-10">First</div>
+        <!-- Project Second Column -->
+        <div class="flex-1">
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex flex-col">
+              <div
+                class="flex-1 px-4 pt-2 pb-3 first:pt-6 last:pt-1 last:pb-6 first:last:pt-6">
+                <div class="text-base font-normal text-gray-800">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris egestas elit a diam volutpat, quis sollicitudin erat
+                  hendrerit. Nunc luctus magna arcu, sit amet tristique ante
+                  efficitur a. Maecenas velit erat, pretium a blandit ut,
+                  finibus ut libero. Proin finibus, dui eget semper congue, leo
+                  nisl auctor tellus, vitae maximus mi urna vitae erat. Aenean
+                  pretium orci ligula, a ultrices ligula maximus et. Sed eget
+                  sapien molestie, ornare velit quis, hendrerit justo. Aenean id
+                  massa in sem cursus mollis. Mauris fringilla ex ut molestie
+                  luctus. Sed et sem arcu. Vestibulum odio tellus, convallis
+                  eget libero sit amet, mollis dapibus lectus. Vivamus sagittis
+                  augue venenatis felis lobortis, at accumsan sapien pretium.
+                  Nullam malesuada, nulla non ullamcorper efficitur, arcu neque
+                  finibus ante, nec tempor dolor sapien sed risus. Curabitur
+                  euismod, mi at porttitor dapibus, dolor mauris auctor lacus,
+                  et condimentum diam risus hendrerit erat. In posuere interdum
+                  mauris at vulputate. Proin id magna arcu. Duis consequat, nisl
+                  quis consectetur lacinia, lorem lectus tempus est, ac
+                  tristique orci tellus dignissim libero. Sed tempor blandit leo
+                  eu sagittis. Aenean tristique augue in nibh imperdiet
+                  hendrerit. In hac habitasse platea dictumst. Etiam
+                  pellentesque turpis et suscipit euismod. Phasellus quis
+                  porttitor magna, quis congue sapien. Integer consectetur eros
+                  neque, vel viverra urna tempus quis. Phasellus sit amet libero
+                  facilisis, volutpat nunc a, porttitor neque. Duis id nisl est.
+                  Donec tempor ex scelerisque neque pulvinar, vitae pretium
+                  massa tristique. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. In egestas venenatis ullamcorper. Proin vitae
+                  dolor finibus, accumsan tellus non, luctus arcu. Curabitur
+                  luctus molestie metus eu egestas. Sed interdum, metus at
+                  dignissim blandit, augue erat interdum urna, ut scelerisque
+                  tellus turpis sed massa. Ut velit ipsum, volutpat eu eros id,
+                  imperdiet condimentum dui. Sed et porta mi. Ut sollicitudin
+                  tristique ipsum, sit amet commodo sapien porttitor a. Praesent
+                  auctor ante purus, non commodo enim vestibulum eget. Ut
+                  facilisis dignissim fringilla. In eget nibh quis quam posuere
+                  malesuada ut ac lectus. Suspendisse viverra magna mauris, at
+                  gravida neque condimentum laoreet. Donec felis nibh, eleifend
+                  nec pharetra a, vehicula quis justo. Etiam aliquet neque et
+                  libero elementum accumsan. Morbi nec turpis a libero lobortis
+                  posuere. Suspendisse nec sollicitudin velit. Nullam aliquet,
+                  metus vitae tincidunt posuere, est erat ullamcorper arcu,
+                  vitae varius lorem urna sed nunc. Sed mauris tortor, maximus
+                  vel ipsum nec, dignissim fringilla dolor. Nam tincidunt
+                  imperdiet mauris sed varius. Mauris iaculis imperdiet posuere.
+                  Aliquam lectus lacus, convallis eu scelerisque quis, tincidunt
+                  id massa. Morbi fermentum condimentum lorem non lobortis.
+                  Praesent ut orci vel dui semper tincidunt in et elit. Sed a
+                  lectus in nisl volutpat sagittis. Mauris non neque eget arcu
+                  condimentum cursus id consequat tortor. Pellentesque habitant
+                  morbi tristique senectus et netus et malesuada fames ac turpis
+                  egestas. Nulla facilisi. Phasellus vehicula lectus at diam
+                  auctor faucibus. Donec auctor felis turpis, a dignissim lorem
+                  bibendum et. Mauris lacus dolor, rutrum sed mauris at,
+                  tristique feugiat orci. Vivamus condimentum massa quam, id
+                  dapibus sapien pulvinar id. Vivamus vehicula interdum neque,
+                  vel laoreet eros imperdiet in. Fusce eleifend, ligula eu
+                  sodales molestie, purus mi cursus elit, sit amet laoreet neque
+                  magna nec orci. Aliquam aliquam quam ut lacus malesuada, nec
+                  congue felis egestas. Aenean finibus sem sit amet elit
+                  imperdiet, ac gravida velit iaculis. Pellentesque sit amet
+                  viverra leo. Ut vehicula ullamcorper orci vitae molestie.
+                  Praesent euismod feugiat lectus sed porta. Praesent id libero
+                  pellentesque, laoreet mauris quis, vehicula lacus. Phasellus
+                  tellus lectus, tincidunt ut quam in, auctor aliquet justo.
+                  Etiam efficitur magna lectus, eget vulputate lacus scelerisque
+                  id. Duis condimentum ex at turpis sagittis vulputate. Mauris
+                  tempor arcu a auctor pellentesque. Cras congue, neque viverra
+                  blandit viverra, augue metus aliquet sapien, vel sollicitudin
+                  nunc odio eu tellus. Fusce eget luctus mauris, at feugiat
+                  turpis. Suspendisse mattis neque sed purus dapibus varius.
+                  Aliquam sed metus vel est porttitor porta eget fermentum
+                  tellus. Duis ultrices nisi in faucibus condimentum. Sed
+                  tincidunt massa pretium erat volutpat, non faucibus massa
+                  lobortis. Aliquam nulla nunc, dignissim sed dui non, lacinia
+                  fringilla diam. Vestibulum id rhoncus sapien. Nunc feugiat
+                  dolor non rhoncus molestie. Pellentesque feugiat massa eu
+                  laoreet suscipit. Proin volutpat commodo ipsum mollis semper.
+                  Phasellus consectetur nisi sed ante luctus, non bibendum nisi
+                  finibus. Nulla interdum ligula leo, ut feugiat ex placerat eu.
+                  Praesent fermentum est at felis molestie, id vestibulum tellus
+                  consectetur. Maecenas fermentum nulla ac eros porttitor
+                  luctus. Ut sapien massa, ultrices eget dui in, tincidunt
+                  interdum urna. Nunc luctus est id mollis feugiat. Praesent non
+                  vestibulum libero. Mauris tristique pharetra elit sit amet
+                  placerat. Proin ultrices erat neque, at pulvinar velit aliquet
+                  ac. Etiam sit amet metus ac magna vulputate elementum. In
+                  pulvinar fringilla blandit. Donec blandit sed enim sit amet
+                  posuere. Aliquam malesuada, diam eget convallis feugiat, leo
+                  ante viverra magna, eget commodo dui metus a nisi. Suspendisse
+                  tellus ligula, egestas quis nisl ut, varius ornare elit.
+                  Aenean sed mi magna. Curabitur nisl nibh, ultricies sed eros
+                  at, pharetra porttitor nibh. Aenean id lobortis metus, et
+                  scelerisque mauris. Cras lectus justo, fermentum non bibendum
+                  quis, posuere et quam. Mauris eu ligula sed purus congue
+                  hendrerit at eu urna. Suspendisse metus orci, sollicitudin sed
+                  cursus sit amet, condimentum quis augue. Aliquam erat
+                  volutpat. Suspendisse varius tincidunt lacus, scelerisque
+                  elementum sapien sagittis at. Curabitur leo lorem, rutrum ut
+                  luctus nec, congue sit amet tortor. Etiam semper, quam sed
+                  rhoncus iaculis, ex urna porta dui, a scelerisque turpis est
+                  at enim. Sed in pulvinar tortor, ac tempor lectus. Ut tempor
+                  ex nec efficitur ullamcorper. Maecenas vel sapien ut diam
+                  euismod eleifend quis eget arcu. Praesent vitae consectetur
+                  arcu. Nullam iaculis elementum velit, sit amet interdum ipsum
+                  porta sit amet. Curabitur dolor dolor, laoreet sit amet nunc
+                  sed, aliquam aliquam velit. Vivamus non dui ut lorem blandit
+                  faucibus at sit amet massa. Vestibulum sagittis consequat ex,
+                  nec lacinia leo rhoncus sit amet.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Third Column -->
+        <div class="flex-0 sticky top-24 flex h-full w-3/12 flex-col gap-4">
+          <!-- Reward -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-0">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <!-- div
+           class="flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6"
+         >
+           <p
+             class="relative text-xs leading-5 text-gray-800 whitespace-normal line-clamp-4 truncated_text"
+           >
+             Edição de luxo | Você receberá a caixa base do jogo e acesso a
+             todas as metas estendidas. Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas. Edição de luxo | Você receberá a caixa base do jogo e acesso a todas as metas estendidas.  
+             <span
+               class="cursor-pointer absolute bottom-0 right-0 pl-1 text-xs text-blue-600 bg-white hover:underline before:content-['...'] see_more"
+               >Ver mais</span
+             >
+             <span
+               class="cursor-pointer absolute bottom-0 right-0 pl-1 text-xs text-blue-600 bg-white hover:underline before:content-['...'] see_more"
+               >Ver menos</span
+             >
+           </p>
+         </!-->
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[10px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Apenas Brasil</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar
+                      </button>
+                      <div
+                        class="flex-1 justify-center text-center text-xs text-gray-600">
+                        50 apoios
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- More -->
+          <div
+            class="flex flex-row items-center gap-4 self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-300 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-300 after:bg-opacity-50">
+            ou
+          </div>
+
+          <a
+            class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-green-600 bg-transparent py-2.5 px-5 text-sm font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+            href="#rewards">
+            Ver todas as recompensas
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Rewards -->
+    <section class="bg-white py-20" id="rewards">
+      <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-16">
+        <!-- Header -->
+        <h2 class="text-2xl font-bold text-gray-900">Recompensas</h2>
+        <div
+          class="grid items-stretch gap-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 xl:grid-cols-4 2xl:grid-cols-4 2xl:gap-8">
+          <!-- Reward - É um Vertical Card sem shadow -->
+          <div class="rounded-lg border border-gray-100 bg-white">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Apenas Brasil</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <span class="font-semibold">50</span> pessoas apoiaram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Reward - É um Vertical Card sem shadow -->
+          <div class="rounded-lg border border-gray-100 bg-white">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Apenas Brasil</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <span class="font-semibold">50</span> pessoas apoiaram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Reward - É um Vertical Card sem shadow -->
+          <div class="rounded-lg border border-gray-100 bg-white">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Apenas Brasil</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <span class="font-semibold">50</span> pessoas apoiaram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reward - É um Vertical Card sem shadow -->
+          <div class="rounded-lg border border-gray-100 bg-white">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Brasil e mundo</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <span class="font-semibold">50</span> pessoas apoiaram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reward - É um Vertical Card sem shadow -->
+          <div class="rounded-lg border border-gray-100 bg-white">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Sem frete envolvido</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <span class="font-semibold">50</span> pessoas apoiaram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reward - É um Vertical Card  sem shadow
+     Essa aqui é uma recompensa limitada, mas ainda disponível -->
+          <div class="rounded-lg border border-gray-100 bg-white">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Retirada presencial</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-2.5 px-5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <!-- Badge color yellow -->
+                        <span
+                          class="mr-2 inline-flex items-center rounded bg-yellow-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-yellow-800 dark:bg-yellow-200 dark:text-yellow-900">
+                          Limitada </span
+                        ><span class="font-semibold">50</span> de
+                        <span class="font-semibold">100</span> disponíveis
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reward - É um Vertical Card com bg gray 
+     Essa aqui é uma recompensa esgotada -->
+          <div class="rounded-lg border border-gray-100 bg-gray-50">
+            <div class="flex flex-col">
+              <div
+                class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                <img
+                  src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275167/thumb_reward_5ed5a4cc-71b5-48e2-beda-f64e3dce83ee.png" />
+              </div>
+              <div class="flex flex-row gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="text-lg font-bold text-green-700">R$199</div>
+                  <div class="text-base font-semibold text-gray-800">Herói</div>
+                </div>
+                <div class="shrink">
+                  <svg class="h-6 w-6 fill-current">
+                    <use xlink:href="#x" />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                <p
+                  class="relative whitespace-normal text-xs leading-5 text-gray-800">
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas. Edição de luxo | Você receberá a
+                  caixa base do jogo e acesso a todas as metas estendidas.
+                  Edição de luxo | Você receberá a caixa base do jogo e acesso a
+                  todas as metas estendidas.
+                </p>
+              </div>
+              <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+                  <div class="flex flex-row gap-3">
+                    <div class="flex flex-1 flex-col items-stretch gap-2">
+                      <div
+                        class="mb-2 flex flex-1 flex-row items-center gap-2 bg-gray-50/50 px-3 py-1 text-[11px] font-semibold text-gray-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="13"
+                          fill="currentColor">
+                          <path
+                            fill="#9EA2A8"
+                            d="M8.59.25c.618 0 1.12.504 1.12 1.125V2.5h1.184c.396 0 .756.157 1.057.438l1.804 1.812c.28.281.437.663.437 1.062V8.5c.413 0 .747.335.747.75s-.334.75-.747.75h-.747a2.246 2.246 0 0 1-2.24 2.25A2.233 2.233 0 0 1 8.962 10H5.976a2.246 2.246 0 0 1-2.241 2.25A2.233 2.233 0 0 1 1.494 10H1.12C.502 10 0 9.496 0 8.875v-7.5C0 .754.502.25 1.12.25h7.47ZM9.71 4v2.25h2.988v-.438L10.894 4H9.71ZM3.735 8.875c-.619 0-1.12.504-1.12 1.125s.501 1.125 1.12 1.125c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125Zm7.47 2.25c.618 0 1.12-.504 1.12-1.125s-.502-1.125-1.12-1.125c-.62 0-1.121.504-1.121 1.125s.502 1.125 1.12 1.125Z" />
+                        </svg>
+                        Dez / 2022<span
+                          class="align-super before:text-xs before:leading-[0px] before:content-['_•_']"
+                          >Apenas Brasil</span
+                        >
+                      </div>
+                      <button
+                        name="button"
+                        type="submit"
+                        class="inline-flex w-full cursor-not-allowed items-center justify-center gap-1 rounded-lg border-gray-100 border-green-600 bg-gray-100 bg-green-600 py-2.5 px-5 text-sm font-medium text-gray-300 text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-100 hover:bg-green-800 active:bg-gray-100 active:bg-green-900">
+                        Selecionar recompensa
+                      </button>
+                      <div
+                        class="mt-1 flex-1 justify-center text-center text-[11px] text-gray-600">
+                        <!-- Badge color yellow -->
+                        <span
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800 dark:bg-gray-700 dark:text-gray-300">
+                          Esgotada
+                        </span>
+                        <span class="font-semibold">50</span> pessoas apoiaram
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Risks -->
+    <!-- Recommended Projects -->
+    <!-- Footer -->
 
     <script>
       const second = 1000,
