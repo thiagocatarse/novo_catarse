@@ -9,107 +9,89 @@
   <body class="bg-gray-50">
     <!-- Inicio do Frame CHANGE - remove gap -->
     <div class="flex flex-col lg:flex-row">
-        
       <!-- Inicio da Area Nav do Frame CHANGE - adiciona lg:-ml-20 -->
       <!-- Nav da pagina de projeto -->
-      <div class="absolute z-20 w-screen h-10 py-4 ">
-        <label
-            for="global_toggler_page"
-            class="absolute flex left-4 flex-0 "
-          >
-            <div class="p-1 cursor-pointer">
-              <svg
-                width="18"
-                height="16"
-                viewBox="0 0 18 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
-                  fill="#DDDFE1"
-                />
-              </svg>
-            </div>
-          </label>
-      </div>  
-      <input type="checkbox" id="global_toggler_page" class="hidden peer flex-0" />
+      <div class="absolute z-20 h-10 w-screen py-4">
+        <label for="global_toggler_page" class="flex-0 absolute left-4 flex">
+          <div class="cursor-pointer p-1">
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
+                fill="#DDDFE1" />
+            </svg>
+          </div>
+        </label>
+      </div>
+      <input
+        type="checkbox"
+        id="global_toggler_page"
+        class="flex-0 peer hidden" />
       <div
-        class="sticky top-0 z-50 flex flex-col h-auto transition-all lg:-ml-20 lg:flex-row lg:h-screen peer-checked:ml-0"
-      >
-      
-      <!-- Inicio da Global Nav -->
+        class="sticky top-0 z-50 flex h-auto flex-col transition-all peer-checked:ml-0 lg:-ml-20 lg:h-screen lg:flex-row">
+        <!-- Inicio da Global Nav -->
         <nav
-          class="top-0 flex flex-row justify-start w-full h-full gap-0 py-3.5 overflow-hidden bg-gray-900 lg:pl-0 lg:py-0 lg:flex-col lg:w-20 lg:left-0 lg:h-full "
-        >
+          class="top-0 flex h-full w-full flex-row justify-start gap-0 overflow-hidden bg-gray-900 py-3.5 lg:left-0 lg:h-full lg:w-20 lg:flex-col lg:py-0 lg:pl-0">
           <!-- Esse input controla a abertura da Global Nav em mobile -->
           <input
             type="checkbox"
             id="global_toggler"
-            class="hidden peer flex-0"
-          />
+            class="flex-0 peer hidden" />
           <!-- Inicio do Overlay que só aparece em mobile -->
           <label
             for="global_toggler"
-            class="top-0 bottom-0 left-0 right-0 transition-all bg-gray-900 opacity-0 peer-checked:block peer-checked:z-30 peer-checked:fixed peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden"
-          ></label>
+            class="top-0 bottom-0 left-0 right-0 bg-gray-900 opacity-0 transition-all peer-checked:fixed peer-checked:z-30 peer-checked:block peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden"></label>
           <!-- Fim do Overlay -->
           <!-- Inicio do Header da Global Nav -->
-          <label
-            for="global_toggler"
-            class="absolute flex left-2 flex-0 "
-          >
-            <div class="p-1 cursor-pointer">
+          <label for="global_toggler" class="flex-0 absolute left-2 flex">
+            <div class="cursor-pointer p-1">
               <svg
                 width="18"
                 height="16"
                 viewBox="0 0 18 16"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
                   d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
-                  fill="#DDDFE1"
-                />
+                  fill="#DDDFE1" />
               </svg>
             </div>
           </label>
           <!-- Inicio do Title da Página, só aparece em mobile -->
-          <div class="flex flex-col items-center flex-1 lg:hidden">
+          <div class="flex flex-1 flex-col items-center lg:hidden">
             <h1 class="text-base font-semibold text-white">Meu projeto</h1>
           </div>
           <!-- Fim do Title da Página -->
           <!-- Fim do Header da Global Nav -->
           <!-- Inicio do Content da Global Nav -->
           <div
-            class="fixed top-0 z-40 flex flex-col w-3/4 h-full overflow-hidden transition-all bg-gray-900 lg:pt-0 lg:w-auto -left-3/4 lg:left-0 peer-checked:left-0 lg:relative"
-          >
+            class="fixed top-0 -left-3/4 z-40 flex h-full w-3/4 flex-col overflow-hidden bg-gray-900 transition-all peer-checked:left-0 lg:relative lg:left-0 lg:w-auto lg:pt-0">
             <!-- Inicio dos Logos da Global Nav, temos um para mobile e outro para desktop -->
             <div
-              class="z-40 flex flex-row items-center gap-2 px-6 pt-4 pb-6 flex-0 lg:flex-0 lg:flex-col lg:sticky lg:top-0"
-            >
+              class="flex-0 lg:flex-0 z-40 flex flex-row items-center gap-2 px-6 pt-4 pb-6 lg:sticky lg:top-0 lg:flex-col">
               <a href="">
                 <img
                   src="https://thiagocatarse.github.io/novo_catarse/src/assets/Catarse_logo.png"
                   alt="Logo do Catarse"
-                  class="hidden w-6 lg:flex"
-                />
+                  class="hidden w-6 lg:flex" />
                 <img
                   src="https://thiagocatarse.github.io/novo_catarse/src/assets/LogoText.png"
                   alt="Logo do Catarse"
-                  class="flex h-8 lg:hidden"
-                />
+                  class="flex h-8 lg:hidden" />
               </a>
             </div>
             <!-- Fim dos logos -->
             <!-- Início do conjunto de links da Global Nav -->
             <div
-              class="flex flex-col flex-1 gap-12 px-4 pt-6 overflow-auto lg:pb-40 lg:px-0"
-            >
+              class="flex flex-1 flex-col gap-12 overflow-auto px-4 pt-6 lg:px-0 lg:pb-40">
               <!-- Inicio da Section de links da Global Nav. Poderíamos considerar a Section como um componente que engloba uma ou mais Lists, que por sua vez são compostas por List items -->
               <div class="flex flex-col items-stretch gap-2 lg:items-center">
                 <!-- Essa div abaixo foi um teste pro caso de queremos ter um Title pra Section, mas está comentada pois não iremos com ela a princípio -->
@@ -119,26 +101,22 @@
                   <!-- List item responsive ACTIVE. OBS: o active aqui embaixo estea manualmente forçado a ficar active, mas o comportamento do active é que ele é igual ao HOVER do list item -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white group py-1 lg:py-0 px-2 lg:px-0 bg-gray-500 lg:bg-gray-900 lg:hover:bg-gray-900 rounded"
-                  >
-                    <div class="flex rounded lg:px-2 lg:py-1 lg:bg-gray-700">
+                    class="group flex flex-row items-center gap-2 rounded bg-gray-500 py-1 px-2 text-white lg:flex-col lg:gap-0.5 lg:bg-gray-900 lg:py-0 lg:px-0 lg:hover:bg-gray-900">
+                    <div class="flex rounded lg:bg-gray-700 lg:px-2 lg:py-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 20 20"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
                           fill-rule="evenodd"
                           d="M17.707 9.293a1 1 0 0 1 0 1.414l-7 7a1 1 0 0 1-1.414 0l-7-7A.996.996 0 0 1 2 10V5a3 3 0 0 1 3-3h5c.256 0 .512.098.707.293l7 7ZM5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Criações
                     </div>
                   </a>
@@ -146,31 +124,25 @@
                   <!-- List item responsive - coloquei o termo "responsive" aqui pois ele é um item que tem uma aparência diferente no mobile em relação ao desktop -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 20 20"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
-                          d="M17.414 2.586a2 2 0 0 0-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 0 0 0-2.828Z"
-                        />
+                          d="M17.414 2.586a2 2 0 0 0-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 0 0 0-2.828Z" />
                         <path
                           fill-rule="evenodd"
                           d="M2 6a2 2 0 0 1 2-2h4a1 1 0 0 1 0 2H4v10h10v-4a1 1 0 0 1 2 0v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Z"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Posts
                     </div>
                   </a>
@@ -178,26 +150,21 @@
                   <!-- List item responsive -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 20 20"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
-                          d="M13 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm5 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-4 7a4 4 0 1 0-8 0v3h8v-3ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm10 10v-3a5.972 5.972 0 0 0-.75-2.906A3.004 3.004 0 0 1 19 15v3h-3ZM4.75 12.094A5.973 5.973 0 0 0 4 15v3H1v-3a3 3 0 0 1 3.75-2.906Z"
-                        />
+                          d="M13 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm5 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-4 7a4 4 0 1 0-8 0v3h8v-3ZM6 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm10 10v-3a5.972 5.972 0 0 0-.75-2.906A3.004 3.004 0 0 1 19 15v3h-3ZM4.75 12.094A5.973 5.973 0 0 0 4 15v3H1v-3a3 3 0 0 1 3.75-2.906Z" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Apoiadores
                     </div>
                   </a>
@@ -205,26 +172,21 @@
                   <!-- List item responsive -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 20 20"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
-                          d="M2 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-5Zm6-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7Zm6-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4Z"
-                        />
+                          d="M2 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-5Zm6-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7Zm6-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4Z" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Métricas
                     </div>
                   </a>
@@ -232,31 +194,25 @@
                   <!-- List item responsive -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 20 20"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
-                          d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 0 1-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582ZM11 12.848v-1.697c.22.07.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.306 2.306 0 0 1-.567.267Z"
-                        />
+                          d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 0 1-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582ZM11 12.848v-1.697c.22.07.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.306 2.306 0 0 1-.567.267Z" />
                         <path
                           fill-rule="evenodd"
                           d="M10 18a8 8 0 1 0 0-16.001A8 8 0 0 0 10 18Zm1-13a1 1 0 0 0-2 0v.092a4.535 4.535 0 0 0-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 1 0-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 1 0 2 0v-.092a4.534 4.534 0 0 0 1.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0 0 11 9.092V7.151c.391.127.68.317.843.504a1 1 0 1 0 1.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5Z"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Conta
                     </div>
                   </a>
@@ -264,29 +220,23 @@
                   <!-- List item responsive -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 20 20"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
-                          d="M8.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l2-2a1 1 0 0 0-1.414-1.414L11 7.586V3a1 1 0 1 0-2 0v4.586l-.293-.293Z"
-                        />
+                          d="M8.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l2-2a1 1 0 0 0-1.414-1.414L11 7.586V3a1 1 0 1 0-2 0v4.586l-.293-.293Z" />
                         <path
-                          d="M3 5a2 2 0 0 1 2-2h1a1 1 0 0 1 0 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 1 1 0-2h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Z"
-                        />
+                          d="M3 5a2 2 0 0 1 2-2h1a1 1 0 0 1 0 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 1 1 0-2h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Z" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Inbox
                     </div>
                   </a>
@@ -307,28 +257,23 @@
                   <!-- List item responsive -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
                           fill-rule="evenodd"
                           d="M9.6 4.8a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6ZM2.4 9.6a7.2 7.2 0 1 1 13.068 4.171l5.78 5.78a1.2 1.2 0 0 1-1.696 1.698l-5.78-5.78A7.2 7.2 0 0 1 2.4 9.6Z"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Explore
                     </div>
                   </a>
@@ -336,26 +281,21 @@
                   <!-- List item responsive -->
                   <a
                     href="#"
-                    class="flex flex-row lg:flex-col items-center gap-2 lg:gap-0.5 text-white lg:text-gray-400 hover:text-white group py-1 lg:py-0 px-2 lg:px-0 hover:bg-gray-500 lg:hover:bg-gray-900 rounded"
-                  >
+                    class="group flex flex-row items-center gap-2 rounded py-1 px-2 text-white hover:bg-gray-500 hover:text-white lg:flex-col lg:gap-0.5 lg:py-0 lg:px-0 lg:text-gray-400 lg:hover:bg-gray-900">
                     <div
-                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700"
-                    >
+                      class="flex rounded lg:px-2 lg:py-1 lg:group-hover:bg-gray-700">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="16"
                         viewBox="0 0 20 16"
-                        class="fill-current"
-                      >
+                        class="fill-current">
                         <path
-                          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm2 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM18 14H2V6h16v8Z"
-                        />
+                          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm2 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM18 14H2V6h16v8Z" />
                       </svg>
                     </div>
                     <div
-                      class="leading-tight text-sm lg:text-[9px] fill-current font-medium lg:font-bold"
-                    >
+                      class="fill-current text-sm font-medium leading-tight lg:text-[9px] lg:font-bold">
                       Feed
                     </div>
                   </a>
@@ -369,13 +309,11 @@
             <!-- Inicio do Footer do Global Nav-->
             <a
               href="#"
-              class="z-40 flex lg:flex-col flex-row items-center gap-3 p-4 bg-gray-900 hover:bg-gray-700 lg:bottom-0 lg:sticky shadow-[0px_-12px_32px_0px_rgba(0,0,0,0.5)]"
-            >
-              <div class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full">
+              class="z-40 flex flex-row items-center gap-3 bg-gray-900 p-4 shadow-[0px_-12px_32px_0px_rgba(0,0,0,0.5)] hover:bg-gray-700 lg:sticky lg:bottom-0 lg:flex-col">
+              <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
                 <img
-                  class="object-cover w-full h-full"
-                  src="https://uploads-ssl.webflow.com/582a84edec4e2d344cf6c6d9/5dc243cd73f230bfe2ceb608_T0256U9U6-UQ21GE31A-d5931ea29b1b-512.png"
-                />
+                  class="h-full w-full object-cover"
+                  src="https://uploads-ssl.webflow.com/582a84edec4e2d344cf6c6d9/5dc243cd73f230bfe2ceb608_T0256U9U6-UQ21GE31A-d5931ea29b1b-512.png" />
               </div>
               <div class="block text-sm font-medium text-white lg:hidden">
                 Nome da usuária
@@ -388,75 +326,62 @@
       <!-- Fim da Area Nav do Frame -->
       <!-- Inicio da Area Main do Frame -->
       <article class="flex-1">
-        <!-- Hero -->
-        <section class="relative bg-[#0E375A] pb-20 w-full overflow-x-hidden">
+        <!-- First Section -->
+        <section class="relative w-full overflow-x-hidden bg-[#0E375A] pb-20">
           <!-- bg -->
           <div
-            class="absolute top-0 w-full h-1/3 bg-gradient-to-b from-gray-900 to-transparent -z-0"
-          ></div>
+            class="absolute top-0 -z-0 h-1/3 w-full bg-gradient-to-b from-gray-900 to-transparent"></div>
           <img
             src="./assets/bg.png"
             alt="Background"
-            class="absolute object-cover w-full h-full opacity-20 -z-0"
-          />
+            class="absolute -z-0 h-full w-full object-cover opacity-20" />
           <!-- Hero Container -->
           <div
-            class="z-10 flex flex-col gap-8 px-4 pt-12 mx-auto lg:max-w-screen-xl"
-          >
+            class="z-10 mx-auto flex flex-col gap-8 px-4 pt-12 lg:max-w-screen-xl">
             <!-- Hero Header -->
             <div
-              class="flex flex-col items-center gap-1 lg:max-w-[462px] mx-auto z-10"
-            >
+              class="z-10 mx-auto flex flex-col items-center gap-1 lg:max-w-[462px]">
               <div>
                 <h1 class="sr-only">desConfronto</h1>
                 <img
                   src="./assets/Logo Desconfronto.png"
                   alt="Nome do projeto"
-                  class="max-w-[216px] h-full"
-                />
+                  class="h-full max-w-[216px]" />
               </div>
-              <h2 class="text-sm font-normal text-center text-white">
+              <h2 class="text-center text-sm font-normal text-white">
                 Salve Sempreterna dos monstros corrompidos pela terrível
                 escuridão que ameaça o mundo!
               </h2>
             </div>
             <!-- Hero Content -->
             <div
-              class="z-10 flex flex-col items-start w-full gap-4 lg:flex-row"
-            >
+              class="z-10 flex w-full flex-col items-start gap-4 lg:flex-row">
               <!-- Hero Media -->
               <div
-                class="z-10 flex flex-col w-full overflow-hidden rounded-t-lg lg:w-2/3"
-              >
+                class="z-10 flex w-full flex-col overflow-hidden rounded-t-lg lg:w-2/3">
                 <div
-                  class="relative z-10 flex-1 object-cover w-full h-auto aspect-video"
-                >
+                  class="relative z-10 aspect-video h-auto w-full flex-1 object-cover">
                   <iframe
                     src="https://www.youtube.com/embed/Mvbnxt7OaRI"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
-                    class="absolute top-0 left-0 w-full h-full"
-                  ></iframe>
+                    class="absolute top-0 left-0 h-full w-full"></iframe>
                 </div>
                 <!-- Author -->
                 <div
-                  class="z-20 flex flex-row px-3 py-4 rounded-b-lg first:rounded-t-lg bg-gray-800/50"
-                >
+                  class="z-20 flex flex-row rounded-b-lg bg-gray-800/50 px-3 py-4 first:rounded-t-lg">
                   <!-- Author block -->
                   <div
-                    class="z-20 flex flex-row items-center gap-3 cursor-pointer"
+                    class="z-20 flex cursor-pointer flex-row items-center gap-3"
                     data-popover-target="popover-user-profile"
-                    data-popover-placement="right"
-                  >
+                    data-popover-placement="right">
                     <div
-                      class="w-8 h-8 overflow-hidden bg-gray-100 rounded-full"
-                    >
+                      class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
                       <img
-                        class="object-cover w-full h-full"
-                        src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
-                      />
+                        class="h-full w-full object-cover"
+                        src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png" />
                     </div>
                     <div class="text-base font-semibold text-white">
                       nat20 Games
@@ -468,7 +393,7 @@
                     data-popover=""
                     id="popover-user-profile"
                     role="tooltip"
-                    class="absolute z-20 invisible inline-block w-64 text-sm font-light text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                    class="invisible absolute z-20 inline-block w-64 rounded-lg border border-gray-200 bg-white text-sm font-light text-gray-500 opacity-0 shadow-sm transition-opacity duration-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400"
                     data-popper-reference-hidden=""
                     data-popper-escaped=""
                     data-popper-placement="bottom"
@@ -478,29 +403,25 @@
                       inset: 0px auto auto 0px;
                       margin: 0px;
                       transform: translate3d(0px, 277px, 0px);
-                    "
-                  >
+                    ">
                     <div class="p-3">
-                      <div class="flex items-center justify-between mb-2">
+                      <div class="mb-2 flex items-center justify-between">
                         <a href="#">
                           <img
-                            class="w-8 h-8 rounded-full"
+                            class="h-8 w-8 rounded-full"
                             src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/user/uploaded_image/1802011/thumb_avatar_2d2968d6-1bfa-440f-ad3f-6f7bd5e75587.png"
-                            alt="nat20 Games"
-                          />
+                            alt="nat20 Games" />
                         </a>
                         <div>
                           <button
                             type="button"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-1.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                          >
+                            class="rounded-lg bg-blue-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Seguir
                           </button>
                         </div>
                       </div>
                       <p
-                        class="text-base font-semibold leading-none text-gray-900 dark:text-white"
-                      >
+                        class="text-base font-semibold leading-none text-gray-900 dark:text-white">
                         <a href="#">nat20 Games</a>
                       </p>
                       <p class="mb-3 text-sm font-normal">
@@ -538,23 +459,20 @@
                         position: absolute;
                         left: 0px;
                         transform: translate3d(0px, 0px, 0px);
-                      "
-                    ></div>
+                      "></div>
                   </div>
                 </div>
               </div>
 
               <!-- Hero Card -->
               <div
-                class="flex flex-col w-full gap-2 bg-white rounded-lg shadow lg:w-1/3"
-              >
+                class="flex w-full flex-col gap-2 rounded-lg bg-white shadow lg:w-1/3">
                 <!-- Banner -->
                 <div class="px-6 pt-4">
                   <div
                     id="banner-1662425884"
-                    class="p-4 pt-2 pb-2 mb-4 text-xs font-semibold text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
-                    role="alert"
-                  >
+                    class="mb-4 rounded-lg bg-green-100 p-4 pt-2 pb-2 text-xs font-semibold text-green-700 dark:bg-green-200 dark:text-green-800"
+                    role="alert">
                     <div class="flex flex-row">
                       <div>
                         Meta mínima já alcançada.
@@ -566,8 +484,7 @@
 
                 <!-- Main Stats -->
                 <div
-                  class="flex flex-col flex-1 gap-6 px-6 pt-0 pb-4 first:pt-4"
-                >
+                  class="flex flex-1 flex-col gap-6 px-6 pt-0 pb-4 first:pt-4">
                   <!-- Total funded -->
                   <div class="flex flex-col gap-1">
                     <div class="text-4xl font-semibold text-gray-800">
@@ -583,12 +500,10 @@
                   <div class="flex flex-col gap-2">
                     <!-- Progress Bar -->
                     <div
-                      class="w-full bg-gray-50 rounded-full h-2.5 border border-gray-100 overflow-hidden flex flex-col items-start"
-                    >
+                      class="flex h-2.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
                       <div
-                        class="bg-green-600 h-2.5 rounded-full"
-                        style="width: 72%"
-                      ></div>
+                        class="h-2.5 rounded-full bg-green-600"
+                        style="width: 72%"></div>
                     </div>
                     <!-- % Goal -->
                     <div class="flex flex-row">
@@ -615,33 +530,27 @@
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="#D3696B"
-                        class="w-6 h-6"
-                      >
+                        class="h-6 w-6">
                         <path
                           fill-rule="evenodd"
                           d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
 
                       <!-- Countdown -->
                       <div class="flex flex-row gap-2">
                         <div
                           id="days"
-                          class="text-2xl font-semibold after:content-['d'] hidden"
-                        ></div>
+                          class="hidden text-2xl font-semibold after:content-['d']"></div>
                         <div
                           id="hours"
-                          class="text-2xl font-semibold after:content-['h']"
-                        ></div>
+                          class="text-2xl font-semibold after:content-['h']"></div>
                         <div
                           id="minutes"
-                          class="text-2xl font-semibold after:content-['m']"
-                        ></div>
+                          class="text-2xl font-semibold after:content-['m']"></div>
                         <div
                           id="seconds"
-                          class="text-2xl font-semibold after:content-['s']"
-                        ></div>
+                          class="text-2xl font-semibold after:content-['s']"></div>
                       </div>
                     </div>
                     <div class="text-sm font-medium text-gray-500">
@@ -653,13 +562,11 @@
                 <!-- Actions -->
                 <div class="flex flex-col gap-4 px-6 py-4">
                   <div
-                    class="fixed bottom-0 left-0 right-0 z-20 w-full px-4 py-4 bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:shadow-none lg:flex lg:relative lg:px-0 lg:py-0"
-                  >
+                    class="fixed bottom-0 left-0 right-0 z-20 w-full bg-white px-4 py-4 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:relative lg:flex lg:px-0 lg:py-0 lg:shadow-none">
                     <button
                       name="button"
                       type="submit"
-                      class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white"
-                    >
+                      class="inline-flex w-full items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
                       Apoiar projeto
                     </button>
                   </div>
@@ -668,36 +575,30 @@
                     <button
                       name="button"
                       type="submit"
-                      class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                    >
+                      class="inline-flex w-full items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mr-1 -ml-1 fill-current"
-                      >
+                        class="mr-1 -ml-1 h-5 w-5 fill-current">
                         <path
                           d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
                           stroke-width="2"
                           stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
+                          stroke-linejoin="round" />
                       </svg>
                       Seguir projeto
                     </button>
                     <button
                       name="button"
                       type="submit"
-                      class="inline-flex items-center justify-center w-full gap-1 px-3 py-2 text-xs font-medium text-gray-600 bg-transparent rounded-lg focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                    >
+                      class="inline-flex w-full items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mr-1 -ml-1 fill-current"
-                      >
+                        class="mr-1 -ml-1 h-5 w-5 fill-current">
                         <path
                           d="M2.40612 1.98816C2.09356 2.30072 1.91797 2.72464 1.91797 3.16667V16.5L7.7513 13.5833L13.5846 16.5V3.16667C13.5846 2.72464 13.409 2.30072 13.0965 1.98816C12.7839 1.67559 12.36 1.5 11.918 1.5H3.58464C3.14261 1.5 2.71868 1.67559 2.40612 1.98816Z"
                           stroke-width="2"
                           stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
+                          stroke-linejoin="round" />
                       </svg>
                       Compartilhar
                     </button>
@@ -705,14 +606,12 @@
                 </div>
                 <!-- Footer -->
                 <div
-                  class="flex flex-row items-center px-4 py-3 border-t border-gray-100"
-                >
+                  class="flex flex-row items-center border-t border-gray-100 px-4 py-3">
                   <div class="flex-1">
                     <img
                       src="./assets/logo-modalidade-aon.png"
                       alt="Tudo ou Nada"
-                      class="w-28"
-                    />
+                      class="w-28" />
                   </div>
                   <div class="text-[10px] text-gray-400">
                     Você pode apoiar até 30/08/2022 às 23h59.
@@ -740,35 +639,31 @@
       });
     </script>
 
-<script>
-    const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
+    <script>
+      const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-    let countDown = new Date("Sep 15, 2022 20:00:00").getTime(),
-      x = setInterval(function () {
-        let now = new Date().getTime(),
-          distance = countDown - now;
+      let countDown = new Date("Sep 15, 2022 20:00:00").getTime(),
+        x = setInterval(function () {
+          let now = new Date().getTime(),
+            distance = countDown - now;
 
-        (document.getElementById("days").innerText = Math.floor(
-          distance / day
-        )),
-          (document.getElementById("hours").innerText = Math.floor(
-            distance / hour
+          (document.getElementById("days").innerText = Math.floor(
+            distance / day
           )),
-          (document.getElementById("minutes").innerText = Math.floor(
-            (distance % hour) / minute
-          )),
-          (document.getElementById("seconds").innerText = Math.floor(
-            (distance % minute) / second
-          ));
-      }, second);
-  </script>
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-  
-
-
-  
-</body>
+            (document.getElementById("hours").innerText = Math.floor(
+              distance / hour
+            )),
+            (document.getElementById("minutes").innerText = Math.floor(
+              (distance % hour) / minute
+            )),
+            (document.getElementById("seconds").innerText = Math.floor(
+              (distance % minute) / second
+            ));
+        }, second);
+    </script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  </body>
 </html>
