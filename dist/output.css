@@ -783,6 +783,10 @@ video {
   grid-column: span 12 / span 12;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
 .col-start-1{
   grid-column-start: 1;
 }
