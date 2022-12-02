@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link href="../../../dist/output.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"></script>
   </head>
 
   <body class="bg-gray-50">
@@ -301,7 +305,8 @@
             <!-- Actions -->
             <div class="flex flex-col gap-4 px-3 py-0 lg:py-4 lg:px-6">
               <div
-                class="fixed bottom-0 left-0 right-0 z-20 flex w-full flex-row items-center gap-1 bg-white px-4 py-4 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:relative lg:px-0 lg:py-0 lg:shadow-none">
+                class="fixed bottom-0 left-0 right-0 z-20 flex w-full flex-row items-center gap-1 bg-white px-4 py-4 shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] transition-all lg:relative lg:px-0 lg:py-0 lg:shadow-none"
+                id="moving-div">
                 <button
                   name="button"
                   type="submit"
@@ -725,7 +730,7 @@
     </section>
 
     <!-- Project Rewards -->
-    <section class="bg-white py-20" id="rewards">
+    <section class="bg-white py-20" id="trigger-div">
       <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-16">
         <!-- Header -->
         <h2 class="text-2xl font-bold text-gray-900">Recompensas</h2>
@@ -1233,6 +1238,84 @@
             ));
         }, second);
     </script>
+
+    <!--<script>
+      // Get a reference to the moving div and the tracked div
+      const movingDiv = document.getElementById("movingDiv");
+      const trackedDiv = document.getElementById("trackedDiv");
+
+      // Listen for the scroll event
+      window.addEventListener("scroll", () => {
+        // Check if the tracked div is on the viewport
+        const trackedDivRect = trackedDiv.getBoundingClientRect();
+        if (
+          trackedDivRect.top >= 0 &&
+          trackedDivRect.bottom <= window.innerHeight
+        ) {
+          // If it is, set the top property of the moving div to move it down
+          movingDiv.style.bottom = "-100";
+        } else {
+          // If it's not, set the bottom property to move it back up
+          movingDiv.style.bottom = "0";
+        }
+      });
+    </script> -->
+    <!--<script>
+      // Get the div you want to move down
+      const movingDiv = document.querySelector("#moving-div");
+
+      // Get the div that triggers the movement
+      const triggerDiv = document.querySelector("#trigger-div");
+
+      // Add the scroll event listener to the window
+      window.addEventListener("scroll", function () {
+        // Check if the trigger div is in the viewport
+        if (isInViewport(triggerDiv)) {
+          // If it is, add the class or inline style to give the moving div a fixed position
+          // or set its top value to the height of the trigger div
+          movingDiv.classList.add("fixed-position");
+          // Or set the top value of the moving div
+          movingDiv.style.top = triggerDiv.offsetHeight + "px";
+        } else {
+          // If the trigger div is not in the viewport, remove the class or inline style
+          // that was added to give the moving div a fixed position or set its top value
+          movingDiv.classList.remove("fixed-position");
+          movingDiv.style.bottom = "0";
+        }
+      });
+
+      // Helper function to check if an element is in the viewport
+      function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    </script> -->
+
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script>
+      // Get the div you want to move
+      const divToMove = document.querySelector("#moving-div");
+
+      // Get the div that will trigger the movement
+      const triggerDiv = document.querySelector("#trigger-div");
+
+      window.addEventListener("scroll", () => {
+        // Check if the trigger div is within the viewport
+        if (window.pageYOffset + window.innerHeight > triggerDiv.offsetTop) {
+          // Move the div down by setting its top position
+          divToMove.style.bottom = "-100px";
+        } else {
+          // Move the div back up by setting its top position
+          divToMove.style.bottom = "0px";
+        }
+      });
+    </script>
   </body>
 </html>
