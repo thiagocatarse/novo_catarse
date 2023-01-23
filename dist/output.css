@@ -1045,6 +1045,10 @@ video {
   aspect-ratio: 16 / 9;
 }
 
+.aspect-auto{
+  aspect-ratio: auto;
+}
+
 .h-full{
   height: 100%;
 }
@@ -1135,6 +1139,12 @@ video {
 
 .h-2\/3{
   height: 66.666667%;
+}
+
+.h-max{
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .max-h-96{
@@ -1329,6 +1339,12 @@ video {
 
 .max-w-screen-xl{
   max-width: 1280px;
+}
+
+.max-w-fit{
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .flex-1{
@@ -1614,6 +1630,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.items-baseline{
+  align-items: baseline;
 }
 
 .items-stretch{
