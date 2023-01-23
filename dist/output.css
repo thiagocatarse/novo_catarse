@@ -3981,6 +3981,10 @@ video {
     gap: 0.75rem;
   }
 
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
   .md\:border-t-0{
     border-top-width: 0px;
   }
