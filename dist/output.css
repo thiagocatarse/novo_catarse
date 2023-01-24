@@ -4883,6 +4883,11 @@ video {
   width: auto;
 }
 
+.\[\&\>img\]\:object-contain>img{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .\[\&\>img\]\:object-cover>img{
   -o-object-fit: cover;
      object-fit: cover;
