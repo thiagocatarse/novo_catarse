@@ -4615,6 +4615,18 @@ video {
   visibility: hidden;
 }
 
+.\[\&_thumbs-wrap\]\:w-12 thumbs-wrap{
+  width: 3rem;
+}
+
+.\[\&_\.thumbs-wrap\]\:w-12 .thumbs-wrap{
+  width: 3rem;
+}
+
+.\[\&_\.thumbs-wrap\]\:w-14 .thumbs-wrap{
+  width: 3.5rem;
+}
+
 
 
 
