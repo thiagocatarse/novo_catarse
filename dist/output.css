@@ -1487,6 +1487,10 @@ video {
   grid-template-columns: 60px 1fr;
 }
 
+.grid-cols-\[68px_1fr\]{
+  grid-template-columns: 68px 1fr;
+}
+
 .grid-rows-\[0fr_0fr_0fr\]{
   grid-template-rows: 0fr 0fr 0fr;
 }
