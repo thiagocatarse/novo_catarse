@@ -2146,6 +2146,10 @@ video {
   fill: #d3696b;
 }
 
+.fill-green-600{
+  fill: #418600;
+}
+
 .stroke-current{
   stroke: currentColor;
 }
