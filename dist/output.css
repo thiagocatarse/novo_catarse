@@ -1661,6 +1661,12 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.-space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(-0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(-0.25rem * var(--tw-space-y-reverse));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -2474,6 +2480,10 @@ video {
 
 .pr-10{
   padding-right: 2.5rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
 }
 
 .text-left{
@@ -3680,6 +3690,16 @@ video {
   z-index: 30;
 }
 
+.peer:checked ~ .peer-checked\:my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.peer:checked ~ .peer-checked\:my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .peer:checked ~ .peer-checked\:ml-0{
   margin-left: 0px;
 }
@@ -3710,6 +3730,10 @@ video {
 
 .peer:checked ~ .peer-checked\:overflow-hidden{
   overflow: hidden;
+}
+
+.peer:checked ~ .peer-checked\:rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .peer:checked ~ .peer-checked\:border-t{
@@ -3796,8 +3820,32 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.peer:checked ~ .group:first-child .peer-checked\:group-first\:mt-0{
+  margin-top: 0px;
+}
+
+.group:first-child .peer:checked ~ .group-first\:peer-checked\:mt-0{
+  margin-top: 0px;
+}
+
+.peer:checked ~ .group:last-child .peer-checked\:group-last\:mb-0{
+  margin-bottom: 0px;
+}
+
+.group:last-child .peer:checked ~ .group-last\:peer-checked\:mb-0{
+  margin-bottom: 0px;
+}
+
 .group.basic-summary .peer:checked ~ .group-\[\.basic-summary\]\:peer-checked\:hidden{
   display: none;
+}
+
+.peer:hover ~ .peer-hover\:z-10{
+  z-index: 10;
+}
+
+.peer:hover ~ .peer-hover\:z-20{
+  z-index: 20;
 }
 
 .peer:hover ~ .peer-hover\:border-blue-600{
@@ -3808,6 +3856,12 @@ video {
 .peer:hover ~ .peer-hover\:shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.peer:hover ~ .peer-hover\:shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
