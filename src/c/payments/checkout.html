@@ -343,8 +343,8 @@
                           <div class="flex flex-col gap-8 px-1 py-2">
                             <!-- Instructions -->
                             <div class="flex flex-col gap-4">
+                              <!-- Parcelas -->
                               <div class="flex flex-col gap-2">
-                                <!-- Parcelas -->
                                 <div class="flex flex-col gap-2">
                                   <div class="flex">
                                     <label
@@ -436,10 +436,86 @@
                         <div class="hidden px-4 peer-checked:block">
                           <!-- Content -->
                           <div class="flex flex-col gap-8 px-1 py-2">
-                            <!-- Instructions -->
-                            <div class="flex flex-col gap-4">
+                            <!-- Credit Card Form -->
+                            <!-- Form Layout -->
+                            <div class="flex flex-col gap-7">
+                              <!-- Nome -->
                               <div class="flex flex-col gap-2">
-                                <!-- Parcelas -->
+                                <div class="flex">
+                                  <label
+                                    for="preview-input"
+                                    class="text-sm font-medium text-gray-900"
+                                    >Nome do titular do cartão</label
+                                  >
+                                </div>
+
+                                <div class="flex w-full rounded-md shadow-sm">
+                                  <input
+                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                    id="preview-input"
+                                    type="number" />
+                                </div>
+                              </div>
+                              <!-- Number -->
+                              <div class="flex flex-col gap-2">
+                                <div class="flex">
+                                  <label
+                                    for="preview-input"
+                                    class="text-sm font-medium text-gray-900"
+                                    >Número do cartão</label
+                                  >
+                                </div>
+
+                                <div class="flex w-full rounded-md shadow-sm">
+                                  <input
+                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                    id="preview-input"
+                                    type="number" />
+                                </div>
+                              </div>
+                              <!-- Field Group -->
+                              <div
+                                class="grid grid-flow-row gap-7 md:grid-flow-col">
+                                <!-- Vencimento -->
+                                <div class="flex flex-col gap-2">
+                                  <div class="flex">
+                                    <label
+                                      for="preview-input"
+                                      class="text-sm font-medium text-gray-900"
+                                      >Vencimento</label
+                                    >
+                                  </div>
+
+                                  <div class="flex w-full rounded-md shadow-sm">
+                                    <input
+                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                      id="preview-input"
+                                      type="number"
+                                      placeholder="MM/YY" />
+                                  </div>
+                                </div>
+                                <!-- CCV -->
+
+                                <div class="flex flex-col gap-2">
+                                  <div class="flex">
+                                    <label
+                                      for="preview-input"
+                                      class="text-sm font-medium text-gray-900"
+                                      >CCV</label
+                                    >
+                                  </div>
+
+                                  <div class="flex w-full rounded-md shadow-sm">
+                                    <input
+                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                      id="preview-input"
+                                      type="number"
+                                      placeholder="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Parcelas -->
+                              <div class="flex flex-col gap-2">
                                 <div class="flex flex-col gap-2">
                                   <div class="flex">
                                     <label
@@ -462,6 +538,65 @@
                                 <p class="text-sm font-medium text-gray-500">
                                   Total: R$121,00
                                 </p>
+                              </div>
+                              <!-- Save card -->
+                              <div>
+                                <div class="flex items-center gap-2">
+                                  <input
+                                    type="hidden"
+                                    value="0"
+                                    autocomplete="off" />
+                                  <input
+                                    type="checkbox"
+                                    id="Salvar_cartão_para_usar_em_apoios_futuros"
+                                    value="1"
+                                    class="h-4 w-4 rounded border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                                    checked="checked" />
+                                  <label
+                                    class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                    for="Salvar_cart_o_para_usar_em_apoios_futuros"
+                                    >Salvar cartão para usar em apoios
+                                    futuros</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Endereço -->
+                            <div class="flex flex-col gap-3">
+                              <h2 class="text-base font-medium text-gray-900">
+                                Endereço de cobrança
+                              </h2>
+                              <!-- Steps Completed -->
+                              <div
+                                class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
+                                <!-- Entrega -->
+                                <div
+                                  class="flex flex-row gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M7.7505 15.1479L7.75274 15.149C7.91044 15.2176 7.99844 15.2016 7.99844 15.2016C7.99844 15.2016 8.08644 15.2176 8.24477 15.1487L8.24638 15.1479L8.25096 15.1459L8.26548 15.1392C8.27751 15.1336 8.29417 15.1257 8.31516 15.1156C8.35714 15.0954 8.41648 15.066 8.4907 15.0273C8.63906 14.9499 8.84741 14.8351 9.09576 14.6811C9.59142 14.3739 10.2523 13.9076 10.9148 13.2691C12.2402 11.9916 13.5984 9.99555 13.5984 7.20156C13.5984 4.10877 11.0912 1.60156 7.99844 1.60156C4.90564 1.60156 2.39844 4.10877 2.39844 7.20156C2.39844 9.99555 3.7567 11.9916 5.08205 13.2691C5.74455 13.9076 6.40545 14.3739 6.90111 14.6811C7.14947 14.8351 7.35782 14.9499 7.50618 15.0273C7.5804 15.066 7.63974 15.0954 7.68171 15.1156C7.70271 15.1257 7.71937 15.1336 7.73139 15.1392L7.74592 15.1459L7.7505 15.1479ZM7.99844 9.00156C8.99255 9.00156 9.79844 8.19567 9.79844 7.20156C9.79844 6.20745 8.99255 5.40156 7.99844 5.40156C7.00432 5.40156 6.19844 6.20745 6.19844 7.20156C6.19844 8.19567 7.00432 9.00156 7.99844 9.00156Z"
+                                      fill="#BEC0C4" />
+                                  </svg>
+
+                                  <p
+                                    class="flex-1 text-xs font-normal text-gray-600">
+                                    Rua Belisário Távora, 560<br />Rio de
+                                    Janeiro - RJ<br />22245-070 - Brasil<br />(21)99999-9999
+                                  </p>
+
+                                  <a
+                                    href=""
+                                    class="text-xs font-normal text-gray-500 underline"
+                                    >Mudar</a
+                                  >
+                                </div>
                               </div>
                             </div>
                             <!-- Action -->
