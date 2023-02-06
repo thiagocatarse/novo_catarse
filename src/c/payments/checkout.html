@@ -179,8 +179,7 @@
                         name="payments_type"
                         value="pix"
                         id="pix"
-                        class="peer absolute left-4 top-5 hidden h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
-                        checked />
+                        class="peer absolute left-4 top-5 hidden h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
 
                       <div
                         class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
@@ -218,7 +217,10 @@
                             </svg>
                           </div>
 
-                          Pix
+                          Pix<span
+                            class="mr-2 inline-flex items-center rounded bg-green-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-green-800 dark:bg-green-200 dark:text-green-900">
+                            Aprovação em minutos
+                          </span>
                         </label>
                         <div class="hidden px-4 peer-checked:block">
                           <!-- Content -->
@@ -242,7 +244,9 @@
                                 </svg>
 
                                 <div class="text-xs font-medium text-gray-500">
-                                  Seu código PIX terá validade de 12 horas.
+                                  Copie o código Pix na próxima etapa e faça o
+                                  pagamento na instituição financeira de sua
+                                  escolha.
                                 </div>
                               </div>
                               <div class="flew-row flex items-center gap-2">
@@ -261,8 +265,7 @@
                                 </svg>
 
                                 <div class="text-xs font-medium text-gray-500">
-                                  O apoio será confirmado em poucos minutos após
-                                  o pagamento.
+                                  O código terá validade de 1 hora.
                                 </div>
                               </div>
                             </div>
@@ -301,7 +304,8 @@
                         name="payments_type"
                         value="saved_card"
                         id="saved_card"
-                        class="peer absolute left-4 top-5 hidden h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
+                        class="peer absolute left-4 top-5 hidden h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
+                        checked />
 
                       <div
                         class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
@@ -366,7 +370,7 @@
                                 </p>
                               </div>
                             </div>
-                            <!-- Action -->
+                            <!-- Action 
                             <div class="flex flex-col py-4">
                               <div class="flex flex-col gap-3 lg:w-min">
                                 <div class="lg:pr-10">
@@ -377,6 +381,29 @@
                                     Realizar pagamento
                                   </button>
                                 </div>
+
+                                <p
+                                  class="text-xs font-normal text-gray-500 max-lg:text-center">
+                                  Ao apoiar você concorda com os
+                                  <a class="text-blue-600 hover:underline"
+                                    >Termos de uso</a
+                                  >
+                                  e
+                                  <a class="text-blue-600 hover:underline"
+                                    >Politica de privalidade</a
+                                  >.
+                                </p>
+                              </div>
+                            </div> -->
+                            <!-- Action -->
+                            <div class="flex flex-col items-center py-4">
+                              <div class="flex flex-col gap-3">
+                                <button
+                                  name="button"
+                                  type="submit"
+                                  class="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                                  Realizar pagamento
+                                </button>
 
                                 <p
                                   class="text-xs font-normal text-gray-500 max-lg:text-center">
@@ -552,8 +579,8 @@
                                   <label
                                     class="text-sm font-medium text-gray-900 dark:text-gray-300"
                                     for="Salvar_cart_o_para_usar_em_apoios_futuros"
-                                    >Salvar cartão para usar em apoios
-                                    futuros</label
+                                    >Guardar cartão para os próximos
+                                    apoios</label
                                   >
                                 </div>
                               </div>
@@ -597,16 +624,14 @@
                               </div>
                             </div>
                             <!-- Action -->
-                            <div class="flex flex-col py-4">
-                              <div class="flex flex-col gap-3 lg:w-min">
-                                <div class="lg:pr-10">
-                                  <button
-                                    name="button"
-                                    type="submit"
-                                    class="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
-                                    Realizar pagamento
-                                  </button>
-                                </div>
+                            <div class="flex flex-col items-center py-4">
+                              <div class="flex flex-col gap-3">
+                                <button
+                                  name="button"
+                                  type="submit"
+                                  class="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                                  Realizar pagamento
+                                </button>
 
                                 <p
                                   class="text-xs font-normal text-gray-500 max-lg:text-center">
@@ -673,28 +698,7 @@
                                 </svg>
 
                                 <div class="text-xs font-medium text-gray-500">
-                                  O prazo para pagamento é 05/11/2022.
-                                </div>
-                              </div>
-                              <div class="flew-row flex items-center gap-2">
-                                <svg
-                                  width="16"
-                                  height="16"
-                                  viewBox="0 0 16 16"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path
-                                    d="M3.49844 4.79844V5.29844H3.99844H4.79844H5.29844V4.79844V3.99844V3.49844H4.79844H3.99844H3.49844V3.99844V4.79844ZM5.81057 5.81057L6.16412 6.16412L5.81057 5.81057C5.75431 5.86683 5.678 5.89844 5.59844 5.89844H3.19844C3.11887 5.89844 3.04257 5.86683 2.98631 5.81057C2.93004 5.75431 2.89844 5.678 2.89844 5.59844V3.19844C2.89844 3.11887 2.93004 3.04257 2.98631 2.98631C3.04257 2.93004 3.11887 2.89844 3.19844 2.89844H5.59844C5.678 2.89844 5.75431 2.93004 5.81057 2.98631C5.86683 3.04257 5.89844 3.11887 5.89844 3.19844V5.59844C5.89844 5.678 5.86683 5.75431 5.81057 5.81057ZM3.49844 11.9984V12.4984H3.99844H4.79844H5.29844V11.9984V11.1984V10.6984H4.79844H3.99844H3.49844V11.1984V11.9984ZM5.81057 13.0106L6.16412 13.3641L5.81057 13.0106C5.75431 13.0668 5.678 13.0984 5.59844 13.0984H3.19844C3.11887 13.0984 3.04257 13.0668 2.98631 13.0106C2.93004 12.9543 2.89844 12.878 2.89844 12.7984V10.3984C2.89844 10.3189 2.93004 10.2426 2.98631 10.1863C3.04257 10.13 3.11887 10.0984 3.19844 10.0984H5.59844C5.678 10.0984 5.75431 10.13 5.81057 10.1863C5.86683 10.2426 5.89844 10.3189 5.89844 10.3984V12.7984C5.89844 12.878 5.86683 12.9543 5.81057 13.0106ZM11.1984 3.49844H10.6984V3.99844V4.79844V5.29844H11.1984H11.9984H12.4984V4.79844V3.99844V3.49844H11.9984H11.1984ZM13.0106 5.81057L13.3641 6.16412L13.0106 5.81057C12.9543 5.86683 12.878 5.89844 12.7984 5.89844H10.3984C10.3189 5.89844 10.2426 5.86683 10.1863 5.81057C10.13 5.75431 10.0984 5.678 10.0984 5.59844V3.19844C10.0984 3.11887 10.13 3.04257 10.1863 2.98631C10.2426 2.93004 10.3189 2.89844 10.3984 2.89844H12.7984C12.878 2.89844 12.9543 2.93004 13.0106 2.98631C13.0668 3.04257 13.0984 3.11887 13.0984 3.19844V5.59844C13.0984 5.678 13.0668 5.75431 13.0106 5.81057Z"
-                                    fill="#9EA2A8"
-                                    stroke="#9EA2A8" />
-                                  <path
-                                    d="M8.79844 3.19844C8.79844 2.98626 8.71415 2.78278 8.56412 2.63275C8.41409 2.48272 8.21061 2.39844 7.99844 2.39844C7.78626 2.39844 7.58278 2.48272 7.43275 2.63275C7.28272 2.78278 7.19844 2.98626 7.19844 3.19844V3.99844C7.19844 4.21061 7.28272 4.41409 7.43275 4.56412C7.58278 4.71415 7.78626 4.79844 7.99844 4.79844C8.21061 4.79844 8.41409 4.71415 8.56412 4.56412C8.71415 4.41409 8.79844 4.21061 8.79844 3.99844V3.19844ZM7.99844 5.59844C8.21061 5.59844 8.41409 5.68272 8.56412 5.83275C8.71415 5.98278 8.79844 6.18626 8.79844 6.39844V7.19844H10.3984C10.6106 7.19844 10.8141 7.28272 10.9641 7.43275C11.1142 7.58278 11.1984 7.78626 11.1984 7.99844C11.1984 8.21061 11.1142 8.41409 10.9641 8.56412C10.8141 8.71415 10.6106 8.79844 10.3984 8.79844H7.99844C7.78626 8.79844 7.58278 8.71415 7.43275 8.56412C7.28272 8.41409 7.19844 8.21061 7.19844 7.99844V6.39844C7.19844 6.18626 7.28272 5.98278 7.43275 5.83275C7.58278 5.68272 7.78626 5.59844 7.99844 5.59844ZM12.7984 7.19844C12.5863 7.19844 12.3828 7.28272 12.2328 7.43275C12.0827 7.58278 11.9984 7.78626 11.9984 7.99844C11.9984 8.21061 12.0827 8.41409 12.2328 8.56412C12.3828 8.71415 12.5863 8.79844 12.7984 8.79844C13.0106 8.79844 13.2141 8.71415 13.3641 8.56412C13.5142 8.41409 13.5984 8.21061 13.5984 7.99844C13.5984 7.78626 13.5142 7.58278 13.3641 7.43275C13.2141 7.28272 13.0106 7.19844 12.7984 7.19844ZM7.19844 10.3984C7.19844 10.1863 7.28272 9.98278 7.43275 9.83275C7.58278 9.68272 7.78626 9.59844 7.99844 9.59844H8.79844C9.01061 9.59844 9.21409 9.68272 9.36412 9.83275C9.51415 9.98278 9.59844 10.1863 9.59844 10.3984C9.59844 10.6106 9.51415 10.8141 9.36412 10.9641C9.21409 11.1142 9.01061 11.1984 8.79844 11.1984V12.7984C8.79844 13.0106 8.71415 13.2141 8.56412 13.3641C8.41409 13.5142 8.21061 13.5984 7.99844 13.5984C7.78626 13.5984 7.58278 13.5142 7.43275 13.3641C7.28272 13.2141 7.19844 13.0106 7.19844 12.7984V10.3984ZM5.59844 8.79844C5.81061 8.79844 6.01409 8.71415 6.16412 8.56412C6.31415 8.41409 6.39844 8.21061 6.39844 7.99844C6.39844 7.78626 6.31415 7.58278 6.16412 7.43275C6.01409 7.28272 5.81061 7.19844 5.59844 7.19844H3.19844C2.98626 7.19844 2.78278 7.28272 2.63275 7.43275C2.48272 7.58278 2.39844 7.78626 2.39844 7.99844C2.39844 8.21061 2.48272 8.41409 2.63275 8.56412C2.78278 8.71415 2.98626 8.79844 3.19844 8.79844H5.59844ZM13.5984 10.3984C13.5984 10.6106 13.5142 10.8141 13.3641 10.9641C13.2141 11.1142 13.0106 11.1984 12.7984 11.1984H11.1984C10.9863 11.1984 10.7828 11.1142 10.6328 10.9641C10.4827 10.8141 10.3984 10.6106 10.3984 10.3984C10.3984 10.1863 10.4827 9.98278 10.6328 9.83275C10.7828 9.68272 10.9863 9.59844 11.1984 9.59844H12.7984C13.0106 9.59844 13.2141 9.68272 13.3641 9.83275C13.5142 9.98278 13.5984 10.1863 13.5984 10.3984ZM12.7984 13.5984C13.0106 13.5984 13.2141 13.5142 13.3641 13.3641C13.5142 13.2141 13.5984 13.0106 13.5984 12.7984C13.5984 12.5863 13.5142 12.3828 13.3641 12.2328C13.2141 12.0827 13.0106 11.9984 12.7984 11.9984H10.3984C10.1863 11.9984 9.98278 12.0827 9.83275 12.2328C9.68272 12.3828 9.59844 12.5863 9.59844 12.7984C9.59844 13.0106 9.68272 13.2141 9.83275 13.3641C9.98278 13.5142 10.1863 13.5984 10.3984 13.5984H12.7984Z"
-                                    fill="#9EA2A8" />
-                                </svg>
-
-                                <div class="text-xs font-medium text-gray-500">
-                                  Assim que finalizar o pedido, seu boleto será
-                                  gerado para você realizar o pagamento.
+                                  O prazo para pagamento do boleto é 05/11/2022.
                                 </div>
                               </div>
 
@@ -714,8 +718,8 @@
                                 </svg>
 
                                 <div class="text-xs font-medium text-gray-500">
-                                  O processamento do pagamento pode levar até
-                                  três dias úteis.
+                                  Após o pagamento, seu apoio pode demorar até 3
+                                  dias úteis para ser confirmado no Catarse.
                                 </div>
                               </div>
                             </div>
