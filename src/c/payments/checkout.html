@@ -624,6 +624,287 @@
                                   >
                                 </div>
                               </div>
+                              <!-- seção com form -->
+                              <div class="flex flex-col gap-4">
+                                <form class="flex flex-col items-end gap-10">
+                                  <div
+                                    class="flex h-full w-full flex-col gap-3">
+                                    <!-- opção: endereço -->
+                                    <div class="group relative">
+                                      <!-- input radio com posição absoluta -->
+                                      <input
+                                        type="radio"
+                                        name="addresses"
+                                        value="default"
+                                        id="default"
+                                        class="peer absolute left-4 top-5 h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
+                                        checked />
+
+                                      <div
+                                        class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
+                                        <label
+                                          for="default"
+                                          class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 text-sm font-normal text-gray-900">
+                                          Rua Belisário Távora, 560<br />Rio de
+                                          Janeiro - RJ <br />22245-070 - Brasil
+                                          <br />(21)99999-9999
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <!-- opção: new -->
+                                    <div class="group relative">
+                                      <!-- input radio com posição absoluta -->
+                                      <input
+                                        type="radio"
+                                        name="addresses"
+                                        value="new"
+                                        id="new"
+                                        class="peer absolute left-4 top-5 h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
+
+                                      <div
+                                        class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
+                                        <label
+                                          for="new"
+                                          class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 font-semibold text-gray-900">
+                                          Adicionar novo endereço
+                                        </label>
+                                        <div
+                                          class="hidden px-4 peer-checked:block">
+                                          <!-- Content -->
+                                          <div
+                                            class="flex flex-col gap-8 px-1 py-2 pb-10">
+                                            <!-- Form de Endereço -->
+                                            <div class="flex flex-col gap-7">
+                                              <!-- Field Group -->
+                                              <div
+                                                class="grid grid-flow-row gap-7 md:grid-flow-col md:grid-cols-3">
+                                                <!-- País -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >País / country</label
+                                                    >
+                                                  </div>
+                                                  <select
+                                                    name=""
+                                                    id=""
+                                                    class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+                                                    <option value="">
+                                                      Brasil
+                                                    </option>
+                                                    <option value="Red">
+                                                      red
+                                                    </option>
+                                                    <option value="Green">
+                                                      green
+                                                    </option>
+                                                    <option value="Blue">
+                                                      blue
+                                                    </option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                              <!-- Field Group -->
+                                              <div
+                                                class="grid grid-flow-row gap-7 md:grid-flow-col md:grid-cols-3">
+                                                <!-- CEP -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      for="preview-input"
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >CEP</label
+                                                    >
+                                                  </div>
+
+                                                  <div
+                                                    class="flex w-full rounded-md shadow-sm">
+                                                    <input
+                                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                      id="preview-input"
+                                                      type="text"
+                                                      placeholder="_____-___" />
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <!-- Endereço -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Endereço</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                              <!-- Field Group -->
+                                              <div
+                                                class="grid grid-flow-row gap-7 md:grid-flow-col">
+                                                <!-- N -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      for="preview-input"
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >Número</label
+                                                    >
+                                                  </div>
+
+                                                  <div
+                                                    class="flex w-full rounded-md shadow-sm">
+                                                    <input
+                                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                      id="preview-input"
+                                                      type="text" />
+                                                  </div>
+                                                </div>
+                                                <!-- Complemento -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      for="preview-input"
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >Complemento</label
+                                                    >
+                                                  </div>
+
+                                                  <div
+                                                    class="flex w-full rounded-md shadow-sm">
+                                                    <input
+                                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                      id="preview-input"
+                                                      type="text" />
+                                                  </div>
+                                                </div>
+                                                <!-- Complemento -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      for="preview-input"
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >Bairro</label
+                                                    >
+                                                  </div>
+
+                                                  <div
+                                                    class="flex w-full rounded-md shadow-sm">
+                                                    <input
+                                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                      id="preview-input"
+                                                      type="text" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- Field Group -->
+                                              <div
+                                                class="grid grid-flow-row gap-7 md:grid-flow-col">
+                                                <!-- Cidade -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      for="preview-input"
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >Cidade</label
+                                                    >
+                                                  </div>
+
+                                                  <div
+                                                    class="flex w-full rounded-md shadow-sm">
+                                                    <input
+                                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                      id="preview-input"
+                                                      type="text" />
+                                                  </div>
+                                                </div>
+                                                <!-- Estado -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >Estado</label
+                                                    >
+                                                  </div>
+                                                  <select
+                                                    name=""
+                                                    id=""
+                                                    class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+                                                    <option value="">
+                                                      Escolha o Estado
+                                                    </option>
+                                                    <option value="Red">
+                                                      red
+                                                    </option>
+                                                    <option value="Green">
+                                                      green
+                                                    </option>
+                                                    <option value="Blue">
+                                                      blue
+                                                    </option>
+                                                  </select>
+                                                </div>
+                                                <!-- Telefone -->
+                                                <div
+                                                  class="flex flex-col gap-2">
+                                                  <div class="flex">
+                                                    <label
+                                                      for="preview-input"
+                                                      class="text-sm font-medium text-gray-900"
+                                                      >Telefone</label
+                                                    >
+                                                  </div>
+
+                                                  <div
+                                                    class="flex w-full rounded-md shadow-sm">
+                                                    <input
+                                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                      id="preview-input"
+                                                      type="text" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- Nome -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Nome do destinatário</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
                             </div>
                             <!-- Action -->
                             <div class="flex flex-col items-center py-4">
