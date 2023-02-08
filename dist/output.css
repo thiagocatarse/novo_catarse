@@ -1223,6 +1223,10 @@ video {
   width: min-content;
 }
 
+.w-16{
+  width: 4rem;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -4669,6 +4673,10 @@ video {
 
   .lg\:gap-4{
     gap: 1rem;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
   }
 
   .lg\:divide-y > :not([hidden]) ~ :not([hidden]){
