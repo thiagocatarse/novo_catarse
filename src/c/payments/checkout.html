@@ -594,7 +594,8 @@
                               </h2>
                               <!-- Steps Completed -->
                               <div
-                                class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
+                                class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4"
+                                id="address_completed">
                                 <!-- Entrega -->
                                 <div
                                   class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
@@ -618,14 +619,16 @@
                                   </p>
 
                                   <a
-                                    href="./shipping_2_filled.html"
-                                    class="text-xs font-normal text-blue-600 underline"
+                                    class="cursor-pointer text-xs font-normal text-blue-600 underline"
+                                    id="show_address_form"
                                     >Usar outro endereço</a
                                   >
                                 </div>
                               </div>
                               <!-- seção com form -->
-                              <div class="flex flex-col gap-4">
+                              <div
+                                class="hidden flex-col gap-4"
+                                id="address_form">
                                 <form class="flex flex-col items-end gap-10">
                                   <div
                                     class="flex h-full w-full flex-col gap-3">
@@ -637,14 +640,13 @@
                                         name="addresses"
                                         value="default"
                                         id="default"
-                                        class="peer absolute left-4 top-5 h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                        checked />
+                                        class="peer absolute left-4 top-5 h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
 
                                       <div
                                         class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
                                         <label
                                           for="default"
-                                          class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 text-sm font-normal text-gray-900">
+                                          class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 text-xs font-normal text-gray-900">
                                           Rua Belisário Távora, 560<br />Rio de
                                           Janeiro - RJ <br />22245-070 - Brasil
                                           <br />(21)99999-9999
@@ -1118,5 +1120,13 @@
         </div>
       </section>
     </div>
+    <script>
+      document
+        .getElementById("show_address_form")
+        .addEventListener("click", function () {
+          document.getElementById("address_form").style.display = "flex";
+          document.getElementById("address_completed").style.display = "none";
+        });
+    </script>
   </body>
 </html>
