@@ -488,58 +488,58 @@
                                   <label
                                     for="preview-input"
                                     class="text-sm font-medium text-gray-900"
-                                    >Número do cartão</label
+                                    >Dados do cartão</label
                                   >
                                 </div>
+                                <!-- Group Input -->
+                                <div class="flex flex-col -space-y-px">
+                                  <!-- Text field Card Number -->
+                                  <div
+                                    class="flex flex-col gap-2 first:[&_input]:rounded-b-none">
+                                    <div class="flex"></div>
 
-                                <div class="flex w-full rounded-md shadow-sm">
-                                  <input
-                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
-                                    id="preview-input"
-                                    type="number" />
+                                    <div
+                                      class="flex w-full rounded-md shadow-sm">
+                                      <input
+                                        class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:z-10 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                        id="preview-input"
+                                        type="text"
+                                        placeholder="Número do Cartão" />
+                                    </div>
+                                  </div>
+
+                                  <!-- Group row -->
+                                  <div class="flex flex-row -space-x-px">
+                                    <!-- vencimento -->
+                                    <div
+                                      class="flex w-full flex-col [&_input]:rounded-t-none [&_input]:first:rounded-br-none [&_input]:last:rounded-bl-none">
+                                      <div class="flex"></div>
+                                      <div
+                                        class="flex w-full rounded-md shadow-sm">
+                                        <input
+                                          class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:z-10 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                          id="preview-input"
+                                          type="text"
+                                          placeholder="MM/YY" />
+                                      </div>
+                                    </div>
+                                    <!-- CVV -->
+                                    <div
+                                      class="flex w-full flex-col [&_input]:rounded-t-none [&_input]:first:rounded-br-none [&_input]:last:rounded-bl-none">
+                                      <div class="flex"></div>
+                                      <div
+                                        class="flex w-full rounded-md shadow-sm">
+                                        <input
+                                          class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:z-10 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                          id="preview-input"
+                                          type="text"
+                                          placeholder="CVV" />
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-                              <!-- Field Group -->
-                              <div
-                                class="grid grid-flow-row gap-7 md:grid-flow-col">
-                                <!-- Vencimento -->
-                                <div class="flex flex-col gap-2">
-                                  <div class="flex">
-                                    <label
-                                      for="preview-input"
-                                      class="text-sm font-medium text-gray-900"
-                                      >Vencimento</label
-                                    >
-                                  </div>
 
-                                  <div class="flex w-full rounded-md shadow-sm">
-                                    <input
-                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
-                                      id="preview-input"
-                                      type="number"
-                                      placeholder="MM/YY" />
-                                  </div>
-                                </div>
-                                <!-- CCV -->
-
-                                <div class="flex flex-col gap-2">
-                                  <div class="flex">
-                                    <label
-                                      for="preview-input"
-                                      class="text-sm font-medium text-gray-900"
-                                      >CCV</label
-                                    >
-                                  </div>
-
-                                  <div class="flex w-full rounded-md shadow-sm">
-                                    <input
-                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
-                                      id="preview-input"
-                                      type="number"
-                                      placeholder="" />
-                                  </div>
-                                </div>
-                              </div>
                               <!-- Parcelas -->
                               <div class="flex flex-col gap-2">
                                 <div class="flex flex-col gap-2">
@@ -587,6 +587,7 @@
                                 </div>
                               </div>
                             </div>
+
                             <!-- Endereço -->
                             <div class="flex flex-col gap-3">
                               <h2 class="text-base font-medium text-gray-900">

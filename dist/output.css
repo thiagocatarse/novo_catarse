@@ -1667,6 +1667,18 @@ video {
   margin-bottom: calc(-0.25rem * var(--tw-space-y-reverse));
 }
 
+.-space-y-px > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(-1px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(-1px * var(--tw-space-y-reverse));
+}
+
+.-space-x-px > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-1px * var(--tw-space-x-reverse));
+  margin-left: calc(-1px * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .divide-y > :not([hidden]) ~ :not([hidden]){
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -3509,6 +3521,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:z-10:focus{
+  z-index: 10;
+}
+
 .focus\:border-blue-700:focus{
   --tw-border-opacity: 1;
   border-color: rgb(41 102 146 / var(--tw-border-opacity));
@@ -5152,6 +5168,24 @@ video {
 
 .\[\&\>\:first-child\]\:invisible>:first-child{
   visibility: hidden;
+}
+
+.\[\&_input\]\:rounded-t-none input{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.first\:\[\&_input\]\:rounded-b-none input:first-child{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.\[\&_input\]\:first\:rounded-br-none:first-child input{
+  border-bottom-right-radius: 0px;
+}
+
+.\[\&_input\]\:last\:rounded-bl-none:last-child input{
+  border-bottom-left-radius: 0px;
 }
 
 
