@@ -110,7 +110,7 @@
               class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
               <!-- User -->
               <div
-                class="flex flex-row gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
                 <svg
                   width="16"
                   height="16"
@@ -131,7 +131,7 @@
               </div>
               <!-- Entrega -->
               <div
-                class="flex flex-row gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
                 <svg
                   width="16"
                   height="16"
@@ -726,16 +726,14 @@
                               </div>
                             </div>
                             <!-- Action -->
-                            <div class="flex flex-col py-4">
-                              <div class="flex flex-col gap-3 lg:w-min">
-                                <div class="lg:pr-10">
-                                  <button
-                                    name="button"
-                                    type="submit"
-                                    class="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
-                                    Realizar pagamento
-                                  </button>
-                                </div>
+                            <div class="flex flex-col items-center py-4">
+                              <div class="flex flex-col gap-3">
+                                <button
+                                  name="button"
+                                  type="submit"
+                                  class="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                                  Realizar pagamento
+                                </button>
 
                                 <p
                                   class="text-xs font-normal text-gray-500 max-lg:text-center">
