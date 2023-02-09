@@ -5170,6 +5170,10 @@ video {
   display: block;
 }
 
+.peer:checked ~ .peer-checked\:\[\&\>\:last-child\]\:flex>:last-child{
+  display: flex;
+}
+
 .\[\&\>\:first-child\]\:visible>:first-child{
   visibility: visible;
 }

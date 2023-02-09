@@ -53,15 +53,17 @@
                 </div>
               </a>
 
-              <!-- Step active -->
-              <a class="group flex flex-row items-center gap-2">
+              <!-- Step visited -->
+              <a
+                class="group flex flex-row items-center gap-2"
+                href="./shipping_2.html">
                 <!-- Order Badge -->
                 <!-- div
-                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-[10px] font-semibold leading-none text-blue-800">
-                          2
+                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50/50 text-[10px] font-semibold leading-none text-blue-300">
+                          1
                         </!-->
                 <!-- Step Title -->
-                <div class="text-xs font-semibold leading-none text-blue-800">
+                <div class="text-xs font-semibold leading-none text-blue-200">
                   Informações
                 </div>
                 <!-- Step Divider -->
@@ -77,15 +79,16 @@
                   </svg>
                 </div>
               </a>
-              <!-- Step -->
+
+              <!-- Step active -->
               <a class="group flex flex-row items-center gap-2">
                 <!-- Order Badge -->
                 <!-- div
-            class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-50 text-[10px] font-semibold leading-none text-gray-300">
-            3
-          </!-->
+                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-[10px] font-semibold leading-none text-blue-800">
+                          2
+                        </!-->
                 <!-- Step Title -->
-                <div class="text-xs font-semibold leading-none text-gray-200">
+                <div class="text-xs font-semibold leading-none text-blue-800">
                   Entrega
                 </div>
                 <!-- Step Divider -->
@@ -101,13 +104,14 @@
                   </svg>
                 </div>
               </a>
+
               <!-- Step -->
               <a class="group flex flex-row items-center gap-2">
                 <!-- Order Badge -->
                 <!-- div
-                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-50 text-[10px] font-semibold leading-none text-gray-300">
-                          3
-                        </!-->
+            class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-50 text-[10px] font-semibold leading-none text-gray-300">
+            3
+          </!-->
                 <!-- Step Title -->
                 <div class="text-xs font-semibold leading-none text-gray-200">
                   Pagamento
@@ -126,6 +130,7 @@
                 </div>
               </a>
             </div>
+
             <!-- Steps Completed -->
             <div
               class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
@@ -144,12 +149,37 @@
                     stroke="#BEC0C4" />
                 </svg>
                 <p class="flex-1 text-xs font-normal text-gray-600">
-                  <span class="font-medium">Nome: </span>Thiago Machado Maia<br />
-                  <span class="font-medium">Email: </span>thiago@catarse<br />
-                  <span class="font-medium">CPF: </span>105.281.907/92
+                  Thiago Machado Maia · thiago@catarse.me · 105.281.907/92
                 </p>
                 <a
                   href=""
+                  class="text-xs font-normal text-gray-400 hover:text-gray-600"
+                  >Mudar</a
+                >
+              </div>
+              <!-- Entrega -->
+              <div
+                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.7505 15.1479L7.75274 15.149C7.91044 15.2176 7.99844 15.2016 7.99844 15.2016C7.99844 15.2016 8.08644 15.2176 8.24477 15.1487L8.24638 15.1479L8.25096 15.1459L8.26548 15.1392C8.27751 15.1336 8.29417 15.1257 8.31516 15.1156C8.35714 15.0954 8.41648 15.066 8.4907 15.0273C8.63906 14.9499 8.84741 14.8351 9.09576 14.6811C9.59142 14.3739 10.2523 13.9076 10.9148 13.2691C12.2402 11.9916 13.5984 9.99555 13.5984 7.20156C13.5984 4.10877 11.0912 1.60156 7.99844 1.60156C4.90564 1.60156 2.39844 4.10877 2.39844 7.20156C2.39844 9.99555 3.7567 11.9916 5.08205 13.2691C5.74455 13.9076 6.40545 14.3739 6.90111 14.6811C7.14947 14.8351 7.35782 14.9499 7.50618 15.0273C7.5804 15.066 7.63974 15.0954 7.68171 15.1156C7.70271 15.1257 7.71937 15.1336 7.73139 15.1392L7.74592 15.1459L7.7505 15.1479ZM7.99844 9.00156C8.99255 9.00156 9.79844 8.19567 9.79844 7.20156C9.79844 6.20745 8.99255 5.40156 7.99844 5.40156C7.00432 5.40156 6.19844 6.20745 6.19844 7.20156C6.19844 8.19567 7.00432 9.00156 7.99844 9.00156Z"
+                    fill="#BEC0C4" />
+                </svg>
+
+                <p class="flex-1 text-xs font-normal text-gray-600">
+                  Rua Belisário Távora, 56 · Rio de Janeiro - RJ · 22245-070 ·
+                  Brasil · (21)99999-9999
+                </p>
+
+                <a
+                  href="./shipping_2_filled.html"
                   class="text-xs font-normal text-gray-400 hover:text-gray-600"
                   >Mudar</a
                 >
@@ -160,7 +190,7 @@
               <div class="flex flex-row gap-6">
                 <div class="flex flex-col gap-2">
                   <h2 class="text-lg font-semibold text-gray-800">
-                    Endereço de entrega
+                    Método de entrega
                   </h2>
                 </div>
               </div>
@@ -183,9 +213,9 @@
                         class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:flex">
                         <label
                           for="default"
-                          class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 text-sm font-normal text-gray-900">
-                          Rua Belisário Távora, 560<br />Rio de Janeiro - RJ
-                          <br />22245-070 - Brasil <br />(21)99999-9999
+                          class="flex w-full cursor-pointer flex-row items-center gap-2 p-4 pl-10 text-sm font-normal text-gray-900">
+                          <p class="flex-1">Correios PAC</p>
+                          <p class="font-semibold">R$ 10,00</p>
                         </label>
                       </div>
                     </div>
