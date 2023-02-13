@@ -128,31 +128,74 @@
             </div>
             <!-- Steps Completed -->
             <div
-              class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
-              <!-- User -->
-              <div
-                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M9.34389 6.14194C8.98758 6.49826 8.5043 6.69844 8.00039 6.69844C7.49648 6.69844 7.01321 6.49826 6.65689 6.14194C6.30057 5.78562 6.10039 5.30235 6.10039 4.79844C6.10039 4.29453 6.30057 3.81125 6.65689 3.45493C7.01321 3.09862 7.49648 2.89844 8.00039 2.89844C8.5043 2.89844 8.98758 3.09862 9.34389 3.45493C9.70021 3.81125 9.90039 4.29453 9.90039 4.79844C9.90039 5.30235 9.70021 5.78562 9.34389 6.14194ZM2.92496 13.8984C2.97404 13.4002 3.09632 12.911 3.28861 12.4468C3.5449 11.828 3.92057 11.2658 4.39415 10.7922C4.86772 10.3186 5.42994 9.94295 6.04871 9.68665C6.66747 9.43035 7.33065 9.29844 8.00039 9.29844C8.67013 9.29844 9.33332 9.43035 9.95208 9.68665C10.5708 9.94295 11.1331 10.3186 11.6066 10.7922C12.0802 11.2658 12.4559 11.828 12.7122 12.4468C12.9045 12.911 13.0267 13.4002 13.0758 13.8984H2.92496Z"
-                    fill="#BEC0C4"
-                    stroke="#BEC0C4" />
-                </svg>
-                <p class="flex-1 text-xs font-normal text-gray-600">
-                  <span class="font-medium">Nome: </span>Thiago Machado Maia<br />
-                  <span class="font-medium">Email: </span>thiago@catarse<br />
-                  <span class="font-medium">CPF: </span>105.281.907/92
-                </p>
-                <a
-                  href=""
-                  class="text-xs font-normal text-gray-400 hover:text-gray-600"
-                  >Mudar</a
-                >
+              class="bg flex flex-row gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.34389 6.14194C8.98758 6.49826 8.5043 6.69844 8.00039 6.69844C7.49648 6.69844 7.01321 6.49826 6.65689 6.14194C6.30057 5.78562 6.10039 5.30235 6.10039 4.79844C6.10039 4.29453 6.30057 3.81125 6.65689 3.45493C7.01321 3.09862 7.49648 2.89844 8.00039 2.89844C8.5043 2.89844 8.98758 3.09862 9.34389 3.45493C9.70021 3.81125 9.90039 4.29453 9.90039 4.79844C9.90039 5.30235 9.70021 5.78562 9.34389 6.14194ZM2.92496 13.8984C2.97404 13.4002 3.09632 12.911 3.28861 12.4468C3.5449 11.828 3.92057 11.2658 4.39415 10.7922C4.86772 10.3186 5.42994 9.94295 6.04871 9.68665C6.66747 9.43035 7.33065 9.29844 8.00039 9.29844C8.67013 9.29844 9.33332 9.43035 9.95208 9.68665C10.5708 9.94295 11.1331 10.3186 11.6066 10.7922C12.0802 11.2658 12.4559 11.828 12.7122 12.4468C12.9045 12.911 13.0267 13.4002 13.0758 13.8984H2.92496Z"
+                  fill="#BEC0C4"
+                  stroke="#BEC0C4" />
+              </svg>
+              <p class="flex-1 text-xs font-normal text-gray-600">
+                thiago@catarse
+              </p>
+              <a
+                href=""
+                class="text-xs font-normal text-gray-400 hover:text-gray-600"
+                >Mudar</a
+              >
+            </div>
+            <!-- Form de Contato -->
+            <div class="flex flex-col gap-7">
+              <div class="flex flex-row gap-6">
+                <div class="flex flex-col gap-2">
+                  <h2 class="text-lg font-semibold text-gray-800">
+                    Informações de contato
+                  </h2>
+                </div>
+              </div>
+              <!-- Nome -->
+              <div class="flex flex-col gap-2">
+                <div class="flex">
+                  <label
+                    for="preview-input"
+                    class="text-sm font-medium text-gray-900"
+                    >Nome completo</label
+                  >
+                </div>
+
+                <div class="flex w-full rounded-md shadow-sm">
+                  <input class="block w-full rounded-md border border-gray-300
+                  bg-white p-3 text-sm text-gray-900 placeholder-gray-300
+                  outline-none transition-all duration-150 ease-in-out
+                  hover:border-gray-600 focus:border-blue-700 focus:outline-4
+                  focus:outline-offset-0 focus:outline-blue-100
+                  focus:ring-blue-500" id="preview-input" type="text"
+                  value="Thiago Machado Maia" / >
+                </div>
+              </div>
+              <!-- Documento -->
+              <div class="flex flex-col gap-2">
+                <div class="flex">
+                  <label
+                    for="preview-input"
+                    class="text-sm font-medium text-gray-900"
+                    >Documento (CPF / CNPJ)</label
+                  >
+                </div>
+
+                <div class="flex w-full rounded-md shadow-sm">
+                  <input
+                    class="block w-full cursor-not-allowed rounded-md border border-gray-300 bg-gray-50 p-3 text-sm text-gray-400 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                    id="preview-input"
+                    type="text"
+                    value="000.000.000/00"
+                    disabled />
+                </div>
               </div>
             </div>
             <!-- Form de Pagamento -->
