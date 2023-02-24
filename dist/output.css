@@ -5272,12 +5272,28 @@ div:nth-child(n+4) .group\/grid .group-\[div\:nth-child\(n\+4\)_\&\]\/grid\:hidd
     display: grid;
   }
 
+  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:min-w-\[302px\]{
+    min-width: 302px;
+  }
+
+  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:max-w-\[402px\]{
+    max-width: 402px;
+  }
+
+  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:grow{
+    flex-grow: 1;
+  }
+
   .group[data-tiers=complete] .lg\:group-data-\[tiers\=complete\]\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:flex-row{
     flex-direction: row;
+  }
+
+  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:only\:max-w-\[582px\]:only-child{
+    max-width: 582px;
   }
 }
 
@@ -5571,6 +5587,20 @@ div:nth-child(n+4) .\[div\:nth-child\(n\+4\)_\&\]\:hidden{
 
 .group[data-tiers=complete] .peer:checked ~ .group-data-\[tiers\=complete\]\:peer-checked\:\[\&\:nth-child\(n\+7\)\]\:block:nth-child(n+7){
   display: block;
+}
+
+@media (min-width: 1024px){
+  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:\[\&\:nth-child\(n\+7\)\]\:hidden:nth-child(n+7){
+    display: none;
+  }
+
+  .group[data-tiers=complete] .lg\:group-data-\[tiers\=complete\]\:\[\&\:nth-child\(n\+7\)\]\:hidden:nth-child(n+7){
+    display: none;
+  }
+
+  .group[data-tiers=complete] .peer:checked ~ .lg\:group-data-\[tiers\=complete\]\:peer-checked\:\[\&\:nth-child\(n\+7\)\]\:block:nth-child(n+7){
+    display: block;
+  }
 }
 
 
