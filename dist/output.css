@@ -5111,6 +5111,11 @@ video {
     line-height: 1.25rem;
   }
 
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:only\:max-w-\[582px\]:only-child{
     max-width: 582px;
   }
