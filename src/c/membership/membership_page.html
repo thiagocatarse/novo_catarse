@@ -8,16 +8,17 @@
 
   <body class="bg-gray-50">
     <!-- Membership Header Wrapper-->
-    <div class="flex flex-col items-center gap-8 bg-blue-50 pb-12">
+    <div class="flex flex-col items-center gap-4 bg-blue-50 pb-12 xl:gap-8">
       <!-- Membership Header Bg -->
-      <div class="h-52 w-full">
+      <div class="h-36 w-full xl:h-52">
         <img
           src="./bg_diversidade.png"
           alt=""
           class="h-full w-full object-cover" />
       </div>
       <!-- Thumbnail wrapper -->
-      <div class="-mt-28 w-64 overflow-hidden rounded-lg shadow-sm">
+      <div
+        class="-mt-14 w-40 overflow-hidden rounded-lg shadow-sm xl:-mt-28 xl:w-64">
         <!-- Project Thumbnail -->
         <div class="w-full">
           <div
@@ -32,18 +33,19 @@
         class="z-10 mx-auto flex flex-col items-center gap-1 pb-2 lg:max-w-[512px]"
         style="color: ">
         <div>
-          <h1 class="mb-2 text-center text-3xl font-semibold lg:text-4xl">
+          <h1
+            class="mb-2 text-center text-xl font-semibold lg:text-4xl xl:text-3xl">
             Diversidade Nerd
           </h1>
         </div>
-        <h2 class="text-center text-sm font-normal">
+        <h2 class="text-center text-xs font-normal xl:text-sm">
           Conteúdo sobre gênero, sexualidade, política, plataformas digitais e
           cultura pop
         </h2>
       </div>
       <!-- CTA -->
       <div
-        class="flex flex-col gap-12 pt-4 max-xl:px-2.5 max-lg:w-screen lg:max-w-screen-xl">
+        class="flex flex-col gap-6 pt-4 max-lg:w-screen lg:max-w-screen-xl xl:gap-12">
         <!-- title -->
         <div class="flex w-full flex-row items-center gap-5">
           <div class="h-[1px] flex-1 bg-gray-900/50"></div>
@@ -56,7 +58,7 @@
         <div data-tiers="complete" class="group flex flex-col gap-6">
           <!-- Tiers Grid Initial load -->
           <div
-            class="gap-6 max-lg:flex max-lg:w-full max-lg:flex-row max-lg:overflow-x-auto lg:group-data-[tiers=incomplete]:flex lg:group-data-[tiers=complete]:grid lg:group-data-[tiers=complete]:grid-cols-4 lg:group-data-[tiers=incomplete]:flex-row">
+            class="gap-6 max-lg:flex max-lg:w-full max-lg:flex-row max-lg:overflow-x-auto max-lg:pb-4 lg:group-data-[tiers=incomplete]:flex lg:group-data-[tiers=complete]:grid lg:group-data-[tiers=complete]:grid-cols-4 lg:group-data-[tiers=incomplete]:flex-row">
             <!-- View more tiers Wrapper -->
             <input
               type="checkbox"
@@ -82,7 +84,7 @@
 
             <!-- Tier -->
             <div
-              class="max-lg:min-w-[calc(100vw-68px)] lg:group-data-[tiers=incomplete]:min-w-[302px] lg:group-data-[tiers=incomplete]:max-w-[402px] lg:group-data-[tiers=incomplete]:grow lg:group-data-[tiers=incomplete]:only:max-w-[582px] lg:group-data-[tiers=incomplete]:[&:nth-child(n+7)]:hidden lg:group-data-[tiers=complete]:[&:nth-child(n+7)]:hidden lg:group-data-[tiers=complete]:peer-checked:[&:nth-child(n+7)]:block">
+              class="max-lg:min-w-[calc(100vw-104px)] lg:group-data-[tiers=incomplete]:min-w-[302px] lg:group-data-[tiers=incomplete]:max-w-[402px] lg:group-data-[tiers=incomplete]:grow lg:group-data-[tiers=incomplete]:only:max-w-[582px] lg:group-data-[tiers=incomplete]:[&:nth-child(n+7)]:hidden lg:group-data-[tiers=complete]:[&:nth-child(n+7)]:hidden lg:group-data-[tiers=complete]:peer-checked:[&:nth-child(n+7)]:block">
               <div class="rounded-lg border border-gray-100 bg-white">
                 <div class="flex h-full flex-col">
                   <div
