@@ -2108,6 +2108,20 @@ video {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[\#0b3a73\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 58 115 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#03244d\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 36 77 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/s3-sa-east-1\.amazonaws\.com\/cdn\.br\.catarse\/uploads\/reward\/uploaded_image\/275259\/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb\.jpg\'\)\]{
   background-image: url('https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/reward/uploaded_image/275259/thumb_reward_a08be7c0-226c-4c4b-a13f-b913d58128bb.jpg');
 }
@@ -5090,18 +5104,6 @@ video {
   .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:only\:max-w-\[582px\]:only-child{
     max-width: 582px;
   }
-
-  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:\[\&\:nth-child\(n\+7\)\]\:hidden:nth-child(n+7){
-    display: none;
-  }
-
-  .group[data-tiers=complete] .lg\:group-data-\[tiers\=complete\]\:\[\&\:nth-child\(n\+7\)\]\:hidden:nth-child(n+7){
-    display: none;
-  }
-
-  .group[data-tiers=complete] .peer:checked ~ .lg\:group-data-\[tiers\=complete\]\:peer-checked\:\[\&\:nth-child\(n\+7\)\]\:block:nth-child(n+7){
-    display: block;
-  }
 }
 
 @media (min-width: 1280px){
@@ -5212,6 +5214,10 @@ video {
   display: block;
 }
 
+.\[\&\>\*\]\:h-full>*{
+  height: 100%;
+}
+
 @media (min-width: 1024px){
   .lg\:\[\&\>\*\]\:\[display\:revert\]>*{
     display: revert;
@@ -5280,6 +5286,20 @@ video {
 
   .max-lg\:\[\&\>button\]\:w-full>button{
     width: 100%;
+  }
+}
+
+@media (min-width: 1024px){
+  .group[data-tiers=incomplete] .lg\:group-data-\[tiers\=incomplete\]\:\[\&\:nth-child\(n\+7\)\]\:hidden:nth-child(n+7){
+    display: none;
+  }
+
+  .group[data-tiers=complete] .lg\:group-data-\[tiers\=complete\]\:\[\&\:nth-child\(n\+7\)\]\:hidden:nth-child(n+7){
+    display: none;
+  }
+
+  .group[data-tiers=complete] .peer:checked ~ .lg\:group-data-\[tiers\=complete\]\:peer-checked\:\[\&\:nth-child\(n\+7\)\]\:block:nth-child(n+7){
+    display: block;
   }
 }
 
