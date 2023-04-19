@@ -1051,6 +1051,10 @@ video {
   margin-right: 1rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .line-clamp-4{
   overflow: hidden;
   display: -webkit-box;
@@ -1439,6 +1443,14 @@ video {
 
 .max-w-xs{
   max-width: 20rem;
+}
+
+.max-w-screen-2xl{
+  max-width: 1536px;
+}
+
+.max-w-\[1600px\]{
+  max-width: 1600px;
 }
 
 .flex-1{
@@ -2764,6 +2776,10 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pb-\[90px\]{
+  padding-bottom: 90px;
 }
 
 .text-left{
