@@ -1,18 +1,27 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .interactive_tab[aria-selected="true"] {
-  @apply 
-  [&>h2]:text-gray-600 [&>h3]:flex bg-blue-50/50;
+  @apply bg-blue-50/50 [&>h2]:text-gray-600 [&>h3]:flex;
 }
 
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 
-
-
-
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
