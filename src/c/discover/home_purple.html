@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Frame -->
+    <div class="flex flex-col">
+      <!-- TopNav -->
+      <div class="h-[60px] bg-white"></div>
+      <!-- main -->
+      <div class="flex flex-row">
+        <!-- sidenav -->
+        <div class="w-[88px] shrink-0 bg-white"></div>
+        <!-- content -->
+        <div>
+          <!-- Home Header -->
+          <div class="flex flex-col bg-[#402E7C] pt-16">
+            <!-- Home header container -->
+            <div class="mx-auto flex flex-col gap-10">
+              <h1 class="text-4xl font-normal text-white">
+                Descubra projetos incríveis no Catarse
+              </h1>
+              <!-- Carousel -->
+              <div
+                class="carousel-navigation relative -mb-24 flex h-min w-[90vw]">
+                <!-- Button reverse -->
+                <div
+                  class="carousel-reverse bg-gra to-60% absolute z-30 ml-4 flex h-full w-40 items-center justify-start text-center transition-all">
+                  <button
+                    class="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white/50 text-gray-900 transition-all hover:bg-gray-100">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6">
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <!-- carousel-navigation-inner -->
+                <div
+                  class="carousel-navigation-inner scrollbar-hide overflow-auto py-4">
+                  <div class="carousel-items-wrapper flex w-min flex-row gap-5">
+                    <!-- Category Livros -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Livros
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#562626] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_livro_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Quadrinhos -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Quadrinhos & Ilustrações
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#195627] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_quadrinhos_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Jogos -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Jogos
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#2F188D] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_jogos_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Podcast -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Podcasts & Jornalismo
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#264556] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_podcast_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Artes -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Artes & Fotografia
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#6B3333] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_artes_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Musica -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Música
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#5F1738] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_musica_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Musica -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Música
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#5F1738] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_musica_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Musica -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Música
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#5F1738] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_musica_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Musica -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Música
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#5F1738] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_musica_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Musica -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Música
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#5F1738] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_musica_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                    <!-- Category Musica -->
+                    <a
+                      href="#"
+                      class="relative h-[180px] w-[180px] shrink-0 overflow-hidden rounded-2xl [&>img]:hover:scale-110 [&>img]:hover:brightness-75">
+                      <p
+                        class="absolute z-20 p-4 text-2xl font-semibold text-white">
+                        Música
+                      </p>
+                      <div
+                        class="absolute z-10 h-full w-full bg-[#5F1738] opacity-70"></div>
+                      <img
+                        src="./assets/categoria_musica_bg.jpg"
+                        alt=""
+                        class="absolute -z-0 h-full w-full object-cover transition-all" />
+                    </a>
+                  </div>
+                </div>
+                <!-- Button forward -->
+                <div
+                  class="carousel-forward absolute right-0 z-30 mr-4 flex h-full w-40 items-center justify-end text-center transition-all">
+                  <button
+                    class="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-gray-900 transition-all hover:bg-gray-100">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Projects section -->
+          <section class="mt-24 bg-white py-14 px-10">
+            <div class="mx-auto">
+              <!-- Grid -->
+              <div
+                class="grid h-min w-full items-stretch gap-3 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4 2xl:grid-cols-4 2xl:gap-8">
+                <!-- Project card -->
+                <div class="rounded-lg border border-gray-100 bg-white shadow">
+                  <div class="flex h-full flex-col">
+                    <!-- poder usar midia como link -->
+                    <a
+                      class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                      href="#">
+                      <img src="./assets/projeto_1.jpg" />
+                    </a>
+                    <div class="flex flex-row items-center gap-4 px-4 py-6">
+                      <div class="flex flex-1 flex-col gap-0.5">
+                        <a
+                          class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                          href="#">
+                          Atalanta Fugiens
+                        </a>
+                        <div class="text-xs font-normal text-gray-500">
+                          por
+                          <a href="#" class="hover:underline">Pri Martinelli</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                      <a href="#"
+                        ><p class="text-xs font-normal text-gray-900">
+                          Minis digitais para For the Quest, com poses
+                          alternativas para cada personagem!
+                        </p></a
+                      >
+
+                      <!-- Info -->
+                      <div class="flex flex-col gap-2 pt-6">
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                        <!-- Stats -->
+                        <div class="flex flex-col gap-2 py-1">
+                          <p class="text-xs font-medium text-gray-600">
+                            <span class="text-sm font-bold">R$ 1.232,00 </span>
+                            arrecadados
+                          </p>
+                          <!-- Progress bar -->
+                          <div class="w-full">
+                            <div
+                              class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                              <div
+                                class="h-1.5 rounded-full bg-green-600"
+                                style="width: 50%"></div>
+                            </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                            <p class="text-xs font-medium text-gray-600">
+                              120% alcançados
+                            </p>
+                            <p class="text-xs font-medium text-gray-600">
+                              30 dias restantes
+                            </p>
+                          </div>
+                        </div>
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project card -->
+                <div class="rounded-lg border border-gray-100 bg-white shadow">
+                  <div class="flex h-full flex-col">
+                    <!-- poder usar midia como link -->
+                    <a
+                      class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                      href="#">
+                      <img src="./assets/projeto_1.jpg" />
+                    </a>
+                    <div class="flex flex-row items-center gap-4 px-4 py-6">
+                      <div class="flex flex-1 flex-col gap-0.5">
+                        <a
+                          class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                          href="#">
+                          Atalanta Fugiens
+                        </a>
+                        <div class="text-xs font-normal text-gray-500">
+                          por
+                          <a href="#" class="hover:underline">Pri Martinelli</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                      <a href="#"
+                        ><p class="text-xs font-normal text-gray-900">
+                          Minis digitais para For the Quest, com poses
+                          alternativas para cada personagem!
+                        </p></a
+                      >
+
+                      <!-- Info -->
+                      <div class="flex flex-col gap-2 pt-6">
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                        <!-- Stats -->
+                        <div class="flex flex-col gap-2 py-1">
+                          <p class="text-xs font-medium text-gray-600">
+                            <span class="text-sm font-bold">R$ 1.232,00 </span>
+                            arrecadados
+                          </p>
+                          <!-- Progress bar -->
+                          <div class="w-full">
+                            <div
+                              class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                              <div
+                                class="h-1.5 rounded-full bg-green-600"
+                                style="width: 50%"></div>
+                            </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                            <p class="text-xs font-medium text-gray-600">
+                              120% alcançados
+                            </p>
+                            <p class="text-xs font-medium text-gray-600">
+                              30 dias restantes
+                            </p>
+                          </div>
+                        </div>
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project card -->
+                <div class="rounded-lg border border-gray-100 bg-white shadow">
+                  <div class="flex h-full flex-col">
+                    <!-- poder usar midia como link -->
+                    <a
+                      class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                      href="#">
+                      <img src="./assets/projeto_1.jpg" />
+                    </a>
+                    <div class="flex flex-row items-center gap-4 px-4 py-6">
+                      <div class="flex flex-1 flex-col gap-0.5">
+                        <a
+                          class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                          href="#">
+                          Atalanta Fugiens
+                        </a>
+                        <div class="text-xs font-normal text-gray-500">
+                          por
+                          <a href="#" class="hover:underline">Pri Martinelli</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                      <a href="#"
+                        ><p class="text-xs font-normal text-gray-900">
+                          Minis digitais para For the Quest, com poses
+                          alternativas para cada personagem!
+                        </p></a
+                      >
+
+                      <!-- Info -->
+                      <div class="flex flex-col gap-2 pt-6">
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                        <!-- Stats -->
+                        <div class="flex flex-col gap-2 py-1">
+                          <p class="text-xs font-medium text-gray-600">
+                            <span class="text-sm font-bold">R$ 1.232,00 </span>
+                            arrecadados
+                          </p>
+                          <!-- Progress bar -->
+                          <div class="w-full">
+                            <div
+                              class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                              <div
+                                class="h-1.5 rounded-full bg-green-600"
+                                style="width: 50%"></div>
+                            </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                            <p class="text-xs font-medium text-gray-600">
+                              120% alcançados
+                            </p>
+                            <p class="text-xs font-medium text-gray-600">
+                              30 dias restantes
+                            </p>
+                          </div>
+                        </div>
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Project card -->
+                <div class="rounded-lg border border-gray-100 bg-white shadow">
+                  <div class="flex h-full flex-col">
+                    <!-- poder usar midia como link -->
+                    <a
+                      class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                      href="#">
+                      <img src="./assets/projeto_1.jpg" />
+                    </a>
+                    <div class="flex flex-row items-center gap-4 px-4 py-6">
+                      <div class="flex flex-1 flex-col gap-0.5">
+                        <a
+                          class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                          href="#">
+                          Atalanta Fugiens
+                        </a>
+                        <div class="text-xs font-normal text-gray-500">
+                          por
+                          <a href="#" class="hover:underline">Pri Martinelli</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="flex-1 px-4 pt-2 pb-3 last:pt-1 last:pb-6 first:last:pt-6">
+                      <a href="#"
+                        ><p class="text-xs font-normal text-gray-900">
+                          Minis digitais para For the Quest, com poses
+                          alternativas para cada personagem!
+                        </p></a
+                      >
+
+                      <!-- Info -->
+                      <div class="flex flex-col gap-2 pt-6">
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                        <!-- Stats -->
+                        <div class="flex flex-col gap-2 py-1">
+                          <p class="text-xs font-medium text-gray-600">
+                            <span class="text-sm font-bold">R$ 1.232,00 </span>
+                            arrecadados
+                          </p>
+                          <!-- Progress bar -->
+                          <div class="w-full">
+                            <div
+                              class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                              <div
+                                class="h-1.5 rounded-full bg-green-600"
+                                style="width: 50%"></div>
+                            </div>
+                          </div>
+                          <div class="flex flex-col gap-1">
+                            <p class="text-xs font-medium text-gray-600">
+                              120% alcançados
+                            </p>
+                            <p class="text-xs font-medium text-gray-600">
+                              30 dias restantes
+                            </p>
+                          </div>
+                        </div>
+                        <!-- divider  -->
+                        <div
+                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 before:bg-opacity-50 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100 after:bg-opacity-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const carouselNav = document.querySelector(".carousel-navigation");
+      const itemsWrapper = carouselNav.querySelector(".carousel-items-wrapper");
+      const innerNav = carouselNav.querySelector(".carousel-navigation-inner");
+      const reverseButton = carouselNav.querySelector(".carousel-reverse");
+      const forwardButton = carouselNav.querySelector(".carousel-forward");
+
+      function checkCarouselState() {
+        const isStart = innerNav.scrollLeft === 0;
+        const isEnd =
+          innerNav.scrollLeft ===
+          itemsWrapper.offsetWidth - innerNav.offsetWidth;
+
+        reverseButton.style.display = isStart ? "none" : "flex";
+        forwardButton.style.display = isEnd ? "none" : "flex";
+      }
+
+      window.addEventListener("load", checkCarouselState);
+      window.addEventListener("resize", checkCarouselState);
+
+      innerNav.addEventListener("scroll", checkCarouselState);
+
+      reverseButton.addEventListener("click", () => {
+        innerNav.scrollBy({ left: -innerNav.offsetWidth, behavior: "smooth" });
+      });
+
+      forwardButton.addEventListener("click", () => {
+        innerNav.scrollBy({ left: innerNav.offsetWidth, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
