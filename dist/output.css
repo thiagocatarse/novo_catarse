@@ -3676,6 +3676,14 @@ video {
   margin-bottom: 0px;
 }
 
+.first\:mr-4:first-child{
+  margin-right: 1rem;
+}
+
+.first\:ml-4:first-child{
+  margin-left: 1rem;
+}
+
 .first\:rounded-l-none:first-child{
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -3712,6 +3720,10 @@ video {
 
 .first\:pt-6:first-child{
   padding-top: 1.5rem;
+}
+
+.last\:mr-4:last-child{
+  margin-right: 1rem;
 }
 
 .last\:rounded-b-lg:last-child{
@@ -4602,6 +4614,11 @@ video {
     padding: 1rem;
   }
 
+  .max-lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .max-lg\:pb-1{
     padding-bottom: 0.25rem;
   }
@@ -5239,6 +5256,11 @@ video {
   .lg\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:pb-20{
