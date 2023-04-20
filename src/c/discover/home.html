@@ -228,25 +228,51 @@
               class="mx-auto flex flex-col gap-16 lg:max-w-[calc(100vw_-_160px)] xl:max-w-[calc(100vw_-_320px)]">
               <!-- Projects row -->
               <div class="flex flex-col gap-5">
-                <h2
-                  class="flex flex-row items-center gap-2 pl-2 text-2xl font-semibold">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M14.1084 2.44076C14.4408 2.52836 14.7192 2.75514 14.874 3.06354C15.4536 4.22394 15.8868 4.92838 16.3224 5.49958C16.764 6.07798 17.2296 6.55075 17.94 7.25995C19.5792 8.90035 20.4 11.052 20.4 13.2C20.4 15.348 19.5792 17.4996 17.94 19.14C14.6592 22.4196 9.3408 22.4196 6.06 19.14C4.4208 17.4996 3.6 15.348 3.6 13.2C3.6 11.052 4.4208 8.90035 6.06 7.25995C6.4032 6.91675 6.9192 6.81475 7.368 7.00075C7.8168 7.18555 8.1084 7.62359 8.1084 8.10839C8.1084 9.45239 8.1924 10.476 8.586 11.2932C8.802 11.742 9.13921 12.1812 9.72001 12.5736C9.85921 11.3004 10.1136 9.74878 10.4568 8.27758C10.7268 7.11838 11.0628 5.96157 11.4636 4.99677C11.664 4.51317 11.8908 4.05474 12.1476 3.65754C12.3972 3.27114 12.7188 2.8788 13.134 2.6016C13.4208 2.4108 13.776 2.35196 14.1084 2.44076ZM14.5452 18.1451C13.14 19.5515 10.86 19.5515 9.4548 18.1451C8.7516 17.4431 8.4 16.5216 8.4 15.6C8.4 15.6 9.4548 16.2 11.4 16.2C11.4 15 12 11.4 12.9 10.8C13.5 12 13.8432 12.3516 14.5452 13.0548C15.2484 13.7568 15.6 14.6784 15.6 15.6C15.6 16.5216 15.2484 17.4431 14.5452 18.1451Z"
-                      fill="#D3696B" />
-                  </svg>
-                  Em alta
-                </h2>
+                <!-- Projects row header -->
+                <div class="flex flex-row items-center justify-between gap-2">
+                  <!-- project row title -->
+
+                  <a href="#" class="hover:underline"
+                    ><h2
+                      class="flex flex-row items-center gap-2 pl-2 text-2xl font-semibold">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.1084 2.44076C14.4408 2.52836 14.7192 2.75514 14.874 3.06354C15.4536 4.22394 15.8868 4.92838 16.3224 5.49958C16.764 6.07798 17.2296 6.55075 17.94 7.25995C19.5792 8.90035 20.4 11.052 20.4 13.2C20.4 15.348 19.5792 17.4996 17.94 19.14C14.6592 22.4196 9.3408 22.4196 6.06 19.14C4.4208 17.4996 3.6 15.348 3.6 13.2C3.6 11.052 4.4208 8.90035 6.06 7.25995C6.4032 6.91675 6.9192 6.81475 7.368 7.00075C7.8168 7.18555 8.1084 7.62359 8.1084 8.10839C8.1084 9.45239 8.1924 10.476 8.586 11.2932C8.802 11.742 9.13921 12.1812 9.72001 12.5736C9.85921 11.3004 10.1136 9.74878 10.4568 8.27758C10.7268 7.11838 11.0628 5.96157 11.4636 4.99677C11.664 4.51317 11.8908 4.05474 12.1476 3.65754C12.3972 3.27114 12.7188 2.8788 13.134 2.6016C13.4208 2.4108 13.776 2.35196 14.1084 2.44076ZM14.5452 18.1451C13.14 19.5515 10.86 19.5515 9.4548 18.1451C8.7516 17.4431 8.4 16.5216 8.4 15.6C8.4 15.6 9.4548 16.2 11.4 16.2C11.4 15 12 11.4 12.9 10.8C13.5 12 13.8432 12.3516 14.5452 13.0548C15.2484 13.7568 15.6 14.6784 15.6 15.6C15.6 16.5216 15.2484 17.4431 14.5452 18.1451Z"
+                          fill="#D3696B" />
+                      </svg>
+                      Em alta
+                    </h2></a
+                  >
+
+                  <div class="right-0">
+                    <a
+                      href="#"
+                      class="flex flex-row items-center gap-2 text-base font-semibold text-gray-900 hover:underline"
+                      >Mostrar tudo
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="h-5 w-5">
+                        <path
+                          fill-rule="evenodd"
+                          d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
                 <!-- Row -->
                 <div
-                  class="flex flex-row items-stretch gap-3 pr-4 max-lg:w-screen max-lg:overflow-auto lg:grid lg:grid-cols-4 lg:gap-4 xl:gap-8 [&>*]:w-[calc(100vw_-_60px)] [&>*]:min-w-0 max-lg:[&>*]:shrink-0 sm:[&>*]:w-[380px] lg:[&>*]:w-full max-lg:[&>:first-child]:ml-4">
+                  class="flex flex-row items-stretch gap-3 max-lg:w-screen max-lg:overflow-auto max-lg:pr-4 lg:grid lg:grid-cols-4 lg:gap-4 xl:gap-8 [&>*]:w-[calc(100vw_-_60px)] [&>*]:min-w-0 max-lg:[&>*]:shrink-0 sm:[&>*]:w-[380px] lg:[&>*]:w-full max-lg:[&>:first-child]:ml-4">
                   <!-- Project card AON -->
                   <div
                     class="rounded-lg border border-gray-100 bg-white shadow">

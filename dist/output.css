@@ -4697,6 +4697,10 @@ video {
     padding-top: 0.75rem;
   }
 
+  .max-lg\:pr-4{
+    padding-right: 1rem;
+  }
+
   .max-lg\:text-center{
     text-align: center;
   }
