@@ -5799,6 +5799,10 @@ video {
   width: calc(100vw - 60px);
 }
 
+.\[\&\>\*\]\:min-w-0>*{
+  min-width: 0px;
+}
+
 .\[\&\>\*\]\:shrink-0>*{
   flex-shrink: 0;
 }
