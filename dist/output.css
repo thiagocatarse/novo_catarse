@@ -1219,6 +1219,10 @@ video {
   height: 60px;
 }
 
+.h-3\.5{
+  height: 0.875rem;
+}
+
 .max-h-96{
   max-height: 24rem;
 }
@@ -1381,6 +1385,19 @@ video {
   width: 90vw;
 }
 
+.w-3\.5{
+  width: 0.875rem;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-\[248px\]{
+  width: 248px;
+}
+
 .min-w-0{
   min-width: 0px;
 }
@@ -1451,6 +1468,36 @@ video {
 
 .max-w-\[1600px\]{
   max-width: 1600px;
+}
+
+.max-w-\[1200px\]{
+  max-width: 1200px;
+}
+
+.max-w-max{
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.max-w-fit{
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-prose{
+  max-width: 65ch;
+}
+
+.max-w-\[calc\(100vw_-_248px\)\]{
+  max-width: calc(100vw - 248px);
+}
+
+.max-w-\[calc\(100vw_-_200px\)\]{
+  max-width: calc(100vw - 200px);
+}
+
+.max-w-\[calc\(100vw_-_348px\)\]{
+  max-width: calc(100vw - 348px);
 }
 
 .flex-1{
@@ -1837,6 +1884,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -2309,6 +2362,16 @@ video {
   background-color: rgb(64 46 124 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#51357A\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 53 122 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#331d53\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 29 83 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/3006ae4499e622ad373a2639eda0e566\.png\'\)\]{
   background-image: url('https://cdn.zappy.app/3006ae4499e622ad373a2639eda0e566.png');
 }
@@ -2387,6 +2450,16 @@ video {
 
 .to-white{
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.to-\[\#51357A\]{
+  --tw-gradient-to: #51357A var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.to-\[\#331d53\]{
+  --tw-gradient-to: #331d53 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 
@@ -3354,6 +3427,12 @@ video {
   background-color: rgb(221 223 225 / var(--tw-bg-opacity));
 }
 
+.before\:bg-gray-50::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .before\:bg-opacity-50::before{
   content: var(--tw-content);
   --tw-bg-opacity: 0.5;
@@ -3528,6 +3607,12 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(221 223 225 / var(--tw-bg-opacity));
+}
+
+.after\:bg-gray-50::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
 }
 
 .after\:bg-opacity-50::after{
@@ -4927,6 +5012,10 @@ video {
     width: min-content;
   }
 
+  .lg\:w-\[88px\]{
+    width: 88px;
+  }
+
   .lg\:max-w-\[462px\]{
     max-width: 462px;
   }
@@ -4937,6 +5026,10 @@ video {
 
   .lg\:max-w-screen-xl{
     max-width: 1280px;
+  }
+
+  .lg\:max-w-\[calc\(100vw_-_348px\)\]{
+    max-width: calc(100vw - 348px);
   }
 
   .lg\:border-collapse{
@@ -5427,12 +5520,44 @@ video {
     width: 16rem;
   }
 
+  .xl\:w-\[248px\]{
+    width: 248px;
+  }
+
+  .xl\:w-\[220px\]{
+    width: 220px;
+  }
+
+  .xl\:w-\[240px\]{
+    width: 240px;
+  }
+
+  .xl\:w-\[320px\]{
+    width: 320px;
+  }
+
   .xl\:min-w-\[302px\]{
     min-width: 302px;
   }
 
   .xl\:max-w-\[402px\]{
     max-width: 402px;
+  }
+
+  .xl\:max-w-\[calc\(100vw_-_348px\)\]{
+    max-width: calc(100vw - 348px);
+  }
+
+  .xl\:max-w-\[calc\(100vw_-_280px\)\]{
+    max-width: calc(100vw - 280px);
+  }
+
+  .xl\:max-w-\[calc\(100vw_-_240px\)\]{
+    max-width: calc(100vw - 240px);
+  }
+
+  .xl\:max-w-\[calc\(100vw_-_320px\)\]{
+    max-width: calc(100vw - 320px);
   }
 
   .xl\:grid-cols-3{
@@ -5467,6 +5592,18 @@ video {
 }
 
 @media (min-width: 1536px){
+  .\32xl\:max-w-\[1600px\]{
+    max-width: 1600px;
+  }
+
+  .\32xl\:max-w-screen-xl{
+    max-width: 1280px;
+  }
+
+  .\32xl\:max-w-\[calc\(100vw_-_348px\)\]{
+    max-width: calc(100vw - 348px);
+  }
+
   .\32xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
