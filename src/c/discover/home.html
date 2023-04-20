@@ -29,7 +29,7 @@
               <div class="carousel-navigation relative flex h-min">
                 <!-- Button reverse -->
                 <div
-                  class="carousel-reverse absolute left-0 z-30 flex h-full w-40 items-center justify-start bg-gradient-to-l from-transparent to-[#331d53] to-60% text-center transition-all">
+                  class="carousel-reverse absolute left-0 z-30 hidden h-full w-40 items-center justify-start bg-gradient-to-l from-transparent to-[#331d53] to-60% text-center transition-all">
                   <button
                     class="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-gray-900 transition-all hover:bg-gray-100">
                     <svg
@@ -202,7 +202,7 @@
                 </div>
                 <!-- Button forward -->
                 <div
-                  class="carousel-forward absolute right-0 z-30 flex h-full w-40 items-center justify-end bg-gradient-to-r from-transparent to-[#331d53] to-60% text-center transition-all">
+                  class="carousel-forward absolute right-0 z-30 flex h-full w-40 items-center justify-end bg-gradient-to-r from-transparent to-[#331d53] to-60% text-center transition-all max-lg:hidden">
                   <button
                     class="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-gray-900 transition-all hover:bg-gray-100">
                     <svg
@@ -670,34 +670,43 @@
     </div>
 
     <script>
-      const carouselNav = document.querySelector(".carousel-navigation");
-      const itemsWrapper = carouselNav.querySelector(".carousel-items-wrapper");
-      const innerNav = carouselNav.querySelector(".carousel-navigation-inner");
-      const reverseButton = carouselNav.querySelector(".carousel-reverse");
-      const forwardButton = carouselNav.querySelector(".carousel-forward");
+      if (window.innerWidth > 1024) {
+        const carouselNav = document.querySelector(".carousel-navigation");
+        const itemsWrapper = carouselNav.querySelector(
+          ".carousel-items-wrapper"
+        );
+        const innerNav = carouselNav.querySelector(
+          ".carousel-navigation-inner"
+        );
+        const reverseButton = carouselNav.querySelector(".carousel-reverse");
+        const forwardButton = carouselNav.querySelector(".carousel-forward");
 
-      function checkCarouselState() {
-        const isStart = innerNav.scrollLeft === 0;
-        const isEnd =
-          innerNav.scrollLeft ===
-          itemsWrapper.offsetWidth - innerNav.offsetWidth;
+        function checkCarouselState() {
+          const isStart = innerNav.scrollLeft === 0;
+          const isEnd =
+            innerNav.scrollLeft ===
+            itemsWrapper.offsetWidth - innerNav.offsetWidth;
 
-        reverseButton.style.display = isStart ? "none" : "flex";
-        forwardButton.style.display = isEnd ? "none" : "flex";
+          reverseButton.style.display = isStart ? "none" : "flex";
+          forwardButton.style.display = isEnd ? "none" : "flex";
+        }
+
+        window.addEventListener("load", checkCarouselState);
+        window.addEventListener("resize", checkCarouselState);
+
+        innerNav.addEventListener("scroll", checkCarouselState);
+
+        reverseButton.addEventListener("click", () => {
+          innerNav.scrollBy({
+            left: -innerNav.offsetWidth,
+            behavior: "smooth",
+          });
+        });
+
+        forwardButton.addEventListener("click", () => {
+          innerNav.scrollBy({ left: innerNav.offsetWidth, behavior: "smooth" });
+        });
       }
-
-      window.addEventListener("load", checkCarouselState);
-      window.addEventListener("resize", checkCarouselState);
-
-      innerNav.addEventListener("scroll", checkCarouselState);
-
-      reverseButton.addEventListener("click", () => {
-        innerNav.scrollBy({ left: -innerNav.offsetWidth, behavior: "smooth" });
-      });
-
-      forwardButton.addEventListener("click", () => {
-        innerNav.scrollBy({ left: innerNav.offsetWidth, behavior: "smooth" });
-      });
     </script>
   </body>
 </html>
