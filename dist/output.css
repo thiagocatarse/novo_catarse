@@ -4794,6 +4794,14 @@ video {
     height: 24rem;
   }
 
+  .md\:h-\[180px\]{
+    height: 180px;
+  }
+
+  .md\:w-\[180px\]{
+    width: 180px;
+  }
+
   .md\:grid-flow-col{
     grid-auto-flow: column;
   }
