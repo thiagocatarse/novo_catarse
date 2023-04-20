@@ -5174,6 +5174,10 @@ video {
     gap: 2rem;
   }
 
+  .lg\:gap-5{
+    gap: 1.25rem;
+  }
+
   .lg\:divide-y > :not([hidden]) ~ :not([hidden]){
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -5239,6 +5243,10 @@ video {
 
   .lg\:p-6{
     padding: 1.5rem;
+  }
+
+  .lg\:p-4{
+    padding: 1rem;
   }
 
   .lg\:px-0{
@@ -5359,6 +5367,11 @@ video {
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:font-bold{
