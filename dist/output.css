@@ -4635,6 +4635,10 @@ video {
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .max-lg\:overflow-auto{
+    overflow: auto;
+  }
+
   .max-lg\:overflow-x-auto{
     overflow-x: auto;
   }
@@ -5807,7 +5811,49 @@ video {
   margin-right: 1rem;
 }
 
+@media not all and (min-width: 1024px){
+  .max-lg\:\[\&\>\*\]\:shrink-0>*{
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 640px){
+  .sm\:\[\&\>\*\]\:w-\[calc\(100vw_-_120px\)\]>*{
+    width: calc(100vw - 120px);
+  }
+
+  .sm\:\[\&\>\*\]\:w-\[380px\]>*{
+    width: 380px;
+  }
+
+  .\[\&\>\*\]\:sm\:w-\[380px\]>*{
+    width: 380px;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:\[\&\>\*\]\:w-\[calc\(100vw_-_60px\)\]>*{
+    width: calc(100vw - 60px);
+  }
+
+  .md\:\[\&\>\*\]\:w-\[380px\]>*{
+    width: 380px;
+  }
+}
+
 @media (min-width: 1024px){
+  .lg\:\[\&\>\*\]\:w-auto>*{
+    width: auto;
+  }
+
+  .lg\:\[\&\>\*\]\:flex-1>*{
+    flex: 1 1 0%;
+  }
+
+  .lg\:\[\&\>\*\]\:grow>*{
+    flex-grow: 1;
+  }
+
   .lg\:\[\&\>\*\]\:\[display\:revert\]>*{
     display: revert;
   }
