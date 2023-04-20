@@ -29,7 +29,7 @@
               <div class="carousel-navigation relative flex h-min">
                 <!-- Button reverse -->
                 <div
-                  class="carousel-reverse bg-gra absolute left-0 z-30 flex h-full w-40 items-center justify-start bg-gradient-to-l from-transparent to-[#331d53] to-60% text-center transition-all max-lg:hidden">
+                  class="carousel-reverse absolute left-0 z-30 flex h-full w-40 items-center justify-start bg-gradient-to-l from-transparent to-[#331d53] to-60% text-center transition-all">
                   <button
                     class="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-gray-900 transition-all hover:bg-gray-100">
                     <svg
@@ -202,7 +202,7 @@
                 </div>
                 <!-- Button forward -->
                 <div
-                  class="carousel-forward bg-gra absolute right-0 z-30 flex h-full w-40 items-center justify-end bg-gradient-to-r from-transparent to-[#331d53] to-60% text-center transition-all max-lg:hidden">
+                  class="carousel-forward absolute right-0 z-30 flex h-full w-40 items-center justify-end bg-gradient-to-r from-transparent to-[#331d53] to-60% text-center transition-all">
                   <button
                     class="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-gray-900 transition-all hover:bg-gray-100">
                     <svg
@@ -673,8 +673,6 @@
       const carouselNav = document.querySelector(".carousel-navigation");
       const itemsWrapper = carouselNav.querySelector(".carousel-items-wrapper");
       const innerNav = carouselNav.querySelector(".carousel-navigation-inner");
-      const gradientInitial = carouselNav.querySelector(".gradient-initial");
-      const gradientEnd = carouselNav.querySelector(".gradient-end");
       const reverseButton = carouselNav.querySelector(".carousel-reverse");
       const forwardButton = carouselNav.querySelector(".carousel-forward");
 
@@ -684,35 +682,22 @@
           innerNav.scrollLeft ===
           itemsWrapper.offsetWidth - innerNav.offsetWidth;
 
-        reverseButton.style.display = isStart ? "none" : "block";
-        gradientInitial.style.display = isStart ? "none" : "block";
-        forwardButton.style.display = isEnd ? "none" : "block";
-        gradientEnd.style.display = isEnd ? "none" : "block";
+        reverseButton.style.display = isStart ? "none" : "flex";
+        forwardButton.style.display = isEnd ? "none" : "flex";
       }
 
-      function setupCarousel() {
-        // Only set up the carousel if the screen is at least 768 pixels wide
-        if (window.matchMedia("(min-width: 1024px)").matches) {
-          checkCarouselState();
-          window.addEventListener("load", checkCarouselState);
-          window.addEventListener("resize", checkCarouselState);
-          innerNav.addEventListener("scroll", checkCarouselState);
-          reverseButton.addEventListener("click", () => {
-            innerNav.scrollBy({
-              left: -innerNav.offsetWidth,
-              behavior: "smooth",
-            });
-          });
-          forwardButton.addEventListener("click", () => {
-            innerNav.scrollBy({
-              left: innerNav.offsetWidth,
-              behavior: "smooth",
-            });
-          });
-        }
-      }
+      window.addEventListener("load", checkCarouselState);
+      window.addEventListener("resize", checkCarouselState);
 
-      setupCarousel();
+      innerNav.addEventListener("scroll", checkCarouselState);
+
+      reverseButton.addEventListener("click", () => {
+        innerNav.scrollBy({ left: -innerNav.offsetWidth, behavior: "smooth" });
+      });
+
+      forwardButton.addEventListener("click", () => {
+        innerNav.scrollBy({ left: innerNav.offsetWidth, behavior: "smooth" });
+      });
     </script>
   </body>
 </html>
