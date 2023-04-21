@@ -2408,6 +2408,11 @@ video {
   background-color: rgb(51 29 83 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#5e4496\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 68 150 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/3006ae4499e622ad373a2639eda0e566\.png\'\)\]{
   background-image: url('https://cdn.zappy.app/3006ae4499e622ad373a2639eda0e566.png');
 }
@@ -2496,6 +2501,11 @@ video {
 
 .to-\[\#331d53\]{
   --tw-gradient-to: #331d53 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.to-\[\#5e4496\]{
+  --tw-gradient-to: #5e4496 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 
