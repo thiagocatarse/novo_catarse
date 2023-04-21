@@ -5266,6 +5266,10 @@ video {
     gap: 2.5rem;
   }
 
+  .lg\:gap-16{
+    gap: 4rem;
+  }
+
   .lg\:divide-y > :not([hidden]) ~ :not([hidden]){
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
