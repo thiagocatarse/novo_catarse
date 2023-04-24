@@ -10,7 +10,7 @@
     <!-- Home Page - a atividade começa aqui -->
         <div class="flex-1 flex flex-col">
           <!-- HomeHeader -->
-          <div class="flex flex-col bg-[#5e4496] py-8 lg:px-10 lg:py-16 to-[#5e4496] from-transparent">
+          <div class="flex flex-col bg-[#5e4496] py-8 lg:px-10 lg:py-16 to-[#5e4496] from-transparent text-white">
             <!-- HomeHeaderContainer -->
             <div
               class="mx-auto flex w-screen flex-col gap-5 lg:max-w-[calc(100vw_-_160px)] lg:gap-10 xl:max-w-[calc(100vw_-_320px)]">
@@ -24,7 +24,7 @@
                 <div
                   class="carousel-reverse absolute left-0 z-30 hidden h-full w-32 items-center justify-start bg-gradient-to-l to-10% text-center transition-all">
                   <button
-                    class="flex h-10 w-10 flex-col items-center justify-center rounded-full text-white transition-all hover:bg-white/30">
+                    class="flex h-10 w-10 flex-col items-center justify-center rounded-full  transition-all hover:bg-white/30">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -198,7 +198,7 @@
                 <div
                   class="carousel-forward absolute right-0 z-30 flex h-full w-32 items-center justify-end bg-gradient-to-r to-10% text-center transition-all max-lg:hidden">
                   <button
-                    class="flex h-10 w-10 flex-col items-center justify-center rounded-full text-white transition-all hover:bg-white/30">
+                    class="flex h-10 w-10 flex-col items-center justify-center rounded-full  transition-all hover:bg-white/30">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -1822,46 +1822,54 @@
     
 
     <script>
-      if (window.innerWidth > 1024) {
-        const carouselNav = document.querySelector(".carousel-navigation");
-        const itemsWrapper = carouselNav.querySelector(
-          ".carousel-items-wrapper"
-        );
-        const innerNav = carouselNav.querySelector(
-          ".carousel-navigation-inner"
-        );
-        const reverseButton = carouselNav.querySelector(".carousel-reverse");
-        const forwardButton = carouselNav.querySelector(".carousel-forward");
+     // Check if the window width is greater than 1024 pixels
+if (window.innerWidth > 1024) {
+  // Select the necessary DOM elements
+  const carouselNav = document.querySelector(".carousel-navigation");
+  const itemsWrapper = carouselNav.querySelector(
+    ".carousel-items-wrapper"
+  );
+  const innerNav = carouselNav.querySelector(".carousel-navigation-inner");
+  const reverseButton = carouselNav.querySelector(".carousel-reverse");
+  const forwardButton = carouselNav.querySelector(".carousel-forward");
 
-        function checkCarouselState() {
-          const isStart = innerNav.scrollLeft === 0;
-          const isEnd =
-            innerNav.scrollLeft ===
-            itemsWrapper.offsetWidth - innerNav.offsetWidth;
+  // Function to check the state of the carousel and update the visibility of the navigation buttons
+  function checkCarouselState() {
+    const isStart = innerNav.scrollLeft === 0;
+    const isEnd =
+      innerNav.scrollLeft ===
+      itemsWrapper.offsetWidth - innerNav.offsetWidth;
 
-          reverseButton.style.display = isStart ? "none" : "flex";
-          forwardButton.style.display = isEnd ? "none" : "flex";
-        }
+    reverseButton.style.display = isStart ? "none" : "flex";
+    forwardButton.style.display = isEnd ? "none" : "flex";
+  }
 
-        window.addEventListener("load", checkCarouselState);
-        window.addEventListener("resize", checkCarouselState);
+  // Add event listeners to check the carousel state on load and resize
+  window.addEventListener("load", checkCarouselState);
+  window.addEventListener("resize", checkCarouselState);
 
-        innerNav.addEventListener("scroll", checkCarouselState);
+  // Add event listener to check the carousel state when it's scrolled
+  innerNav.addEventListener("scroll", checkCarouselState);
 
-        reverseButton.addEventListener("click", () => {
-          innerNav.scrollBy({
-            left: -180, // change the scroll distance to 100 pixels
-            behavior: "smooth",
-          });
-        });
+  // Add event listeners to scroll the carousel when the user clicks the forward or reverse button
+  reverseButton.addEventListener("click", () => {
+    const itemWidth = itemsWrapper.firstElementChild.offsetWidth;
+    innerNav.scrollBy({
+      left: -itemWidth,
+      behavior: "smooth",
+    });
+  });
 
-        forwardButton.addEventListener("click", () => {
-          innerNav.scrollBy({
-            left: 180, // change the scroll distance to 100 pixels
-            behavior: "smooth",
-          });
-        });
-      }
+  forwardButton.addEventListener("click", () => {
+    const itemWidth = itemsWrapper.firstElementChild.offsetWidth;
+    innerNav.scrollBy({
+      left: itemWidth,
+      behavior: "smooth",
+    });
+  });
+}
+
+
     </script>
   </body>
 </html>
