@@ -4633,6 +4633,11 @@ video {
     padding-right: 1rem;
   }
 
+  .max-lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .max-lg\:pb-1{
     padding-bottom: 0.25rem;
   }
