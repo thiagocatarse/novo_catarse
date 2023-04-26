@@ -9,7 +9,7 @@
   <body>
     <!-- Home Page - a atividade começa aqui -->
     <div class="flex flex-1 flex-col">
-      <!-- HomeHeader -->
+      <!-- DiscoverHeader -->
       <div class="sticky top-0">
         <!-- Categoria -->
         <div
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <!-- Tabs -->
+        <!-- Componente Tabs -->
         <div
           class="flex w-full flex-row items-center border-b border-gray-100 bg-white">
           <nav
@@ -50,7 +50,7 @@
           </nav>
         </div>
       </div>
-      <!-- Projects section -->
+      <!-- Projects List with pagination -->
       <section class="bg-white py-8 lg:py-14">
         <div
           class="mx-auto flex flex-col gap-14 max-lg:px-4 lg:max-w-[calc(100vw_-_160px)] lg:gap-20 xl:max-w-[calc(100vw_-_320px)]">
@@ -1086,56 +1086,5 @@
         </div>
       </section>
     </div>
-
-    <script>
-      // Check if the window width is greater than 1024 pixels
-      if (window.innerWidth > 1024) {
-        // Select the necessary DOM elements
-        const carouselNav = document.querySelector(".carousel-navigation");
-        const itemsWrapper = carouselNav.querySelector(
-          ".carousel-items-wrapper"
-        );
-        const innerNav = carouselNav.querySelector(
-          ".carousel-navigation-inner"
-        );
-        const reverseButton = carouselNav.querySelector(".carousel-reverse");
-        const forwardButton = carouselNav.querySelector(".carousel-forward");
-
-        // Function to check the state of the carousel and update the visibility of the navigation buttons
-        function checkCarouselState() {
-          const isStart = innerNav.scrollLeft === 0;
-          const isEnd =
-            innerNav.scrollLeft ===
-            itemsWrapper.offsetWidth - innerNav.offsetWidth;
-
-          reverseButton.style.display = isStart ? "none" : "flex";
-          forwardButton.style.display = isEnd ? "none" : "flex";
-        }
-
-        // Add event listeners to check the carousel state on load and resize
-        window.addEventListener("load", checkCarouselState);
-        window.addEventListener("resize", checkCarouselState);
-
-        // Add event listener to check the carousel state when it's scrolled
-        innerNav.addEventListener("scroll", checkCarouselState);
-
-        // Add event listeners to scroll the carousel when the user clicks the forward or reverse button
-        reverseButton.addEventListener("click", () => {
-          const itemWidth = itemsWrapper.firstElementChild.offsetWidth;
-          innerNav.scrollBy({
-            left: -itemWidth,
-            behavior: "smooth",
-          });
-        });
-
-        forwardButton.addEventListener("click", () => {
-          const itemWidth = itemsWrapper.firstElementChild.offsetWidth;
-          innerNav.scrollBy({
-            left: itemWidth,
-            behavior: "smooth",
-          });
-        });
-      }
-    </script>
   </body>
 </html>
