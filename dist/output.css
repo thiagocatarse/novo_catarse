@@ -2331,6 +2331,20 @@ video {
   background-color: rgb(64 113 136 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 132 139 / var(--tw-bg-opacity));
+}
+
+.bg-inherit{
+  background-color: inherit;
+}
+
+.bg-\[\#407155\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 113 85 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/3006ae4499e622ad373a2639eda0e566\.png\'\)\]{
   background-image: url('https://cdn.zappy.app/3006ae4499e622ad373a2639eda0e566.png');
 }
@@ -2418,6 +2432,11 @@ video {
 
 .to-\[\#407188\]{
   --tw-gradient-to: #407188 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.to-\[\#407155\]{
+  --tw-gradient-to: #407155 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 
@@ -2805,6 +2824,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-8{
+  padding-bottom: 2rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -3104,8 +3127,16 @@ video {
   background-blend-mode: multiply;
 }
 
+.bg-blend-darken{
+  background-blend-mode: darken;
+}
+
 .mix-blend-multiply{
   mix-blend-mode: multiply;
+}
+
+.mix-blend-plus-lighter{
+  mix-blend-mode: plus-lighter;
 }
 
 .shadow{
