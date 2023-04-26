@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Home Page - a atividade começa aqui -->
+    <div class="flex flex-1 flex-col">
+      <!-- HomeHeader -->
+      <div class="sticky top-0">
+        <!-- Categoria -->
+        <div
+          class="flex w-full flex-row items-center border-b border-gray-50 bg-white py-3">
+          <div
+            class="mx-auto flex w-full max-w-screen-xl items-center gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-6">
+            <h1 class="text-xl text-gray-800">Descubra</h1>
+
+            <!-- Select -->
+            <div class="flex flex-col gap-2">
+              <select
+                name=""
+                id=""
+                class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+                <option value="">Quadrinhos</option>
+                <option value="Red">red</option>
+                <option value="Green">green</option>
+                <option value="Blue">blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Tabs -->
+        <div
+          class="flex w-full flex-row items-center border-b border-gray-100 bg-white">
+          <nav
+            class="mx-auto flex w-full max-w-screen-xl gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-6"
+            aria-label="Tabs">
+            <a
+              href="#"
+              class="active whitespace-nowrap rounded-t-lg border-b-2 border-blue-600 p-4 text-blue-600">
+              Financiamento Coletivo
+            </a>
+            <a
+              class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600">
+              Clubes de Assinatura
+            </a>
+          </nav>
+        </div>
+      </div>
+      <!-- Projects section -->
+      <section class="bg-white py-8 lg:py-14">
+        <div
+          class="mx-auto flex flex-col gap-14 lg:max-w-[calc(100vw_-_160px)] lg:gap-20 xl:max-w-[calc(100vw_-_320px)]">
+          <!-- Grid > lg: 4 -->
+          <div
+            class="grid h-min w-full items-stretch gap-3 lg:grid-cols-4 lg:gap-6 xl:grid-cols-4 2xl:grid-cols-4 2xl:gap-8">
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project card AON -->
+            <div class="rounded-lg border border-gray-100 bg-white shadow">
+              <div class="flex h-full flex-col">
+                <!-- poder usar midia como link -->
+                <a
+                  class="flex-0 mb-6 aspect-video w-full overflow-hidden first:mb-0 first:rounded-tl-lg first:rounded-tr-lg [&>img]:h-full [&>img]:w-full [&>img]:object-cover"
+                  href="#">
+                  <img src="./assets/projeto_1.jpg" />
+                </a>
+                <div class="flex flex-row items-center gap-4 px-4 py-6">
+                  <div class="flex flex-1 flex-col gap-0.5">
+                    <a
+                      class="text-lg font-semibold leading-tight text-gray-800 hover:underline"
+                      href="#">
+                      Atalanta Fugiens
+                    </a>
+                    <div class="text-xs font-normal text-gray-500">
+                      por
+                      <a href="#" class="hover:underline">Pri Martinelli</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-1 flex-col gap-1 px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                  <a href="#" class="flex-1"
+                    ><p
+                      class="text-xs font-normal leading-relaxed text-gray-900">
+                      Minis digitais para For the Quest, com poses alternativas
+                      para cada personagem!
+                    </p></a
+                  >
+
+                  <!-- Info -->
+                  <div class="flex flex-col gap-2 pt-6">
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Stats -->
+                    <div class="flex flex-col gap-1.5 py-1">
+                      <p class="text-xs font-medium text-gray-600">
+                        <span class="text-sm font-bold">R$ 1.232,00 </span>
+                        arrecadados
+                      </p>
+                      <!-- Goal -->
+                      <div class="flex flex-col gap-1.5">
+                        <!-- Progress bar -->
+                        <div class="w-full">
+                          <div
+                            class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                            <div
+                              class="h-1.5 rounded-full bg-green-600"
+                              style="width: 50%"></div>
+                          </div>
+                        </div>
+                        <p class="text-xs font-medium text-gray-600">
+                          120% alcançados
+                        </p>
+                      </div>
+                      <p class="text-xs font-medium text-gray-600">
+                        30 dias restantes
+                      </p>
+                    </div>
+                    <!-- divider large - trocar cores  -->
+                    <div
+                      class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[2px] before:w-full before:flex-grow before:bg-gray-50 after:h-[2px] after:w-full after:flex-grow after:bg-gray-50"></div>
+                    <!-- Footer -->
+                    <div class="flex flex-row items-center gap-1">
+                      <!-- Categoria -->
+                      <div class="flex-1">
+                        <!-- Badge com icon e link - trocar tamanho do icone para 3.5 -->
+                        <a
+                          class="mr-2 inline-flex items-center rounded bg-gray-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-gray-800"
+                          href="#">
+                          <svg class="mr-1 h-3.5 w-3.5 fill-current">
+                            <path
+                              d="M1.40002 4.43769C1.40002 4.06639 1.54752 3.71029 1.81007 3.44774C2.07263 3.18519 2.42872 3.03769 2.80002 3.03769H7.70002C8.07133 3.03769 8.42742 3.18519 8.68997 3.44774C8.95253 3.71029 9.10002 4.06639 9.10002 4.43769V7.23769C9.10002 7.60899 8.95253 7.96509 8.68997 8.22764C8.42742 8.49019 8.07133 8.63769 7.70002 8.63769H6.30002L4.20002 10.7377V8.63769H2.80002C2.42872 8.63769 2.07263 8.49019 1.81007 8.22764C1.54752 7.96509 1.40002 7.60899 1.40002 7.23769V4.43769Z"
+                              fill="#3F4752" />
+                            <path
+                              d="M10.5 5.83768V7.23768C10.5 7.98028 10.205 8.69247 9.67987 9.21758C9.15477 9.74268 8.44258 10.0377 7.69997 10.0377H6.87957L5.64337 11.2746C5.83937 11.3789 6.06267 11.4377 6.29997 11.4377H7.69997L9.79997 13.5377V11.4377H11.2C11.5713 11.4377 11.9274 11.2902 12.1899 11.0276C12.4525 10.7651 12.6 10.409 12.6 10.0377V7.23768C12.6 6.86637 12.4525 6.51028 12.1899 6.24773C11.9274 5.98518 11.5713 5.83768 11.2 5.83768H10.5Z"
+                              fill="#202429" />
+                          </svg>
+
+                          Quadrinhos
+                        </a>
+                      </div>
+                      <!-- Modalidade -->
+                      <div class="h-4">
+                        <img
+                          src="./assets/badge_aon.svg"
+                          alt="Tudo ou Nada"
+                          class="h-full w-auto" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+
+          <nav class="flex justify-center">
+            <ul class="inline-flex -space-x-px">
+              <li>
+                <a
+                  href="#"
+                  class="ml-0 rounded-l-lg border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Previous</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-current="page"
+                  class="border border-gray-300 bg-blue-50 px-3 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                  >3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >4</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >5</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="rounded-r-lg border border-gray-300 bg-white px-3 py-2 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  >Next</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Check if the window width is greater than 1024 pixels
+      if (window.innerWidth > 1024) {
+        // Select the necessary DOM elements
+        const carouselNav = document.querySelector(".carousel-navigation");
+        const itemsWrapper = carouselNav.querySelector(
+          ".carousel-items-wrapper"
+        );
+        const innerNav = carouselNav.querySelector(
+          ".carousel-navigation-inner"
+        );
+        const reverseButton = carouselNav.querySelector(".carousel-reverse");
+        const forwardButton = carouselNav.querySelector(".carousel-forward");
+
+        // Function to check the state of the carousel and update the visibility of the navigation buttons
+        function checkCarouselState() {
+          const isStart = innerNav.scrollLeft === 0;
+          const isEnd =
+            innerNav.scrollLeft ===
+            itemsWrapper.offsetWidth - innerNav.offsetWidth;
+
+          reverseButton.style.display = isStart ? "none" : "flex";
+          forwardButton.style.display = isEnd ? "none" : "flex";
+        }
+
+        // Add event listeners to check the carousel state on load and resize
+        window.addEventListener("load", checkCarouselState);
+        window.addEventListener("resize", checkCarouselState);
+
+        // Add event listener to check the carousel state when it's scrolled
+        innerNav.addEventListener("scroll", checkCarouselState);
+
+        // Add event listeners to scroll the carousel when the user clicks the forward or reverse button
+        reverseButton.addEventListener("click", () => {
+          const itemWidth = itemsWrapper.firstElementChild.offsetWidth;
+          innerNav.scrollBy({
+            left: -itemWidth,
+            behavior: "smooth",
+          });
+        });
+
+        forwardButton.addEventListener("click", () => {
+          const itemWidth = itemsWrapper.firstElementChild.offsetWidth;
+          innerNav.scrollBy({
+            left: itemWidth,
+            behavior: "smooth",
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

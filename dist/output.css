@@ -2345,6 +2345,11 @@ video {
   background-color: rgb(64 113 85 / var(--tw-bg-opacity));
 }
 
+.bg-purple-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 7 100 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/3006ae4499e622ad373a2639eda0e566\.png\'\)\]{
   background-image: url('https://cdn.zappy.app/3006ae4499e622ad373a2639eda0e566.png');
 }
@@ -2670,6 +2675,11 @@ video {
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-0{
@@ -3087,6 +3097,11 @@ video {
 .text-yellow-800{
   --tw-text-opacity: 1;
   color: rgb(133 77 14 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3883,6 +3898,11 @@ video {
   background-color: rgb(32 36 41 / 0.5);
 }
 
+.hover\:bg-blue-100:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 232 241 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-600:hover{
   --tw-text-opacity: 1;
   color: rgb(49 122 175 / var(--tw-text-opacity));
@@ -3901,6 +3921,11 @@ video {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(41 102 146 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -4501,6 +4526,11 @@ video {
   .dark\:hover\:text-gray-300:hover{
     --tw-text-opacity: 1;
     color: rgb(158 162 168 / var(--tw-text-opacity));
+  }
+
+  .dark\:hover\:text-white:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .dark\:focus\:ring-blue-600:focus{
