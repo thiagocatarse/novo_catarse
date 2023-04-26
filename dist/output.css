@@ -5727,6 +5727,12 @@ video {
   display: flex;
 }
 
+@media not all and (min-width: 1024px){
+  .max-lg\:\[\&\>\:last-child\]\:mr-4>:last-child{
+    margin-right: 1rem;
+  }
+}
+
 .\[\&\>_\.handle\]\:invisible> .handle{
   visibility: hidden;
 }
