@@ -1697,6 +1697,10 @@ video {
   flex-wrap: wrap;
 }
 
+.flex-nowrap{
+  flex-wrap: nowrap;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -5685,6 +5689,10 @@ video {
   margin-left: 1.5rem;
 }
 
+.\[\&\>\:first-child\]\:ml-4>:first-child{
+  margin-left: 1rem;
+}
+
 @media not all and (min-width: 1024px){
   .max-lg\:\[\&\>\:first-child\]\:ml-4>:first-child{
     margin-left: 1rem;
@@ -5697,6 +5705,10 @@ video {
 
 .\[\&\>\:last-child\]\:invisible>:last-child{
   visibility: hidden;
+}
+
+.\[\&\>\:last-child\]\:mr-4>:last-child{
+  margin-right: 1rem;
 }
 
 .peer:checked ~ .peer-checked\:\[\&\>\:last-child\]\:block>:last-child{
