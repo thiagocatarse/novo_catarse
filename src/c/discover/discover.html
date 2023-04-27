@@ -9,45 +9,79 @@
   <body>
     <!-- Home Page - a atividade começa aqui -->
     <div class="flex flex-1 flex-col">
-      <!-- DiscoverHeader -->
-      <div class="sticky top-0">
-        <!-- Categoria -->
+      <!-- Categoria -->
+      <div class="flex w-full flex-row items-center bg-[#5e4496] py-8">
         <div
-          class="flex w-full flex-row items-center border-b border-gray-50 bg-white py-3">
-          <div
-            class="mx-auto flex w-full max-w-screen-xl items-center gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-6">
-            <h1 class="text-xl text-gray-800">Descubra</h1>
+          class="mx-auto flex w-full max-w-screen-2xl items-center gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-900 md:gap-6">
+          <h1 class="text-xl text-white">Descubra</h1>
 
-            <!-- Select -->
-            <div class="flex flex-col gap-2">
-              <select
-                name=""
-                id=""
-                class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
-                <option value="">Quadrinhos</option>
-                <option value="Red">red</option>
-                <option value="Green">green</option>
-                <option value="Blue">blue</option>
-              </select>
-            </div>
+          <!-- Select -->
+          <div class="flex flex-col gap-2">
+            <select
+              name=""
+              id=""
+              class="block w-full rounded-full border border-white/50 bg-inherit px-3 py-2 text-xl text-white outline-none transition-all duration-150 ease-in-out hover:border-white focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+              <option value="">Quadrinhos</option>
+              <option value="Red">Jogos</option>
+              <option value="Green">Literatura</option>
+              <option value="Blue">Artes</option>
+            </select>
           </div>
         </div>
-        <!-- Componente Tabs -->
-        <div
-          class="flex w-full flex-row items-center border-b border-gray-100 bg-white">
-          <nav
-            class="mx-auto flex w-full max-w-screen-xl gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-6"
-            aria-label="Tabs">
+      </div>
+      <!-- Componente Tabs -->
+      <div
+        class="flex w-full flex-row items-center border-b border-gray-100 bg-white">
+        <nav
+          class="mx-auto flex w-full max-w-screen-2xl gap-2 overflow-x-auto px-3 text-center text-sm font-semibold text-gray-500 md:gap-6"
+          aria-label="Tabs">
+          <a
+            href="#"
+            class="active whitespace-nowrap rounded-t-lg border-b-2 border-blue-600 py-4 text-blue-600">
+            Financiamento Coletivo
+          </a>
+          <a
+            class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent py-4 hover:border-gray-300 hover:text-gray-600">
+            Clubes de Assinatura
+          </a>
+        </nav>
+      </div>
+      <!-- DiscoverHeader -->
+      <div class="sticky top-0">
+        <!-- Pills -->
+        <div class="flex w-full flex-row items-center bg-white py-4">
+          <div
+            class="mx-auto flex w-full max-w-screen-2xl items-center gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-3">
+            <!-- Large clickable -->
             <a
               href="#"
-              class="active whitespace-nowrap rounded-t-lg border-b-2 border-blue-600 p-4 text-blue-600">
-              Financiamento Coletivo
+              class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 align-middle text-sm font-medium text-white transition-all hover:bg-gray-200/50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                  fill-rule="evenodd"
+                  d="M13.5 4.938a7 7 0 11-9.006 1.737c.202-.257.59-.218.793.039.278.352.594.672.943.954.332.269.786-.049.773-.476a5.977 5.977 0 01.572-2.759 6.026 6.026 0 012.486-2.665c.247-.14.55-.016.677.238A6.967 6.967 0 0013.5 4.938zM14 12a4 4 0 01-4 4c-1.913 0-3.52-1.398-3.91-3.182-.093-.429.44-.643.814-.413a4.043 4.043 0 001.601.564c.303.038.531-.24.51-.544a5.975 5.975 0 011.315-4.192.447.447 0 01.431-.16A4.001 4.001 0 0114 12z"
+                  clip-rule="evenodd" />
+              </svg>
+
+              Em alta
             </a>
+            <!-- Large clickable -->
             <a
-              class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600">
-              Clubes de Assinatura
+              href="#"
+              class="inline-flex items-center rounded-full bg-gray-100/50 px-4 py-2 align-middle text-sm font-medium text-gray-800 transition-all hover:bg-gray-200/50">
+              Recém-lançado
             </a>
-          </nav>
+            <!-- Large clickable -->
+            <a
+              href="#"
+              class="inline-flex items-center rounded-full bg-gray-100/50 px-4 py-2 align-middle text-sm font-medium text-gray-800 transition-all hover:bg-gray-200/50">
+              Em breve no Catarse
+            </a>
+          </div>
         </div>
       </div>
       <!-- Projects List with pagination -->

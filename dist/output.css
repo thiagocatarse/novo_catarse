@@ -1448,6 +1448,10 @@ video {
   max-width: 1536px;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -2100,6 +2104,15 @@ video {
   border-color: transparent;
 }
 
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-white\/50{
+  border-color: rgb(255 255 255 / 0.5);
+}
+
 .border-b-gray-100\/50{
   border-bottom-color: rgb(221 223 225 / 0.5);
 }
@@ -2352,6 +2365,30 @@ video {
 .bg-purple-950{
   --tw-bg-opacity: 1;
   background-color: rgb(59 7 100 / var(--tw-bg-opacity));
+}
+
+.bg-purple-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100\/50{
+  background-color: rgb(221 223 225 / 0.5);
+}
+
+.bg-blue-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 61 88 / var(--tw-bg-opacity));
+}
+
+.bg-blue-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 81 117 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 122 175 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/cdn\.zappy\.app\/3006ae4499e622ad373a2639eda0e566\.png\'\)\]{
@@ -3150,6 +3187,10 @@ video {
   background-blend-mode: darken;
 }
 
+.bg-blend-difference{
+  background-blend-mode: difference;
+}
+
 .mix-blend-multiply{
   mix-blend-mode: multiply;
 }
@@ -3827,6 +3868,11 @@ video {
   border-color: rgb(54 112 0 / var(--tw-border-opacity));
 }
 
+.hover\:border-white:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#F8F8F826\]:hover{
   background-color: #F8F8F826;
 }
@@ -3905,6 +3951,20 @@ video {
 .hover\:bg-blue-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(219 232 241 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 210 228 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 192 196 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200\/50:hover{
+  background-color: rgb(190 192 196 / 0.5);
 }
 
 .hover\:text-blue-600:hover{
@@ -4847,6 +4907,10 @@ video {
 
   .md\:gap-6{
     gap: 1.5rem;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
   }
 
   .md\:p-8{
