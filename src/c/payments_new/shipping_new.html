@@ -6,7 +6,7 @@
     <link href="../../../dist/output.css" rel="stylesheet" />
   </head>
 
-  <body class="overflow-x-hidden">
+  <body>
     <div class="flex flex-col">
       <!-- Header -->
       <div
@@ -23,7 +23,7 @@
           class="relative mx-auto flex w-full max-w-5xl flex-col-reverse lg:flex-row lg:items-start lg:gap-12">
           <!-- cart -->
           <div
-            class="z-10 flex flex-col gap-8 bg-white max-lg:p-4 max-lg:pb-36 lg:w-8/12 lg:pt-8 lg:pb-20">
+            class="z-10 flex flex-col gap-8 bg-white max-lg:p-4 max-lg:pb-36 lg:w-8/12 lg:pb-20 lg:pt-8">
             <!-- Breadcrum -->
             <div class="flex flex-row items-center gap-2">
               <!-- Step visited -->
@@ -128,7 +128,7 @@
             </div>
             <!-- Steps Completed -->
             <div
-              class="bg flex flex-row gap-2 rounded-lg border border-gray-100 bg-white py-2 px-4">
+              class="bg flex flex-row gap-2 rounded-lg border border-gray-100 bg-white px-4 py-2">
               <svg
                 width="16"
                 height="16"
@@ -149,53 +149,7 @@
                 >Mudar</a
               >
             </div>
-            <!-- Form de Contato -->
-            <div class="flex flex-col gap-7">
-              <div class="flex flex-row gap-6">
-                <div class="flex flex-col gap-2">
-                  <h2 class="text-lg font-semibold text-gray-800">
-                    Informações de contato
-                  </h2>
-                </div>
-              </div>
-              <!-- Nome -->
-              <div class="flex flex-col gap-2">
-                <div class="flex">
-                  <label
-                    for="preview-input"
-                    class="text-sm font-medium text-gray-900"
-                    >Nome completo</label
-                  >
-                </div>
 
-                <div class="flex w-full rounded-md shadow-sm">
-                  <input class="block w-full rounded-md border border-gray-300
-                  bg-white p-3 text-sm text-gray-900 placeholder-gray-300
-                  outline-none transition-all duration-150 ease-in-out
-                  hover:border-gray-600 focus:border-blue-700 focus:outline-4
-                  focus:outline-offset-0 focus:outline-blue-100
-                  focus:ring-blue-500" id="preview-input" type="text" /
-                  autofocus>
-                </div>
-              </div>
-              <!-- Documento -->
-              <div class="flex flex-col gap-2">
-                <div class="flex">
-                  <label
-                    for="preview-input"
-                    class="text-sm font-medium text-gray-900"
-                    >Documento (CPF / CNPJ)</label
-                  >
-                </div>
-
-                <div class="flex w-full rounded-md shadow-sm">
-                  <input
-                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
-                    id="preview-input"
-                    type="text" />
-                </div>
-              </div>
-            </div>
             <!-- Form de Endereço -->
             <div class="flex flex-col gap-7">
               <div class="flex flex-row gap-6">
@@ -391,6 +345,31 @@
                     type="text" />
                 </div>
               </div>
+              <!-- Endereço padrão -->
+              <div>
+                <div class="flex">
+                  <label
+                    class="relative inline-flex cursor-pointer gap-2"
+                    for="address_default">
+                    <input
+                      type="hidden"
+                      name="address[default]"
+                      value="0"
+                      autocomplete="off" />
+                    <input
+                      type="checkbox"
+                      name="address[default]"
+                      id="address_default"
+                      value="1"
+                      class="peer sr-only" />
+                    <div
+                      class="peer h-6 w-11 shrink-0 rounded-full bg-gray-200 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 peer-disabled:cursor-not-allowed"></div>
+                    <span class="text-sm font-medium text-gray-900"
+                      >Endereço padrão</span
+                    >
+                  </label>
+                </div>
+              </div>
             </div>
             <!-- Footer Action -->
             <div
@@ -405,7 +384,7 @@
                   <a
                     href="./method.html"
                     type="submit"
-                    class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 py-3.5 px-6 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                    class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 px-6 py-3.5 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
                     Continuar para entrega
                   </a>
                 </div>

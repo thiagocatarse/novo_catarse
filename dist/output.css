@@ -3576,6 +3576,11 @@ video {
   content: var(--tw-content);
 }
 
+.after\:content-\[\'\'\]::after{
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .first\:mb-0:first-child{
   margin-bottom: 0px;
 }
@@ -4251,6 +4256,10 @@ video {
 .peer:focus ~ .peer-focus\:ring-blue-300{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(151 188 215 / var(--tw-ring-opacity));
+}
+
+.peer:disabled ~ .peer-disabled\:cursor-not-allowed{
+  cursor: not-allowed;
 }
 
 .data-\[theme\=dark\]\:text-white[data-theme=dark]{
