@@ -5266,6 +5266,11 @@ video {
     padding-bottom: 1.5rem;
   }
 
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .lg\:pb-12{
     padding-bottom: 3rem;
   }
@@ -5688,6 +5693,10 @@ video {
   margin-left: 1.5rem;
 }
 
+.\[\&\>\:first-child\]\:ml-2>:first-child{
+  margin-left: 0.5rem;
+}
+
 @media not all and (min-width: 1024px){
   .max-lg\:\[\&\>\:first-child\]\:ml-4>:first-child{
     margin-left: 1rem;
@@ -5700,6 +5709,10 @@ video {
 
 .\[\&\>\:last-child\]\:invisible>:last-child{
   visibility: hidden;
+}
+
+.\[\&\>\:last-child\]\:mr-2>:last-child{
+  margin-right: 0.5rem;
 }
 
 .peer:checked ~ .peer-checked\:\[\&\>\:last-child\]\:block>:last-child{
@@ -5736,6 +5749,10 @@ video {
   .max-lg\:\[\&\>button\]\:w-full>button{
     width: 100%;
   }
+}
+
+.\[\&\>first-child\]\:ml-2>first-child{
+  margin-left: 0.5rem;
 }
 
 .\[\&\>h2\]\:text-blue-600>h2{
