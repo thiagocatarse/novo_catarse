@@ -2106,6 +2106,15 @@ video {
   border-color: rgb(126 132 139 / var(--tw-border-opacity));
 }
 
+.border-blue-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(41 102 146 / var(--tw-border-opacity));
+}
+
+.border-gray-100\/50{
+  border-color: rgb(221 223 225 / 0.5);
+}
+
 .border-b-gray-100\/50{
   border-bottom-color: rgb(221 223 225 / 0.5);
 }
@@ -3826,6 +3835,11 @@ video {
 .hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:border-blue-700:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(41 102 146 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#F8F8F826\]:hover{
