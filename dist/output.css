@@ -3551,6 +3551,11 @@ video {
   transition-duration: 150ms;
 }
 
+.after\:content-\[\'\'\]::after{
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .after\:content-\[\'\:\'\]::after{
   --tw-content: ':';
   content: var(--tw-content);
@@ -3573,11 +3578,6 @@ video {
 
 .after\:content-\[\'s\'\]::after{
   --tw-content: 's';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'\'\]::after{
-  --tw-content: '';
   content: var(--tw-content);
 }
 
