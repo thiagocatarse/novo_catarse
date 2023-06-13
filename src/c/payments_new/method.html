@@ -194,82 +194,93 @@
                   </h2>
                 </div>
               </div>
-              <!-- seção com form -->
-              <div class="flex flex-col gap-4">
-                <!-- Método de entrega -->
-                <form class="flex w-full flex-1 flex-col gap-2">
-                  <!-- opção: Transportadora -->
-                  <div class="group relative flex-1 items-center">
-                    <!-- input radio com posição absoluta -->
-                    <input
-                      type="radio"
-                      name="addresses"
-                      value="default"
-                      id="transportadora"
-                      class="peer absolute bottom-0 left-4 top-0 m-auto h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
-                      checked />
+              <div class="flex flex-col gap-10">
+                <!-- Form project -->
+                <div class="flex flex-col gap-4">
+                  <!-- Método de entrega -->
+                  <h3 class="flex flex-row gap-2 text-sm font-medium">
+                    <img
+                      src="https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/161924/project_thumb_large_27c3072a-98a7-4a6a-9f86-0c604ba14b66.png"
+                      alt=""
+                      class="aspect-video w-10 rounded-sm" />
+                    Tormenta 20
+                  </h3>
+                  <form class="flex w-full flex-1 flex-col gap-2">
+                    <!-- opção: Transportadora -->
+                    <div class="group relative flex-1 items-center">
+                      <!-- input radio com posição absoluta -->
+                      <input
+                        type="radio"
+                        name="addresses"
+                        value="default"
+                        id="transportadora"
+                        class="peer absolute bottom-0 left-4 top-0 m-auto h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
+                        checked />
 
-                    <div
-                      class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md">
-                      <label
-                        for="transportadora"
-                        class="flex cursor-pointer flex-row items-center gap-4 px-3 py-3 pl-10">
-                        <div class="flex flex-1 flex-col">
-                          <div class="flex w-full flex-row">
-                            <p class="flex-1 text-sm font-medium text-gray-900">
-                              Entregue em casa
-                            </p>
-                            <div class="flex flex-col items-end">
-                              <p class="text-sm font-medium text-gray-900">
-                                R$10
+                      <div
+                        class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md">
+                        <label
+                          for="transportadora"
+                          class="flex cursor-pointer flex-row items-center gap-4 px-3 py-3 pl-10">
+                          <div class="flex flex-1 flex-col">
+                            <div class="flex w-full flex-row">
+                              <p
+                                class="flex-1 text-sm font-medium text-gray-900">
+                                Entregue em casa
                               </p>
+                              <div class="flex flex-col items-end">
+                                <p class="text-sm font-medium text-gray-900">
+                                  R$10
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Disclaimer -->
+                            <div class="pt-1 text-xs text-gray-500">
+                              Envio previsto em Mai/23
                             </div>
                           </div>
-                          <!-- Disclaimer -->
-                          <div class="pt-1 text-xs text-gray-500">
-                            Envio previsto em Mai/23
-                          </div>
-                        </div>
-                      </label>
+                        </label>
+                      </div>
                     </div>
-                  </div>
-                  <!-- opção: retirada -->
-                  <div class="group relative flex-1 items-center">
-                    <!-- input radio com posição absoluta -->
-                    <input
-                      type="radio"
-                      name="addresses"
-                      value="default"
-                      id="retirada"
-                      class="peer absolute bottom-0 left-4 top-0 m-auto h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
+                    <!-- opção: retirada -->
+                    <div class="group relative flex-1 items-center">
+                      <!-- input radio com posição absoluta -->
+                      <input
+                        type="radio"
+                        name="addresses"
+                        value="default"
+                        id="retirada"
+                        class="peer absolute bottom-0 left-4 top-0 m-auto h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
 
-                    <div
-                      class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md">
-                      <label
-                        for="retirada"
-                        class="flex cursor-pointer flex-row items-center gap-4 px-3 py-3 pl-10">
-                        <div class="flex flex-1 flex-col">
-                          <div class="flex w-full flex-row">
-                            <p class="flex-1 text-sm font-medium text-gray-900">
-                              Retirada em São Paulo
-                            </p>
-                            <div class="flex flex-col items-end">
-                              <p class="text-sm font-medium text-gray-900">
-                                R$0
+                      <div
+                        class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md">
+                        <label
+                          for="retirada"
+                          class="flex cursor-pointer flex-row items-center gap-4 px-3 py-3 pl-10">
+                          <div class="flex flex-1 flex-col">
+                            <div class="flex w-full flex-row">
+                              <p
+                                class="flex-1 text-sm font-medium text-gray-900">
+                                Retirada em São Paulo
                               </p>
+                              <div class="flex flex-col items-end">
+                                <p class="text-sm font-medium text-gray-900">
+                                  R$0
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Disclaimer -->
+                            <div class="pt-1 text-xs text-gray-500">
+                              Retirada prevista em Mai/23, em São Paulo - SP.
+                              Você precisará ir a local ainda a ser definido
+                              para coletar a recompensa.
                             </div>
                           </div>
-                          <!-- Disclaimer -->
-                          <div class="pt-1 text-xs text-gray-500">
-                            Retirada prevista em Mai/23, em São Paulo - SP. Você
-                            precisará ir a local ainda a ser definido para
-                            coletar a recompensa.
-                          </div>
-                        </div>
-                      </label>
+                        </label>
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
 
