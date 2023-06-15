@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div class="flex flex-col">
+      <!-- Header -->
+      <div
+        class="flex w-full flex-col items-center border-b border-b-gray-50 p-4">
+        <div class="flex w-full max-w-5xl flex-col items-stretch justify-start">
+          <img
+            src="../../assets/Logo_Text.svg"
+            alt="Logo do Catarse"
+            class="w-24" />
+        </div>
+      </div>
+      <section class="flex min-h-screen flex-col lg:flex-row">
+        <div
+          class="relative mx-auto flex w-full max-w-5xl flex-col-reverse lg:flex-row lg:items-start lg:gap-12">
+          <!-- cart -->
+          <div
+            class="z-10 flex flex-col gap-8 bg-white max-lg:p-4 max-lg:pb-36 lg:w-8/12 lg:pb-20 lg:pt-8">
+            <!-- Breadcrum -->
+            <div class="flex flex-row items-center gap-2">
+              <!-- Step visited -->
+              <a
+                class="group flex flex-row items-center gap-2"
+                href="./cart.html">
+                <!-- Order Badge -->
+                <!-- div
+                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50/50 text-[10px] font-semibold leading-none text-blue-300">
+                          1
+                        </!-->
+                <!-- Step Title -->
+                <div class="text-xs font-semibold leading-none text-blue-200">
+                  Sacola
+                </div>
+                <!-- Step Divider -->
+                <div class="text-gray-100 group-last:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    class="h-5 w-5 fill-current">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Step visited -->
+              <a
+                class="group flex flex-row items-center gap-2"
+                href="./shipping_2.html">
+                <!-- Order Badge -->
+                <!-- div
+                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50/50 text-[10px] font-semibold leading-none text-blue-300">
+                          1
+                        </!-->
+                <!-- Step Title -->
+                <div class="text-xs font-semibold leading-none text-blue-200">
+                  Informações
+                </div>
+                <!-- Step Divider -->
+                <div class="text-gray-100 group-last:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    class="h-5 w-5 fill-current">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Step visited -->
+              <a
+                class="group flex flex-row items-center gap-2"
+                href="./method.html">
+                <!-- Order Badge -->
+                <!-- div
+                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50/50 text-[10px] font-semibold leading-none text-blue-300">
+                          1
+                        </!-->
+                <!-- Step Title -->
+                <div class="text-xs font-semibold leading-none text-blue-200">
+                  Entrega
+                </div>
+                <!-- Step Divider -->
+                <div class="text-gray-100 group-last:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    class="h-5 w-5 fill-current">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Step active -->
+              <a class="group flex flex-row items-center gap-2">
+                <!-- Order Badge -->
+                <!-- div
+                          class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-50 text-[10px] font-semibold leading-none text-blue-800">
+                          2
+                        </!-->
+                <!-- Step Title -->
+                <div class="text-xs font-semibold leading-none text-blue-800">
+                  Pagamento
+                </div>
+                <!-- Step Divider -->
+                <div class="text-gray-100 group-last:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    class="h-5 w-5 fill-current">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <!-- Steps Completed -->
+            <div
+              class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white px-4 py-2">
+              <!-- User -->
+              <div
+                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.34389 6.14194C8.98758 6.49826 8.5043 6.69844 8.00039 6.69844C7.49648 6.69844 7.01321 6.49826 6.65689 6.14194C6.30057 5.78562 6.10039 5.30235 6.10039 4.79844C6.10039 4.29453 6.30057 3.81125 6.65689 3.45493C7.01321 3.09862 7.49648 2.89844 8.00039 2.89844C8.5043 2.89844 8.98758 3.09862 9.34389 3.45493C9.70021 3.81125 9.90039 4.29453 9.90039 4.79844C9.90039 5.30235 9.70021 5.78562 9.34389 6.14194ZM2.92496 13.8984C2.97404 13.4002 3.09632 12.911 3.28861 12.4468C3.5449 11.828 3.92057 11.2658 4.39415 10.7922C4.86772 10.3186 5.42994 9.94295 6.04871 9.68665C6.66747 9.43035 7.33065 9.29844 8.00039 9.29844C8.67013 9.29844 9.33332 9.43035 9.95208 9.68665C10.5708 9.94295 11.1331 10.3186 11.6066 10.7922C12.0802 11.2658 12.4559 11.828 12.7122 12.4468C12.9045 12.911 13.0267 13.4002 13.0758 13.8984H2.92496Z"
+                    fill="#BEC0C4"
+                    stroke="#BEC0C4" />
+                </svg>
+                <p class="flex-1 text-xs font-normal text-gray-600">
+                  thiago@catarse.me
+                </p>
+                <a
+                  href=""
+                  class="text-xs font-normal text-gray-400 hover:text-gray-600"
+                  >Mudar</a
+                >
+              </div>
+              <!-- Entrega -->
+              <div
+                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.7505 15.1479L7.75274 15.149C7.91044 15.2176 7.99844 15.2016 7.99844 15.2016C7.99844 15.2016 8.08644 15.2176 8.24477 15.1487L8.24638 15.1479L8.25096 15.1459L8.26548 15.1392C8.27751 15.1336 8.29417 15.1257 8.31516 15.1156C8.35714 15.0954 8.41648 15.066 8.4907 15.0273C8.63906 14.9499 8.84741 14.8351 9.09576 14.6811C9.59142 14.3739 10.2523 13.9076 10.9148 13.2691C12.2402 11.9916 13.5984 9.99555 13.5984 7.20156C13.5984 4.10877 11.0912 1.60156 7.99844 1.60156C4.90564 1.60156 2.39844 4.10877 2.39844 7.20156C2.39844 9.99555 3.7567 11.9916 5.08205 13.2691C5.74455 13.9076 6.40545 14.3739 6.90111 14.6811C7.14947 14.8351 7.35782 14.9499 7.50618 15.0273C7.5804 15.066 7.63974 15.0954 7.68171 15.1156C7.70271 15.1257 7.71937 15.1336 7.73139 15.1392L7.74592 15.1459L7.7505 15.1479ZM7.99844 9.00156C8.99255 9.00156 9.79844 8.19567 9.79844 7.20156C9.79844 6.20745 8.99255 5.40156 7.99844 5.40156C7.00432 5.40156 6.19844 6.20745 6.19844 7.20156C6.19844 8.19567 7.00432 9.00156 7.99844 9.00156Z"
+                    fill="#BEC0C4" />
+                </svg>
+
+                <p class="flex-1 text-xs font-normal text-gray-600">
+                  Rua Belisário Távora, 56 · Rio de Janeiro - RJ · 22245-070 ·
+                  Brasil · (21)99999-9999
+                </p>
+
+                <a
+                  href="./shipping_2_filled.html"
+                  class="text-xs font-normal text-gray-400 hover:text-gray-600"
+                  >Mudar</a
+                >
+              </div>
+              <!-- metodo -->
+              <!-- Entrega -->
+              <div
+                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.9 13.2C5.9 13.3857 5.82625 13.5637 5.69497 13.695C5.5637 13.8262 5.38565 13.9 5.2 13.9C5.01435 13.9 4.8363 13.8262 4.70503 13.695C4.57375 13.5637 4.5 13.3857 4.5 13.2C4.5 13.0143 4.57375 12.8363 4.70503 12.705C4.8363 12.5737 5.01435 12.5 5.2 12.5C5.38565 12.5 5.5637 12.5737 5.69497 12.705C5.82625 12.8363 5.9 13.0143 5.9 13.2ZM11.5 13.2C11.5 13.3857 11.4263 13.5637 11.295 13.695C11.1637 13.8262 10.9857 13.9 10.8 13.9C10.6143 13.9 10.4363 13.8262 10.305 13.695C10.1737 13.5637 10.1 13.3857 10.1 13.2C10.1 13.0143 10.1737 12.8363 10.305 12.705C10.4363 12.5737 10.6143 12.5 10.8 12.5C10.9857 12.5 11.1637 12.5737 11.295 12.705C11.4263 12.8363 11.5 13.0143 11.5 13.2Z"
+                    fill="#BEC0C4"
+                    stroke="#BEC0C4" />
+                  <path
+                    d="M2.40156 3.19922C2.18939 3.19922 1.98591 3.2835 1.83588 3.43353C1.68585 3.58356 1.60156 3.78705 1.60156 3.99922V11.9992C1.60156 12.2114 1.68585 12.4149 1.83588 12.5649C1.98591 12.7149 2.18939 12.7992 2.40156 12.7992H3.24156C3.33337 12.3471 3.57865 11.9406 3.93586 11.6487C4.29306 11.3567 4.74022 11.1972 5.20156 11.1972C5.6629 11.1972 6.11006 11.3567 6.46727 11.6487C6.82447 11.9406 7.06976 12.3471 7.16156 12.7992H8.00156C8.21374 12.7992 8.41722 12.7149 8.56725 12.5649C8.71728 12.4149 8.80156 12.2114 8.80156 11.9992V3.99922C8.80156 3.78705 8.71728 3.58356 8.56725 3.43353C8.41722 3.2835 8.21374 3.19922 8.00156 3.19922H2.40156ZM11.2016 5.59922C10.9894 5.59922 10.7859 5.6835 10.6359 5.83353C10.4858 5.98356 10.4016 6.18705 10.4016 6.39922V11.2392C10.659 11.1866 10.9242 11.1853 11.1821 11.2352C11.44 11.2852 11.6856 11.3854 11.9047 11.5303C12.1239 11.6752 12.3124 11.8618 12.4594 12.0795C12.6064 12.2972 12.7091 12.5418 12.7616 12.7992H13.6016C13.8137 12.7992 14.0172 12.7149 14.1672 12.5649C14.3173 12.4149 14.4016 12.2114 14.4016 11.9992V7.99922C14.4015 7.78706 14.3172 7.58361 14.1672 7.43362L12.5672 5.83362C12.4172 5.68358 12.2137 5.59926 12.0016 5.59922H11.2016Z"
+                    fill="#BEC0C4" />
+                </svg>
+
+                <p class="flex-1 text-xs font-normal text-gray-600">
+                  Entregue em casa · R$10,00
+                </p>
+
+                <a
+                  href="./method.html"
+                  class="text-xs font-normal text-gray-400 hover:text-gray-600"
+                  >Mudar</a
+                >
+              </div>
+            </div>
+
+            <!-- Form de Pagamento -->
+            <div class="flex flex-col gap-7">
+              <div class="flex flex-row gap-6">
+                <div class="flex flex-col gap-2">
+                  <h2 class="text-lg font-semibold text-gray-800">
+                    Escolha a forma de pagamento
+                  </h2>
+                </div>
+              </div>
+              <!-- seção com form -->
+              <div class="flex flex-col gap-4">
+                <form class="flex flex-col items-stretch gap-10">
+                  <!-- card -->
+                  <div
+                    class="rounded-lg border border-gray-100 bg-white shadow">
+                    <div class="flex h-full flex-col">
+                      <div class="flex flex-row items-center gap-4 px-4 py-6">
+                        <div>
+                          <img
+                            src="./assets/credit_card.svg"
+                            alt="Cartão de crédito"
+                            class="h-6" />
+                        </div>
+                        <div class="flex flex-1 flex-col gap-0.5">
+                          <div
+                            class="break-words text-lg font-bold text-gray-800">
+                            Novo cartão de crédito
+                          </div>
+                        </div>
+                        <div class="shrink">
+                          <a
+                            href="./checkout_card.html"
+                            class="text-xs font-normal text-gray-400 hover:text-gray-600"
+                            >Mudar</a
+                          >
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                        <!-- Content -->
+                        <div class="flex flex-col gap-8 px-1 py-2">
+                          <!-- Credit Card Form -->
+                          <!-- Form Layout -->
+                          <div class="flex flex-col gap-7">
+                            <!-- Nome -->
+                            <div class="flex flex-col gap-2">
+                              <div class="flex">
+                                <label
+                                  for="preview-input"
+                                  class="text-sm font-medium text-gray-900"
+                                  >Nome do titular do cartão</label
+                                >
+                              </div>
+
+                              <div class="flex w-full rounded-md shadow-sm">
+                                <input
+                                  class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                  id="preview-input"
+                                  type="number"
+                                  autofocus />
+                              </div>
+                            </div>
+                            <!-- Number -->
+                            <div class="flex flex-col gap-2">
+                              <div class="flex">
+                                <label
+                                  for="preview-input"
+                                  class="text-sm font-medium text-gray-900"
+                                  >Dados do cartão</label
+                                >
+                              </div>
+                              <!-- Group Input -->
+                              <div class="flex flex-col -space-y-px">
+                                <!-- Text field Card Number -->
+                                <div
+                                  class="flex flex-col gap-2 first:[&_input]:rounded-b-none">
+                                  <div class="flex"></div>
+
+                                  <div class="flex w-full rounded-md shadow-sm">
+                                    <input
+                                      class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:z-10 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                      id="preview-input"
+                                      type="text"
+                                      placeholder="Número do Cartão" />
+                                  </div>
+                                </div>
+
+                                <!-- Group row -->
+                                <div class="flex flex-row -space-x-px">
+                                  <!-- vencimento -->
+                                  <div
+                                    class="flex w-full flex-col [&_input]:rounded-t-none [&_input]:first:rounded-br-none [&_input]:last:rounded-bl-none">
+                                    <div class="flex"></div>
+                                    <div
+                                      class="flex w-full rounded-md shadow-sm">
+                                      <input
+                                        class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:z-10 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                        id="preview-input"
+                                        type="text"
+                                        placeholder="MM/YY" />
+                                    </div>
+                                  </div>
+                                  <!-- CVV -->
+                                  <div
+                                    class="flex w-full flex-col [&_input]:rounded-t-none [&_input]:first:rounded-br-none [&_input]:last:rounded-bl-none">
+                                    <div class="flex"></div>
+                                    <div
+                                      class="flex w-full rounded-md shadow-sm">
+                                      <input
+                                        class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:z-10 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                        id="preview-input"
+                                        type="text"
+                                        placeholder="CVV" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Save card -->
+                            <div>
+                              <div class="flex items-center gap-2">
+                                <input
+                                  type="hidden"
+                                  value="0"
+                                  autocomplete="off" />
+                                <input
+                                  type="checkbox"
+                                  id="Salvar_cartão_para_usar_em_apoios_futuros"
+                                  value="1"
+                                  class="h-4 w-4 rounded border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+                                  checked="checked" />
+                                <label
+                                  class="text-sm font-medium text-gray-900 dark:text-gray-300"
+                                  for="Salvar_cart_o_para_usar_em_apoios_futuros"
+                                  >Guardar cartão para os próximos apoios</label
+                                >
+                              </div>
+                            </div>
+                            <!-- Parcelas -->
+                            <div class="flex flex-col gap-2">
+                              <div class="flex flex-col gap-2">
+                                <div class="flex">
+                                  <label
+                                    class="text-sm font-medium text-gray-900"
+                                    >Parcelas</label
+                                  >
+                                </div>
+                                <select
+                                  name=""
+                                  id=""
+                                  class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+                                  <option value="">
+                                    1 x R$110,00 (sem juros)
+                                  </option>
+                                  <option value="Red">red</option>
+                                  <option value="Green">green</option>
+                                  <option value="Blue">blue</option>
+                                </select>
+                              </div>
+                              <p class="text-sm font-medium text-gray-500">
+                                Total: R$121,00
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- Endereço -->
+                          <div class="flex flex-col gap-3">
+                            <h2 class="text-sm font-medium text-gray-900">
+                              Endereço de cobrança
+                            </h2>
+                            <!-- Steps Completed -->
+                            <div
+                              class="flex flex-col gap-2 rounded-lg border border-gray-100 bg-white px-4 py-2"
+                              id="address_completed">
+                              <!-- Entrega -->
+                              <div
+                                class="flex flex-row items-start gap-2 border-b border-b-gray-100/50 bg-white pb-2 last:border-b-0 last:pb-0 only:border-b-0 only:pb-0">
+                                <svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M7.7505 15.1479L7.75274 15.149C7.91044 15.2176 7.99844 15.2016 7.99844 15.2016C7.99844 15.2016 8.08644 15.2176 8.24477 15.1487L8.24638 15.1479L8.25096 15.1459L8.26548 15.1392C8.27751 15.1336 8.29417 15.1257 8.31516 15.1156C8.35714 15.0954 8.41648 15.066 8.4907 15.0273C8.63906 14.9499 8.84741 14.8351 9.09576 14.6811C9.59142 14.3739 10.2523 13.9076 10.9148 13.2691C12.2402 11.9916 13.5984 9.99555 13.5984 7.20156C13.5984 4.10877 11.0912 1.60156 7.99844 1.60156C4.90564 1.60156 2.39844 4.10877 2.39844 7.20156C2.39844 9.99555 3.7567 11.9916 5.08205 13.2691C5.74455 13.9076 6.40545 14.3739 6.90111 14.6811C7.14947 14.8351 7.35782 14.9499 7.50618 15.0273C7.5804 15.066 7.63974 15.0954 7.68171 15.1156C7.70271 15.1257 7.71937 15.1336 7.73139 15.1392L7.74592 15.1459L7.7505 15.1479ZM7.99844 9.00156C8.99255 9.00156 9.79844 8.19567 9.79844 7.20156C9.79844 6.20745 8.99255 5.40156 7.99844 5.40156C7.00432 5.40156 6.19844 6.20745 6.19844 7.20156C6.19844 8.19567 7.00432 9.00156 7.99844 9.00156Z"
+                                    fill="#BEC0C4" />
+                                </svg>
+
+                                <p
+                                  class="flex-1 text-xs font-normal text-gray-600">
+                                  Rua Belisário Távora, 560<br />Rio de Janeiro
+                                  - RJ<br />22245-070 - Brasil<br />(21)99999-9999
+                                </p>
+
+                                <a
+                                  class="cursor-pointer text-xs font-normal text-blue-600 underline"
+                                  id="show_address_form"
+                                  >Usar outro endereço</a
+                                >
+                              </div>
+                            </div>
+                            <!-- seção com form -->
+                            <div
+                              class="hidden flex-col gap-4"
+                              id="address_form">
+                              <form class="flex flex-col items-end gap-10">
+                                <div class="flex h-full w-full flex-col gap-3">
+                                  <!-- opção: endereço -->
+                                  <div class="group relative">
+                                    <!-- input radio com posição absoluta -->
+                                    <input
+                                      type="radio"
+                                      name="addresses"
+                                      value="default"
+                                      id="default"
+                                      class="peer absolute left-4 top-5 h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
+
+                                    <div
+                                      class="flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
+                                      <label
+                                        for="default"
+                                        class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 text-xs font-normal text-gray-900">
+                                        Rua Belisário Távora, 560<br />Rio de
+                                        Janeiro - RJ <br />22245-070 - Brasil
+                                        <br />(21)99999-9999
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <!-- opção: new -->
+                                  <div class="group relative">
+                                    <!-- input radio com posição absoluta -->
+                                    <input
+                                      type="radio"
+                                      name="addresses"
+                                      value="new"
+                                      id="new"
+                                      class="peer absolute left-4 top-5 h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500" />
+
+                                    <div
+                                      class="flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md peer-checked:[&>:last-child]:block">
+                                      <label
+                                        for="new"
+                                        class="flex cursor-pointer flex-row items-center gap-2 p-4 pl-10 font-semibold text-gray-900">
+                                        Adicionar novo endereço
+                                      </label>
+                                      <div
+                                        class="hidden px-4 peer-checked:block">
+                                        <!-- Content -->
+                                        <div
+                                          class="flex flex-col gap-8 px-1 py-2 pb-10">
+                                          <!-- Form de Endereço -->
+                                          <div class="flex flex-col gap-7">
+                                            <!-- Field Group -->
+                                            <div
+                                              class="grid grid-flow-row gap-7 md:grid-flow-col md:grid-cols-3">
+                                              <!-- País -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >País / country</label
+                                                  >
+                                                </div>
+                                                <select
+                                                  name=""
+                                                  id=""
+                                                  class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+                                                  <option value="">
+                                                    Brasil
+                                                  </option>
+                                                  <option value="Red">
+                                                    red
+                                                  </option>
+                                                  <option value="Green">
+                                                    green
+                                                  </option>
+                                                  <option value="Blue">
+                                                    blue
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <!-- Field Group -->
+                                            <div
+                                              class="grid grid-flow-row gap-7 md:grid-flow-col md:grid-cols-3">
+                                              <!-- CEP -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >CEP</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text"
+                                                    placeholder="_____-___" />
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <!-- Endereço -->
+                                            <div class="flex flex-col gap-2">
+                                              <div class="flex">
+                                                <label
+                                                  for="preview-input"
+                                                  class="text-sm font-medium text-gray-900"
+                                                  >Endereço</label
+                                                >
+                                              </div>
+
+                                              <div
+                                                class="flex w-full rounded-md shadow-sm">
+                                                <input
+                                                  class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                  id="preview-input"
+                                                  type="text" />
+                                              </div>
+                                            </div>
+                                            <!-- Field Group -->
+                                            <div
+                                              class="grid grid-flow-row gap-7 md:grid-flow-col">
+                                              <!-- N -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Número</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                              <!-- Complemento -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Complemento</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                              <!-- Complemento -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Bairro</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- Field Group -->
+                                            <div
+                                              class="grid grid-flow-row gap-7 md:grid-flow-col">
+                                              <!-- Cidade -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Cidade</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                              <!-- Estado -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Estado</label
+                                                  >
+                                                </div>
+                                                <select
+                                                  name=""
+                                                  id=""
+                                                  class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100">
+                                                  <option value="">
+                                                    Escolha o Estado
+                                                  </option>
+                                                  <option value="Red">
+                                                    red
+                                                  </option>
+                                                  <option value="Green">
+                                                    green
+                                                  </option>
+                                                  <option value="Blue">
+                                                    blue
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <!-- Telefone -->
+                                              <div class="flex flex-col gap-2">
+                                                <div class="flex">
+                                                  <label
+                                                    for="preview-input"
+                                                    class="text-sm font-medium text-gray-900"
+                                                    >Telefone</label
+                                                  >
+                                                </div>
+
+                                                <div
+                                                  class="flex w-full rounded-md shadow-sm">
+                                                  <input
+                                                    class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                    id="preview-input"
+                                                    type="text" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <!-- Nome -->
+                                            <div class="flex flex-col gap-2">
+                                              <div class="flex">
+                                                <label
+                                                  for="preview-input"
+                                                  class="text-sm font-medium text-gray-900"
+                                                  >Nome do destinatário</label
+                                                >
+                                              </div>
+
+                                              <div
+                                                class="flex w-full rounded-md shadow-sm">
+                                                <input
+                                                  class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500"
+                                                  id="preview-input"
+                                                  type="text" />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex flex-row gap-4 px-4 pb-5 pt-6">
+                        <div class="flex-1">
+                          <!-- Action -->
+                          <div class="flex flex-col items-center py-4">
+                            <div class="flex flex-col gap-3">
+                              <button
+                                name="button"
+                                type="submit"
+                                class="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-lg border-green-600 bg-green-600 px-6 py-3.5 text-base font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900">
+                                Realizar pagamento
+                              </button>
+
+                              <p
+                                class="text-xs font-normal text-gray-500 max-lg:text-center">
+                                Ao apoiar você concorda com os
+                                <a class="text-blue-600 hover:underline"
+                                  >Termos de uso</a
+                                >
+                                e
+                                <a class="text-blue-600 hover:underline"
+                                  >Politica de privalidade</a
+                                >.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar -->
+          <!-- remove basic-summary, lg:relative, remove lg:top-8, remove max-lg:fixed, remove shadow, não tem CTA  -->
+          <div
+            class="z-10 flex w-full flex-col gap-2 bg-gray-50 p-4 pt-0 max-lg:bottom-0 lg:relative lg:mt-8 lg:w-4/12 lg:gap-6 lg:rounded-lg lg:p-6">
+            <!-- List -->
+            <div class="flex flex-col gap-3 bg-gray-50">
+              <input type="checkbox" hidden id="show_details" class="peer" />
+              <!-- Summary mobile -->
+              <!-- Line total -->
+              <div
+                class="flex flex-row gap-2 pt-3 max-lg:pb-1 lg:hidden lg:border-t lg:border-t-gray-100">
+                <label
+                  for="show_details"
+                  class="flex flex-1 flex-row items-center gap-1">
+                  <div class="flex flex-row items-baseline gap-1">
+                    <div class="text-base font-semibold text-gray-800">
+                      Total
+                    </div>
+                    <div
+                      class="text-xs text-gray-500 group-[.basic-summary]:hidden">
+                      (3 itens)
+                    </div>
+                  </div>
+
+                  <div
+                    class="ml-2 text-xs text-gray-500 underline group-[.basic-summary]:hidden lg:hidden">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="h-5 w-5">
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </label>
+                <div class="text-base font-semibold text-gray-800">
+                  R$110,00
+                </div>
+              </div>
+              <!-- Title and items -->
+              <div
+                class="flex flex-col gap-6 peer-checked:flex peer-checked:pt-4 max-lg:hidden max-lg:group-[.basic-summary]:peer-checked:hidden">
+                <!-- Table -->
+                <div class="flex flex-col gap-6">
+                  <!-- Line main -->
+                  <div
+                    class="flex flex-row gap-2 text-xs font-semibold text-gray-500">
+                    <div class="flex-1">
+                      <div class="flex h-full flex-row gap-3">
+                        <!-- image -->
+                        <div
+                          class="bg relative flex h-full flex-col items-center justify-center overflow-hidden rounded-lg bg-gray-50 p-1">
+                          <div class="z-10 shadow-lg">
+                            <!-- Thumbnail -->
+                            <div class="w-10">
+                              <div
+                                class="aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                                <img
+                                  src="https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="-z-1 absolute h-[150%] w-[150%] bg-[url('https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg')] bg-cover blur brightness-50"></div>
+                        </div>
+                        <!-- title and recompensa -->
+                        <div class="flex flex-1 flex-col gap-1">
+                          <p class="text-xs font-semibold text-gray-500">
+                            Os Desejos do Sultão: Expansão Viajantes
+                          </p>
+                          <p class="text-xs font-normal text-gray-500">
+                            Jogo Base
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-start text-right">
+                      R$100,00
+                    </div>
+                  </div>
+                  <!-- Line main -->
+                  <div
+                    class="flex flex-row gap-2 text-xs font-semibold text-gray-500">
+                    <div class="flex-1">
+                      <div class="flex h-full flex-row gap-3">
+                        <!-- image -->
+                        <div
+                          class="bg relative flex h-full flex-col items-center justify-center overflow-hidden rounded-lg bg-gray-50 p-1">
+                          <div class="z-10 shadow-lg">
+                            <!-- Thumbnail -->
+                            <div class="w-10">
+                              <div
+                                class="aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                                <img
+                                  src="https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="-z-1 absolute h-[150%] w-[150%] bg-[url('https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg')] bg-cover blur brightness-50"></div>
+                        </div>
+                        <!-- title and recompensa -->
+                        <div class="flex flex-1 flex-col gap-1">
+                          <p class="text-xs font-semibold text-gray-500">
+                            Os Desejos do Sultão: Expansão Viajantes
+                          </p>
+                          <p class="text-xs font-normal text-gray-500">
+                            Jogo Base
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-start text-right">
+                      R$100,00
+                    </div>
+                  </div>
+                  <!-- Line main -->
+                  <div
+                    class="flex flex-row gap-2 text-xs font-semibold text-gray-500">
+                    <div class="flex-1">
+                      <div class="flex h-full flex-row gap-3">
+                        <!-- image -->
+                        <div
+                          class="bg relative flex h-full flex-col items-center justify-center overflow-hidden rounded-lg bg-gray-50 p-1">
+                          <div class="z-10 shadow-lg">
+                            <!-- Thumbnail -->
+                            <div class="w-10">
+                              <div
+                                class="aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+                                <img
+                                  src="https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            class="-z-1 absolute h-[150%] w-[150%] bg-[url('https://uploads-ssl.webflow.com/61b7e967a6e9edd7db0a2768/62e85736e31755f7c36bf50b_milad-fakurian-E8Ufcyxz514-unsplash.jpeg')] bg-cover blur brightness-50"></div>
+                        </div>
+                        <!-- title and recompensa -->
+                        <div class="flex flex-1 flex-col gap-1">
+                          <p class="text-xs font-semibold text-gray-500">
+                            Os Desejos do Sultão: Expansão Viajantes
+                          </p>
+                          <p class="text-xs font-normal text-gray-500">
+                            Jogo Base
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col justify-start text-right">
+                      R$100,00
+                    </div>
+                  </div>
+                </div>
+                <!-- Line total -->
+                <div
+                  class="flex flex-row gap-2 border-t border-t-gray-100 pt-3 text-base font-semibold text-gray-800 max-lg:pb-1 lg:border-t lg:border-t-gray-100">
+                  <div class="flex-1">Total</div>
+                  <div class="text-right">R$110,00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      document
+        .getElementById("show_address_form")
+        .addEventListener("click", function () {
+          document.getElementById("address_form").style.display = "flex";
+          document.getElementById("address_completed").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
