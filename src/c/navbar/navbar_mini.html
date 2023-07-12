@@ -14,7 +14,7 @@
       <!-- Inicio do Overlay que só aparece em mobile -->
       <label
         for="global_toggler"
-        class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked:fixed peer-checked:z-30 peer-checked:block peer-checked:opacity-50 lg:hidden lg:peer-checked:hidden"></label>
+        class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked:fixed peer-checked:z-30 peer-checked:block peer-checked:opacity-50 xl:hidden xl:peer-checked:hidden"></label>
       <!-- Primary Nav -->
       <nav
         class="fixed top-0 z-50 flex h-14 w-full flex-row items-center bg-white">
@@ -80,15 +80,16 @@
       </nav>
       <!-- Persistent Secondary Nav -->
       <nav
-        class="fixed bottom-0 left-0 top-0 z-40 block h-full w-60 bg-white px-4 pt-16 max-lg:hidden max-lg:w-3/4 max-lg:peer-checked:fixed max-lg:peer-checked:block lg:peer-checked:hidden">
+        class="fixed bottom-0 left-0 top-0 z-40 hidden h-full w-3/4 bg-white pt-16 @container peer-checked:fixed peer-checked:block md:block md:w-20 md:peer-checked:w-60 xl:w-60 xl:peer-checked:w-20">
         <!-- Header Secondary Nav -->
         <!-- Content Secondary Nav -->
-        <div class="flex flex-col gap-4 py-4">
+        <div class="flex flex-col gap-4 px-2 py-4 @[81px]:px-4">
           <!-- Link inicio -->
           <a
             class="group flex flex-row rounded bg-blue-50 px-2 py-1 text-blue-700 hover:bg-blue-50 hover:text-blue-700"
             href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
-            <div class="flex flex-1 flex-row items-center gap-3">
+            <div
+              class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-3">
               <svg
                 class="h-4 w-4 fill-current"
                 aria-hidden="true"
@@ -99,32 +100,19 @@
                   d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
               </svg>
 
-              <div class="text-sm font-medium text-blue-700">Início</div>
+              <div
+                class="text-[10px] font-medium text-blue-700 @[81px]:text-sm">
+                Início
+              </div>
             </div>
           </a>
-          <!-- Link Seguindo -->
-          <a
-            class="group flex flex-row rounded px-2 py-1 text-gray-500 hover:bg-blue-50 hover:text-blue-700"
-            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-            <div class="flex flex-1 flex-row items-center gap-3">
-              <svg
-                class="h-4 w-4 fill-current"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 18">
-                <path
-                  d="M17.947 2.053a5.209 5.209 0 0 0-3.793-1.53A6.414 6.414 0 0 0 10 2.311 6.482 6.482 0 0 0 5.824.5a5.2 5.2 0 0 0-3.8 1.521c-1.915 1.916-2.315 5.392.625 8.333l7 7a.5.5 0 0 0 .708 0l7-7a6.6 6.6 0 0 0 2.123-4.508 5.179 5.179 0 0 0-1.533-3.793Z" />
-              </svg>
 
-              <div class="text-sm font-medium">Seguindo</div>
-            </div>
-          </a>
           <!-- Link Descobrir -->
           <a
             class="group flex flex-row rounded px-2 py-1 text-gray-500 hover:bg-blue-50 hover:text-blue-700"
             href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-            <div class="flex flex-1 flex-row items-center gap-3">
+            <div
+              class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-3">
               <svg
                 class="h-4 w-4 fill-current"
                 aria-hidden="true"
@@ -135,7 +123,9 @@
                   d="M8.5 0C6.91775 0 5.37103 0.469192 4.05544 1.34824C2.73985 2.22729 1.71447 3.47672 1.10897 4.93853C0.503466 6.40034 0.34504 8.00887 0.653721 9.56072C0.962403 11.1126 1.72433 12.538 2.84315 13.6569C3.96197 14.7757 5.38743 15.5376 6.93928 15.8463C8.49113 16.155 10.0997 15.9965 11.5615 15.391C13.0233 14.7855 14.2727 13.7602 15.1518 12.4446C16.0308 11.129 16.5 9.58225 16.5 8C16.4978 5.87895 15.6542 3.84542 14.1544 2.34562C12.6546 0.845814 10.621 0.00223986 8.5 0ZM12.4677 4.44538L10.0062 9.36846C9.97602 9.42779 9.9278 9.47601 9.86846 9.50615L4.94539 11.9677C4.88759 11.9967 4.82211 12.0068 4.75826 11.9965C4.6944 11.9862 4.63542 11.9561 4.58968 11.9103C4.54395 11.8646 4.51379 11.8056 4.50349 11.7417C4.49319 11.6779 4.50327 11.6124 4.53231 11.5546L6.99385 6.63154C7.02399 6.5722 7.07221 6.52398 7.13154 6.49384L12.0546 4.03231C12.1124 4.00327 12.1779 3.99318 12.2417 4.00348C12.3056 4.01378 12.3646 4.04394 12.4103 4.08968C12.4561 4.13541 12.4862 4.1944 12.4965 4.25826C12.5068 4.32211 12.4967 4.38759 12.4677 4.44538Z" />
               </svg>
 
-              <div class="text-sm font-medium">Descobrir projetos</div>
+              <div class="text-[10px] font-medium @[81px]:text-sm">
+                Descobrir projetos
+              </div>
             </div>
           </a>
           <!-- Divider -->
@@ -167,7 +157,7 @@
       <!-- Mobile Secondary Nav -->
       <nav></nav>
       <!-- Content -->
-      <div class="mt-14 peer-checked:ml-0 lg:ml-60">
+      <div class="mt-14 md:ml-20 xl:ml-60 xl:peer-checked:ml-20">
         <!-- Discovery -->
         <div class="flex flex-1 flex-col">
           <div class="flex flex-col">
