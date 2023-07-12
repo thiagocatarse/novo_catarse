@@ -5019,6 +5019,14 @@ video {
     align-items: center;
   }
 
+  .sm\:justify-normal{
+    justify-content: normal;
+  }
+
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
   .sm\:gap-3{
     gap: 0.75rem;
   }
