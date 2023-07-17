@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="">
+    <!-- Frame -->
+    <div class="relative flex flex-col">
+      <!-- Toggle -->
+      <input type="checkbox" id="global_toggler" class="flex-0 peer hidden" />
+      <!-- Inicio do Overlay que só aparece em mobile -->
+      <label
+        for="global_toggler"
+        class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked:fixed peer-checked:z-[60] peer-checked:block peer-checked:opacity-50 xl:hidden xl:peer-checked:hidden"></label>
+      <!-- Primary Nav -->
+      <nav
+        class="fixed top-0 z-50 flex w-full flex-row items-center justify-between border-b border-b-gray-50 bg-white">
+        <!-- Toggle and Logo -->
+        <div class="flex h-14 w-44 flex-row items-center gap-3 px-3">
+          <!-- Toggler -->
+          <label for="global_toggler" class="">
+            <div class="cursor-pointer p-1">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
+                  fill="#000" />
+              </svg>
+            </div>
+          </label>
+          <!-- Logo -->
+          <a href="#" class="flex flex-row items-center gap-2">
+            <img src="./assets/logo-symbol.svg" alt="Símbolo do Catarse" />
+            <img src="./assets/logo-estudio.svg" alt="Texto do Logo Catarse" />
+          </a>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex flex-row items-center gap-2 pr-3 lg:gap-3 lg:pr-10">
+          <!-- Button Green Light -->
+          <div class="hidden sm:flex">
+            <a
+              class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-sm font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+              href="">
+              <svg class="h-5 w-5 fill-current">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-11.25a.75.75 0 00-1.5 0v2.5h-2.5a.75.75 0 000 1.5h2.5v2.5a.75.75 0 001.5 0v-2.5h2.5a.75.75 0 000-1.5h-2.5v-2.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Button Backing Bag -->
+
+          <!-- Button Profile -->
+          <a href="#" class="rounded-full border border-gray-100">
+            <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
+              <img
+                class="h-full w-full object-cover"
+                src="https://yt3.ggpht.com/yti/AOXPAcUlqOiezOOeZk0GGrmkc2g19Q-xpONfNROQ6GpT944=s88-c-k-c0x00ffffff-no-rj-mo" />
+            </div>
+          </a>
+        </div>
+      </nav>
+      <!-- Persistent Secondary Nav -->
+      <nav
+        class="fixed bottom-0 left-0 top-0 z-[100] hidden h-full w-3/4 bg-white @container peer-checked:fixed peer-checked:block md:z-40 md:block md:w-20 md:peer-checked:z-[100] md:peer-checked:w-60 lg:peer-checked:z-[100] xl:w-60 xl:peer-checked:z-40 xl:peer-checked:w-20">
+        <!-- Header Secondary Nav -->
+        <!-- Logo -->
+        <!-- Toggle and Logo -->
+        <div class="flex h-14 w-44 flex-row items-center gap-3 px-3">
+          <!-- Toggler -->
+          <label for="global_toggler" class="">
+            <div class="cursor-pointer p-1">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
+                  fill="#000" />
+              </svg>
+            </div>
+          </label>
+          <!-- Logo -->
+          <a href="#" class="flex flex-row items-center gap-2">
+            <img src="./assets/logo-symbol.svg" alt="Símbolo do Catarse" />
+            <img src="./assets/logo-texto.svg" alt="Texto do Logo Catarse" />
+          </a>
+        </div>
+
+        <!-- Content Secondary Nav -->
+        <div class="flex flex-col gap-4 px-2 py-4 pt-8 @[81px]:px-4">
+          <!-- Links section -->
+          <div class="flex flex-col gap-2">
+            <!-- Link inicio -->
+            <a
+              class="group flex flex-row rounded-lg bg-gray-50 px-2 py-2 text-gray-700 hover:bg-gray-50 hover:text-gray-700"
+              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-3">
+                <svg
+                  class="h-4 w-4 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path
+                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                </svg>
+
+                <div
+                  class="text-[10px] font-medium text-gray-700 @[81px]:text-sm">
+                  Início
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Secondary Nav -->
+      <nav></nav>
+      <!-- Content -->
+      <div class="mt-14 md:ml-20 xl:ml-60 xl:peer-checked:ml-20">
+        <!-- Onboarding -->
+        <div class="flex-1">
+          <section class="h-full min-h-screen bg-gray-50">
+            <div
+              class="mx-auto my-0 flex max-w-3xl flex-col gap-10 px-4 py-12 2xl:px-0">
+              <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+                <div class="flex flex-1 flex-col gap-3">
+                  <div class="flex flex-col gap-2">
+                    <h1
+                      class="text-2xl font-semibold leading-none text-gray-900">
+                      Oi, Thiago Maia
+                    </h1>
+                    <div class="text-sm font-normal text-gray-600">
+                      Estas dicas e sugestões foram cuidadosamente selecionadas
+                      para te ajudar a alcançar o sucesso na sua campanha. Siga
+                      nossas recomendações e veja a campanha crescer!
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-10">
+                <div
+                  class="grid h-min w-full grid-cols-1 items-stretch gap-3 lg:gap-6 2xl:gap-8">
+                  <div
+                    class="rounded-lg border border-gray-100 bg-white shadow">
+                    <div class="flex h-full flex-col">
+                      <div class="flex flex-row items-center gap-4 px-4 py-6">
+                        <div>
+                          <img
+                            src="/assets/ilustrations/new-color-edf645bf38205ab5ac5b238110aa51cd053629aa.svg" />
+                        </div>
+
+                        <div class="flex flex-1 flex-col gap-0.5">
+                          <div
+                            class="break-words text-lg font-bold text-gray-800">
+                            Torne seu projeto único
+                          </div>
+
+                          <div class="text-sm font-medium text-gray-500">
+                            <div class="flex flex-row items-center gap-4 py-2">
+                              1/2
+                              <div class="w-full">
+                                <div
+                                  class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                                  <div
+                                    class="h-1.5 rounded-full bg-green-600"
+                                    style="width: 50%"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                        <div
+                          class="grid items-stretch gap-3 md:grid-cols-2 lg:grid-cols-2 lg:gap-6 2xl:gap-8">
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                            <svg class="h-6 w-6 shrink-0 fill-green-600">
+                              <use xlink:href="#check_circle"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-gray-900">
+                                1. Dê o primeiro passo
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Adicione nome, categoria e a modalidade de
+                                financiamento.
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/customization/edit">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                2. Personalize sua página
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Deixe a campanha com sua cara configurando
+                                imagens, cores e logo.
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="rounded-lg border border-gray-100 bg-white shadow">
+                    <div class="flex h-full flex-col">
+                      <div class="flex flex-row items-center gap-4 px-4 py-6">
+                        <div>
+                          <img
+                            src="/assets/ilustrations/paper-airplane-color-e12a52dc69bf1c0ef1093e2eb176156228ec81b5.svg" />
+                        </div>
+
+                        <div class="flex flex-1 flex-col gap-0.5">
+                          <div
+                            class="break-words text-lg font-bold text-gray-800">
+                            Conquiste seguidores com o pré-lançamento
+                          </div>
+
+                          <div class="text-sm font-medium text-gray-500">
+                            <div class="flex flex-row items-center gap-4 py-2">
+                              0/2
+                              <div class="w-full">
+                                <div
+                                  class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                                  <div
+                                    class="h-1.5 rounded-full bg-green-600"
+                                    style="width: 0%"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                        <div
+                          class="grid items-stretch gap-3 md:grid-cols-2 lg:grid-cols-2 lg:gap-6 2xl:gap-8">
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/pre_launch/new">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                1. Ative seu pré-lançamento
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Planeje, personalize e divulgue seu
+                                pré-lançamento para alcançar seguidores.
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/promotion">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                2. Divulgue sua página e conecte-se com
+                                seguidores
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Envie emails para quem está acompanhando seu
+                                pré-lançamento e fortaleça sua comunidade.
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="rounded-lg border border-gray-100 bg-white shadow">
+                    <div class="flex h-full flex-col">
+                      <div class="flex flex-row items-center gap-4 px-4 py-6">
+                        <div>
+                          <img
+                            src="/assets/ilustrations/rocket-color-a53016652cdd6d052445fa389ff5d816b32764aa.svg" />
+                        </div>
+
+                        <div class="flex flex-1 flex-col gap-0.5">
+                          <div
+                            class="break-words text-lg font-bold text-gray-800">
+                            Publique seu projeto e comece a receber dinheiro
+                          </div>
+
+                          <div class="text-sm font-medium text-gray-500">
+                            <div class="flex flex-row items-center gap-4 py-2">
+                              0/4
+                              <div class="w-full">
+                                <div
+                                  class="flex h-1.5 w-full flex-col items-start overflow-hidden rounded-full border border-gray-100 bg-gray-50">
+                                  <div
+                                    class="h-1.5 rounded-full bg-green-600"
+                                    style="width: 0%"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                        <div
+                          class="grid items-stretch gap-3 md:grid-cols-2 lg:grid-cols-2 lg:gap-6 2xl:gap-8">
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/tiers">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                1. Ofereça benefícios a seus assinantes
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Crie recompensas e benefícios que incentivem as
+                                pessoas a contribuir com sua campanha.
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/funding_goals">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                2. Crie metas para sua campanha
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Mostre para seus apoiadores o que você irá
+                                realizar caso seu projeto atinja as metas.
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/publication/new">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                3. Publique seu projeto
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Coloque sua campanha no ar e nós avisaremos
+                                automaticamente seus seguidores.
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            class="flex flex-row gap-2 rounded-lg bg-white px-4 py-3 hover:bg-blue-50"
+                            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/promotion">
+                            <svg class="h-6 w-6 shrink-0 fill-blue-200">
+                              <use xlink:href="#arrow_circle_right"></use>
+                            </svg>
+
+                            <div class="flex flex-col gap-2">
+                              <div
+                                class="text-base font-semibold text-blue-600">
+                                4. Divulgue seu link e comece a receber dinheiro
+                              </div>
+                              <div class="text-sm font-medium text-gray-500">
+                                Compartilhe sua campanha e arrecade recursos
+                                para alcançar seus objetivos.
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
