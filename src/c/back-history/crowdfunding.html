@@ -32,26 +32,26 @@
                   aria-label="Tabs">
                   <a
                     class="active whitespace-nowrap rounded-t-lg border-b-2 border-blue-600 p-4 text-blue-600"
-                    href="/">
+                    href="./crowdfunding.html">
                     Não recebidos
                   </a>
                   <a
                     class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600"
-                    href="/">
-                    Recebibos
+                    href="./crowdfunding_received.html">
+                    Recebidos
                   </a>
                   <a
                     class="whitespace-nowrap rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600"
-                    href="/">
+                    href="./crowdfunding_canceled.html">
                     Cancelados
                   </a>
                 </nav>
               </div>
             </div>
-
-            <div class="-mx-4 mb-4">
+            <!-- Card com pagamentos pending -->
+            <div class="mb-4 lg:-mx-4">
               <!-- Card -->
-              <div class="rounded-lg border-gray-100 bg-gray-50 shadow-lg">
+              <div class="rounded-lg border border-gray-100 bg-white shadow-lg">
                 <div class="flex h-full flex-col">
                   <div class="flex flex-row items-center gap-4 px-4 py-6">
                     <div>
@@ -73,8 +73,8 @@
                         Atenção:
                       </div>
                       <div class="text-sm font-medium text-gray-500">
-                        Para fazer parte do Financiamento Coletivo, pague os
-                        apoios abaixo dentro do prazo.
+                        Finalize os pagamentos abaixo para participar dos
+                        projetos.
                       </div>
                     </div>
                     <div class="shrink">
@@ -156,7 +156,7 @@
                                 </div>
 
                                 <p class="text-xs font-normal text-gray-400">
-                                  Boleto: Vence em 12/Abr
+                                  Boleto: Vence em 12/04/2023
                                 </p>
                               </div>
                             </td>
@@ -229,7 +229,7 @@
                                 </div>
 
                                 <p class="text-xs font-normal text-gray-400">
-                                  Pix: Vence em 12/Abr às 12h50
+                                  Pix: Vence em 12/04/2023 às 12h50
                                 </p>
                               </div>
                             </td>
@@ -378,7 +378,7 @@
                       class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
                       <!-- Cell title -->
                       <div class="flex flex-col items-start gap-1 py-0.5">
-                        <!-- badge dark default -->
+                        <!-- badge blue default -->
                         <span
                           class="mr-2 inline-flex items-center whitespace-nowrap rounded bg-blue-100 px-2.5 py-0.5 align-middle text-xs font-semibold text-blue-800">
                           Enviado
@@ -418,7 +418,7 @@
                                 d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                                 clip-rule="evenodd" />
                             </svg>
-                            Recebido
+                            Recebi
                           </a>
                           <!-- button xs gray plain -->
                           <a
@@ -489,6 +489,18 @@
                         <!-- Button group -->
                         <div
                           class="flex flex-col gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+                          <!-- button green outline xs icon check -->
+                          <a
+                            class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border border-green-600 bg-transparent px-3 py-2 text-xs font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+                            href="">
+                            <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                clip-rule="evenodd" />
+                            </svg>
+                            Recebi
+                          </a>
                           <!-- button xs gray plain -->
                           <a
                             class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
