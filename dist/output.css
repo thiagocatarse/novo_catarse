@@ -2290,6 +2290,10 @@ video {
   border-top-right-radius: 0.5rem;
 }
 
+.rounded-br-lg{
+  border-bottom-right-radius: 0.5rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -4324,12 +4328,20 @@ video {
   outline-color: #317aaf;
 }
 
+.hover\:flex:hover{
+  display: flex;
+}
+
 .hover\:w-48:hover{
   width: 12rem;
 }
 
 .hover\:w-auto:hover{
   width: auto;
+}
+
+.hover\:w-60:hover{
+  width: 15rem;
 }
 
 .hover\:cursor-grab:hover{
@@ -5136,6 +5148,10 @@ video {
   margin-bottom: 0px;
 }
 
+.peer\/logo:hover ~ .peer-hover\/logo\:flex{
+  display: flex;
+}
+
 .peer\/collect:hover ~ .peer-hover\/collect\:border-blue-600{
   --tw-border-opacity: 1;
   border-color: rgb(49 122 175 / var(--tw-border-opacity));
@@ -5209,16 +5225,6 @@ video {
   display: none;
 }
 
-@container (min-width: 20rem){
-  .\@xs\:flex-row{
-    flex-direction: row;
-  }
-
-  .\@xs\:flex-col{
-    flex-direction: column;
-  }
-}
-
 @container (min-width: 80px){
   .\@\[80px\]\:flex-row{
     flex-direction: row;
@@ -5231,10 +5237,6 @@ video {
   .\@\[80px\]\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .\@\[80px\]\:text-\[10px\]{
-    font-size: 10px;
   }
 }
 
@@ -6016,6 +6018,10 @@ video {
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .md\:hover\:w-60:hover{
+    width: 15rem;
   }
 
   .peer:checked ~ .md\:peer-checked\:z-\[100\]{
@@ -6867,6 +6873,10 @@ video {
 
   .xl\:ml-20{
     margin-left: 5rem;
+  }
+
+  .xl\:ml-0{
+    margin-left: 0px;
   }
 
   .xl\:block{
