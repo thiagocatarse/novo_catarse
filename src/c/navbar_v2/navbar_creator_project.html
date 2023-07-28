@@ -110,12 +110,12 @@
           class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked/search:fixed peer-checked/search:z-[60] peer-checked/search:block peer-checked/search:opacity-50 lg:peer-checked/search:opacity-0 "></label>
       <!-- Sidebar -->
       <nav
-        class="fixed bottom-0 left-0 top-0 z-[100] hidden h-screen w-3/4 flex-col items-stretch bg-white shadow-xl @container peer-checked/sidebar:fixed peer-checked/sidebar:flex md:z-[100] md:flex md:w-20 xl:w-60 peer-checked/search:shadow-none">
+        class="fixed bottom-0 left-0 top-0 z-[100] hidden h-screen w-3/4 flex-col items-stretch bg-white shadow-xl @container peer-checked/sidebar:fixed peer-checked/sidebar:flex md:z-[100] md:flex md:w-20 lg:hover:w-60  xl:w-60 peer-checked/search:shadow-none">
         <!-- Header Secondary Nav -->
         <!-- Logo -->
         <!-- Toggle and Logo -->
         <div
-          class="sticky top-0 flex h-14 flex-row items-center gap-3 bg-white px-3 py-3 md:px-5 lg:justify-start mb-4">
+          class="sticky top-0 flex h-14 flex-row items-center gap-3 bg-white px-3 py-3 md:px-5 lg:justify-start">
           <!-- Toggler -->
           <label for="sidebar_toggle" class="md:hidden">
             <div class="cursor-pointer p-1">
@@ -135,7 +135,7 @@
           </label>
           <!-- Logo -->
           <a
-            href="#"
+            href="./navbar_creator.html"
             class="flex w-full flex-row items-center justify-center gap-2 @[81px]:w-auto">
             <img src="./assets/logo-symbol.svg" alt="Símbolo do Catarse" />
             <img
@@ -149,6 +149,46 @@
         <!-- Content Secondary Nav -->
         <div
           class="flex flex-1 flex-col gap-4 overflow-auto px-2 @[81px]:px-4">
+          <!-- Header Sidebar -->
+          <div class="flex flex-col">
+            <div class=" flex-col pb-4 pl-0.5 lg:flex">
+              <!-- Link para voltar -->
+              <a href="./navbar_creator.html" class="flex flex-row items-center font-medium gap-0.5 text-[10px] py-1 text-gray-400 hover:text-gray-600 hover:underline  ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                  <path fill-rule="evenodd" d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z" clip-rule="evenodd" />
+                </svg>
+                  Todos os projetos</a>
+                
+                   <!-- Titulo e status do projeto -->
+                   <div class="flex flex-col gap-1 pt-1">
+                    <h2 class="text-base font-semibold text-gray-900 leading-snug hidden @[81px]:flex">pre lancamento assinatura</h2>
+                  <div class="flex flex-row items-center gap-1 text-gray-900">      
+                    <div class="flex flex-row items-center gap-1 @[81px]:flex hidden">
+                      <svg class="w-2.5 h-2.5 fill-green-500">
+                        <use xlink:href="#circle"></use>
+                      </svg>
+                      <span class="text-xs font-normal  ">Em campanha</span>
+                    </div>
+
+                  </div>
+                  </div>
+                    
+
+                  </div>
+
+                  
+                  
+              
+             <!-- Button visualizar -->
+             <div class="mb-3"><a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2 px-3 text-xs bg-transparent text-gray-600 border-gray-600 hover:bg-gray-50 active:bg-gray-100 border" href="">
+              <svg class="w-5 h-5 mr-1 -ml-1 stroke-current fill-transparent">
+                <use xlink:href="#eye" />
+              </svg>
+              Visualizar
+            </a></div>
+          
+            </div>
+          
           <!-- Links section -->
           <div class="flex flex-col gap-1">
             <!-- Link inicio -->
@@ -175,85 +215,218 @@
                 </div>
               </div>
             </a>
+            <!-- Link Básico -->
+            <a
+              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <use xlink:href="#cube"></use>
+                </svg>
+                
+                
+                
+                
+
+                <div
+                  class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+                  Básico
+                </div>
+              </div>
+            </a>
+            <!-- Link Personalização -->
+            <a
+              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <use xlink:href="#swatch"></use>
+                </svg>
+                
+                
+                
+                
+
+                <div
+                  class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+                  Persona&shy;lização
+                </div>
+              </div>
+            </a>
+            <!-- Link Descrição -->
+            <a
+          class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+          href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+          <div
+            class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+            <svg
+              class="h-5 w-5 fill-current"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 18">
+              <use xlink:href="#pencil"></use>
+            </svg>
             
-            <!-- Link Posts -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h9A1.5 1.5 0 0114 3.5v11.75A2.75 2.75 0 0016.75 18h-12A2.75 2.75 0 012 15.25V3.5zm3.75 7a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zm0 3a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM5 5.75A.75.75 0 015.75 5h4.5a.75.75 0 01.75.75v2.5a.75.75 0 01-.75.75h-4.5A.75.75 0 015 8.25v-2.5z" clip-rule="evenodd" />
-                  <path d="M16.5 6.5h-1v8.75a1.25 1.25 0 102.5 0V8a1.5 1.5 0 00-1.5-1.5z" />
-                </svg>
-                
-                
-                
-                
+            
+            
+            
 
-                <div
-                  class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
-                  Posts
-                </div>
-              </div>
-            </a>
-            <!-- Link Apoiadores -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <path d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
-                </svg>
-                
-                
-
-                <div
-                  class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
-                  Apoiadores
-                </div>
-              </div>
-            </a>
-            <!-- Link Metricas -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <path d="M15.5 2A1.5 1.5 0 0014 3.5v13a1.5 1.5 0 001.5 1.5h1a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0016.5 2h-1zM9.5 6A1.5 1.5 0 008 7.5v9A1.5 1.5 0 009.5 18h1a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 6h-1zM3.5 10A1.5 1.5 0 002 11.5v5A1.5 1.5 0 003.5 18h1A1.5 1.5 0 006 16.5v-5A1.5 1.5 0 004.5 10h-1z" />
-                </svg>
-                
-                
-                
-
-                <div
-                  class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
-                  Métricas
-                </div>
-              </div>
-            </a>
+            <div
+              class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+              Descrição
+            </div>
           </div>
+            </a>
+            <!-- Link Metas -->
+            <a
+        class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+        href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+        <div
+          class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+          <svg
+            class="h-5 w-5 fill-current"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 18">
+            <use xlink:href="#target"></use>
+          </svg>
           
           
+          
+          
+
+          <div
+            class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+            Metas
+          </div>
         </div>
-        <!-- Profile nav -->
+            </a>
+            <!-- Link Recompensas -->
+            <a
+      class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+      href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+      <div
+        class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+        <svg
+          class="h-5 w-5 fill-current"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 18">
+          <use xlink:href="#gift"></use>
+        </svg>
+        
+        
+        
+        
+
+        <div
+          class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+          Recom&shy;pensas
+        </div>
+      </div>
+            </a>
+            <!-- Divider -->
+            <div class="mt-4 mb-1">
+              <div class="flex flex-row items-center self-stretch after:flex-grow after:w-full whitespace-nowrap after:bg-gray-300 after:bg-opacity-50 leading-tight text-sm font-normal text-gray-300 gap-4 after:h-[1px]">
+                <span class="hidden @[81px]:inline-flex">Promoção</span> 
+              </div>
+            </div>
+            <!-- Link Pre-lancamento -->
+            <a
+    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+    <div
+      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+      <svg
+        class="h-5 w-5 fill-current"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 18">
+        <use xlink:href="#paper_airplane"></use>
+      </svg>
+      
+      
+      
+      
+
+      <div
+        class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+        Pré-lançamento
+      </div>
+    </div>
+            </a>
+            <!-- Link Lancamento -->
+            <a
+  class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+  href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+  <div
+    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+    <svg
+      class="h-5 w-5 fill-current"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 20 18">
+      <use xlink:href="#rocket_launch"></use>
+    </svg>
+    
+    
+    
+    
+
+    <div
+      class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+      Lançamento
+    </div>
+  </div>
+            </a>
+            <!-- Link Divulgacao -->
+            <a
+class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+<div
+  class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+  <svg
+    class="h-5 w-5 fill-current"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 20 18">
+    <use xlink:href="#speakerphone"></use>
+  </svg>
+  
+  
+  
+  
+
+  <div
+    class="text-center hyphens-manual text-[10px] font-normal @[81px]:text-left @[81px]:text-sm">
+    Divulgação
+  </div>
+</div>
+            </a>
+          </div>        
+      </div>
+          
+          
+        
+        <!-- Profile Descrição -->
 
         <div class="sticky bottom-0 w-full overflow-x-clip flex flex-col items-center">
           <input
@@ -518,476 +691,233 @@
         
         
       </nav>
-      <!-- Mobile Bottom Nav -->
-      <div
-        class="fixed bottom-0 left-0 z-50 h-16 w-full border-t border-gray-200 bg-white md:hidden">
-        <div class="mx-auto grid h-full max-w-lg grid-cols-4 font-medium">
-          <button
-            type="button"
-            class="group inline-flex flex-col items-center justify-center gap-0.5 px-5 hover:bg-gray-50">
-            <svg
-              class="h-5 w-5 text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20">
-              <path
-                fill-rule="evenodd"
-                d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
-                clip-rule="evenodd" />
-            </svg>
 
-            <span
-              class="text-sm text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              >Início</span
-            >
-          </button>
-
-          <label
-            for="search_toggle"
-            class="group inline-flex flex-col items-center justify-center gap-0.5 px-5 hover:bg-gray-50">
-            <svg
-              class="h-5 w-5 text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20">
-              <path
-                fill-rule="evenodd"
-                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                clip-rule="evenodd" />
-            </svg>
-
-            <span
-              class="text-sm text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              >Pesquisar</span
-            >
-          </label>
-          <button
-            type="button"
-            class="group inline-flex flex-col items-center justify-center gap-0.5 px-5 hover:bg-gray-50">
-            <svg
-              class="h-5 w-5 text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 20 20">
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
-            </svg>
-            <span
-              class="text-sm text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              >Settings</span
-            >
-          </button>
-          <button
-            type="button"
-            class="group inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800">
-            <svg
-              class="mb-2 h-5 w-5 text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20">
-              <path
-                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
-            </svg>
-            <span
-              class="text-sm text-gray-500 group-hover:text-blue-600 dark:text-gray-400 dark:group-hover:text-blue-500"
-              >Profile</span
-            >
-          </button>
-        </div>
-      </div>
 
       <!-- Page Content -->
       <div class="w-full md:ml-20 xl:ml-60">
         <!-- Criações -->
         <div class="flex-1">
           <section class="min-h-screen h-full bg-gray-50">
-<div class="flex flex-col mx-auto my-0 px-4 2xl:px-0 py-12 gap-10 max-w-screen-lg">
+<div class="flex flex-col mx-auto my-0 px-4 2xl:px-0 py-12 gap-10 max-w-3xl">
   <div class="flex flex-col gap-6 lg:flex-row lg:items-center ">
 <div class="flex flex-1 flex-col gap-3">
   
   <div class="flex flex-col gap-2">
-    <h1 class="leading-none text-2xl font-semibold text-gray-900">Meus projetos</h1>
-    <div class="text-sm font-normal text-gray-600">Aqui você poderá gerenciar seus projetos</div>
+    <h1 class="leading-none text-2xl font-semibold text-gray-900">Oi, Thiago Maia</h1>
+    <div class="text-sm font-normal text-gray-600">Estas dicas e sugestões foram cuidadosamente selecionadas para te ajudar a alcançar o sucesso na sua campanha. Siga nossas recomendações e veja a campanha crescer!</div>
 </div></div>
-   <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" href="/creator/products/new">
-  
-  Novo projeto
-  
-</a>
+
 </div>
 
-  <div class="flex flex-col gap-10">          <h2 class="text-xl font-semibold leading-none text-gray-900">
-Clube de assinatura
-</h2>
+  <div class="flex flex-col gap-10">        <div class="grid gap-3 lg:gap-6 2xl:gap-8 h-min w-full items-stretch grid-cols-1">
 
-<div class="relative overflow-hidden rounded-lg lg:ring-1 lg:ring-gray-100">
-<table class="block w-full table-auto border-separate text-left text-sm text-gray-500 lg:border-collapse lg:border-0 lg:[display:revert] [&>*]:block lg:[&>*]:[display:revert] [&>thead>*]:hidden lg:[&>thead>*]:[display:revert] [&>tbody>*]:block lg:[&>tbody>*]:[display:revert] [&>tbody>tr>*]:block lg:[&>tbody>tr>*]:[display:revert]">
-  <thead class="text-xs font-semibold text-gray-900 uppercase bg-gray-50">
-<tr>
-  
-    <th class="px-4 py-3 empty:p-0">
-</th>
-    <th class="px-4 py-3 empty:p-0" scope="col">
-Projeto
-</th>
-    <th class="px-4 py-3 empty:p-0">
-</th>
-</tr>
-</thead>
+        <div class="rounded-lg border border-gray-100 bg-white shadow"><div class="flex flex-col h-full">      <div class="flex flex-row gap-4 items-center px-4 py-6">
 
-  <tbody class="lg:divide-y lg:divide-gray-100">
-  <tr class="my-4 overflow-hidden bg-white border border-gray-100 divide-y rounded-lg divide-gray-50 lg:divide-none lg:border-x-0">
-
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-  <div class="overflow-hidden rounded aspect-video h-14 [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
-    <img src="https://minio.staging.catarse.com.br/public-bucket/b79c052284a9f6f451de54ff092ee85d.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230724%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230724T054918Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=9e18084cdda6e409fd9f1dcd4f4cfcceacef1b6a9f44dee113cdc38fcf77fa49">
-  </div>
-</td>
-  <td data-title="Projeto" class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden">
-              <div class="flex flex-col gap-1">
-                
-            <div class="text-base font-medium text-gray-600">
-              pre lancamento assinatura
-            </div>
-            <div class="flex flex-row items-center gap-1">
-<svg class="w-2.5 h-2.5 fill-green-500 fill-current">
-<use xlink:href="#circle"></use>
-</svg>
-<span class="text-xs font-normal">Em campanha</span>
+<div>      <img src="/assets/ilustrations/new-color-edf645bf38205ab5ac5b238110aa51cd053629aa.svg">
 </div>
 
-          </div>
-
-</td>
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-              <div class="flex flex-row gap-0.5">
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="view-project-tooltip-54ac5526-764e-4dc2-a68a-c91adb0a4393" target="_blank" href="/9i2aK4gZQSMv">
-  
-  <svg class="h-5 w-5 stroke-current fill-transparent">
-<use xlink:href="#eye"></use>
-</svg>
-  
-</a>
-            <div id="view-project-tooltip-54ac5526-764e-4dc2-a68a-c91adb0a4393" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(838px, -159px, 0px);">
-Visualizar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(66px, 0px, 0px);"></div>
+<div class="flex flex-1 flex-col gap-0.5">
+  <div class="break-words text-lg font-bold text-gray-800">      Torne seu projeto único
 </div>
 
+  <div class="font-medium text-gray-500 text-sm">      <div class="flex flex-row items-center gap-4 py-2">
+      1/2
+      <div class="w-full">
 
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="edit-project-tooltip-54ac5526-764e-4dc2-a68a-c91adb0a4393" href="./navbar_creator_project.html">
-  
-  <svg class="h-5 w-5 fill-current">
-<use xlink:href="#pencil_alt"></use>
-</svg>
-  
-</a>
-            <div id="edit-project-tooltip-54ac5526-764e-4dc2-a68a-c91adb0a4393" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(877.5px, -159px, 0px);">
-Editar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(72px, 0px, 0px);"></div>
+<div class="w-full bg-gray-50 rounded-full border border-gray-100 overflow-hidden flex flex-col items-start h-1.5">
+  <div class="bg-green-600 rounded-full h-1.5" style="width: 50%"></div>
+</div></div>
+    </div>
 </div>
 
-          </div>
+</div>
 
-</td>
-</tr>
-  <tr class="my-4 overflow-hidden bg-white border border-gray-100 divide-y rounded-lg divide-gray-50 lg:divide-none lg:border-x-0">
-
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-  <div class="overflow-hidden rounded aspect-video h-14 [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+</div>
     
+  <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="grid items-stretch gap-3 lg:gap-6 2xl:gap-8 md:grid-cols-2 lg:grid-cols-2">
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+<svg class="w-6 h-6 shrink-0 fill-green-600">
+<use xlink:href="#check_circle"></use>
+</svg>
+
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-gray-900">
+    1.
+    Dê o primeiro passo
+</div>    <div class="text-sm font-medium text-gray-500">
+    Adicione nome, categoria e a modalidade de financiamento.
   </div>
-</td>
-  <td data-title="Projeto" class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden">
-              <div class="flex flex-col gap-1">
-            <div class="text-base font-medium text-gray-600">
-              tyutryu
-            </div>
-            <div class="flex flex-row items-center gap-1">
-<svg class="w-2.5 h-2.5 fill-gray-200 fill-current">
-<use xlink:href="#circle"></use>
-</svg>
-<span class="text-xs font-normal">Rascunho</span>
 </div>
-
-          </div>
-
-</td>
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-              <div class="flex flex-row gap-0.5">
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="view-project-tooltip-df6ab7cc-2a83-42e2-affc-c311687a08f6" target="_blank" href="/6hSQ1p28Pndz">
-  
-  <svg class="h-5 w-5 stroke-current fill-transparent">
-<use xlink:href="#eye"></use>
-</svg>
-  
 </a>
-            <div id="view-project-tooltip-df6ab7cc-2a83-42e2-affc-c311687a08f6" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(838px, -70px, 0px);">
-Visualizar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(66px, 0px, 0px);"></div>
-</div>
-
-
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="edit-project-tooltip-df6ab7cc-2a83-42e2-affc-c311687a08f6" href="/creator/membership/projects/df6ab7cc-2a83-42e2-affc-c311687a08f6/dashboard">
-  
-  <svg class="h-5 w-5 fill-current">
-<use xlink:href="#pencil_alt"></use>
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/customization/edit">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
 </svg>
-  
+
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    2.
+    Personalize sua página
+</div>    <div class="text-sm font-medium text-gray-500">
+    Deixe a campanha com sua cara configurando imagens, cores e logo.
+  </div>
+</div>
 </a>
-            <div id="edit-project-tooltip-df6ab7cc-2a83-42e2-affc-c311687a08f6" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(877.5px, -70px, 0px);">
-Editar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(72px, 0px, 0px);"></div>
+  </div>
 </div>
 
-          </div>
-
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<h2 class="text-xl font-semibold leading-none text-gray-900">
-Financiamento coletivo
-</h2>
-<div class="relative overflow-hidden rounded-lg lg:ring-1 lg:ring-gray-100">
-<table class="block w-full table-auto border-separate text-left text-sm text-gray-500 lg:border-collapse lg:border-0 lg:[display:revert] [&>*]:block lg:[&>*]:[display:revert] [&>thead>*]:hidden lg:[&>thead>*]:[display:revert] [&>tbody>*]:block lg:[&>tbody>*]:[display:revert] [&>tbody>tr>*]:block lg:[&>tbody>tr>*]:[display:revert]">
-  <thead class="text-xs font-semibold text-gray-900 uppercase bg-gray-50">
-<tr>
   
-    <th class="px-4 py-3 empty:p-0">
-</th>
-    <th class="px-4 py-3 empty:p-0" scope="col">
-Projeto
-</th>
-    <th class="px-4 py-3 empty:p-0">
-</th>
-</tr>
-</thead>
+  
+</div></div>
 
-  <tbody class="lg:divide-y lg:divide-gray-100">
-  <tr class="my-4 overflow-hidden bg-white border border-gray-100 divide-y rounded-lg divide-gray-50 lg:divide-none lg:border-x-0">
+<div class="rounded-lg border border-gray-100 bg-white shadow"><div class="flex flex-col h-full">      <div class="flex flex-row gap-4 items-center px-4 py-6">
 
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-  <div class="overflow-hidden rounded aspect-video h-14 [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+<div>      <img src="/assets/ilustrations/paper-airplane-color-e12a52dc69bf1c0ef1093e2eb176156228ec81b5.svg">
+</div>
+
+<div class="flex flex-1 flex-col gap-0.5">
+  <div class="break-words text-lg font-bold text-gray-800">      Conquiste seguidores com o pré-lançamento
+</div>
+
+  <div class="font-medium text-gray-500 text-sm">      <div class="flex flex-row items-center gap-4 py-2">
+      0/2
+      <div class="w-full">
+
+<div class="w-full bg-gray-50 rounded-full border border-gray-100 overflow-hidden flex flex-col items-start h-1.5">
+  <div class="bg-green-600 rounded-full h-1.5" style="width: 0%"></div>
+</div></div>
+    </div>
+</div>
+
+</div>
+
+</div>
     
+  <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="grid items-stretch gap-3 lg:gap-6 2xl:gap-8 md:grid-cols-2 lg:grid-cols-2">
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
+</svg>
+
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    1.
+    Ative seu pré-lançamento
+</div>    <div class="text-sm font-medium text-gray-500">
+    Planeje, personalize e divulgue seu pré-lançamento para alcançar seguidores.
   </div>
-</td>
-  <td data-title="Projeto" class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden">
-              <div class="flex flex-col gap-1">
-            <div class="text-base font-medium text-gray-600">
-              Metas
-            </div>
-            <div class="flex flex-row items-center gap-1">
-<svg class="w-2.5 h-2.5 fill-green-500 fill-current">
-<use xlink:href="#circle"></use>
-</svg>
-<span class="text-xs font-normal">Em campanha</span>
 </div>
-
-          </div>
-
-</td>
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-              <div class="flex flex-row gap-0.5">
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="view-project-tooltip-adf4c7b0-b3a0-4426-984b-494a4379c87f" target="_blank" href="/ouiixBytzxDi">
-  
-  <svg class="h-5 w-5 stroke-current fill-transparent">
-<use xlink:href="#eye"></use>
-</svg>
-  
 </a>
-            <div id="view-project-tooltip-adf4c7b0-b3a0-4426-984b-494a4379c87f" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(838px, -337px, 0px);">
-Visualizar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(66px, 0px, 0px);"></div>
-</div>
-
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="edit-project-tooltip-adf4c7b0-b3a0-4426-984b-494a4379c87f" href="/creator/crowdfunding/projects/adf4c7b0-b3a0-4426-984b-494a4379c87f/dashboard">
-  
-  <svg class="h-5 w-5 fill-current">
-<use xlink:href="#pencil_alt"></use>
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/promotion">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
 </svg>
-  
+
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    2.
+    Divulgue sua página e conecte-se com seguidores
+</div>    <div class="text-sm font-medium text-gray-500">
+    Envie emails para quem está acompanhando seu pré-lançamento e fortaleça sua comunidade.
+  </div>
+</div>
 </a>
-            <div id="edit-project-tooltip-adf4c7b0-b3a0-4426-984b-494a4379c87f" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(877.5px, -337px, 0px);">
-Editar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(72px, 0px, 0px);"></div>
+  </div>
 </div>
 
-          </div>
+  
+  
+</div></div>
 
-</td>
-</tr>
-  <tr class="my-4 overflow-hidden bg-white border border-gray-100 divide-y rounded-lg divide-gray-50 lg:divide-none lg:border-x-0">
+<div class="rounded-lg border border-gray-100 bg-white shadow"><div class="flex flex-col h-full">      <div class="flex flex-row gap-4 items-center px-4 py-6">
 
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-  <div class="overflow-hidden rounded aspect-video h-14 [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
+<div>      <img src="/assets/ilustrations/rocket-color-a53016652cdd6d052445fa389ff5d816b32764aa.svg">
+</div>
+
+<div class="flex flex-1 flex-col gap-0.5">
+  <div class="break-words text-lg font-bold text-gray-800">      Publique seu projeto e comece a receber dinheiro
+</div>
+
+  <div class="font-medium text-gray-500 text-sm">      <div class="flex flex-row items-center gap-4 py-2">
+      0/4
+      <div class="w-full">
+
+<div class="w-full bg-gray-50 rounded-full border border-gray-100 overflow-hidden flex flex-col items-start h-1.5">
+  <div class="bg-green-600 rounded-full h-1.5" style="width: 0%"></div>
+</div></div>
+    </div>
+</div>
+
+</div>
+
+</div>
     
+  <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="grid items-stretch gap-3 lg:gap-6 2xl:gap-8 md:grid-cols-2 lg:grid-cols-2">
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/tiers">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
+</svg>
+
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    1.
+    Ofereça benefícios a seus assinantes
+</div>    <div class="text-sm font-medium text-gray-500">
+    Crie recompensas e benefícios que incentivem as pessoas a contribuir com sua campanha.
   </div>
-</td>
-  <td data-title="Projeto" class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden">
-              <div class="flex flex-col gap-1">
-            <div class="text-base font-medium text-gray-600">
-              gfdfg
-            </div>
-            <div class="flex flex-row items-center gap-1">
-<svg class="w-2.5 h-2.5 fill-green-300 fill-current">
-<use xlink:href="#circle"></use>
-</svg>
-<span class="text-xs font-normal">Pré-lançamento</span>
 </div>
-
-          </div>
-
-</td>
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-              <div class="flex flex-row gap-0.5">
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="view-project-tooltip-1d3cc1cf-c5a2-4b97-a4cf-03269b4b0db0" target="_blank" href="/mHNUgffCa2vt">
-  
-  <svg class="h-5 w-5 stroke-current fill-transparent">
-<use xlink:href="#eye"></use>
-</svg>
-  
 </a>
-            <div id="view-project-tooltip-1d3cc1cf-c5a2-4b97-a4cf-03269b4b0db0" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(838px, -248px, 0px);">
-Visualizar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(66px, 0px, 0px);"></div>
-</div>
-
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="edit-project-tooltip-1d3cc1cf-c5a2-4b97-a4cf-03269b4b0db0" href="/creator/crowdfunding/projects/1d3cc1cf-c5a2-4b97-a4cf-03269b4b0db0/dashboard">
-  
-  <svg class="h-5 w-5 fill-current">
-<use xlink:href="#pencil_alt"></use>
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/funding_goals">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
 </svg>
-  
-</a>
-            <div id="edit-project-tooltip-1d3cc1cf-c5a2-4b97-a4cf-03269b4b0db0" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(877.5px, -248px, 0px);">
-Editar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(72px, 0px, 0px);"></div>
-</div>
 
-          </div>
-
-</td>
-</tr>
-  <tr class="my-4 overflow-hidden bg-white border border-gray-100 divide-y rounded-lg divide-gray-50 lg:divide-none lg:border-x-0">
-
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-  <div class="overflow-hidden rounded aspect-video h-14 [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
-    
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    2.
+    Crie metas para sua campanha
+</div>    <div class="text-sm font-medium text-gray-500">
+    Mostre para seus apoiadores o que você irá realizar caso seu projeto atinja as metas.
   </div>
-</td>
-  <td data-title="Projeto" class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden">
-              <div class="flex flex-col gap-1">
-            <div class="text-base font-medium text-gray-600">
-              test
-            </div>
-            <div class="flex flex-row items-center gap-1">
-<svg class="w-2.5 h-2.5 fill-gray-200 fill-current">
-<use xlink:href="#circle"></use>
-</svg>
-<span class="text-xs font-normal">Rascunho</span>
 </div>
-
-          </div>
-
-</td>
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-              <div class="flex flex-row gap-0.5">
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="view-project-tooltip-7a6d639d-e8ce-4f11-b5c9-2b8629c09ed9" target="_blank" href="/ZCBXdchqRnmp">
-  
-  <svg class="h-5 w-5 stroke-current fill-transparent">
-<use xlink:href="#eye"></use>
-</svg>
-  
 </a>
-            <div id="view-project-tooltip-7a6d639d-e8ce-4f11-b5c9-2b8629c09ed9" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(838px, -159px, 0px);">
-Visualizar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(66px, 0px, 0px);"></div>
-</div>
-
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="edit-project-tooltip-7a6d639d-e8ce-4f11-b5c9-2b8629c09ed9" href="/creator/crowdfunding/projects/7a6d639d-e8ce-4f11-b5c9-2b8629c09ed9/dashboard">
-  
-  <svg class="h-5 w-5 fill-current">
-<use xlink:href="#pencil_alt"></use>
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/publication/new">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
 </svg>
-  
-</a>
-            <div id="edit-project-tooltip-7a6d639d-e8ce-4f11-b5c9-2b8629c09ed9" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(877.5px, -159px, 0px);">
-Editar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(72px, 0px, 0px);"></div>
-</div>
 
-          </div>
-
-</td>
-</tr>
-  <tr class="my-4 overflow-hidden bg-white border border-gray-100 divide-y rounded-lg divide-gray-50 lg:divide-none lg:border-x-0">
-
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-  <div class="overflow-hidden rounded aspect-video h-14 [&>img]:h-full [&>img]:w-full [&>img]:object-cover">
-    
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    3.
+    Publique seu projeto
+</div>    <div class="text-sm font-medium text-gray-500">
+    Coloque sua campanha no ar e nós avisaremos automaticamente seus seguidores.
   </div>
-</td>
-  <td data-title="Projeto" class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden">
-              <div class="flex flex-col gap-1">
-            <div class="text-base font-medium text-gray-600">
-              Sem metas
-            </div>
-            <div class="flex flex-row items-center gap-1">
-<svg class="w-2.5 h-2.5 fill-gray-200 fill-current">
-<use xlink:href="#circle"></use>
-</svg>
-<span class="text-xs font-normal">Rascunho</span>
 </div>
-
-          </div>
-
-</td>
-  <td class="lg:bg-inherit empty:p-0 empty:border-none py-4 px-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] lg:before:hidden lg:w-[0.01%] lg:whitespace-nowrap">
-              <div class="flex flex-row gap-0.5">
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="view-project-tooltip-03cfea4c-3307-425f-940a-39d08649b247" target="_blank" href="/3yhjzK2XDj3A">
-  
-  <svg class="h-5 w-5 stroke-current fill-transparent">
-<use xlink:href="#eye"></use>
-</svg>
-  
 </a>
-            <div id="view-project-tooltip-03cfea4c-3307-425f-940a-39d08649b247" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(838px, -70px, 0px);">
-Visualizar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(66px, 0px, 0px);"></div>
-</div>
-
-               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" data-tooltip-target="edit-project-tooltip-03cfea4c-3307-425f-940a-39d08649b247" href="/creator/crowdfunding/projects/03cfea4c-3307-425f-940a-39d08649b247/dashboard">
-  
-  <svg class="h-5 w-5 fill-current">
-<use xlink:href="#pencil_alt"></use>
+      <a class="flex flex-row gap-2 px-4 py-3 bg-white rounded-lg hover:bg-blue-50" href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/promotion">
+<svg class="w-6 h-6 shrink-0 fill-blue-200">
+<use xlink:href="#arrow_circle_right"></use>
 </svg>
-  
+
+<div class="flex flex-col gap-2">
+  <div class="text-base font-semibold text-blue-600">
+    4.
+    Divulgue seu link e comece a receber dinheiro
+</div>    <div class="text-sm font-medium text-gray-500">
+    Compartilhe sua campanha e arrecade recursos para alcançar seus objetivos.
+  </div>
+</div>
 </a>
-            <div id="edit-project-tooltip-03cfea4c-3307-425f-940a-39d08649b247" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(877.5px, -70px, 0px);">
-Editar projeto
-<div class="tooltip-arrow" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate3d(72px, 0px, 0px);"></div>
+  </div>
 </div>
 
-          </div>
-
-</td>
-</tr>
-</tbody>
-</table>
-</div>
+  
+  
+</div></div>
 
 
-</div>
+</div></div>
   
 </div></section>
 
