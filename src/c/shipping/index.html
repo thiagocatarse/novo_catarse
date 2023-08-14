@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Page Base Gray -->
+    <section class="h-full min-h-screen bg-gray-50">
+      <div
+        class="mx-auto my-0 flex max-w-3xl flex-col gap-10 px-4 py-12 2xl:px-0">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+          <div class="flex flex-1 flex-col gap-3">
+            <div class="flex flex-col gap-2">
+              <h1 class="text-2xl font-semibold leading-none text-gray-900">
+                Frete e entrega
+              </h1>
+              <div class="text-sm font-normal text-gray-600">
+                Aqui você poderá cadastrar os perfis de frete e endereços de
+                retirada que serão utilizados em suas recompensas.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <!-- Escolha de tipo de cobrança -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div class="flex flex-row items-center gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="break-words text-lg font-bold text-gray-800">
+                    Em que momento você quer cobrar a entrega?
+                  </div>
+                  <div class="text-sm font-medium text-gray-500">Subtitle</div>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <!-- Radio Group tipos de frete -->
+                <div class="flex flex-col gap-3 md:flex-row">
+                  <!-- Cobrar durante campanha -->
+                  <div class="group relative flex-1 items-center">
+                    <input
+                      type="radio"
+                      class="peer absolute bottom-0 left-4 top-0 m-auto h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
+                      id="pre_charge"
+                      name="moment"
+                      value="pre_charge"
+                      checked />
+                    <div
+                      class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md">
+                      <label
+                        for="pre_charge"
+                        class="flex cursor-pointer flex-row items-center gap-4 px-3 py-3 pl-10">
+                        <!-- Content -->
+                        <div class="flex flex-row gap-3 py-2">
+                          <!-- Icone -->
+                          <img src="./assets/pre-charge.svg" alt="" />
+                          <!-- Texto -->
+                          <div class="flex flex-col gap-1">
+                            <p class="text-sm font-semibold text-gray-900">
+                              Cobrar durante a campanha
+                            </p>
+                            <p class="text-xs font-normal text-gray-900">
+                              O frete será cobrado junto com o apoio.
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- Cobrar após campanha -->
+                  <div class="group relative flex-1 items-center">
+                    <input
+                      type="radio"
+                      class="peer absolute bottom-0 left-4 top-0 m-auto h-4 w-4 border-gray-300 bg-white text-blue-600 focus:ring-2 focus:ring-blue-500"
+                      id="post_charge"
+                      name="moment"
+                      value="post_charge" />
+                    <div
+                      class="peer-checked:border-1 flex h-full flex-col gap-6 rounded-lg border border-gray-100 bg-white peer-checked:border-blue-600 peer-checked:bg-white peer-checked:shadow-md peer-hover:border-blue-600 peer-hover:shadow-md">
+                      <label
+                        for="post_charge"
+                        class="flex cursor-pointer flex-row items-center gap-4 px-3 py-3 pl-10">
+                        <!-- Content -->
+                        <div class="flex flex-row gap-3 py-2">
+                          <!-- Icone -->
+                          <img src="./assets/post_charge.svg" alt="" />
+                          <!-- Texto -->
+                          <div class="flex flex-col gap-1">
+                            <p class="text-sm font-semibold text-gray-900">
+                              A combinar
+                            </p>
+                            <p class="text-xs font-normal text-gray-900">
+                              Você deverá gerenciar a cobrança do frete após a
+                              campanha.
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Perfis de frete -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div class="flex flex-row items-center gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="break-words text-lg font-bold text-gray-800">
+                    Perfis de Entrega
+                  </div>
+                  <div class="text-sm font-medium text-gray-500">
+                    Escolha onde você envia suas recompensas e quanto cobra pelo
+                    envio.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <!-- Card content  -->
+                <div class="flex flex-col gap-8">
+                  <!-- Padrão -->
+                  <div class="flex flex-col gap-3">
+                    <p class="text-base font-semibold text-gray-900">
+                      Entrega padrão
+                    </p>
+                    <!-- Vertical card -->
+                    <div
+                      class="rounded-lg border border-gray-100 bg-white shadow-sm">
+                      <div class="flex h-full flex-col">
+                        <div
+                          class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                          <div
+                            class="flex w-full flex-col items-center gap-2 md:flex-row">
+                            <!-- Nome e recompensas -->
+                            <div
+                              class="flex w-full flex-col gap-1 pb-2 md:w-1/6 md:pb-0">
+                              <p class="text-sm font-semibold text-gray-900">
+                                Perfil padrão
+                              </p>
+                              <p
+                                class="flex flex-row items-center gap-1 text-xs font-normal text-gray-700">
+                                0 recompensas
+                              </p>
+                            </div>
+                            <!-- Localizações -->
+                            <div
+                              class="flex flex-1 flex-col gap-1 border-t border-t-gray-100 pb-4 pt-4 md:border-l md:border-t-0 md:border-l-gray-100 md:pb-0 md:pl-4 md:pt-0">
+                              <p class="text-xs font-normal text-gray-900">
+                                Taxas para
+                              </p>
+                              <div class="flex flex-row gap-2.5">
+                                <!-- Nacional -->
+                                <p
+                                  class="flex flex-row items-center gap-1 text-xs font-normal text-gray-700">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none">
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M3.88189 3C3.39484 3 3 3.42676 3 3.95319V16.0468C3 16.5732 3.39484 17 3.88189 17H16.1181C16.6052 17 17 16.5732 17 16.0468V3.95319C17 3.42676 16.6052 3 16.1181 3H3.88189ZM4.57087 9.5234L10.0276 5.38298L15.4843 9.5234L10.0276 13.634L4.57087 9.5234Z"
+                                      fill="black" />
+                                    <path
+                                      d="M12.3274 10.4469C12.4263 10.1593 12.4803 9.84819 12.4803 9.5234C12.4803 8.05926 11.3822 6.87234 10.0276 6.87234C9.02511 6.87234 8.16312 7.52234 7.78268 8.45367C9.11727 8.05321 11.092 8.14651 12.3274 10.4469Z"
+                                      fill="black" />
+                                    <path
+                                      d="M11.7506 11.4101C11.3077 11.8827 10.6991 12.1745 10.0276 12.1745C8.67294 12.1745 7.5748 10.9875 7.5748 9.5234C7.5748 9.43373 7.57892 9.34509 7.58697 9.2577C9.99778 8.82074 11.2636 10.2707 11.7506 11.4101Z"
+                                      fill="black" />
+                                  </svg>
+                                  Doméstico
+                                </p>
+                                <!-- Internacional -->
+                                <p
+                                  class="flex flex-row items-center gap-1 text-xs font-normal text-gray-700">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-1.503.204A6.5 6.5 0 117.95 3.83L6.927 5.62a1.453 1.453 0 001.91 2.02l.175-.087a.5.5 0 01.224-.053h.146a.5.5 0 01.447.724l-.028.055a.4.4 0 01-.357.221h-.502a2.26 2.26 0 00-1.88 1.006l-.044.066a2.099 2.099 0 001.085 3.156.58.58 0 01.397.547v1.05a1.175 1.175 0 002.093.734l1.611-2.014c.192-.24.296-.536.296-.842 0-.316.128-.624.353-.85a1.363 1.363 0 00.173-1.716l-.464-.696a.369.369 0 01.527-.499l.343.257c.316.237.738.275 1.091.098a.586.586 0 01.677.11l1.297 1.297z"
+                                      clip-rule="evenodd" />
+                                  </svg>
+                                  Internacional
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Action Button xs gray outline -->
+                            <a
+                              class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                              href="./default_shipping.html">
+                              Editar
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Customizados -->
+                  <div class="flex flex-col gap-3">
+                    <p class="text-base font-semibold text-gray-900">
+                      Entregas personalizadas
+                    </p>
+                    <!-- Vertical card -->
+                    <div class="rounded-lg border border-gray-100 bg-white">
+                      <div class="flex h-full flex-col">
+                        <div
+                          class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                          <!-- Empty State -->
+                          <div class="m-auto flex flex-col items-center gap-6">
+                            <div class="flex flex-col items-center gap-6">
+                              <div
+                                class="flex flex-col items-center gap-3 text-center">
+                                <p class="text-sm font-normal text-gray-500">
+                                  Adicione taxas customizadas ou restrições de
+                                  destino para grupos específicos de
+                                  recompensas.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                              <div
+                                class="flex flex-col gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+                                <a
+                                  class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+                                  href="./custom_shipping.html">
+                                  Criar novo perfil
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Retirada presencial -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div class="flex flex-row items-center gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="break-words text-lg font-bold text-gray-800">
+                    Retirada presencial
+                  </div>
+                  <div class="text-sm font-medium text-gray-500">
+                    Deixe seus apoiadores coletarem as recompensas em locais de
+                    sua escolha
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <!-- Card content  -->
+                <div class="flex flex-col gap-8">
+                  <!-- Customizados -->
+                  <div class="flex flex-col gap-3">
+                    <!-- Vertical card -->
+                    <div class="rounded-lg bg-gray-50">
+                      <div class="flex h-full flex-col">
+                        <div
+                          class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                          <!-- Empty State -->
+                          <div class="m-auto flex flex-col items-center gap-6">
+                            <div class="flex flex-col items-center gap-6">
+                              <div
+                                class="flex flex-col items-center gap-3 text-center">
+                                <p class="text-sm font-normal text-gray-500">
+                                  Escolha quais locais os apoiadores poderão
+                                  retirar seus pedidos.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                              <div
+                                class="flex flex-col gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+                                <a
+                                  class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                                  href="">
+                                  Novo ponto de retirada
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

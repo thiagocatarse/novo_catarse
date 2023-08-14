@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Page Base Gray -->
+    <section class="h-full min-h-screen bg-gray-50">
+      <div
+        class="mx-auto my-0 flex max-w-3xl flex-col gap-10 px-4 py-12 2xl:px-0">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+          <div class="flex flex-1 flex-col gap-3">
+            <div class="flex flex-col gap-2">
+              <h1 class="text-2xl font-semibold leading-none text-gray-900">
+                Nova região
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- Page Body -->
+        <div class="flex flex-col gap-10">
+          <!-- Dados -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <div class="flex flex-col gap-7">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex">
+                      <label
+                        name="zone_id"
+                        for="zone_id"
+                        value="bb6785ca-36a0-4ee7-a733-1756696d5db5"
+                        class="text-sm font-medium text-gray-900"
+                        >Região</label
+                      >
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                      <select
+                        name="zone_id"
+                        id="zone_id"
+                        class="block w-full rounded-lg border border-gray-300 bg-white p-3 text-sm text-gray-900 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100"
+                        value="bb6785ca-36a0-4ee7-a733-1756696d5db5">
+                        <option value="">Escolha uma região</option>
+                        <option
+                          selected="selected"
+                          value="32d38887-f252-4973-acd7-fb562f38afe2">
+                          Todo o Brasil
+                        </option>
+                        <option disabled value="">--------------</option>
+                        <option value="ee007396-0f23-4930-81af-808bf94ac2b0">
+                          Região Sudeste
+                        </option>
+                        <option value="bb6785ca-36a0-4ee7-a733-1756696d5db5">
+                          Região Nordeste
+                        </option>
+                        <option value="853df8f4-5c26-4f53-b90f-490612ac37bd">
+                          Região Sul
+                        </option>
+                        <option value="939a8311-cb60-4fd3-b14d-5cf22988254f">
+                          Região Norte
+                        </option>
+                        <option value="0e00832f-f756-4414-8034-3970f9c0f568">
+                          Região Centro-Oeste
+                        </option>
+                        <option value="7713c8af-3376-46c8-b417-7457465ec418">
+                          Artes
+                        </option>
+                        <option value="64f72873-429f-4b4b-817a-fdd3ad93924a">
+                          Cinema e Vídeo
+                        </option>
+                        <option value="03ec2c5b-7bbc-4b9f-bf56-324279933294">
+                          Socioambiental
+                        </option>
+                        <option value="bada8346-d9ed-4531-ac7d-81702b4ff33d">
+                          Educação
+                        </option>
+                        <option value="baa2c6f7-1f7b-4788-af8c-6f8747af1602">
+                          Arquitetura e Urbanismo
+                        </option>
+                        <option value="0265ef28-1a39-47e8-8c12-fc1969bcfa19">
+                          Teatro e Dança
+                        </option>
+                        <option value="daa4896c-99bc-43ba-aa26-65e96774cf95">
+                          Fotografia
+                        </option>
+                        <option value="3aa140bd-b1d0-4dc1-b3cf-a500825d3ec6">
+                          Design e Moda
+                        </option>
+                        <option value="d6a471c7-0d04-4bf0-a0ab-fe432a83f543">
+                          Ciência e Tecnologia
+                        </option>
+                        <option value="f5a113fb-fc6b-4a8a-95f9-31af8395b73d">
+                          Pessoais
+                        </option>
+                        <option value="8274b433-e798-4531-a8e1-5785d6750aef">
+                          Eventos
+                        </option>
+                        <option value="8770f59b-fd83-4335-a17f-ae185bab5bef">
+                          Esporte
+                        </option>
+                        <option value="64be4844-1a73-40dc-bef8-cd92f19a07a1">
+                          Gastronomia
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Input Group -->
+                  <div
+                    class="grid-cols grid grid-flow-row gap-7 md:grid-flow-col">
+                    <div class="col-span-4 sm:col-span-2 lg:col-span-2">
+                      <!-- Valor único -->
+                      <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label
+                            name="crowdfunding_reward[amount_cents]"
+                            for="crowdfunding_reward_amount_cents"
+                            value="4444"
+                            class="text-sm font-medium text-gray-900"
+                            >Taxa para uma recompensa</label
+                          >
+                        </div>
+                        <div class="flex w-full rounded-md shadow-sm">
+                          <span
+                            class="inline-flex items-center whitespace-nowrap rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500 group-disabled:cursor-not-allowed group-disabled:opacity-30 sm:text-sm"
+                            >R$</span
+                          >
+
+                          <input
+                            class="block w-full rounded-r-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500 disabled:cursor-not-allowed disabled:border-inherit disabled:opacity-30"
+                            type="text"
+                            name="crowdfunding_reward[amount_cents]"
+                            id="crowdfunding_reward_amount_cents"
+                            value="4444"
+                            data-controller="money-input"
+                            inputmode="numeric" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-span-4 sm:col-span-2 lg:col-span-2">
+                      <!-- Valor adicional -->
+                      <div class="flex flex-col gap-2">
+                        <div class="flex">
+                          <label
+                            name="crowdfunding_reward[amount_cents]"
+                            for="crowdfunding_reward_amount_cents"
+                            value="4444"
+                            class="text-sm font-medium text-gray-900"
+                            >Taxa para recompensas adicionais</label
+                          >
+                        </div>
+                        <div class="flex w-full rounded-md shadow-sm">
+                          <span
+                            class="inline-flex items-center whitespace-nowrap rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500 group-disabled:cursor-not-allowed group-disabled:opacity-30 sm:text-sm"
+                            >R$</span
+                          >
+
+                          <input
+                            class="block w-full rounded-r-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500 disabled:cursor-not-allowed disabled:border-inherit disabled:opacity-30"
+                            type="text"
+                            name="crowdfunding_reward[amount_cents]"
+                            id="crowdfunding_reward_amount_cents"
+                            value="4444"
+                            data-controller="money-input"
+                            inputmode="numeric" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page Footer -->
+        <div
+          class="flex flex-col-reverse gap-6 border-t border-gray-100 py-6 lg:flex-row">
+          <div>
+            <div
+              class="flex flex-col-reverse gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+              <button
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-5 py-2.5 text-sm font-medium text-red-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-red-50 active:bg-red-100"
+                data-controller="confirm"
+                data-confirm-message-value="Você tem certeza que deseja deletar essa recompensa?"
+                type="submit">
+                <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
+                    clip-rule="evenodd" />
+                </svg>
+                Remover
+              </button>
+            </div>
+          </div>
+          <div class="flex w-full flex-1 justify-end">
+            <div
+              class="flex flex-col-reverse gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+              <a
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-5 py-2.5 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                href="/creator/crowdfunding/projects/b6b13d8e-f270-40f8-a6e7-19e3ef448e45/funding_goals">
+                Cancelar
+              </a>
+              <button
+                name="button"
+                type="submit"
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 px-5 py-2.5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900"
+                form="funding-goal-form">
+                Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

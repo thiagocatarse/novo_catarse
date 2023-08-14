@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Page Base Gray -->
+    <section class="h-full min-h-screen bg-gray-50">
+      <div
+        class="mx-auto my-0 flex max-w-3xl flex-col gap-10 px-4 py-12 2xl:px-0">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+          <div class="flex flex-1 flex-col gap-3">
+            <div class="flex flex-col gap-2">
+              <h1 class="text-2xl font-semibold leading-none text-gray-900">
+                Novo perfil de frete
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- Page Body -->
+        <div class="flex flex-col gap-10">
+          <!-- Nome -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <div class="flex flex-col gap-2">
+                  <div class="flex">
+                    <label
+                      name="membership_tier[title]"
+                      for="membership_tier_title"
+                      class="text-sm font-medium text-gray-900"
+                      >Nome
+                    </label>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <div class="flex w-full rounded-md shadow-sm">
+                      <input
+                        class="block w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-900 placeholder-gray-300 outline-none transition-all duration-150 ease-in-out hover:border-gray-600 focus:border-blue-700 focus:outline-4 focus:outline-offset-0 focus:outline-blue-100 focus:ring-blue-500 disabled:cursor-not-allowed disabled:border-inherit disabled:opacity-30"
+                        type="text"
+                        name="membership_tier[title]"
+                        id="membership_tier_title"
+                        placeholder="Recompensas frágeis" />
+                    </div>
+                    <p class="text-xs font-normal text-gray-500">
+                      Seus apoiadores não verão isso.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recompensas -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div class="flex flex-row items-center gap-4 px-4 py-6">
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="break-words text-lg font-bold text-gray-800">
+                    Recompensas
+                  </div>
+                </div>
+                <div class="shrink">
+                  <a
+                    class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+                    href="">
+                    Adicionar recompensas
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <!-- Card content  -->
+                <div class="flex flex-col gap-8">
+                  <!-- Customizados -->
+                  <div class="flex flex-col gap-3">
+                    <!-- Table -->
+                    <div class="relative overflow-hidden rounded-lg">
+                      <table
+                        class="block w-full table-auto border-separate text-left text-sm text-gray-500 lg:border-collapse lg:border-0 lg:[display:revert] [&>*]:block lg:[&>*]:[display:revert] [&>tbody>*]:block lg:[&>tbody>*]:[display:revert] [&>tbody>tr>*]:block lg:[&>tbody>tr>*]:[display:revert] [&>thead>*]:hidden lg:[&>thead>*]:[display:hidden]">
+                        <thead
+                          class="bg-gray-50 text-xs font-semibold uppercase text-gray-900">
+                          <tr>
+                            <th class="px-4 py-3 empty:p-0"></th>
+                            <th class="px-4 py-3 empty:p-0" scope="col">
+                              Recompensa
+                            </th>
+                            <th class="px-4 py-3 empty:p-0" scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody class="lg:divide-y lg:divide-gray-100">
+                          <tr
+                            class="my-4 divide-y divide-gray-50 overflow-hidden rounded-lg border border-gray-100 bg-white lg:divide-none lg:border-x-0">
+                            <td
+                              data-title=""
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                              <div class="w-14 overflow-hidden rounded-md">
+                                <img
+                                  class="aspect-video h-full w-full object-cover"
+                                  src="https://minio.staging.catarse.com.br/public-bucket/7d06613664d639a40fff4fcd2232fb65.jpeg" />
+                              </div>
+                            </td>
+                            <td
+                              data-title="Recompensa"
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
+                              Combo: Coleção Toppi vols. 1, 2, 3 e 4 + Sharaz-De
+                              Integral
+                            </td>
+
+                            <td
+                              data-title=""
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                              <a
+                                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-red-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-red-50 active:bg-red-100"
+                                href="">
+                                <svg class="h-5 w-5 fill-current">
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr
+                            class="my-4 divide-y divide-gray-50 overflow-hidden rounded-lg border border-gray-100 bg-white lg:divide-none lg:border-x-0">
+                            <td
+                              data-title=""
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                              <div class="w-14 overflow-hidden rounded-md">
+                                <img
+                                  class="aspect-video h-full w-full object-cover"
+                                  src="https://minio.staging.catarse.com.br/public-bucket/7d06613664d639a40fff4fcd2232fb65.jpeg" />
+                              </div>
+                            </td>
+                            <td
+                              data-title="Recompensa"
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
+                              Combo: Coleção Toppi vols. 1, 2, 3 e 4 + Sharaz-De
+                              Integral
+                            </td>
+
+                            <td
+                              data-title=""
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                              <a
+                                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-red-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-red-50 active:bg-red-100"
+                                href="">
+                                <svg class="h-5 w-5 fill-current">
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr
+                            class="my-4 divide-y divide-gray-50 overflow-hidden rounded-lg border border-gray-100 bg-white lg:divide-none lg:border-x-0">
+                            <td
+                              data-title=""
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                              <div class="w-14 overflow-hidden rounded-md">
+                                <img
+                                  class="aspect-video h-full w-full object-cover"
+                                  src="https://minio.staging.catarse.com.br/public-bucket/7d06613664d639a40fff4fcd2232fb65.jpeg" />
+                              </div>
+                            </td>
+                            <td
+                              data-title="Recompensa"
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
+                              Combo: Coleção Toppi vols. 1, 2, 3 e 4 + Sharaz-De
+                              Integral
+                            </td>
+
+                            <td
+                              data-title=""
+                              class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                              <a
+                                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-red-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-red-50 active:bg-red-100"
+                                href="">
+                                <svg class="h-5 w-5 fill-current">
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Doméstico -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div class="flex flex-row items-center gap-4 px-4 py-6">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.65983 3.60156C4.07537 3.60156 3.60156 4.11367 3.60156 4.74539V19.2577C3.60156 19.8895 4.07536 20.4016 4.65983 20.4016H19.3433C19.9278 20.4016 20.4016 19.8895 20.4016 19.2577V4.74539C20.4016 4.11367 19.9278 3.60156 19.3433 3.60156H4.65983ZM5.4866 11.4296L12.0346 6.46114L18.5827 11.4296L12.0346 16.3624L5.4866 11.4296Z"
+                      fill="black" />
+                    <path
+                      d="M14.7944 12.5378C14.9131 12.1928 14.9779 11.8194 14.9779 11.4296C14.9779 9.67268 13.6602 8.24837 12.0346 8.24837C10.8317 8.24837 9.79731 9.02837 9.34078 10.146C10.9423 9.66542 13.312 9.77737 14.7944 12.5378Z"
+                      fill="black" />
+                    <path
+                      d="M14.1023 13.6937C13.5708 14.2608 12.8405 14.6109 12.0346 14.6109C10.4091 14.6109 9.09133 13.1866 9.09133 11.4296C9.09133 11.322 9.09627 11.2157 9.10592 11.1108C11.9989 10.5865 13.5178 12.3263 14.1023 13.6937Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="break-words text-lg font-bold text-gray-800">
+                    Doméstico
+                  </div>
+                </div>
+                <div class="shrink">
+                  <a
+                    class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+                    href="">
+                    Adicionar região
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <!-- Card content  -->
+                <div class="flex flex-col gap-8">
+                  <div
+                    class="relative overflow-hidden rounded-lg lg:ring-1 lg:ring-gray-100">
+                    <table
+                      class="block w-full table-auto border-separate text-left text-sm text-gray-500 lg:border-collapse lg:border-0 lg:[display:revert] [&>*]:block lg:[&>*]:[display:revert] [&>tbody>*]:block lg:[&>tbody>*]:[display:revert] [&>tbody>tr>*]:block lg:[&>tbody>tr>*]:[display:revert] [&>thead>*]:hidden lg:[&>thead>*]:[display:revert]">
+                      <thead
+                        class="bg-gray-50 text-xs font-semibold uppercase text-gray-900">
+                        <tr>
+                          <th class="px-4 py-3 empty:p-0">Região</th>
+                          <th class="px-4 py-3 empty:p-0" scope="col">
+                            Taxa para uma recompensa
+                          </th>
+                          <th class="px-4 py-3 empty:p-0" scope="col">
+                            Taxa para recompensas adicionais
+                          </th>
+                          <th class="px-4 py-3 empty:p-0" scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="lg:divide-y lg:divide-gray-100">
+                        <tr
+                          class="my-4 divide-y divide-gray-50 overflow-hidden rounded-lg border border-gray-100 bg-white lg:divide-none lg:border-x-0">
+                          <td
+                            data-title="Região"
+                            class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
+                            Todo o Brasil
+                          </td>
+                          <td
+                            data-title="Taxa única"
+                            class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
+                            R$20,00
+                          </td>
+                          <td
+                            data-title="Taxa por recompensa adicional"
+                            class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:bg-inherit lg:before:hidden">
+                            R$20,00
+                          </td>
+                          <td
+                            class="px-4 py-4 before:block before:text-xs before:font-bold before:content-[attr(data-title)] empty:border-none empty:p-0 lg:w-[0.01%] lg:whitespace-nowrap lg:bg-inherit lg:before:hidden">
+                            <a
+                              class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                              href="">
+                              Editar
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Internacional -->
+          <!-- Vertical card -->
+          <div class="rounded-lg border border-gray-100 bg-white shadow">
+            <div class="flex h-full flex-col">
+              <div class="flex flex-row items-center gap-4 px-4 py-6">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6">
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 4.505a8.25 8.25 0 1011.672 8.214l-.46-.46a2.252 2.252 0 01-.422-.586l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.211.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.654-.261a2.25 2.25 0 01-1.384-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.279-2.132z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="flex flex-1 flex-col gap-0.5">
+                  <div class="break-words text-lg font-bold text-gray-800">
+                    Internacional
+                  </div>
+                </div>
+                <div class="shrink">
+                  <a
+                    class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-xs font-medium text-green-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-50 active:bg-green-100"
+                    href="">
+                    Adicionar região
+                  </a>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                <!-- Card content  -->
+                <!-- Vertical card -->
+                <div class="rounded-lg border border-gray-100 bg-white">
+                  <div class="flex h-full flex-col">
+                    <div
+                      class="flex flex-1 flex-col px-4 pb-3 pt-2 last:pb-6 last:pt-1 first:last:pt-6">
+                      <!-- Empty State -->
+                      <div
+                        class="m-auto flex max-w-lg flex-col items-center gap-6">
+                        <div class="flex flex-col items-center gap-6">
+                          <div
+                            class="flex flex-col items-center gap-2 text-center">
+                            <h3 class="text-sm font-medium text-gray-900">
+                              Entrega internacional não oferecida
+                            </h3>
+                            <p class="text-sm font-normal text-gray-500">
+                              Escolha para onde você poderá enviar suas
+                              recompensas no mundo.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page Footer -->
+        <div
+          class="flex flex-col-reverse gap-6 border-t border-gray-100 py-6 lg:flex-row">
+          <div>
+            <div
+              class="flex flex-col-reverse gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+              <button
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-5 py-2.5 text-sm font-medium text-red-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-red-50 active:bg-red-100"
+                data-controller="confirm"
+                data-confirm-message-value="Você tem certeza que deseja deletar essa recompensa?"
+                type="submit">
+                <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
+                    clip-rule="evenodd" />
+                </svg>
+                Remover
+              </button>
+            </div>
+          </div>
+          <div class="flex w-full flex-1 justify-end">
+            <div
+              class="flex flex-col-reverse gap-3 max-lg:w-full lg:flex-row max-lg:[&>a]:w-full max-lg:[&>button]:w-full max-lg:[&>form>button]:w-full">
+              <a
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-5 py-2.5 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                href="/creator/crowdfunding/projects/b6b13d8e-f270-40f8-a6e7-19e3ef448e45/funding_goals">
+                Cancelar
+              </a>
+              <button
+                name="button"
+                type="submit"
+                class="inline-flex w-fit items-center justify-center gap-1 rounded-lg border-green-600 bg-green-600 px-5 py-2.5 text-sm font-medium text-white focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-green-800 active:bg-green-900"
+                form="funding-goal-form">
+                Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
