@@ -7,20 +7,21 @@
   </head>
 
   <body class="bg-gray-50">
-    <!-- Page Small Width-->
+    <!-- Page Small Width Color White-->
     <section class="h-full min-h-screen bg-white">
       <div
         class="mx-auto my-0 flex max-w-3xl flex-col gap-10 px-4 py-12 2xl:px-0">
         <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
-          <!-- Change - poder ser row ao invés de col -->
+          <!-- Mudar - Header da Page precisa ser flex-row ao invés de flex-col
+          Hoje é flex flex-1 flex-col gap-3
+          Passa a ser com as classes abaixo -->
           <div class="flex flex-1 flex-row items-center gap-3">
-            <!-- Change - Poder usar imagem -->
+            <!-- Mudar - Precisamos poder colocar uma imagem, e não só um ícone no Header da Page -->
             <div class="w-32 overflow-hidden rounded-md">
               <img
                 class="aspect-video h-full w-full object-cover"
                 src="https://minio.staging.catarse.com.br/public-bucket/c7432142aa12d4b880e492c6eeb3580d.png" />
             </div>
-
             <div class="flex flex-col gap-2">
               <h1 class="text-2xl font-semibold leading-none text-gray-900">
                 O livro dos passáros
@@ -33,7 +34,7 @@
         </div>
         <!-- Page body -->
         <div class="flex flex-col gap-10">
-          <!-- Rewards section -->
+          <!-- Rewards List -->
           <div class="flex flex-col gap-6">
             <!-- Vertical card -->
             <div class="rounded-lg border border-gray-100 bg-white shadow">
