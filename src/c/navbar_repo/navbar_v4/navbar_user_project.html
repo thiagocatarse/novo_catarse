@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
+      rel="stylesheet" />
+    <link href="../../../dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="">
+    <!-- Frame -->
+    <div class="flex flex-col lg:flex-row">
+      <!-- Sidebar Toggle -->
+      <input type="checkbox" id="sidebar_toggle" class="flex-0 peer/sidebar hidden" />
+      <!-- Search toggle -->
+      <input type="checkbox" id="search_toggle" class="peer/search hidden" />
+      <!-- Inicio do Overlay Sidebar que só aparece em mobile -->
+      <label
+        for="sidebar_toggle"
+        class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked/sidebar:fixed peer-checked/sidebar:z-[60] peer-checked/sidebar:block peer-checked/sidebar:opacity-50 xl:hidden xl:peer-checked/sidebar:hidden "></label>
+        <!-- Inicio do Overlay Search que só aparece em mobile -->
+        <label
+          for="search_toggle"
+          class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked/search:fixed peer-checked/search:z-[60] peer-checked/search:block peer-checked/search:opacity-50 lg:peer-checked/search:opacity-0 "></label>
+
+      <!-- Sidebar -->
+      <nav
+        class="fixed bottom-0 left-0 top-0 z-[100] hidden h-screen w-3/4 flex-col items-stretch bg-white shadow-xl @container peer-checked/sidebar:fixed peer-checked/sidebar:flex md:z-[100] md:flex md:w-20 xl:w-60 peer-checked/search:shadow-none">
+        <!-- Header Secondary Nav -->
+        <!-- Logo -->
+        <!-- Toggle and Logo -->
+        <div
+          class="sticky top-0 flex h-14 flex-row items-center gap-3 bg-white px-3 py-3 md:px-5 lg:justify-start mb-4">
+          <!-- Toggler -->
+          <label for="sidebar_toggle" class="md:hidden">
+            <div class="cursor-pointer p-1">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z"
+                  fill="#000" />
+              </svg>
+            </div>
+          </label>
+          <!-- Logo -->
+          <a
+            href="#"
+            class="flex w-full flex-row items-center justify-center gap-2 @[81px]:w-auto">
+            <img src="./assets/logo-symbol.svg" alt="Símbolo do Catarse" />
+            <img
+              src="./assets/logo-texto.svg"
+              alt="Texto do Logo Catarse"
+              class="hidden @[81px]:flex" />
+          </a>
+        </div>
+
+        <!-- Content Secondary Nav -->
+        <div
+          class="flex flex-1 flex-col gap-4 overflow-auto px-2  @[81px]:px-4">
+          <!-- Links section -->
+          <div class="flex flex-col gap-1">
+            <!-- Link inicio -->
+            <a
+              class="group flex flex-row rounded-lg bg-gray-50 px-2 py-2 text-gray-700 font-semibold hover:bg-gray-50 hover:text-gray-700"
+              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                <div
+                  class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                  Início
+                </div>
+              </div>
+            </a>
+            <!-- Link Descobrir -->
+            <label for="search_toggle"
+              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 font-normal hover:bg-gray-50 hover:text-gray-700 cursor-pointer"
+              >
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                    clip-rule="evenodd" />
+                </svg>
+
+                <div
+                  class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                  Pesquisar
+                </div>
+              </div>
+            </label>
+            <!-- Link Descobrir -->
+            <a
+              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <path
+                    d="M8.5 0C6.91775 0 5.37103 0.469192 4.05544 1.34824C2.73985 2.22729 1.71447 3.47672 1.10897 4.93853C0.503466 6.40034 0.34504 8.00887 0.653721 9.56072C0.962403 11.1126 1.72433 12.538 2.84315 13.6569C3.96197 14.7757 5.38743 15.5376 6.93928 15.8463C8.49113 16.155 10.0997 15.9965 11.5615 15.391C13.0233 14.7855 14.2727 13.7602 15.1518 12.4446C16.0308 11.129 16.5 9.58225 16.5 8C16.4978 5.87895 15.6542 3.84542 14.1544 2.34562C12.6546 0.845814 10.621 0.00223986 8.5 0ZM12.4677 4.44538L10.0062 9.36846C9.97602 9.42779 9.9278 9.47601 9.86846 9.50615L4.94539 11.9677C4.88759 11.9967 4.82211 12.0068 4.75826 11.9965C4.6944 11.9862 4.63542 11.9561 4.58968 11.9103C4.54395 11.8646 4.51379 11.8056 4.50349 11.7417C4.49319 11.6779 4.50327 11.6124 4.53231 11.5546L6.99385 6.63154C7.02399 6.5722 7.07221 6.52398 7.13154 6.49384L12.0546 4.03231C12.1124 4.00327 12.1779 3.99318 12.2417 4.00348C12.3056 4.01378 12.3646 4.04394 12.4103 4.08968C12.4561 4.13541 12.4862 4.1944 12.4965 4.25826C12.5068 4.32211 12.4967 4.38759 12.4677 4.44538Z" />
+                </svg>
+
+                <div
+                  class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                  Descobrir projetos
+                </div>
+              </div>
+            </a>
+            <!-- Link Criações -->
+            <a
+              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+              href="./navbar_creator.html">
+              <div
+                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <path
+                    d="M13.2511 7.68025C13.4392 5.49634 12.7391 3.33333 11.2657 1.5883C10.1686 0.271682 9.34307 0.0522466 8.81016 0.0104493C8.73701 0 8.66387 0 8.59072 0C8.29814 0 8.01601 0.0522466 7.74433 0.146291C7.09647 0.376176 6.574 0.867294 6.30232 1.47335C5.86345 2.45559 6.04109 3.99164 7.4622 5.03657C9.45802 6.49948 11.6942 8.62069 11.4956 12.0899C12.4988 10.8359 13.1153 9.28945 13.2511 7.68025Z" />
+                  <path
+                    d="M2.23854 16.8758C1.93551 15.7473 2.02956 14.5456 2.48933 13.4798C2.42663 12.9887 2.45798 12.4767 2.63562 11.9229C2.0818 12.3408 1.63248 12.8842 1.32945 13.5216C0.859233 14.5352 0.817436 15.6951 1.21451 16.7922C1.50709 17.5968 1.85192 17.8372 2.0818 17.9417C2.23854 18.0148 2.40573 18.0566 2.58337 18.0566C2.62517 18.0566 2.66697 18.0462 2.71921 18.0462C2.51023 17.6804 2.34304 17.2938 2.23854 16.8758Z" />
+                  <path
+                    d="M5.91621 18.8925C4.87128 18.1611 4.09803 17.0848 3.7323 15.8622C3.31433 15.486 2.95905 15.0054 2.72916 14.3784C2.53063 15.1517 2.53063 15.9563 2.73961 16.74C3.06354 17.9312 3.85769 18.9448 4.96532 19.5926C5.43554 19.8643 5.84306 20.0002 6.18789 20.0002C6.30283 20.0002 6.41778 19.9897 6.53272 19.9584C6.72081 19.9061 6.89844 19.8121 7.04474 19.6971C7.09698 19.6553 7.13878 19.6135 7.18058 19.5613C6.73126 19.3836 6.31328 19.1747 5.91621 18.8925Z" />
+                  <path
+                    d="M10.4204 17.9831C10.2323 18.004 10.0546 18.004 9.86656 18.004C8.64399 18.004 7.46321 17.6383 6.44963 16.9695C5.74952 16.9382 5.10167 16.7501 4.49561 16.4053C4.87178 17.2308 5.46739 17.9413 6.21974 18.4638C7.07659 19.0594 8.10062 19.3833 9.16645 19.3833C9.49038 19.3833 9.81431 19.352 10.1278 19.2997C11.1727 19.1116 11.5384 18.7459 11.7161 18.4847C11.8415 18.307 11.9251 18.0981 11.9669 17.8891C11.9773 17.8055 11.9878 17.7219 11.9878 17.6383C11.4862 17.8159 10.9637 17.9413 10.4204 17.9831Z" />
+                  <path
+                    d="M14.83 12.8735C14.7778 12.7795 14.7151 12.6959 14.6419 12.6123C14.3493 13.1348 13.9836 13.6154 13.5552 14.0439C12.4685 15.1306 11.0369 15.8202 9.5113 15.9874C8.93659 16.4263 8.23648 16.7607 7.37964 16.907C8.15289 17.2832 8.99928 17.4817 9.86658 17.4817C10.0338 17.4817 10.201 17.4712 10.3786 17.4608C11.8833 17.325 13.2731 16.5935 14.2762 15.3814C15.0285 14.4827 15.0808 13.908 15.0494 13.5527C15.0285 13.3124 14.9554 13.0825 14.83 12.8735Z" />
+                  <path
+                    d="M14.3589 7.04288C14.1917 6.87569 14.0037 6.75029 13.7947 6.65625C13.8051 7.01153 13.8051 7.35635 13.7738 7.71163C13.5961 9.697 12.7497 11.5674 11.3704 13.0094C11.1928 13.814 10.8271 14.6082 10.1792 15.3501C11.3077 15.0889 12.3631 14.5037 13.1886 13.6782C14.3694 12.4974 15.0172 10.8882 15.0172 9.15364C15.0172 7.84747 14.6411 7.32501 14.3589 7.04288Z" />
+                </svg>
+
+                <div
+                  class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                  Minhas criações
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Links section wide only -->
+          <div class="hidden flex-col gap-1 @[81px]:flex">
+            <!-- Divider -->
+            <div class="my-4">
+              <!-- Divider component -->
+              <div
+                class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100"></div>
+            </div>
+            <!-- CTA login -->
+            <div class="flex flex-col gap-3 rounded-lg py-3">
+              <p class="text-xs font-normal text-gray-900">
+                Faça login para apoiar, seguir ou criar projetos!
+              </p>
+              <!-- button xs blue outline stretch -->
+              <a
+                class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-blue-600 bg-transparent px-3 py-2 text-xs font-medium text-blue-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-blue-50 active:bg-blue-100"
+                href="">
+                <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+                  <path
+                    d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+                </svg>
+
+                Entre ou cadastre-se
+              </a>
+            </div>
+          </div>
+          <!-- Links section wide only -->
+          <div class="hidden flex-col gap-2 @[81px]:flex">
+            <!-- Divider -->
+            <div class="my-4">
+              <!-- Divider component -->
+              <div
+                class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Profile nav -->
+
+        <div class="sticky bottom-0 w-full overflow-x-clip flex flex-col items-center">
+          <input
+            type="checkbox"
+            id="profile_toggler"
+            class="flex-0 peer/profile hidden" />
+
+          <label
+            for="profile_toggler"
+            class="flex w-full cursor-pointer flex-row items-center justify-center gap-3 border-t border-t-gray-100 bg-white p-4 hover:bg-gray-50 @[81px]:justify-start peer-checked/profile:shadow-[0_-8px_12px_#00000008]">
+            <!-- Avatar e nome -->
+            <div class="flex flex-1 flex-row gap-3 items-center justify-start md:justify-center xl:justify-start">
+              <!-- Avatar sm -->
+              <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
+                <img
+                  class="h-full w-full object-cover"
+                  src="https://ca.slack-edge.com/T0256U9U6-U0460U5PL-f02cbc1f5103-512" />
+              </div>
+              <!-- Nome e crédito -->
+              <div class="hidden flex-col @[81px]:flex">
+                <p class="text-sm font-medium text-gray-900">Thiago Maia</p>
+                <p class="text-xs font-normal text-gray-500">Apoiador</p>
+              </div>
+            </div>
+            <!-- Chevron Up Down -->
+            <div class="hidden flex-col text-gray-400 @[81px]:flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </label>
+          <!-- Trocar criador -->
+          <div class="z-[999] hidden w-full  @[81px]:peer-checked/profile:flex px-4 py-3 pb-6 border-b border-b-gray-100">
+            <a
+            class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+            href="./navbar_creator.html">
+            <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+              <path
+                fill-rule="evenodd"
+                d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+            Trocar para Criador
+          </a></div>
+          <!-- Profile menu -->
+          <div class="z-[999] hidden w-full bg-white peer-checked/profile:flex">
+            <!-- Content Profile Nav -->
+            <div
+              class="flex flex-1 flex-col gap-4 overflow-auto px-2 py-4 @[81px]:px-4">
+              <!-- Links section -->
+              <div class="flex flex-col gap-2">
+                <!-- Link Perfil -->
+                <a
+                  class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                  href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+                  <div
+                    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                    <svg
+                      class="h-5 w-5 fill-current"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z" />
+                    </svg>
+
+                    <div
+                      class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                      Meu perfil
+                    </div>
+                  </div>
+                </a>
+                <!-- Link Config -->
+                <a
+                  class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal "
+                  href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                  <div
+                    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                    <svg
+                      class="h-5 w-5 fill-current"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 18">
+                      <svg
+                    class="h-5 w-5 fill-current"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 18">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
+                    </svg>
+
+                    <div
+                      class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                      Configura&shy;ções
+                    </div>
+                  </div>
+                </a>
+                <!-- Link Sair -->
+                <a
+                  class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                  href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                  <div
+                    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
+                    <svg
+                      class="h-5 w-5 fill-current"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 18">
+                      <path
+                      fill-rule="evenodd"
+                      d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
+                      clip-rule="evenodd" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
+                      clip-rule="evenodd" />
+                    </svg>
+
+                    <div
+                      class="text-center hyphens-manual text-[10px] @[81px]:text-left @[81px]:text-sm">
+                      Sair
+                    </div>
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Search Wrapper -->
+      <!-- Inicio do wrapper da busca e recomendações -->
+      <div
+      class="z-[110] md:z-[90] md:ml-20 xl:ml-60 hidden h-screen flex-col gap-4 bg-white border-l border-l-gray-100 peer-checked/search:fixed transition-all duration-75 peer-checked/search:flex shadow-2xl py-4 px-8 w-full md:w-[412px]  border-r border-r-gray-100">
+      <div class="flex flex-row justify-between  mb-6">
+        <p class="text-gray-900 text-xl font-semibold flex-1">Pesquisar</p>
+        <label for="search_toggle" class="cursor-pointer md:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+          <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+        </svg>
+        </label>
+      </div>
+      
+      <form class="w-full border-b border-b-gray-50">
+        <!-- Text Field Large -->
+        <div class="flex flex-col gap-2">
+          <div class="flex w-full rounded-md shadow-sm">
+            <input class="p-3 text-sm text-gray-900 bg-white border-gray-300 focus:ring-blue-500 placeholder-gray-300 hover:border-gray-600 border block w-full outline-none focus:outline-blue-100 focus:outline-offset-0 focus:outline-4 focus:border-blue-700 transition-all duration-150 ease-in-out disabled:cursor-not-allowed disabled:border-inherit disabled:opacity-30 rounded-md" id="preview-input" type="text" placeholder="Busque projetos, pessoas ou categorias">
+          </div>
+        </div>
+      </form>
+      <div class="flex flex-col gap-3 bg-white mt-6">
+        <p class="text-sm text-gray-600">Pesquisas populares:</p>
+        <div class="flex flex-row gap-2">
+          <a
+            class="mr-2 inline-flex items-center whitespace-nowrap rounded-lg bg-gray-100 px-3 py-2 align-middle text-xs font-semibold text-gray-800 hover:bg-gray-200"
+            href="#">
+            Quadrinhos
+          </a>
+          <a
+            class="mr-2 inline-flex items-center whitespace-nowrap rounded-lg bg-gray-100 px-3 py-2 align-middle text-xs font-semibold text-gray-800 hover:bg-gray-200"
+            href="#">
+            RPG
+          </a>
+          <a
+            class="mr-2 inline-flex items-center whitespace-nowrap rounded-lg bg-gray-100 px-3 py-2 align-middle text-xs font-semibold text-gray-800 hover:bg-gray-200"
+            href="#">
+            Jogos
+          </a>
+          <a
+            class="mr-2 inline-flex items-center whitespace-nowrap rounded-lg bg-gray-100 px-3 py-2 align-middle text-xs font-semibold text-gray-800 hover:bg-gray-200"
+            href="#">
+            Livros
+          </a>
+        </div>
+      </div>
+    </div>
+      <!-- Mobile Top Nav User - Main  -->
+<nav class="top-0 z-50 flex w-full flex-row items-center border-b border-b-gray-50 bg-white md:hidden">
+  <!-- Toggle and Logo -->
+  <div class="sticky top-0 flex h-14 flex-row items-center gap-3 bg-white px-3 py-3 md:px-5 lg:justify-start">
+    <!-- Toggler -->
+    <label for="sidebar_toggle" class="">
+      <div class="cursor-pointer p-1">
+        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z" fill="#000" />
+        </svg>
+      </div>
+    </label>
+    <!-- Logo -->
+    <a href="#" class="flex flex-row items-center gap-2">
+      <img src="https://thiagocatarse.github.io/novo_catarse/src/c/navbar_v2/assets/logo-symbol.svg" alt="Símbolo do Catarse" />
+      <img src="https://thiagocatarse.github.io/novo_catarse/src/c/navbar_v2/assets/logo-texto.svg" alt="Texto do Logo Catarse" />
+    </a>
+  </div>
+
+  <!-- TopNav Action -->
+
+  <div class="flex h-full flex-1 items-center justify-end pr-2">
+    <!-- Aqui entra as actions -->
+    <a class="inline-flex w-fit items-center justify-center gap-1 rounded-lg bg-transparent px-3 py-2 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100" href=""> Entrar </a>
+  </div>
+</nav>
+
+      <!-- Mobile Bottom Nav -->
+      <!-- Não tem na página de projeto -->
+      <!-- Page Content -->
+      <div class="w-full md:ml-20 xl:ml-60" >
+        
+        
+          
+        
+          
+        
+        
+          
+        
+          
+            <section class="relative w-full overflow-x-hidden z-20" style="background-color: #000000">
+            <img class="absolute object-cover w-full h-full -z-0" alt="Background" src="https://minio.staging.catarse.com.br/public-bucket/714a7a914585e0d95ec78a54679411eb.png">
+          <div class="z-10 flex flex-col gap-8 px-3 pt-12 mx-auto lg:px-4 lg:max-w-screen-xl">
+            <div class="flex flex-col pb-2 items-center gap-1 lg:max-w-[512px] mx-auto z-10" style="color: #dc0403">
+          <div>
+              <img alt="Infærnum - Edição Apocalíptica" class="max-w-[256px] max-h-[128px]" src="https://minio.staging.catarse.com.br/public-bucket/0677dc455a6a7e0a2afda701c25a4c99.png">
+          </div>
+          <h2 class="text-sm font-medium text-center break-words">
+            Reviva o fim na edição definitiva de Infærnum: um novo livro com tudo para criar seu apocalipse.
+          </h2>
+        </div>
+        
+        
+            <div class="pb-20 z-10 flex flex-col items-start w-full gap-4 lg:flex-row">
+              <div class="z-10 flex flex-col w-full overflow-hidden rounded-t-lg lg:w-2/3">
+                  <div class="relative z-10 flex-1 w-full aspect-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/nlkCwFPWNcA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute top-0 left-0 w-full h-full">
+            </iframe>
+          </div>
+        
+        
+                <div class="z-20 flex flex-col items-start justify-between gap-3 px-3 py-4 rounded-b-lg lg:items-center lg:flex-row first:rounded-t-lg bg-gray-900/50">
+                  <div class="z-20 flex flex-row items-center gap-3 cursor-pointer">
+          <div class="text-base font-semibold text-white">
+            Ana Livia Nunes
+          </div>
+        </div>
+        
+                  <div class="flex flex-row gap-5">
+          <a class="flex flex-row gap-1.5 text-xs font-medium text-gray-100 hover:underline" href="#">
+            <svg class="w-4 h-4 fill-current">
+          <use xlink:href="#tag"></use>
+        </svg>
+            Jogos
+        </a>
+          <a class="flex flex-row gap-1.5 text-xs font-medium text-gray-100 hover:underline" href="#">
+            <svg class="w-4 h-4 fill-current">
+          <use xlink:href="#catarse_heart"></use>
+        </svg>
+            Projeto em Destaque
+        </a></div>
+        
+                </div>
+              </div>
+        
+              <div class="flex flex-col w-full gap-2 overflow-hidden bg-white rounded-lg shadow lg:w-1/3">
+          <div class="px-3 pt-4 lg:px-6">
+          <div class="mb-4 rounded-lg text-green-700 bg-green-100 p-2 text-xs font-semibold" role="alert">
+          <div class="flex flex-row items-center">
+            
+            <div>
+              
+              
+              
+            Meta mínima já alcançada.
+            <span class="font-extrabold">
+              Rumo à próxima meta!
+            </span>
+        
+              
+            </div>
+            
+          </div>
+        </div></div>
+        
+        
+          <div class="flex flex-col flex-1 gap-6 px-3 pt-0 pb-4 lg:px-6 first:pt-4">
+            <div class="flex flex-col gap-1">
+          <div class="text-3xl font-semibold text-gray-800 lg:text-4xl">
+            R$0,00
+          </div>
+          <div class="text-sm font-semibold text-gray-500">
+            arrecadados por <b>0 pessoas</b>
+          </div>
+        </div>
+        
+        
+              <div class="flex flex-col gap-2">
+          <div class="w-full">
+        
+          <div class="w-full bg-gray-50 rounded-full border border-gray-100 overflow-hidden flex flex-col items-start h-1.5">
+            <div class="bg-green-600 rounded-full h-1.5" style="width: 0%"></div>
+        </div></div>
+        
+          <div class="flex flex-row">
+            <div class="flex-1 text-xs font-bold text-gray-500">
+              0% da meta de R$6.666,00
+            </div>
+        
+            <div class="flex-0">
+              <div class="text-xs font-semibold">
+                <a class="text-blue-600 hover:underline" href="#">Ver metas</a>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+            <div class="flex flex-col">
+          <div class="flex flex-row items-center gap-1 text-2xl font-semibold">
+            <div class="flex flex-row gap-2" data-controller="countdown-timer" data-countdown-timer-target-datetime-value="2023-08-28T00:00:00Z">
+            28 dias
+        </div>
+        
+          </div>
+          <div class="text-sm font-medium text-gray-500">
+            restantes para apoiar
+          </div>
+        </div>
+        
+          </div>
+        
+          <div class="flex flex-col gap-4 px-3 py-0 lg:py-4 lg:px-6">
+          <div class="fixed bottom-0 left-0 right-0 z-20 w-full px-4 py-4 bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.2)] lg:shadow-none flex flex-row gap-1 lg:relative lg:px-0 lg:py-0 items-center">
+               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-3.5 px-6 text-base bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" href="#">
+            
+            Apoiar projeto
+            
+        </a>
+          </div>
+        
+          <div class="flex flex-row gap-2 max-lg:mb-6">
+            <div class="w-full">
+                <form class="w-full" method="post" action="/community/follows?followable_id=22403cda-d5eb-4604-8afe-963fd7b85c74&followable_type=Crowdfunding%3A%3AProject"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" type="submit">
+            <svg class="w-5 h-5 mr-1 -ml-1 fill-current">
+          <use xlink:href="#heart"></use>
+        </svg>
+            Lembrar-me
+            
+        </button><input type="hidden" name="authenticity_token" value="afYAPU18CQ4A9tCDKbibsRpfiPhzhJS1KZdPS-kDRMtT5yCOi5shohtMMO7tWYGozv0trcr2ekDllE9IgN3Tig" autocomplete="off"></form>
+            </div>
+        
+               <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" href="">
+            <svg class="w-5 h-5 mr-1 -ml-1 fill-current">
+          <use xlink:href="#share"></use>
+        </svg>
+            Compartilhar
+            
+        </a>
+          </div>
+        </div>
+        
+        
+          <div class="flex flex-row gap-2 items-center px-4 py-3 border-t border-gray-50 bg-gray-50/50">
+          <div class="flex-grow-0">
+              <svg class="w-36 h-7 fill-white">
+          <use xlink:href="#all_or_nothing"></use>
+        </svg>
+          </div>
+        
+            <div class="flex-1 text-[10px] text-gray-400 text-right">
+              Apoie até 31 de julho, 00:49
+            </div>
+        </div>
+        
+        </div>
+        
+            </div>
+          </div>
+        </section>
+        <div class="sticky top-0 z-10 flex w-full flex-row items-center bg-white pt-4">
+          <div class="w-full border-b border-gray-100 bg-white flex flex-row items-center">
+          <nav class="mx-auto flex w-full max-w-screen-xl gap-2 overflow-x-auto px-3 text-center text-sm font-medium text-gray-500 md:gap-6" aria-label="Tabs">
+              <a class="whitespace-nowrap rounded-t-lg p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" href="/Inf%C3%A6rnum#about">
+          
+          O projeto
+        </a>
+              <a class="whitespace-nowrap rounded-t-lg p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" href="/Inf%C3%A6rnum#rewards">
+          
+          Recompensas
+        </a>
+              <a class="whitespace-nowrap rounded-t-lg p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" href="#">
+          
+          Posts
+        </a>
+              <a class="whitespace-nowrap rounded-t-lg p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" href="/Inf%C3%A6rnum/comments">
+          
+          Comentários
+        </a>
+              <a class="whitespace-nowrap rounded-t-lg p-4 border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300" href="/Inf%C3%A6rnum/funding_goals">
+          
+          Metas
+        </a>
+        
+              <div class="flex flex-1 flex-row items-center justify-end gap-4 max-lg:hidden">           <a class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" href="#">
+            
+            Apoiar projeto
+            
+        </a>
+                  <form class="button_to" method="post" action="/community/follows?followable_id=22403cda-d5eb-4604-8afe-963fd7b85c74&followable_type=Crowdfunding%3A%3AProject"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2 px-3 text-xs bg-transparent text-gray-600 hover:bg-gray-50 active:bg-gray-100" type="submit">
+            <svg class="w-5 h-5 mr-1 -ml-1 fill-current">
+          <use xlink:href="#heart"></use>
+        </svg>
+            Lembrar-me
+            
+        </button><input type="hidden" name="authenticity_token" value="1YXD88AJcIiJMlDBziubFCnJ20iFD4jFQmhDZV1dhznvlONABu5YJJKIsKwKyoEN_Wt-HTx9ZjCOa0NmNIMQeA" autocomplete="off"></form>
+        </div>
+        </nav></div></div>
+        
+        <section class="px-3 pt-12 pb-20 bg-gray-50" id="about">
+          <div class="mx-auto flex max-w-2xl flex-col gap-6">
+            <div class="flex flex-col gap-4 col-span-12 lg:col-span-7 lg:col-start-2">
+                <div class="rounded-lg border border-gray-100 bg-white shadow"><div class="flex flex-col h-full">      
+              
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">            <div class="px-2 py-1 text-base font-normal text-gray-800">
+                      <script>
+          function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+          }
+        </script>
+        
+        <iframe class="w-full px-0.5" frameborder="0" scrolling="no" onload="resizeIframe(this)" srcdoc="<link rel=&quot;stylesheet&quot; href=&quot;/static/redactorx-editor/css/redactorx.min.css&quot; /><div class=&quot;rx-reset rx-content&quot;><p></p><figure class=&quot;outset-both&quot; style=&quot;max-width: 517px;&quot;><img src=&quot;https://minio.staging.catarse.com.br/public-bucket/4254a67f1634283c123f81b01f2f1788.png&quot; id=&quot;4254a67f1634283c123f81b01f2f1788.png&quot; data-image=&quot;4254a67f1634283c123f81b01f2f1788.png&quot; width=&quot;517&quot; height=&quot;914&quot; style=&quot;width: 517px; max-width: 517px; height: 914px;&quot;></figure><p><strong>O apocalipse já aconteceu.</strong>&nbsp;Infærnum foi financiado e, neste momento, os materiais físicos já estão em produção. Finalizamos quase todas as recompensas digitais e decidimos dar uma nova – e última – chance a quem perdeu o financiamento: nossas mais sinceras boas-vindas aos atrasados, aos que não participaram do fim de todas as coisas.<br><br>Neste&nbsp;<em>late pledge</em>, você poderá adquirir apenas recompensas digitais. Contudo, é só apoiar para acessá-las no mesmo instante. Há apenas um nível de apoio, que dá direito ao livro, acessórios, suplementos e todas as metas extras que foram batidas no financiamento já realizado. As metas extras já estão prontas e já estão disponíveis.<br><br>Aproveite,&nbsp;<strong>apoie e acesse agora mesmo suas recompensas na aba Novidades.</strong></p>
+        
+        <p>Um jogo&nbsp;<em>brutal&nbsp;</em>– ao mesmo tempo que é&nbsp;<em>bonito</em><em>&nbsp;</em>– e que seja&nbsp;<em>bom</em>. É isso que a gente tá dando o sangue pra fazer.</p>
+        <p>Aliás, sente-se. Aproveite o calor da fogueira e vamos conversar um pouco. Afinal, não se trata de qualquer conversa. Estamos falando de conversas capazes de criar o infinito.</p>
+        <p>Antes de qualquer coisa é preciso dizer que Infærnum é um RPG (Role Playing Game), um jogo de contar histórias enquanto se interpreta alguns personagens na narrativa criada. De um jeito simples, dá pra dizer que com as regras do livro, mais alguns dados e algo para anotar, os jogadores acabam criando um cenário fictício em que essas personagens ganham vida. E aos recém-chegados, vale dizer: tudo isso acontece usando a imaginação.</p>
+        <p></p>
+        <figure class=&quot;outset-both&quot;><img src=&quot;https://minio.staging.catarse.com.br/public-bucket/a91d78b15f8e2c987ac0c6fd83f67a89.png&quot; id=&quot;a91d78b15f8e2c987ac0c6fd83f67a89.png&quot; data-image=&quot;a91d78b15f8e2c987ac0c6fd83f67a89.png&quot;></figure>
+        
+        <p>Quando se fala em RPG, é muito comum associar a sigla a uma outra, de um jogo muito mais famoso que este. Mas preciso avisar: existe um universo gigantesco de jogos que fogem um pouquinho desse padrão mais tradicional. Infærnum está aí, no meio dessa constelação não tão conhecida, mas repleta de novidades.</p>
+        <p>Há três maneiras de se jogar Infærnum:</p>
+        
+        <figure><img src=&quot;https://minio.staging.catarse.com.br/public-bucket/5a47c3ebcd4f862ef9b9687e897633e5.png&quot; id=&quot;5a47c3ebcd4f862ef9b9687e897633e5.png&quot; data-image=&quot;5a47c3ebcd4f862ef9b9687e897633e5.png&quot;></figure>
+        <p>Ao jogar sozinho, você cria um personagem para interpretar e contar uma história que gira em torno dele. Nessa modalidade, você fará perguntas e o próprio jogo te dará respostas para interpretar. Além disso, o jogo trará regras para que você gere ideias e imagine o que elas significam na narrativa que você está contando. Se desejar, você pode manter o registro da sua história, anotando um resumo dos acontecimentos conforme o enredo progride.</p>
+        <p><strong>Um aviso sobre o modo solo:</strong>&nbsp;Infærnum não é um livro-jogo, com uma história fechada e repleta de escolhas para que você tome. No modo solo, você terá ferramentas que te ajudarão a criar o mundo de jogo e contar a história do seu personagem com total liberdade. Infelizmente, muita gente ainda desconhece essa modalidade de RPG e acaba pensando apenas nos livros-jogos quando se fala em “jogar RPG solo”. Contudo, ela não é novidade. Há uma infinidade de jogos que abrangem essa modalidade e Infærnum está chegando para se juntar a eles.</p><figure><img src=&quot;https://minio.staging.catarse.com.br/public-bucket/65a94c6308c1bfe9163b029a72925942.png&quot; id=&quot;65a94c6308c1bfe9163b029a72925942.png&quot; data-image=&quot;65a94c6308c1bfe9163b029a72925942.png&quot;></figure>
+        
+        <p>É possível jogar Infærnum cooperativamente, sem a necessidade de um jogador que desempenhe o papel comumente intitulado de “mestre”. Nessa modalidade, você e seus amigos definirão cada um o seu personagem e contarão juntos uma história sobre eles. Assim como no modo solo, os jogadores podem fazer perguntas para o próprio jogo ou gerar ideias, seguindo as regras do livro. Contudo, há um diferencial aqui, é possível fazer perguntas para o jogador que está assumindo o papel de Oráculo.</p>
+        <p><strong>Um aviso sobre o modo cooperativo:</strong>&nbsp;Junto do livro de regras, você receberá um acessório denominado Oráculo. Em jogos cooperativos, esse marcador ficará no centro da mesa e apontará para um jogador. Os outros jogadores podem fazer perguntas mais amplas para que esse jogador responda. O que ele disser automaticamente é considerado uma verdade na ficção. Além disso, o Oráculo pode interpretar as ações de outros personagens que aparecem conforme a história progride. Um detalhe: há uma regra específica que fará com que os jogadores revezem o papel de Oráculo. E, é claro, relaxe: ninguém é obrigado a assumir esse papel se assim desejar.</p>
+        <figure><img src=&quot;https://minio.staging.catarse.com.br/public-bucket/ab678e4d7de4e5ba7a42b5e596a60c7d.png&quot; id=&quot;ab678e4d7de4e5ba7a42b5e596a60c7d.png&quot; data-image=&quot;ab678e4d7de4e5ba7a42b5e596a60c7d.png&quot;></figure>
+        
+        <p>Assemelhando-se a RPGs mais tradicionais, essa maneira de se jogar pressupõe que um dos jogadores assuma o papel de “mestre”. Essa pessoa ficará responsável por interpretar personagens que não sejam os dos demais jogadores, além de dar vida ao cenário ao redor deles.</p>
+        <p><strong>Um aviso sobre o modo guiado:</strong>&nbsp;Achou que eu não teria o que dizer sobre uma modalidade tão clássica? Enganou-se. Tenho um conselho: se você só jogou RPGs dessa maneira, experimente os outros modos. Talvez você se divirta mais com eles, já que neles todos são jogadores-narradores e não há essa divisão de papéis que ocorre aqui. Em todo caso, ao assumir o papel de mestre, evite preparações. Use as regras do livro como inspiração e, em vez de contar a sua história, crie junto dos demais jogadores a história que todos desejam contar.</p></div>" style="height: 3881px;"></iframe>
+        
+                    </div>
+        </div>
+        
+            
+            
+        </div></div>
+              <div class="rounded-lg border border-gray-100 bg-white shadow"><div class="flex flex-col h-full">      <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          <div>  <div class="overflow-hidden rounded-full w-12 h-12 bg-gray-100">
+            <svg class="w-12 h-12 mt-2 text-gray-300 fill-current">
+          <use xlink:href="#base_avatar"></use>
+        </svg>
+        </div>
+        </div>
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-gray-800">Ana Livia Nunes</div>
+        
+            
+        </div>
+          
+        </div>
+              
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <p></p>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-1 flex-col items-stretch gap-2">
+                  <form class="button_to" method="post" action="/community/follows?followable_id=859b1f41-086f-4615-bf0a-32cf03a55ab4&followable_type=User"><input type="hidden" name="_method" value="delete" autocomplete="off"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-fit py-2.5 px-5 text-sm bg-gray-50 border-gray-50 hover:bg-gray-100 active:bg-gray-100 text-gray-900" data-controller="confirm" data-confirm-message-value="Deixar de seguir Ana Livia Nunes?" type="submit">
+            <svg class="w-5 h-5 mr-1 -ml-1 fill-current">
+          <use xlink:href="#heart"></use>
+        </svg>
+            Seguindo
+            
+        </button><input type="hidden" name="authenticity_token" value="HhA4CQjL9uKVV4EHu6lJw4r2VGkVYcp_LUJ72KI8oKN40VBD9kSyRchOn3w6NT-ItDkijsqPl2NJeIsrQBMZLw" autocomplete="off"></form>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        
+            </div>
+          </div>
+        </section>
+        
+        <section class="bg-white py-20 px-3" id="rewards">
+          <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-16">
+            <h2 class="text-2xl font-bold text-gray-900">
+              Recompensas
+            </h2>
+        
+            <div class="grid gap-3 lg:gap-6 2xl:gap-8 h-min w-full items-stretch grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4">
+          
+              <div class="rounded-lg border border-gray-100 bg-white"><div class="flex flex-col h-full">      <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>a>img]:h-full [&>a>img]:w-full [&>a>img]:object-cover w-full first:rounded-tr-lg">
+          <img src="https://minio.staging.catarse.com.br/public-bucket/0106536a2cc28cf247e8a4de809a7676.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T004932Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=e0ef5cedfc2d1b64ec95c1f8d4ee716022914ca2f8d1c422575ade1b000f588a">
+        </div>
+              <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-green-700">R$26,00</div>
+        
+            <div class="font-semibold text-gray-800 text-base">A Peste [digital]</div>
+        
+        </div>
+          
+        </div>
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="text-xs leading-normal font-normal">
+              <p>Apenas recompensas digitais.</p>
+        
+        <p>✔ Livro (.pdf)</p>
+        
+        <p>+ 3 acessórios (.pdf):
+        <br>✔ O Oráculo;
+        <br>✔ A Chave;
+        <br>✔ A Arena.</p>
+        
+        <p>+ Metas extras digitais (.pdf) que forem alcançadas.</p>
+            </div>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-col items-stretch flex-1 gap-2">
+                <div class="flex flex-row items-center flex-1 gap-2 px-3 py-1 mb-2 text-[11px] font-semibold text-gray-400 bg-gray-50/50">
+                  <svg class="w-4 h-3 fill-current">
+          <use xlink:href="#truck"></use>
+        </svg>
+                  Jul/2023
+                </div>
+        
+                  <form class="w-full" method="post" action="/checkout/cart_items"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" type="submit">
+            
+            Selecionar recompensa
+            
+        </button><input type="hidden" name="authenticity_token" value="VB-Uw20aXSodmK9Rnxa2N8TyS-eYSEumcTA2Ku3RwXnTt7y9MLY2Qa_txs2bgnTL25Izig5NwnpZ22SxDZie3A" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_id]" value="19bcf1f6-1978-4c33-9128-55bbad93cc8a" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_type]" value="Crowdfunding::Reward" autocomplete="off"></form>
+        
+                <div class="justify-center flex-1 text-[11px] text-center text-gray-600 mt-1">
+                  
+                  <b>0</b> pessoas apoiaram
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        <div class="rounded-lg border border-gray-100 bg-white"><div class="flex flex-col h-full">      <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>a>img]:h-full [&>a>img]:w-full [&>a>img]:object-cover w-full first:rounded-tr-lg">
+          <img src="https://minio.staging.catarse.com.br/public-bucket/f1c2a483d1e41c581fc771e4936062f9.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T004932Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=4f18ffe3ab7a740dcf120e77f32b1f88fc8636b5b859a23d01338d00a7450353">
+        </div>
+              <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-green-700">R$36,00</div>
+        
+            <div class="font-semibold text-gray-800 text-base">A Guerra [digital]</div>
+        
+        </div>
+          
+        </div>
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="text-xs leading-normal font-normal">
+              <p>Apenas recompensas digitais.</p>
+        
+        <p>✔ Livro (.pdf)</p>
+        
+        <p>+ 3 acessórios (.pdf):
+        <br>✔ O Oráculo;
+        <br>✔ A Chave;
+        <br>✔ A Arena.</p>
+        
+        <p>+ 6 suplementos (.pdf):
+        <br>✔ Fendas;
+        <br>✔ Colossos;
+        <br>✔ Paranoias;
+        <br>✔ Pactos;
+        <br>✔ Territórios;
+        <br>✔ Caos.</p>
+        
+        <p>+ Metas extras digitais (.pdf) que forem alcançadas.</p>
+            </div>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-col items-stretch flex-1 gap-2">
+                <div class="flex flex-row items-center flex-1 gap-2 px-3 py-1 mb-2 text-[11px] font-semibold text-gray-400 bg-gray-50/50">
+                  <svg class="w-4 h-3 fill-current">
+          <use xlink:href="#truck"></use>
+        </svg>
+                  Jul/2023
+                </div>
+        
+                  <form class="w-full" method="post" action="/checkout/cart_items"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" type="submit">
+            
+            Selecionar recompensa
+            
+        </button><input type="hidden" name="authenticity_token" value="97F-jq9vfWbnivddxK0ezN1xkemxblxKkpb9Znf7zj5wGVbw8sMWDVX_nsHAOdwwwhHphCdr1Za6fa_9l7KRmw" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_id]" value="dbf9a3e2-bb81-45f0-aecd-d1041ca2f18f" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_type]" value="Crowdfunding::Reward" autocomplete="off"></form>
+        
+                <div class="justify-center flex-1 text-[11px] text-center text-gray-600 mt-1">
+                  
+                  <b>0</b> pessoas apoiaram
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        <div class="rounded-lg border border-gray-100 bg-white"><div class="flex flex-col h-full">      <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>a>img]:h-full [&>a>img]:w-full [&>a>img]:object-cover w-full first:rounded-tr-lg">
+          <img src="https://minio.staging.catarse.com.br/public-bucket/43ee6b338dc85b6185f75f067dfa5630.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T004932Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=ad26dd0e51f3ae13f1f39ce6404be1ed9fa389c6be382cbfeb0da16d409bee0e">
+        </div>
+              <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-green-700">R$39,00</div>
+        
+            <div class="font-semibold text-gray-800 text-base">A Fome [digital]</div>
+        
+        </div>
+          
+        </div>
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="text-xs leading-normal font-normal">
+              <p>Apenas recompensas digitais.</p>
+        
+        <p>✔ Livro (.pdf)</p>
+        
+        <p>+ 3 acessórios (.pdf):
+        <br>✔ O Oráculo;
+        <br>✔ A Chave;
+        <br>✔ A Arena.</p>
+        
+        <p>+ 6 suplementos (.pdf):
+        <br>✔ Fendas;
+        <br>✔ Colossos;
+        <br>✔ Paranoias;
+        <br>✔ Pactos;
+        <br>✔ Territórios;
+        <br>✔ Caos.</p>
+        
+        <p>✔ Artbook (.pdf)</p>
+        
+        <p>+ Metas extras digitais (.pdf) que forem alcançadas.</p>
+            </div>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-col items-stretch flex-1 gap-2">
+                <div class="flex flex-row items-center flex-1 gap-2 px-3 py-1 mb-2 text-[11px] font-semibold text-gray-400 bg-gray-50/50">
+                  <svg class="w-4 h-3 fill-current">
+          <use xlink:href="#truck"></use>
+        </svg>
+                  Jul/2023
+                </div>
+        
+                  <form class="w-full" method="post" action="/checkout/cart_items"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" type="submit">
+            
+            Selecionar recompensa
+            
+        </button><input type="hidden" name="authenticity_token" value="Sxy7qmXxVz02GmWLfaORutTZ02NpWZYaY2Djok2jALXMtJPUOF08VoRvDBd5N1NGy7mrDv9cH8ZLi7E5repfEA" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_id]" value="895b31f6-961e-457d-b244-ace1e8329a17" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_type]" value="Crowdfunding::Reward" autocomplete="off"></form>
+        
+                <div class="justify-center flex-1 text-[11px] text-center text-gray-600 mt-1">
+                  
+                  <b>0</b> pessoas apoiaram
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        <div class="rounded-lg border border-gray-100 bg-white"><div class="flex flex-col h-full">      <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>a>img]:h-full [&>a>img]:w-full [&>a>img]:object-cover w-full first:rounded-tr-lg">
+          <img src="https://minio.staging.catarse.com.br/public-bucket/a3730582d297ccf94909bb5a56748e23.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T004932Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=d88435b2eaf47f78ebd5b333d307aba2a6a51e1e923ed27b3217d63f154ed5f1">
+        </div>
+              <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-green-700">R$66,00</div>
+        
+            <div class="font-semibold text-gray-800 text-base">A Peste [impressos+digital]</div>
+        
+        </div>
+          
+        </div>
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="text-xs leading-normal font-normal">
+              <p>Recompensas impressas e digitais.</p>
+        
+        <p>✔ Livro (.pdf + impresso)</p>
+        
+        <p>+ 3 acessórios (.pdf + impressos):
+        <br>✔ O Oráculo;
+        <br>✔ A Chave;
+        <br>✔ A Arena.</p>
+        
+        <p>+ Metas extras digitais (.pdf) que forem alcançadas.</p>
+            </div>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-col items-stretch flex-1 gap-2">
+                <div class="flex flex-row items-center flex-1 gap-2 px-3 py-1 mb-2 text-[11px] font-semibold text-gray-400 bg-gray-50/50">
+                  <svg class="w-4 h-3 fill-current">
+          <use xlink:href="#truck"></use>
+        </svg>
+                  Jul/2023
+                </div>
+        
+                  <form class="w-full" method="post" action="/checkout/cart_items"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" type="submit">
+            
+            Selecionar recompensa
+            
+        </button><input type="hidden" name="authenticity_token" value="ehOcqRWejS3J36wWNkr9TlzXgfUM4dUOJ9bCtG90MO_9u7TXSDLmRnuqxYoy3j-yQ7f5mJrkXNIPPZAvjz1vSg" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_id]" value="6db47005-ceb9-4948-837b-4ecb79ec718d" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_type]" value="Crowdfunding::Reward" autocomplete="off"></form>
+        
+                <div class="justify-center flex-1 text-[11px] text-center text-gray-600 mt-1">
+                  
+                  <b>0</b> pessoas apoiaram
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        <div class="rounded-lg border border-gray-100 bg-white"><div class="flex flex-col h-full">      <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>a>img]:h-full [&>a>img]:w-full [&>a>img]:object-cover w-full first:rounded-tr-lg">
+          <img src="https://minio.staging.catarse.com.br/public-bucket/161929b63592c6d1d5120a04ad0eb84a.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T004932Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=000d57cb01acf2b59ac607ab4d0d5fc00edfcd8025ced68bd676c3eff80c5fae">
+        </div>
+              <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-green-700">R$86,00</div>
+        
+            <div class="font-semibold text-gray-800 text-base">A Guerra [impressos+digital]</div>
+        
+        </div>
+          
+        </div>
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="text-xs leading-normal font-normal">
+              <p>Recompensas impressas e digitais.</p>
+        
+        <p>✔ Livro (.pdf + impresso)</p>
+        
+        <p>+ 3 acessórios (.pdf + impressos):
+        <br>✔ O Oráculo;
+        <br>✔ A Chave;
+        <br>✔ A Arena.</p>
+        
+        <p>+ 6 suplementos (.pdf + impressos):
+        <br>✔ Fendas;
+        <br>✔ Colossos;
+        <br>✔ Paranoias;
+        <br>✔ Pactos;
+        <br>✔ Territórios;
+        <br>✔ Caos.</p>
+        
+        <p>+ Metas extras digitais (.pdf) que forem alcançadas.</p>
+            </div>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-col items-stretch flex-1 gap-2">
+                <div class="flex flex-row items-center flex-1 gap-2 px-3 py-1 mb-2 text-[11px] font-semibold text-gray-400 bg-gray-50/50">
+                  <svg class="w-4 h-3 fill-current">
+          <use xlink:href="#truck"></use>
+        </svg>
+                  Jul/2023
+                </div>
+        
+                  <form class="w-full" method="post" action="/checkout/cart_items"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" type="submit">
+            
+            Selecionar recompensa
+            
+        </button><input type="hidden" name="authenticity_token" value="RSPmyj1ZdkxKg5fiVGoRUzZbbiWdKwOgy7iLXzq9zWfCi860YPUdJ_j2_n5Q_tOvKTsWSAsuinzjU9nE2vSSwg" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_id]" value="8d324e23-e005-458c-9caa-115cdcee75ac" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_type]" value="Crowdfunding::Reward" autocomplete="off"></form>
+        
+                <div class="justify-center flex-1 text-[11px] text-center text-gray-600 mt-1">
+                  
+                  <b>0</b> pessoas apoiaram
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        <div class="rounded-lg border border-gray-100 bg-white"><div class="flex flex-col h-full">      <div class="flex-0 mb-6 overflow-hidden first:mb-0 first:rounded-tl-lg aspect-video [&>img]:h-full [&>img]:w-full [&>img]:object-cover [&>a>img]:h-full [&>a>img]:w-full [&>a>img]:object-cover w-full first:rounded-tr-lg">
+          <img src="https://minio.staging.catarse.com.br/public-bucket/c6c0937860e3ef3579937b8979a309c8.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=admin%2F20230731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230731T004932Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=ad38c17a3ed6b40dfa2325f0d5acac2ae48a0c66cc434ea123cb7cd4b85fd171">
+        </div>
+              <div class="flex flex-row gap-4 items-center px-4 py-6">
+        
+          
+        
+          <div class="flex flex-1 flex-col gap-0.5">
+            <div class="break-words text-lg font-bold text-green-700">R$99,99</div>
+        
+            <div class="font-semibold text-gray-800 text-base">A Fome [impressos+digital]</div>
+        
+        </div>
+          
+        </div>
+            <div class="flex flex-col flex-1 px-4 pt-2 pb-3 first:last:pt-6 last:pt-1 last:pb-6">    <div class="text-xs leading-normal font-normal">
+              <p>Recompensas impressas e digitais.</p>
+        
+        <p>✔ Livro (.pdf + impresso)</p>
+        
+        <p>+ 3 acessórios (.pdf + impressos):
+        <br>✔ O Oráculo;
+        <br>✔ A Chave;
+        <br>✔ A Arena.</p>
+        
+        <p>+ 6 suplementos (.pdf + impressos):
+        <br>✔ Fendas;
+        <br>✔ Colossos;
+        <br>✔ Paranoias;
+        <br>✔ Pactos;
+        <br>✔ Territórios;
+        <br>✔ Caos.</p>
+        
+        <p>✔ Artbook (.pdf + impresso)</p>
+        
+        <p>+ Metas extras digitais (.pdf) que forem alcançadas.</p>
+            </div>
+        </div>
+        
+            <div class="flex flex-row gap-4 px-4 pt-6 pb-5">
+                <div class="flex-1">
+              <div class="flex flex-col items-stretch flex-1 gap-2">
+                <div class="flex flex-row items-center flex-1 gap-2 px-3 py-1 mb-2 text-[11px] font-semibold text-gray-400 bg-gray-50/50">
+                  <svg class="w-4 h-3 fill-current">
+          <use xlink:href="#truck"></use>
+        </svg>
+                  Jul/2023
+                </div>
+        
+                  <form class="w-full" method="post" action="/checkout/cart_items"><button class="inline-flex justify-center items-center gap-1 rounded-lg font-medium focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 w-full py-2.5 px-5 text-sm bg-green-600 border-green-600 hover:bg-green-800 active:bg-green-900 text-white" type="submit">
+            
+            Selecionar recompensa
+            
+        </button><input type="hidden" name="authenticity_token" value="cVFq3rWU_MkOJntLgbEToiqjpDAH3EJL2xNtWUlL4N_2-UKg6DiXorxTEteFJdFeNcPcXZHZy5fz-D_CqQK_eg" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_id]" value="5876d69e-757c-46e6-9656-a84048b1ff32" autocomplete="off"><input type="hidden" name="checkout_cart_item[product_type]" value="Crowdfunding::Reward" autocomplete="off"></form>
+        
+                <div class="justify-center flex-1 text-[11px] text-center text-gray-600 mt-1">
+                  
+                  <b>0</b> pessoas apoiaram
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        
+            
+        </div></div>
+        
+        
+        </div>  </div>
+        </section>
+        
+        <div class="flex flex-col bg-gray-50 py-20 px-8">
+          <div class="flex flex-col items-center gap-12 max-w-screen-xl mx-auto">
+            <h2 class="text-center text-xl font-bold text-gray-800">
+              Qual é a responsabilidade do Catarse no projeto?
+            </h2>
+        
+            <div class="grid gap-3 lg:gap-6 2xl:gap-8 h-min w-full items-stretch grid-cols-1 sm:grid-cols-1 md:grid-cols-3">
+          
+              <div class="flex flex-col items-center gap-4 py-3 md:px-8">
+                <img class="h-16" src="/assets/application/responsability/community-f9d29253961d7705efe3b7c5a14d4432cde785cf.svg">
+                <p class="text-center text-base text-gray-800">O Catarse é um espaço para aproximar pessoas que desejam <b>viabilizar financeiramente</b> determinados projetos.</p>
+              </div>
+              <div class="flex flex-col items-center gap-4 py-3 md:px-8">
+                <img class="h-16" src="/assets/application/responsability/project-8f6e782ce82c6709b151f69a95b005ea68fa09df.svg">
+                <p class="text-center text-base text-gray-800">Ao publicar um projeto no Catarse, <b>o realizador se torna responsável pelo conteúdo</b>, pelos compromissos e prazos.</p>
+              </div>
+              <div class="flex flex-col items-center gap-4 py-3 md:px-8">
+                <img class="h-16" src="/assets/application/responsability/security-24f71f86813b133d9c4fbd518eb84739b03b4696.svg">
+                <p class="text-center text-base text-gray-800">O Catarse trabalha para <b>garantir a segurança</b> de todas as transações financeiras e a privacidade dos dados</p>
+              </div>
+        
+        </div>
+            <p class="py-2 text-center text-gray-800">
+              Este projeto não está seguindo as diretrizes do catarse?
+              <a class="text-blue-600 hover:underline" href="/complaint/fillings?project_id=22403cda-d5eb-4604-8afe-963fd7b85c74">Denuncie.</a>
+        
+            </p>
+          </div>
+        </div>
+        
+        
+        
+            
+          
+        
+        <iframe style="display: none;"></iframe><hv-copy-modal></hv-copy-modal><div id="tldx-toast-container"></div><style data-styled="active" data-styled-version="5.3.9"></style><div id="tldx-webext-container"></div>
+        
+        
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+  </body>
+</html>
