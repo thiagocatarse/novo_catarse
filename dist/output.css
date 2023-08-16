@@ -2029,6 +2029,11 @@ video {
           hyphens: manual;
 }
 
+.hyphens-auto{
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
 .whitespace-normal{
   white-space: normal;
 }
@@ -5382,6 +5387,10 @@ video {
     width: 16.666667%;
   }
 
+  .md\:w-60{
+    width: 15rem;
+  }
+
   .md\:grid-flow-col{
     grid-auto-flow: column;
   }
@@ -6432,6 +6441,10 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
   .xl\:justify-start{
     justify-content: flex-start;
   }
@@ -6444,6 +6457,15 @@ video {
     gap: 2rem;
   }
 
+  .xl\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .xl\:pt-0{
+    padding-top: 0px;
+  }
+
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -6454,8 +6476,22 @@ video {
     line-height: 1.25rem;
   }
 
+  .xl\:text-\[10px\]{
+    font-size: 10px;
+  }
+
+  .xl\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .xl\:only\:max-w-\[582px\]:only-child{
     max-width: 582px;
+  }
+
+  .xl\:hover\:bg-gray-50:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 248 248 / var(--tw-bg-opacity));
   }
 
   .peer:checked ~ .xl\:peer-checked\:z-40{
