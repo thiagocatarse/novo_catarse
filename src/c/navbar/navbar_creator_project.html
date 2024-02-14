@@ -20,364 +20,243 @@
         for="sidebar_toggle"
         class="bottom-0 left-0 right-0 top-0 bg-gray-900 opacity-0 transition-all peer-checked/sidebar:fixed peer-checked/sidebar:z-[60] peer-checked/sidebar:block peer-checked/sidebar:opacity-50 xl:hidden xl:peer-checked/sidebar:hidden "></label>
 
-      <!-- Sidebar Mobile -->
-      <nav
-        class="fixed md:hidden bottom-0 left-0  md:pb-0 md:top-0 rounded-t-2xl h-[calc(100vh-12rem)] z-[100] hidden md:h-screen w-full flex-col items-stretch bg-white shadow-xl @container peer-checked/sidebar:fixed peer-checked/sidebar:flex md:z-[100] md:flex md:w-20 xl:w-60 peer-checked/search:shadow-none overflow-x-clip  pb-8">
-        <div class="overflow-auto md:flex md:flex-col flex-1">
-          <!--Sidebar Header -->
-          <div class="hidden md:sticky top-0 mb-4 md:flex h-14 flex-row items-center gap-3 bg-white px-3 py-3 md:px-5 lg:justify-start">
-            <!-- Toggle -->
-            <label for="sidebar_toggle" class="md:hidden">
-              <div class="cursor-pointer p-1">
-                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z" fill="#000" />
-                </svg>
-              </div>
-            </label>
-            <!-- Logo -->
-            <a href="./navbar_creator.html" class="@[81px]:w-auto flex w-full flex-row items-center justify-center gap-2">
-              <img src="./assets/logo-symbol.svg" alt="Símbolo do Catarse" />
-              <img src="./assets/logo-estudio.svg" alt="Texto do Logo Catarse" class="@[81px]:flex hidden" />
-            </a>
-          </div>
-          <!-- Profile label -->
-          <label
-              for="profile_toggler"
-              class="md:order-last sticky top-0 flex w-full cursor-pointer flex-row items-center justify-center gap-3 border-t border-t-gray-100 bg-white p-4 md:hover:bg-gray-50 @[81px]:justify-start peer-checked/profile:shadow-[0_-8px_12px_#00000008] group z-50">
-              <!-- Avatar e nome -->
-              <div class="flex flex-1 flex-row gap-3 items-center justify-start md:justify-center xl:justify-start">
-                <!-- Avatar sm -->
-                <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://ca.slack-edge.com/T0256U9U6-U0460U5PL-f02cbc1f5103-512" />
-                </div>
-                <!-- Nome e crédito -->
-                <div class="hidden flex-col @[81px]:flex">
-                  <p class="text-lg md:text-sm font-medium text-gray-900">Thiago Maia</p>
-                  <p class="text-base md:text-xs font-normal text-gray-500">Modo criação</p>
-                </div>
-              </div>
-              <!-- Ellipsis -->
-              <div class="hidden flex-col text-gray-400 md:@[81px]:flex hover:text-gray-900 group-hover:text-gray-900">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                
-              </div>
-            </label>
-            <!-- Profile content -->
-          <div class="md:order-last justify-end relative top-0 md:bottom-0 w-full overflow-x-clip flex flex-col items-center ">
-            <input
-              type="checkbox"
-              id="profile_toggler"
-              class="flex-0 peer/profile hidden" />
-  
-            
-            <!-- Trocar criador -->
-            <div class="flex md:hidden w-full  md:@[81px]:peer-checked/profile:flex px-4 py-3 pb-6 border-b border-b-gray-100 ">
-              <a
-              class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-              href="./navbar_user.html">
-              <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
-                <path
+      <!-- Sidebar Modo Apoio - Páginas globais -->
+<nav
+class="fixed top-0 left-0 h-full z-[100] hidden w-full flex-col items-stretch bg-white shadow-xl peer-checked/sidebar:fixed peer-checked/sidebar:flex xl:hidden xl:w-60 overflow-x-clip">
+<div class="overflow-auto flex flex-col flex-1 h-full">
+   <!--SidebarHeader -->
+   <div class="sticky top-0 mb-4 flex h-14 flex-row items-center gap-3 bg-white px-3 xl:px-5 py-3 justify-start">
+      <!-- Logo -->
+      <!-- O link do Logo leva para a Home do Catarse, no caso da Sidebar do modo apoio, e para a Home do Estúdio, no caso da Sidebar no modo criação -->
+      <a href="#" class="flex w-auto flex-row items-center gap-2 flex-1">
+      <img src="https://thiagocatarse.github.io/novo_catarse/src/c/navbar/assets/logo-symbol.svg" alt="Símbolo do Catarse" />
+      <!-- Essa imagem abaixo é a única que muda em função do modo apoio ou criação, caso seja no modo criação, basta trocar ali o 'logo-texto.svg' por 'logo-estudio.svg'  -->
+      <img src="https://thiagocatarse.github.io/novo_catarse/src/c/navbar/assets/logo-estudio.svg" alt="Texto do Logo Catarse" class="flex" />
+      </a>
+      <!-- Essa div abaixo só existe para que a gente não precise ficar criando uma regra de esconder o Toggler dentro do componente Toggler -->
+      <div class="xl:hidden">
+        <!-- Aqui embaixo é o componente SidebarToggler de fechar. Existe também o SidebarToggler de abrir, mas esse fica dentro da MobileTopNav -->
+         <label for="sidebar_toggle" class="">
+            <div class="cursor-pointer p-1">
+              <!-- Heroicon x-mark -->
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+               </svg>
+            </div>
+         </label>
+      </div>
+   </div>
+   <!-- SidebarContent -->
+   <div
+      class="flex flex-1 flex-col gap-4 overflow-auto px-4 pt-0 ">
+      <!-- SidebarLinksSection -->
+      <div class="flex flex-col gap-1">
+         <!-- SidebarLink , esse é um componente que é usado e e reaproveitado em todos os lugares. Precisa ter um status Current, que é quando a pessoa está na página, e um status Default - pensar melhor nesses nomes -->
+         <a
+            class="group flex flex-row rounded-lg bg-gray-50 px-2 py-2 text-gray-700 font-semibold hover:bg-gray-50 hover:text-gray-700"
+            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+            <div
+               class="flex flex-1 flex-row items-center gap-5">
+               <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path
+                     fill-rule="evenodd"
+                     d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                     clip-rule="evenodd" />
+               </svg>
+               <div
+                  class="leading-tight text-lg xl:text-sm text-left">
+                  Projetos
+               </div>
+            </div>
+         </a>
+         
+      </div>
+      <!-- SidebarLinksSection mobile only - a ideia aqui é que a gente tenha uma variante no componente SidebarLinksSection onde marcamos se é uma SidebarLinksSection mobile-only. A diferença é a classe xl:hidden -->
+      <div class="flex flex-col gap-1 xl:hidden">
+         <!-- SidebarDivider - a ideia dessa div abaixo era pra ela colocar um espaçamento vertical no crowd_divider, mas fico me questionando se o próprio divider não deveria já ter essa margem my-4 dentro do próprio componente -->
+         <div class="my-4">
+            <!-- crowd_divider -->
+            <div
+               class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100"></div>
+         </div>
+         
+         <!-- SidebarLink -->
+         <a
+            class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal "
+            href="./navbar_user_settings.html">
+            <div
+               class="flex flex-1 flex-row items-center gap-5">
+               <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+               <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <path
+                     fill-rule="evenodd"
+                     clip-rule="evenodd"
+                     d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
+               </svg>
+               <div
+                  class="leading-tight text-lg xl:text-sm text-left">
+                  Configura&shy;ções
+               </div>
+            </div>
+         </a>
+         <!-- SidebarLink -->
+         <a
+            class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+            <div
+               class="flex flex-1 flex-row items-center gap-5">
+               <svg
+                  class="h-5 w-5 fill-current"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 18">
+                  <path
+                     fill-rule="evenodd"
+                     d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
+                     clip-rule="evenodd" />
+                  <path
+                     fill-rule="evenodd"
+                     d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
+                     clip-rule="evenodd" />
+               </svg>
+               <div
+                  class="leading-tight text-lg xl:text-sm text-left">
+                  Sair
+               </div>
+            </div>
+         </a>
+      </div>
+   </div>
+   <!-- ProfileLabel - existe o ProfileLabel de modo apoio e o ProfileLabel de modo criação -->
+   <label
+      for="profile_toggler"
+      class=" sticky bottom-0 flex w-full cursor-pointer flex-row items-center justify-start gap-3 border-t border-t-gray-100 bg-white p-4 xl:hover:bg-gray-50  peer-checked/profile:shadow-[0_-8px_12px_#00000008] group z-50">
+      <!-- Avatar e nome -->
+      <div class="flex flex-1 flex-row gap-3 items-center justify-start">
+         <!-- Avatar sm -->
+         <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
+            <img
+               class="h-full w-full object-cover"
+               src="https://ca.slack-edge.com/T0256U9U6-U0460U5PL-f02cbc1f5103-512" />
+         </div>
+         <!-- Nome e crédito -->
+         <div class="flex flex-col">
+            <p class="text-lg xl:text-sm font-medium text-gray-900">Thiago Maia</p>
+            <p class="text-base xl:text-xs font-normal text-gray-500">Modo criação</p>
+         </div>
+      </div>
+      <!-- Ellipsis -->
+      <div class="hidden flex-col text-gray-400 xl:flex hover:text-gray-900 group-hover:text-gray-900">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+         </svg>
+      </div>
+   </label>
+   <!-- ProfileContent -->
+   <div class=" justify-end relative bottom-0 w-full overflow-x-clip flex flex-col items-center ">
+      <input
+         type="checkbox"
+         id="profile_toggler"
+         class="flex-0 peer/profile hidden" />
+      <!-- Button change mode -  -->
+      <div class="flex xl:hidden w-full peer-checked/profile:flex px-4 py-3 pb-6 border-b border-b-gray-100 ">
+         <a
+            class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+            href="./navbar_user.html">
+            <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+               <path
                   fill-rule="evenodd"
                   d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z"
                   clip-rule="evenodd" />
-              </svg>
-              Ir para modo apoio
-            </a></div>
-            <!-- Profile menu -->
-            <div class="z-[999] hidden w-full bg-white peer-checked/profile:flex">
-              <!-- Content Profile Nav -->
-              <div
-                class="hidden md:flex flex-1 flex-col gap-4 overflow-auto px-2 py-4 @[81px]:px-4 ">
-                <!-- Links section -->
-                <div class="flex flex-col gap-2">
-                  <!-- Link Perfil -->
-                  <a
-                    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-                    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
-                    <div
-                      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                      <svg
-                        class="h-5 w-5 fill-current"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 20">
-                        <path
-                          d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z" />
-                      </svg>
-  
-                      <div
-                        class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                        Meu perfil
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Link Config -->
-                  <a
-                    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal "
-                    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-                    <div
-                      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                      <svg
-                        class="h-5 w-5 fill-current"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 18">
-                        <svg
-                      class="h-5 w-5 fill-current"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 18">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
-                      </svg>
-  
-                      <div
-                        class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                        Configura&shy;ções
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Link Sair -->
-                  <a
-                    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-                    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-                    <div
-                      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                      <svg
-                        class="h-5 w-5 fill-current"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 18">
-                        <path
-                        fill-rule="evenodd"
-                        d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
-                        clip-rule="evenodd" />
-                      <path
-                        fill-rule="evenodd"
-                        d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
-                        clip-rule="evenodd" />
-                      </svg>
-  
-                      <div
-                        class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                        Sair
-                      </div>
-                    </div>
-                  </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-                  <!-- Content Secondary Nav -->
-                  <div
-                    class="flex flex-1 flex-col gap-4 overflow-auto px-2 pt-6 md:pt-0  @[81px]:px-4">
-                    <!-- Links section -->
-                    <div class="flex flex-col gap-1">
-                      <!-- Link inicio -->
-            <a
-            class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
-            <div
-              class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-              <svg
-                class="h-5 w-5 fill-current"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20">
-                <path
-                  fill-rule="evenodd"
-                  d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
-                  clip-rule="evenodd" />
-              </svg>
-
-              <div
-                class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                Início
-              </div>
-            </div>
-          </a>
-                      <!-- Link Posts -->
-            <a
-            class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-            <div
-              class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-              <svg
-                class="h-5 w-5 fill-current"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 18">
-                <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h9A1.5 1.5 0 0114 3.5v11.75A2.75 2.75 0 0016.75 18h-12A2.75 2.75 0 012 15.25V3.5zm3.75 7a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zm0 3a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM5 5.75A.75.75 0 015.75 5h4.5a.75.75 0 01.75.75v2.5a.75.75 0 01-.75.75h-4.5A.75.75 0 015 8.25v-2.5z" clip-rule="evenodd" />
-                <path d="M16.5 6.5h-1v8.75a1.25 1.25 0 102.5 0V8a1.5 1.5 0 00-1.5-1.5z" />
-              </svg>
-              
-              
-              
-              
-
-              <div
-                class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                Posts
-              </div>
-            </div>
-          </a>
-          <!-- Link Apoiadores -->
-          <a
-            class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-            <div
-              class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-              <svg
-                class="h-5 w-5 fill-current"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 18">
-                <path d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
-              </svg>
-              
-              
-
-              <div
-                class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                Apoiadores
-              </div>
-            </div>
-          </a>
-          <!-- Link Metricas -->
-          <a
-            class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-            href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-            <div
-              class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-              <svg
-                class="h-5 w-5 fill-current"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 18">
-                <path d="M15.5 2A1.5 1.5 0 0014 3.5v13a1.5 1.5 0 001.5 1.5h1a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0016.5 2h-1zM9.5 6A1.5 1.5 0 008 7.5v9A1.5 1.5 0 009.5 18h1a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 6h-1zM3.5 10A1.5 1.5 0 002 11.5v5A1.5 1.5 0 003.5 18h1A1.5 1.5 0 006 16.5v-5A1.5 1.5 0 004.5 10h-1z" />
-              </svg>
-              
-              
-              
-
-              <div
-                class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                Métricas
-              </div>
-            </div>
-          </a>
-                    </div>
-                    <!-- Links section mobile -->
-                    <div class="flex flex-col gap-1 md:hidden">
-                      <!-- Divider -->
-                      <div class="my-4">
-                        <!-- Divider component -->
-                        <div
-                          class="flex flex-row items-center self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-900 before:h-[1px] before:w-full before:flex-grow before:bg-gray-100 after:h-[1px] after:w-full after:flex-grow after:bg-gray-100"></div>
-                      </div>
-                      <!-- Link Perfil -->
-                  <a
-                  class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-                  href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
-                  <div
-                    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                    <svg
-                      class="h-5 w-5 fill-current"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20">
-                      <path
-                        d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z" />
-                    </svg>
-
-                    <div
-                      class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                      Meu perfil
-                    </div>
-                  </div>
-                </a>
-                <!-- Link Config -->
-                <a
+            </svg>
+            Ir para modo apoio
+         </a>
+      </div>
+      <!-- ProfileMenu -->
+      <div class="z-[999] hidden w-full bg-white peer-checked/profile:flex">
+         <!-- ProfileMenuContent -->
+         <div
+            class="hidden xl:flex flex-1 flex-col gap-4 overflow-auto px-4 py-4 ">
+            <!-- SidebarLinksSection -->
+            <div class="flex flex-col gap-1">
+               <!-- SidebarLink -->
+               <a
                   class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal "
-                  href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                  href="./navbar_user_settings.html">
                   <div
-                    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                    <svg
-                      class="h-5 w-5 fill-current"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 18">
-                      <svg
-                    class="h-5 w-5 fill-current"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 20 18">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
-                    </svg>
-
-                    <div
-                      class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                      Configura&shy;ções
-                    </div>
+                     class="flex flex-1 flex-row items-center gap-5">
+                     <svg
+                        class="h-5 w-5 fill-current"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 18">
+                     <svg
+                        class="h-5 w-5 fill-current"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 18">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
+                     </svg>
+                     <div
+                        class="leading-tight text-lg xl:text-sm text-left">
+                        Configura&shy;ções
+                     </div>
                   </div>
-                </a>
-                <!-- Link Sair -->
-                <a
+               </a>
+               <!-- SidebarLink -->
+               <a
                   class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
                   href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
                   <div
-                    class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                    <svg
-                      class="h-5 w-5 fill-current"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 18">
-                      <path
-                      fill-rule="evenodd"
-                      d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
-                      clip-rule="evenodd" />
-                    <path
-                      fill-rule="evenodd"
-                      d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
-                      clip-rule="evenodd" />
-                    </svg>
-
-                    <div
-                      class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                      Sair
-                    </div>
+                     class="flex flex-1 flex-row items-center gap-5">
+                     <svg
+                        class="h-5 w-5 fill-current"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 18">
+                        <path
+                           fill-rule="evenodd"
+                           d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
+                           clip-rule="evenodd" />
+                        <path
+                           fill-rule="evenodd"
+                           d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
+                           clip-rule="evenodd" />
+                     </svg>
+                     <div
+                        class="leading-tight text-lg xl:text-sm text-left">
+                        Sair
+                     </div>
                   </div>
-                </a>
-                    </div>
-                    
-                    
-                    
-                  </div>
-                  </div>
-       
-      </nav>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</nav>
       <!-- Mobile Top Nav User - Main  -->
 <nav class="top-0 z-50 flex w-full flex-row items-center border-b border-b-gray-50 bg-white md:hidden">
   <!-- Toggle and Logo -->
@@ -406,456 +285,410 @@
     </label>
   </div>
 </nav>
-      <!-- Sidebar Internal Desktop -->
-      <div class="bg-white z-40 lg:flex-0 flex flex-1 flex-col w-full items-start gap-2 px-3 py-3 shadow-sm md:shadow-none lg:flex-col md:p-0 sticky top-0">
-      <input type="checkbox" id="sidebar_internal_toggle" class="hidden peer/sidebar_internal">
-      <p class="text-base font-medium text-gray-900 md:hidden">Nome do projeto</p> 
-      
-        
-    <label for="sidebar_internal_toggle" class="md:hidden group flex flex-1 flex-row w-full border border-gray-200 py-1.5 rounded-md md:rounded-none px-2 text-gray-700 md:border-none peer-checked/sidebar_internal:border-gray-600">
-      <div class="flex flex-1 flex-row items-center gap-3">
+<!-- InternalSidebar Wrapper -->
+<div class="bg-white z-40 lg:flex-0 flex flex-1 flex-col w-full items-start gap-2 px-3 py-3 shadow-sm xl:shadow-none lg:flex-col xl:p-0 sticky top-0">
+  <input type="checkbox" id="sidebar_internal_toggle" class="hidden peer/sidebar_internal">
+  <p class="text-base font-medium text-gray-900 xl:hidden">Nome do projeto</p>
+  <label for="sidebar_internal_toggle" class="xl:hidden group flex flex-1 flex-row w-full border border-gray-200 py-1.5 rounded-md xl:rounded-none px-2 text-gray-700 xl:border-none peer-checked/sidebar_internal:border-gray-600">
+     <div class="flex flex-1 flex-row items-center gap-3">
         <svg class="w-6 h-6 fill-current">
-          
-          <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd"></path>
-          
-          
-  </svg>  
+           <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd"></path>
+        </svg>
         <div class="text-base font-medium text-gray-700">
-          Início
+           Início
         </div>
-      </div>
-      <div class="bg-gray-50 rounded p-1">
+     </div>
+     <div class="bg-gray-50 rounded p-1">
         <svg class="w-6 h-6 fill-current">
-          
-          
-            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
-          
-          
-          
-          
-  </svg>
-      </div>
-    </label>
-  
-      <nav
-        class="absolute md:fixed top-24 left-3 right-3 md:bottom-0 md:left-0 md:pb-0 md:top-0 rounded-lg md:rounded-none md:border-gray-50 border border-gray-100 h-auto z-[100] hidden md:h-screen w-auto flex-col items-stretch bg-white shadow-2xl md:shadow-xl @container peer-checked/sidebar_internal:absolute peer-checked/sidebar_internal:flex md:z-[100] md:flex md:w-20 xl:w-60 peer-checked/search:shadow-none overflow-x-clip  py-6 md:py-0">
-        <div class="overflow-auto md:flex md:flex-col flex-1">
-          <!--Sidebar Header -->
-          <div class="hidden md:sticky top-0 mb-4 md:flex h-14 flex-row items-center gap-3 bg-white px-3 py-3 md:px-5 lg:justify-start">
-            <!-- Toggle -->
-            <label for="sidebar_toggle" class="md:hidden">
-              <div class="cursor-pointer p-1">
-                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.599609 2.00005C0.599609 1.68179 0.726038 1.37656 0.951081 1.15152C1.17612 0.926477 1.48135 0.800049 1.79961 0.800049H16.1996C16.5179 0.800049 16.8231 0.926477 17.0481 1.15152C17.2732 1.37656 17.3996 1.68179 17.3996 2.00005C17.3996 2.31831 17.2732 2.62353 17.0481 2.84858C16.8231 3.07362 16.5179 3.20005 16.1996 3.20005H1.79961C1.48135 3.20005 1.17612 3.07362 0.951081 2.84858C0.726038 2.62353 0.599609 2.31831 0.599609 2.00005ZM0.599609 8.00005C0.599609 7.68179 0.726038 7.37656 0.951081 7.15152C1.17612 6.92648 1.48135 6.80005 1.79961 6.80005H16.1996C16.5179 6.80005 16.8231 6.92648 17.0481 7.15152C17.2732 7.37656 17.3996 7.68179 17.3996 8.00005C17.3996 8.31831 17.2732 8.62353 17.0481 8.84858C16.8231 9.07362 16.5179 9.20005 16.1996 9.20005H1.79961C1.48135 9.20005 1.17612 9.07362 0.951081 8.84858C0.726038 8.62353 0.599609 8.31831 0.599609 8.00005ZM0.599609 14C0.599609 13.6818 0.726038 13.3766 0.951081 13.1515C1.17612 12.9265 1.48135 12.8 1.79961 12.8H8.99961C9.31787 12.8 9.62309 12.9265 9.84814 13.1515C10.0732 13.3766 10.1996 13.6818 10.1996 14C10.1996 14.3183 10.0732 14.6235 9.84814 14.8486C9.62309 15.0736 9.31787 15.2 8.99961 15.2H1.79961C1.48135 15.2 1.17612 15.0736 0.951081 14.8486C0.726038 14.6235 0.599609 14.3183 0.599609 14Z" fill="#000" />
-                </svg>
+           <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+        </svg>
+     </div>
+  </label>
+  <nav
+     class="absolute xl:fixed top-24 left-3 right-3 xl:top-0 xl:left-0 xl:pb-0  rounded-lg xl:rounded-none h-auto z-[100] hidden xl:h-full w-auto flex-col items-stretch bg-white shadow-2xl xl:shadow-xl  peer-checked/sidebar_internal:absolute peer-checked/sidebar_internal:flex xl:flex xl:w-60 overflow-x-clip py-6 xl:py-0">
+     <div class="overflow-auto md:flex md:flex-col flex-1">
+        <!--SidebarHeader -->
+        <div class="sticky top-0 mb-4 flex h-14 flex-row items-center gap-3 bg-white px-3 xl:px-5 py-3 justify-start">
+           <!-- Logo -->
+           <!-- O link do Logo leva para a Home do Catarse, no caso da Sidebar do modo apoio, e para a Home do Estúdio, no caso da Sidebar no modo criação -->
+           <a href="#" class="flex w-auto flex-row items-center gap-2 flex-1">
+              <img src="https://thiagocatarse.github.io/novo_catarse/src/c/navbar/assets/logo-symbol.svg" alt="Símbolo do Catarse" />
+              <!-- Essa imagem abaixo é a única que muda em função do modo apoio ou criação, caso seja no modo criação, basta trocar ali o 'logo-texto.svg' por 'logo-estudio.svg'  -->
+              <img src="https://thiagocatarse.github.io/novo_catarse/src/c/navbar/assets/logo-estudio.svg" alt="Texto do Logo Catarse" class="flex" />
+           </a>
+           <!-- Essa div abaixo só existe para que a gente não precise ficar criando uma regra de esconder o Toggler dentro do componente Toggler -->
+           <div class="xl:hidden">
+              <!-- Aqui embaixo é o componente SidebarToggler de fechar. Existe também o SidebarToggler de abrir, mas esse fica dentro da MobileTopNav -->
+              <label for="sidebar_toggle" class="">
+                 <div class="cursor-pointer p-1">
+                    <!-- Heroicon x-mark -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                    </svg>
+                 </div>
+              </label>
+           </div>
+        </div>
+        <!-- Internal Sidebar Content -->
+        <div class="flex flex-1 flex-col gap-4 overflow-auto px-4 pt-0">
+           <!-- Header Sidebar -->
+           <div class="hidden md:flex flex-col">
+              <div class="flex-col pb-2 pl-0.5 lg:flex">
+                 <!-- Link para voltar -->
+                 <a
+                    href="./navbar_creator.html"
+                    class="flex flex-row items-center gap-0.5 py-1 text-[10px] font-medium text-gray-400 hover:text-gray-600 hover:underline">
+                    <svg
+                       xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 20 20"
+                       fill="currentColor"
+                       class="h-5 w-5">
+                       <path
+                          fill-rule="evenodd"
+                          d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
+                          clip-rule="evenodd" />
+                    </svg>
+                    Todos os projetos
+                 </a
+                    >
+                 <!-- Titulo e status do projeto -->
+                 <div class="flex flex-col gap-1 pt-1">
+                    <h2
+                       class="hidden text-base font-semibold leading-snug text-gray-900 @[81px]:flex">
+                       Nome do projeto
+                    </h2>
+                    <div class="flex flex-row items-center gap-1 text-gray-900">
+                       <div
+                          class="flex hidden flex-row items-center gap-1 @[81px]:flex">
+                          <svg class="h-2.5 w-2.5 fill-green-500">
+                             <use xlink:href="#circle"></use>
+                          </svg>
+                          <span class="text-xs font-normal">Em campanha</span>
+                       </div>
+                    </div>
+                 </div>
               </div>
-            </label>
-            <!-- Logo -->
-            <a href="./navbar_creator.html" class="@[81px]:w-auto flex w-full flex-row items-center justify-center gap-2">
-              <img src="./assets/logo-symbol.svg" alt="Símbolo do Catarse" />
-              <img src="./assets/logo-estudio.svg" alt="Texto do Logo Catarse" class="@[81px]:flex hidden" />
-            </a>
-          </div>
-          <!-- Profile label -->
-          <label
-              for="profile_toggler_internal"
-              class="hidden md:order-last sticky top-0 md:flex w-full cursor-pointer flex-row items-center justify-center gap-3 border-t border-t-gray-100 bg-white p-4 md:hover:bg-gray-50 @[81px]:justify-start peer-checked/profile:shadow-[0_-8px_12px_#00000008] group z-50">
-              <!-- Avatar e nome -->
-              <div class="flex flex-1 flex-row gap-3 items-center justify-start md:justify-center xl:justify-start">
-                <!-- Avatar sm -->
-                <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
-                  <img
+           </div>
+           <!-- SidebarLinksSection -->
+           <div class="flex flex-col gap-1">
+              <!-- Button visualizar -->
+              <div class="mb-3">
+                 <a
+                    class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                    href="">
+                    <svg class="-ml-1 mr-1 h-5 w-5 fill-transparent stroke-current">
+                       <use xlink:href="#eye" />
+                    </svg>
+                    Visualizar
+                 </a>
+              </div>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 20">
+                       <path
+                          fill-rule="evenodd"
+                          d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                          clip-rule="evenodd" />
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Início
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#cube"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Básico
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#swatch"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Personalização
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#pencil"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Descrição
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#target"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Metas
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#gift"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Recom&shy;pensas
+                    </div>
+                 </div>
+              </a>
+              <!-- Divider -->
+              <div class="mb-1 mt-4">
+                 <div
+                    class="flex flex-row items-center gap-4 self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-300 after:h-[1px] after:w-full after:flex-grow after:bg-gray-300 after:bg-opacity-50">
+                    <span class="inline-flex">Promoção</span>
+                 </div>
+              </div>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#paper_airplane"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Pré-lançamento
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#rocket_launch"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Lançamento
+                    </div>
+                 </div>
+              </a>
+              <!-- SidebarLink -->
+              <a
+                 class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                 href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                 <div
+                    class="flex flex-1 flex-row items-center gap-5">
+                    <svg
+                       class="h-5 w-5 fill-current"
+                       aria-hidden="true"
+                       xmlns="http://www.w3.org/2000/svg"
+                       fill="currentColor"
+                       viewBox="0 0 20 18">
+                       <use xlink:href="#speakerphone"></use>
+                    </svg>
+                    <div
+                       class="leading-tight text-lg xl:text-sm text-left">
+                       Divulgação
+                    </div>
+                 </div>
+              </a>
+           </div>
+        </div>
+        <!-- ProfileLabel - existe o ProfileLabel de modo apoio e o ProfileLabel de modo criação -->
+        <label
+           for="profile_toggler"
+           class=" sticky bottom-0 flex w-full cursor-pointer flex-row items-center justify-start gap-3 border-t border-t-gray-100 bg-white p-4 xl:hover:bg-gray-50  peer-checked/profile:shadow-[0_-8px_12px_#00000008] group z-50">
+           <!-- Avatar e nome -->
+           <div class="flex flex-1 flex-row gap-3 items-center justify-start">
+              <!-- Avatar sm -->
+              <div class="h-8 w-8 overflow-hidden rounded-full bg-gray-100">
+                 <img
                     class="h-full w-full object-cover"
                     src="https://ca.slack-edge.com/T0256U9U6-U0460U5PL-f02cbc1f5103-512" />
-                </div>
-                <!-- Nome e crédito -->
-                <div class="hidden flex-col @[81px]:flex">
-                  <p class="text-lg md:text-sm font-medium text-gray-900">Thiago Maia</p>
-                  <p class="text-base md:text-xs font-normal text-gray-500">Modo criação</p>
-                </div>
               </div>
-              <!-- Ellipsis -->
-              <div class="hidden flex-col text-gray-400 md:@[81px]:flex hover:text-gray-900 group-hover:text-gray-900">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                
+              <!-- Nome e crédito -->
+              <div class="flex flex-col">
+                 <p class="text-lg xl:text-sm font-medium text-gray-900">Thiago Maia</p>
+                 <p class="text-base xl:text-xs font-normal text-gray-500">Modo criação</p>
               </div>
-            </label>
-            <!-- Profile content -->
-          <div class="hidden md:order-last justify-end relative top-0 md:bottom-0 w-full overflow-x-clip md:flex flex-col items-center ">
-            <input
-              type="checkbox"
-              id="profile_toggler_internal"
-              class="flex-0 peer/profile hidden" />
-  
-            
-            <!-- Trocar criador -->
-            <div class="flex md:hidden w-full  md:@[81px]:peer-checked/profile:flex px-4 py-3 pb-6 border-b border-b-gray-100 ">
-              <a
-              class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-              href="./navbar_user.html">
-              <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
-                <path
-                  fill-rule="evenodd"
-                  d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z"
-                  clip-rule="evenodd" />
+           </div>
+           <!-- Ellipsis -->
+           <div class="hidden flex-col text-gray-400 xl:flex hover:text-gray-900 group-hover:text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Ir para modo apoio
-            </a></div>
-            <!-- Profile menu -->
-            <div class="z-[999] hidden w-full bg-white peer-checked/profile:flex">
-              <!-- Content Profile Nav -->
-              <div
-                class="hidden md:flex flex-1 flex-col gap-4 overflow-auto px-2 py-4 @[81px]:px-4 ">
-                <!-- Links section -->
-                <div class="flex flex-col gap-2">
-                  <!-- Link Perfil -->
-                  <a
-                    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-                    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
-                    <div
-                      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                      <svg
-                        class="h-5 w-5 fill-current"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 20">
-                        <path
-                          d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z" />
-                      </svg>
-  
-                      <div
-                        class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                        Meu perfil
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Link Config -->
-                  <a
-                    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal "
-                    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-                    <div
-                      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                      <svg
-                        class="h-5 w-5 fill-current"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 18">
-                        <svg
-                      class="h-5 w-5 fill-current"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 18">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
-                      </svg>
-  
-                      <div
-                        class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                        Configura&shy;ções
-                      </div>
-                    </div>
-                  </a>
-                  <!-- Link Sair -->
-                  <a
-                    class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-                    href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-                    <div
-                      class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                      <svg
-                        class="h-5 w-5 fill-current"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 20 18">
-                        <path
-                        fill-rule="evenodd"
-                        d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
-                        clip-rule="evenodd" />
-                      <path
-                        fill-rule="evenodd"
-                        d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
-                        clip-rule="evenodd" />
-                      </svg>
-  
-                      <div
-                        class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                        Sair
-                      </div>
-                    </div>
-                  </a>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-                  <!-- Content Secondary Nav -->
-                  
-        <div class="flex flex-1 flex-col gap-4 overflow-auto px-2 @[81px]:px-4">
-          <!-- Header Sidebar -->
-          <div class="hidden md:flex flex-col">
-            <div class="flex-col pb-2 pl-0.5 lg:flex">
-              <!-- Link para voltar -->
+           </div>
+        </label>
+        <!-- ProfileContent -->
+        <div class=" justify-end relative bottom-0 w-full overflow-x-clip flex flex-col items-center ">
+           <input
+              type="checkbox"
+              id="profile_toggler"
+              class="flex-0 peer/profile hidden" />
+           <!-- Button change mode -  -->
+           <div class="flex xl:hidden w-full peer-checked/profile:flex px-4 py-3 pb-6 border-b border-b-gray-100 ">
               <a
-                href="./navbar_creator.html"
-                class="flex flex-row items-center gap-0.5 py-1 text-[10px] font-medium text-gray-400 hover:text-gray-600 hover:underline">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="h-5 w-5">
-                  <path
-                    fill-rule="evenodd"
-                    d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
-                    clip-rule="evenodd" />
-                </svg>
-                Todos os projetos</a
-              >
-
-              <!-- Titulo e status do projeto -->
-              <div class="flex flex-col gap-1 pt-1">
-                <h2
-                  class="hidden text-base font-semibold leading-snug text-gray-900 @[81px]:flex">
-                  Nome do projeto
-                </h2>
-                <div class="flex flex-row items-center gap-1 text-gray-900">
-                  <div
-                    class="flex hidden flex-row items-center gap-1 @[81px]:flex">
-                    <svg class="h-2.5 w-2.5 fill-green-500">
-                      <use xlink:href="#circle"></use>
-                    </svg>
-                    <span class="text-xs font-normal">Em campanha</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-          </div>
-
-          <!-- Links section -->
-          <div class="flex flex-col gap-1">
-            <!-- Button visualizar -->
-            <div class="mb-3">
-              <a
-                class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-xs font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
-                href="">
-                <svg class="-ml-1 mr-1 h-5 w-5 fill-transparent stroke-current">
-                  <use xlink:href="#eye" />
-                </svg>
-                Visualizar
+                 class="inline-flex w-full items-center justify-center gap-1 rounded-lg border border-gray-600 bg-transparent px-3 py-2 text-sm font-medium text-gray-600 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-600 hover:bg-gray-50 active:bg-gray-100"
+                 href="./navbar_user.html">
+                 <svg class="-ml-1 mr-1 h-5 w-5 fill-current">
+                    <path
+                       fill-rule="evenodd"
+                       d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z"
+                       clip-rule="evenodd" />
+                 </svg>
+                 Ir para modo apoio
               </a>
-            </div>
-            <!-- Link inicio -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/dashboard">
+           </div>
+           <!-- ProfileMenu -->
+           <div class="z-[999] hidden w-full bg-white peer-checked/profile:flex">
+              <!-- ProfileMenuContent -->
               <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
-                    clip-rule="evenodd" />
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Início
-                </div>
+                 class="hidden xl:flex flex-1 flex-col gap-4 overflow-auto px-4 py-4 ">
+                 <!-- SidebarLinksSection -->
+                 <div class="flex flex-col gap-1">
+                    <!-- SidebarLink -->
+                    <a
+                       class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal "
+                       href="./navbar_user_settings.html">
+                       <div
+                          class="flex flex-1 flex-row items-center gap-5">
+                          <svg
+                             class="h-5 w-5 fill-current"
+                             aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg"
+                             fill="currentColor"
+                             viewBox="0 0 20 18">
+                          <svg
+                             class="h-5 w-5 fill-current"
+                             aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg"
+                             fill="currentColor"
+                             viewBox="0 0 20 18">
+                             <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62213 8.18522 3.80541C8.02845 3.9887 7.83063 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24367 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" />
+                          </svg>
+                          <div
+                             class="leading-tight text-lg xl:text-sm text-left">
+                             Configura&shy;ções
+                          </div>
+                       </div>
+                    </a>
+                    <!-- SidebarLink -->
+                    <a
+                       class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
+                       href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
+                       <div
+                          class="flex flex-1 flex-row items-center gap-5">
+                          <svg
+                             class="h-5 w-5 fill-current"
+                             aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg"
+                             fill="currentColor"
+                             viewBox="0 0 20 18">
+                             <path
+                                fill-rule="evenodd"
+                                d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
+                                clip-rule="evenodd" />
+                             <path
+                                fill-rule="evenodd"
+                                d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
+                                clip-rule="evenodd" />
+                          </svg>
+                          <div
+                             class="leading-tight text-lg xl:text-sm text-left">
+                             Sair
+                          </div>
+                       </div>
+                    </a>
+                 </div>
               </div>
-            </a>
-            <!-- Link Básico -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#cube"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Básico
-                </div>
-              </div>
-            </a>
-            <!-- Link Personalização -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#swatch"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-auto text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Personalização
-                </div>
-              </div>
-            </a>
-            <!-- Link Descrição -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#pencil"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Descrição
-                </div>
-              </div>
-            </a>
-            <!-- Link Metas -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#target"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Metas
-                </div>
-              </div>
-            </a>
-            <!-- Link Recompensas -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#gift"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Recom&shy;pensas
-                </div>
-              </div>
-            </a>
-            <!-- Divider -->
-            <div class="mb-1 mt-4">
-              <div
-                class="flex flex-row items-center gap-4 self-stretch whitespace-nowrap text-sm font-normal leading-tight text-gray-300 after:h-[1px] after:w-full after:flex-grow after:bg-gray-300 after:bg-opacity-50">
-                <span class="hidden @[81px]:inline-flex">Promoção</span>
-              </div>
-            </div>
-            <!-- Link Pre-lancamento -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#paper_airplane"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Pré-lançamento
-                </div>
-              </div>
-            </a>
-            <!-- Link Lancamento -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#rocket_launch"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Lançamento
-                </div>
-              </div>
-            </a>
-            <!-- Link Divulgacao -->
-            <a
-              class="group flex flex-row rounded-lg px-2 py-2 text-gray-500 hover:bg-gray-50 hover:text-gray-700 font-normal"
-              href="/creator/membership/projects/54ac5526-764e-4dc2-a68a-c91adb0a4393/basic_info/edit">
-              <div
-                class="flex flex-1 flex-col items-center gap-1 @[81px]:flex-row @[81px]:gap-5">
-                <svg
-                  class="h-5 w-5 fill-current"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18">
-                  <use xlink:href="#speakerphone"></use>
-                </svg>
-
-                <div
-                  class="leading-tight text-center hyphens-manual text-lg md:text-[10px] @[81px]:text-left md:@[81px]:text-sm">
-                  Divulgação
-                </div>
-              </div>
-            </a>
-          </div>
+           </div>
         </div>
-                  </div>
-       
-      </nav></div>
+     </div>
+  </nav>
+</div>
 
       
 
